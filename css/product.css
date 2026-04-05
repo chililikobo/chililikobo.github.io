@@ -1,0 +1,162 @@
+﻿/* ==========================================
+   製品詳細ページ専用 (product.css)
+   ========================================== */
+
+/* ページ全体の余白 */
+.product-page {
+    padding-bottom: 100px;
+}
+
+/* 戻るリンクのナビゲーション */
+.nav-back {
+    padding: 30px 0;
+}
+
+    .nav-back a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .nav-back a:hover {
+            color: var(--accent-red);
+        }
+
+/* ヒーローセクション */
+.hero-product {
+    background-color: var(--bg-card);
+    padding: 80px 0;
+    border-top: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
+    margin-bottom: 50px;
+}
+
+/* セクション見出し (赤い左線) */
+.section-title {
+    border-left: 4px solid var(--accent-red);
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* カスタムカード */
+.card-custom {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+/* スペックテーブル (幅 35%) */
+.spec-table th {
+    width: 35%;
+    color: #888;
+    font-weight: normal;
+    border-bottom-color: var(--border-dark);
+}
+
+.spec-table td {
+    border-bottom-color: var(--border-dark);
+    color: #eee;
+}
+
+/* 購入・体験ボタン */
+.buy-button {
+    background-color: var(--accent-red);
+    color: white !important;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    text-align: center;
+}
+
+    .buy-button:hover {
+        background-color: var(--accent-red-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+    }
+
+/* 更新履歴 */
+.changelog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.changelog-item {
+    border-bottom: 1px solid var(--border-dark);
+    padding: 10px 0;
+}
+
+    .changelog-item:last-child {
+        border-bottom: none;
+    }
+
+/* スクリーンショット (16:9) */
+.screenshot-container {
+    margin-bottom: 10px;
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.screenshot-container:hover .screenshot-img {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* ライセンスボックス */
+.license-box {
+    background-color: #252525;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.license-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.step-badge {
+    background-color: var(--accent-red);
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* 【利用制限】アラート */
+.limit-alert {
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

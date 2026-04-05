@@ -1,0 +1,122 @@
+﻿/* ==========================================
+   規約・プライバシー共通設定 (terms.css)
+   ========================================== */
+
+/* body の padding を 0 にしてナビを最上部に密着させる */
+body {
+    padding: 0 !important;
+}
+
+/* ナビの下から余白を開始させるための設定 */
+.terms-page {
+    padding: 50px 0 80px; /* ここで余白を管理 */
+    min-height: 80vh; /* コンテンツが少なくてもフッターを沈める */
+}
+
+/* カード型コンテナ */
+.terms-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+    /* 大見出し */
+    .terms-card h1 {
+        font-weight: bold;
+        border-bottom: 2px solid var(--accent-red);
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        font-size: 1.8rem;
+    }
+
+    /* 中見出し */
+    .terms-card h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--accent-red);
+        margin-top: 40px;
+        margin-bottom: 15px;
+        border-left: 4px solid var(--accent-red);
+        padding-left: 15px;
+    }
+
+    /* 本文テキスト */
+    .terms-card p,
+    .terms-card li {
+        color: #ccc;
+        font-size: 0.95rem;
+    }
+
+    .terms-card ul {
+        padding-left: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+/* 特定商取引法などのテーブル (terms用) */
+.spec-table th {
+    width: 30%;
+    color: #888;
+    font-weight: normal;
+    border-bottom: 1px solid var(--border-dark);
+    vertical-align: middle;
+}
+
+.spec-table td {
+    border-bottom: 1px solid var(--border-dark);
+    padding: 12px 8px;
+    color: #eee;
+}
+
+/* 戻るボタン */
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .back-btn:hover {
+        color: var(--accent-red);
+    }
+
+/* 区切り線 */
+hr {
+    border-color: #444;
+    margin: 60px 0;
+}
+
+/* 重要ノート (返金不可などの強調) */
+.important-note {
+    border: 1px solid var(--accent-red);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+    background: rgba(220, 53, 69, 0.05);
+}
+
+/* フッターの調整 (規約ページ用) */
+footer {
+    margin-top: 100px;
+}
+
+/* Googleフォームの色を反転させてダークモード風にする */
+/* 2. Googleフォームの埋め込みエリアを濃く馴染ませる */
+.contact-form-wrapper {
+    background-color: #000000; /* 外枠を真っ黒にする */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333333; /* わずかな境界線で高級感を出す */
+    margin-top: 2rem;
+}
+
+    /* 3. Googleフォーム自体の色を反転してダークモード化する */
+    .contact-form-wrapper iframe {
+        width: 100% !important;
+        display: block;
+        /* 色反転(invert) + 色相調整(hue-rotate) + 明るさ調整(brightness) */
+        filter: invert(92%) hue-rotate(180deg) brightness(0.8);
+        background-color: #ffffff;
+    }

@@ -1,0 +1,62 @@
+﻿/* ==========================================
+   index.html 専用設定 (index.css)
+   ========================================== */
+
+/* ヒーローセクション */
+.hero-section {
+    padding: 120px 0;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.hero-logo {
+    max-width: 600px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(220, 53, 69, 0.2));
+    margin-bottom: 10px;
+}
+
+/* 製品カード */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    color: var(--text-main);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-red);
+    }
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #bbb;
+}
+
+/* モーダル (indexでのみ使用する場合) */
+.modal-content {
+    background-color: var(--bg-card);
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.modal-header, .modal-footer {
+    border-color: var(--border-dark);
+}
+
+.terms-content {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 300px;
+    }
+}
