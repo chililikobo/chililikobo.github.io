@@ -133,6 +133,6 @@ footer p.small {
 }
 
 /* アンカーリンクでジャンプした際、ナビに隠れないように余白を作る */
-[id] {
-    scroll-margin-top: 150px; /* ナビの高さ（約80-90px）より少し多めに設定 */
+section[id] {
+    scroll-margin-top: 150px; /* ナビの高さより少し多めに設定 */
 }

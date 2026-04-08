@@ -7,11 +7,10 @@ body {
     padding: 0 !important;
 }
 
-/* ナビの下から余白を開始させるための設定 */
-.terms-page {
-    padding: 50px 0 80px; /* ここで余白を管理 */
-    min-height: 80vh; /* コンテンツが少なくてもフッターを沈める */
-}
+    body.terms-page nav + .container {
+        padding-top: 50px; /* ここで一番上のカードの位置を調整 */
+        padding-bottom: 80px;
+    }
 
 /* カード型コンテナ */
 .terms-card {
@@ -69,25 +68,6 @@ body {
     color: #eee;
 }
 
-/* 戻るボタン */
-.back-btn {
-    display: inline-block;
-    margin-top: 40px;
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-    .back-btn:hover {
-        color: var(--accent-red);
-    }
-
-/* 区切り線 */
-hr {
-    border-color: #444;
-    margin: 60px 0;
-}
-
 /* 重要ノート (返金不可などの強調) */
 .important-note {
     border: 1px solid var(--accent-red);
@@ -95,11 +75,6 @@ hr {
     border-radius: 4px;
     margin: 20px 0;
     background: rgba(220, 53, 69, 0.05);
-}
-
-/* フッターの調整 (規約ページ用) */
-footer {
-    margin-top: 100px;
 }
 
 /* Googleフォームの色を反転させてダークモード風にする */
@@ -120,3 +95,4 @@ footer {
         filter: invert(92%) hue-rotate(180deg) brightness(0.8);
         background-color: #ffffff;
     }
+
