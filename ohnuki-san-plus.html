@@ -4,34 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohnuki-san Plus | chilili kobo</title>
-    <link rel="icon" href="img/chililikobo.ico">
-    <link rel="apple-touch-icon" href="img/chilili600x600.png">
+
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/ohnuki-san-plus.html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/ohnuki-san-plus.html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/ohnuki-san-plus.html">
+
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
 </head>
 <body class="product-page">
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/chilili600x600.png" alt="chilili kobo" class="brand-logo">
-            </a>
-
-            <button class="navbar-toggler navbar-dark border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html#info">Information</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
-                    <li class="nav-item ms-lg-2"><a class="nav-link disabled small" href="#">EN</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header-placeholder"></div>
 
     <header class="hero-product text-center">
         <div class="container">
@@ -91,8 +78,8 @@
 
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('img/260407_042147_536_4.png')">
-                                <img src="img/260407_042147_536_4.png" alt="ライセンス入力画面" class="screenshot-img">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/260407_042147_536_4.png')">
+                                <img src="/img/260407_042147_536_4.png" alt="ライセンス入力画面" class="screenshot-img">
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-window me-1"></i>ライセンス入力画面</h4>
@@ -101,8 +88,8 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('img/260407_042546_150_1.png')">
-                                <img src="img/260407_042546_150_1.png" alt="レポート結果" class="screenshot-img">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/260407_042546_150_1.png')">
+                                <img src="/img/260407_042546_150_1.png" alt="レポート結果" class="screenshot-img">
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-browser-chrome me-1"></i>ブラウザでのレポート表示</h4>
@@ -227,10 +214,10 @@
 
                 <div class="text-center mt-4">
                     <div class="mb-2">
-                        <a href="terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
-                        <a href="terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                        <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
+                        <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
                     </div>
-                    <a href="terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
+                    <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
                 </div>
             </div>
         </div>
@@ -249,41 +236,10 @@
         </div>
     </div>
 
-    <footer id="contact" class="text-center">
-        <div class="container">
-            <div class="mb-4">
-                <a href="https://x.com/TABASCOsoft" target="_blank" class="footer-icon">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-            </div>
-
-            <ul class="list-inline mb-4">
-                <li class="list-inline-item"><a href="terms.html#terms">利用規約</a></li>
-                <li class="list-inline-item"><a href="terms.html#privacy">プライバシーポリシー</a></li>
-                <li class="list-inline-item"><a href="terms.html#commercial-law">特定商取引法に基づく表記</a></li>
-                <li class="list-inline-item"><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-
-            <p class="mb-0 small">&copy; 2013 - <span id="current-year">2026</span> chilili kobo</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
 
-    <script>
-        // ページが読み込まれたら実行
-        document.addEventListener('DOMContentLoaded', function () {
-            const yearSpan = document.getElementById('current-year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-
-        // 画像表示用（ohnuki-san-plus.html の場合）
-        function showImage(src) {
-            const modalImg = document.getElementById('modalImage');
-            if (modalImg) modalImg.src = src;
-        }
-    </script>
 </body>
 </html>

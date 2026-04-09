@@ -2,16 +2,6 @@
    規約・プライバシー共通設定 (terms.css)
    ========================================== */
 
-/* body の padding を 0 にしてナビを最上部に密着させる */
-body {
-    padding: 0 !important;
-}
-
-    body.terms-page nav + .container {
-        padding-top: 50px; /* ここで一番上のカードの位置を調整 */
-        padding-bottom: 80px;
-    }
-
 /* カード型コンテナ */
 .terms-card {
     background-color: var(--bg-card);
@@ -80,10 +70,7 @@ body {
 /* Googleフォームの色を反転させてダークモード風にする */
 /* 2. Googleフォームの埋め込みエリアを濃く馴染ませる */
 .contact-form-wrapper {
-    background-color: #000000; /* 外枠を真っ黒にする */
-    border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #333333; /* わずかな境界線で高級感を出す */
     margin-top: 2rem;
 }
 
@@ -92,7 +79,6 @@ body {
         width: 100% !important;
         display: block;
         /* 色反転(invert) + 色相調整(hue-rotate) + 明るさ調整(brightness) */
-        filter: invert(92%) hue-rotate(180deg) brightness(0.8);
-        background-color: #ffffff;
+        filter: invert(86%) hue-rotate(180deg) brightness(1.2);
     }
 

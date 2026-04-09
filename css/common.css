@@ -9,13 +9,30 @@
     --text-main: #ffffff;
     --text-muted: #777;
     --border-dark: #333;
+
+    --font-ja: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    --font-en: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#header-placeholder {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* デフォルト（日本語）のフォント設定 */
 body {
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: var(--font-ja);
     background-color: var(--bg-dark);
     color: var(--text-main);
     line-height: 1.6;
+    padding-top: 100px;
+}
+
+/* 英語ページ（html lang="en"）の場合のフォント上書き */
+html[lang="en"] body {
+    font-family: var(--font-en);
 }
 
 /* アクセント共通クラス */
@@ -136,3 +153,4 @@ footer p.small {
 section[id] {
     scroll-margin-top: 150px; /* ナビの高さより少し多めに設定 */
 }
+
