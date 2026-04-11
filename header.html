@@ -10,6 +10,37 @@
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item"><a class="nav-link" href="/index.html#info">Information</a></li>
                 <li class="nav-item"><a class="nav-link" href="/index.html#products">Products</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="shareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-share me-1"></i>Share
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="shareDropdown">
+                        <li>
+                            <a id="share-x" class="dropdown-item" href="#" target="_blank">
+                                <i class="bi bi-twitter-x me-2"></i>X (Twitter)
+                            </a>
+                        </li>
+                        <li>
+                            <a id="share-line" class="dropdown-item" href="#" target="_blank">
+                                <i class="bi bi-line me-2"></i>LINE
+                            </a>
+                        </li>
+                        <li>
+                            <a id="share-fb" class="dropdown-item" href="#" target="_blank">
+                                <i class="bi bi-facebook me-2"></i>Facebook
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="copyToClipboard()">
+                                <i class="bi bi-link-45deg me-2"></i>
+                                <span id="copy-link-text">URLをコピー</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="nav-item ms-lg-2">
                     <a id="lang-switch" class="nav-link small" href="#">
                         <i class="bi bi-globe me-1"></i>EN

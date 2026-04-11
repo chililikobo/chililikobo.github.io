@@ -51,6 +51,11 @@ function initLangSwitch() {
                 link.href = '/en' + originalHref;
             }
         });
+
+        const copyTextElement = document.getElementById('copy-link-text');
+        if (copyTextElement) {
+            copyTextElement.textContent = "Copy URL";
+        }
     }
 
     langBtn.addEventListener('click', function (e) {
@@ -58,6 +63,27 @@ function initLangSwitch() {
         let targetPath = isEnglish ? path.replace('/en/', '/') : (path === '/' || path.endsWith('index.html') ? '/en/index.html' : '/en' + path);
         window.location.href = targetPath.replace('//', '/');
     });
+
+    const currentUrl = encodeURIComponent(window.location.href);
+    const pageTitle = encodeURIComponent(document.title); // ページタイトルも取得
+
+    // X (Twitter) のリンクを更新
+    const shareX = document.getElementById('share-x');
+    if (shareX) {
+        shareX.href = `https://x.com/intent/tweet?url=${currentUrl}&text=${pageTitle}`;
+    }
+
+    // LINE のリンクを更新
+    const shareLine = document.getElementById('share-line');
+    if (shareLine) {
+        shareLine.href = `https://social-plugins.line.me/lineit/share?url=${currentUrl}`;
+    }
+
+    // Facebook のリンクを更新
+    const shareFB = document.getElementById('share-fb');
+    if (shareFB) {
+        shareFB.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+    }
 }
 
 // --- フッターの文字とリンクを英語対応にする ---
@@ -97,4 +123,24 @@ function showImage(src) {
     if (modalImg) {
         modalImg.src = src;
     }
+}
+
+function copyToClipboard() {
+    // 現在のページのURLを取得
+    const url = window.location.href;
+
+    // パスに "/en/" が含まれているかチェック
+    const isEnglish = window.location.pathname.includes('/en/');
+
+    // メッセージの切り替え
+    const message = isEnglish
+        ? "URL copied to clipboard!"
+        : "URLをコピーしました！";
+
+    // クリップボードへのコピー処理
+    navigator.clipboard.writeText(url).then(() => {
+        alert(message);
+    }).catch(err => {
+        console.error('Copy failed', err);
+    });
 }
