@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>chilili kobo</Company_Name>
+		<Address_1 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Japan</Country>
+		<Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name />
+			<Author_Last_Name />
+			<Author_Email>chilili.kobo@gmail.com</Author_Email>
+		</Contact_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Ohnuki-san Dashboard</Program_Name>
+		<Program_Version>26.4.18.0</Program_Version>
+		<Program_Release_Month>04</Program_Release_Month>
+		<Program_Release_Day>18</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win10,Win11</Program_OS_Support>
+		<Program_Language>English,Japanese</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Utilities</Program_Specific_Category>
+		<Program_Category_Class>System Utilities::System Analysis</Program_Category_Class>
+		<Program_System_Requirements>Windows 10 or later</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Char_Desc_45>Visualize system data with intuitive charts.</Char_Desc_45>
+			<Char_Desc_80>An analysis tool to visualize Ohnuki-san Plus data with charts and tree views.</Char_Desc_80>
+			<Char_Desc_250>Ohnuki-san Dashboard is an analysis tool designed to visualize system data collected by Ohnuki-san Plus. It allows you to instantly grasp PC configurations through intuitive charts and tree views.</Char_Desc_250>
+			<Char_Desc_450>Ohnuki-san Dashboard transforms system reports into visual insights. By specifying the folder containing Ohnuki-san Plus HTML reports, users can analyze hardware configurations using graphical charts and hierarchical tree views. This tool is developed for users who need to manage and understand their IT assets quickly and intuitively. Distributed as freeware via GitHub.</Char_Desc_450>
+			<Char_Desc_2000>
+				Visualize your IT assets at a glance. Ohnuki-san Dashboard is the official analysis tool for Ohnuki-san Plus.
+
+				Simply specify the folder where Ohnuki-san Plus HTML reports are stored, and the dashboard will automatically aggregate and transform raw system data into graphical insights.
+
+				Key features:
+				- Graphical Analysis: View system components through intuitive pie charts and graphs.
+				- Tree View Navigation: Explore hardware details with a structured hierarchical layout.
+				- Seamless Integration: Designed specifically to analyze folders managed by Ohnuki-san Plus.
+				- No Installation Required: Portable utility for quick access.
+
+				From Data Collection to Insight:
+				While Plus excels at gathering system information, Dashboard empowers you to "see" and analyze that information effectively. Perfect for IT administrators and power users who manage multiple devices.
+
+				Developed by chilili kobo, this tool is available for free as part of the Ohnuki-san ecosystem.
+			</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://chililikobo.github.io/en/ohnuki-san-dashboard.html</Application_Info_URL>
+			<Application_Order_URL>https://github.com/chililikobo/OhnukisanDashboard/releases/latest</Application_Order_URL>
+			<Application_Screenshot_URL>https://chililikobo.github.io/img/dashboard-main.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://chililikobo.github.io/img/ohnuki-san-dashboard-icon256.png</Application_Icon_URL>
+			<Application_XML_File_URL>https://chililikobo.github.io/pad/ohnuki-san-dashboard.xml</Application_XML_File_URL>
+		</Application_URLs>
+	</Web_Info>
+</XML_DIZ_INFO>
