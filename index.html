@@ -64,6 +64,19 @@
 
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-3">
+                            <span class="text-accent fw-bold me-3">2026.04.18</span> Ohnuki-san Dashboard v26.4.18.0 リリース
+                        </button>
+                    </h2>
+                    <div id="info-item-3" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            システム情報をグラフィカルに可視化する「Ohnuki-san Dashboard」をリリースしました。Plusで取得したレポートを読み込み、直感的な分析を可能にします。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-1">
                             <span class="text-accent fw-bold me-3">2026.04.09</span> 公式サイトをリニューアルしました
                         </button>
@@ -99,14 +112,33 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-5">
                     <div class="card h-100 shadow">
-                        <div class="card-body p-4">
+                        <div class="card-body p-4 d-flex flex-column">
                             <h3 class="h4 card-title fw-bold mb-3">Ohnuki-san Plus</h3>
-                            <p class="card-text mb-4">システム情報を素早く取得・管理するためのユーティリティ。さらに使いやすく、パワフルに進化しました。</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://chililikobo.gumroad.com/l/rskilq" target="_blank" class="btn btn-danger fw-bold px-4 shadow-sm">
-                                    Get it on Gumroad
+                            <p class="card-text mb-4" style="min-height: 4.5em;">システム情報を素早く取得・管理するためのユーティリティ。さらに使いやすく、パワフルに進化しました。</p>
+                            <div class="mt-auto">
+                                <a href="https://chililikobo.gumroad.com/l/rskilq" target="_blank" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
+                                    Gumroad で取得
                                 </a>
-                                <a href="ohnuki-san-plus.html" class="text-accent fw-bold text-decoration-none">More Details →</a>
+                                <div class="text-center">
+                                    <a href="ohnuki-san-plus.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="h4 card-title fw-bold mb-3">Ohnuki-san Dashboard</h3>
+                            <p class="card-text mb-4" style="min-height: 4.5em;">Plusで収集したデータを「見える化」。直感的なグラフやツリーで構成を瞬時に把握できる分析ツール。</p>
+                            <div class="mt-auto">
+                                <a href="https://github.com/chililikobo/OhnukisanDashboard/releases/latest" target="_blank" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
+                                    <i class="bi bi-github me-1"></i> GitHub で取得
+                                </a>
+                                <div class="text-center">
+                                    <a href="ohnuki-san-dashboard.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
+                                </div>
                             </div>
                         </div>
                     </div>

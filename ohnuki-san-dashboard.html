@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B8PSQRQ7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B8PSQRQ7X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohnuki-san Dashboard | chilili kobo - Visual IT Asset Management</title>
+    <meta name="description" content="収集したシステム情報を「見える化」。Ohnuki-san Dashboardは、直感的な分析と管理を実現する可視化ツールです。">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="chilili kobo">
+    <meta property="og:title" content="Ohnuki-san Dashboard | chilili kobo - Visual IT Asset Management">
+    <meta property="og:description" content="収集したシステム情報を「見える化」。円グラフやツリービューでPC構成を瞬時に把握。">
+    <meta property="og:url" content="https://chililikobo.github.io/ohnuki-san-dashboard.html">
+    <meta property="og:image" content="https://chililikobo.github.io/img/og-ohnuki-san-dashboard.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ohnuki-san Dashboard | chilili kobo - Visual IT Asset Management">
+    <meta name="twitter:description" content="収集したシステム情報を「見える化」。円グラフやツリービューでPC構成を瞬時に把握。">
+    <meta name="twitter:image" content="https://chililikobo.github.io/img/og-ohnuki-san-dashboard.png">
+    <meta name="twitter:site" content="@chililikobo">
+
+    <link rel="canonical" href="https://chililikobo.github.io/ohnuki-san-dashboard.html">
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/ohnuki-san-dashboard.html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/ohnuki-san-dashboard.html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/ohnuki-san-dashboard.html">
+
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body class="product-page">
+
+    <div id="header-placeholder"></div>
+
+    <header class="hero-product text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Ohnuki-san <span class="text-accent">Dashboard</span></h1>
+            <p class="lead text-white-50 mb-5">情報を「集約」から「活用」へ。資産管理を加速させるビジュアル分析ツール。</p>
+            <div class="d-inline-block">
+                <a href="https://github.com/chililikobo/OhnukisanDashboard/releases/latest" target="_blank" class="buy-button">
+                    <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
+                </a>
+                <p class="small text-white-50 mt-3">※本ツールの利用には Ohnuki-san Plus で取得したデータが必要です</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <div class="card-custom border-accent" style="background: rgba(220, 53, 69, 0.05);">
+                        <h2 class="h5 fw-bold text-accent mb-3"><i class="bi bi-info-circle-fill me-2"></i>ご利用には「Ohnuki-san Plus」が必要です</h2>
+                        <p class="small mb-0">
+                            Ohnuki-san Dashboardは、<strong>Ohnuki-san Plusで出力されたHTMLレポート群を読み込んで解析する</strong>ためのビューアーです。本ツール単体ではPC情報の収集は行えませんので、必ずPlusで作成したデータフォルダをご用意ください。
+                        </p>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">製品説明</h2>
+                    <p class="lead fw-bold text-accent">「膨大なレポートを、一目でわかるインサイトに変える。」</p>
+                    <p>Ohnuki-san Dashboardは、散らばったシステム情報を一箇所に統合し、IT資産の現状をグラフィカルに把握するために開発されました。</p>
+
+                    <div class="card-custom text-center py-4 mt-4">
+                        <h3 class="h5 fw-bold mb-3">データ収集ツールをお探しですか？</h3>
+                        <p class="small text-white-50 mb-4">
+                            分析の元データとなるHTMLレポートを作成するには、システム情報抽出ツール「Ohnuki-san Plus」をご利用ください。
+                        </p>
+                        <a href="/ohnuki-san-plus.html" class="btn btn-outline-danger px-4">
+                            Ohnuki-san Plus の詳細を見る
+                        </a>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">スクリーンショット</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/dashboard-main.png')">
+                                <img src="/img/dashboard-main.png" alt="統合ダッシュボード" class="screenshot-img">
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-speedometer2 me-1"></i>メインダッシュボード</h4>
+                                <p class="text-white-50 small mb-0">グラフによる視覚的なステータス確認が可能です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">使用方法</h2>
+                    <div class="card-custom">
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="h3 text-accent mb-2">01</div>
+                                <h4 class="h6 fw-bold">データ準備</h4>
+                                <p class="small mb-0 text-white-50">Ohnuki-san Plusを実行し、PC情報のHTMLレポートを生成します。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">02</div>
+                                <h4 class="h6 fw-bold">フォルダ選択</h4>
+                                <p class="small mb-0 text-white-50">Dashboardを起動し、レポートが保存されたフォルダを<strong>指定</strong>します。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">03</div>
+                                <h4 class="h6 fw-bold">ビジュアル分析</h4>
+                                <p class="small mb-0 text-white-50">自動集計されたグラフやツリーから、システム構成を瞬時に把握します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">更新履歴</h2>
+                    <div class="card-custom">
+                        <ul class="changelog-list mb-0">
+                            <li class="changelog-item">
+                                <span class="badge bg-accent me-2">v26.4.18.0</span> <span class="text-white-50 small">2026.04.18</span>
+                                <div class="mt-1 ps-1 text-white-50 small">Ohnuki-san Dashboard リリース。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                    <div class="mb-4 p-3 border border-accent rounded text-center">
+                        <p class="small text-white-50 mb-1">Standard Edition</p>
+                        <p class="h3 fw-bold mb-2">FREE</p>
+                        <a href="https://github.com/chililikobo/OhnukisanDashboard/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">GitHub で取得</a>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
+                    <table class="table table-sm table-dark spec-table mb-0">
+                        <tbody>
+                            <tr><th>OS</th><td>Windows 10 / 11</td></tr>
+                            <tr><th>入力データ</th><td>Plus 生成レポートフォルダ</td></tr>
+                            <tr><th>前提条件</th><td>Ohnuki-san Plus</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>

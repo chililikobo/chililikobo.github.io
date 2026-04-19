@@ -48,6 +48,11 @@
     border-color: var(--border-dark);
 }
 
+/* アコーディオンの矢印アイコンを白くする */
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
 .terms-content {
     font-size: 0.9rem;
     line-height: 1.8;
