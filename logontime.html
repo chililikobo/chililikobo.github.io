@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B8PSQRQ7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B8PSQRQ7X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogonTime | chilili kobo - Windows Logon Log Analyzer</title>
+    <meta name="description" content="Windowsのイベントログからログオン・ログオフ時間を解析し、滞在時間を自動計算。勤怠管理のエビデンスにも役立つ、超高速・軽量なコマンドラインツールです。">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="chilili kobo">
+    <meta property="og:title" content="LogonTime | chilili kobo - Logon Log Analyzer">
+    <meta property="og:description" content="イベントログを瞬時に解析。ランタイム不要で動作する超高速コマンドラインツール。">
+    <meta property="og:url" content="https://chililikobo.github.io/logontime.html">
+    <meta property="og:image" content="https://chililikobo.github.io/img/og-logontime.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LogonTime | chilili kobo - Logon Log Analyzer">
+    <meta name="twitter:description" content="Windowsのイベントログを解析し、PCの滞在時間を自動計算。勤怠入力の支援に最適です。">
+    <meta name="twitter:image" content="https://chililikobo.github.io/img/og-logontime.png">
+    <meta name="twitter:site" content="@chililikobo">
+
+    <link rel="canonical" href="https://chililikobo.github.io/logontime.html">
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/logontime.html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/logontime.html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/logontime.html">
+
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body class="product-page">
+
+    <div id="header-placeholder"></div>
+
+    <header class="hero-product text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Logon<span class="text-accent">Time</span></h1>
+            <p class="lead text-white-50 mb-5">イベントログを瞬時に解析。PCの滞在時間を自動計算する超高速コマンドラインツール。</p>
+            <div class="d-inline-block">
+                <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="buy-button">
+                    <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
+                </a>
+                <p class="small text-white-50 mt-3">※インストール不要・単体で動作します</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <div class="card-custom border-accent" style="background: rgba(220, 53, 69, 0.05);">
+                        <h2 class="h5 fw-bold text-accent mb-3">
+                            <i class="bi bi-rocket-takeoff-fill me-2"></i>ランタイムの追加インストールは一切不要です
+                        </h2>
+                        <p class="small mb-0">
+                            LogonTimeは <strong>.NET 10 Native AOT</strong> テクノロジーでビルドされています。
+                            <br><br>
+                            .NETランタイムなどの追加インストールや、レジストリへの書き込みは一切不要。単一の実行ファイル（.exe）のみで、システムに負荷をかけることなく超高速に起動します。
+                        </p>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">製品説明</h2>
+                    <p class="lead fw-bold text-accent">「見えないログを、確かなエビデンスに。」</p>
+                    <p>LogonTimeは、Windowsの「System」イベントログからユーザーのログオン・ログオフ時間を抽出し、自動的に滞在時間を計算して一覧表示するコマンドラインツールです。</p>
+                    <p>日々の勤怠アプリへの入力支援や、リモートワーク時の稼働エビデンス（証跡）として、手軽かつ正確にご活用いただけます。</p>
+
+                    <div class="card-custom py-4 mt-4">
+                        <h3 class="h5 fw-bold mb-3 text-center">主な特徴</h3>
+                        <ul class="mb-0">
+                            <li><strong>期間の自由指定:</strong> 過去何日分のログを取得するか、引数から自由に指定可能。（デフォルトは30日）</li>
+                            <li><strong>マルチフォーマット出力:</strong> 標準テキスト表示に加え、スクリプト連携に便利な <code>--csv</code> および <code>--json</code> 出力に対応。</li>
+                            <li><strong>多言語対応 (i18n):</strong> OSの言語設定を自動判別し、日本語/英語環境に最適化されたメッセージを表示。</li>
+                            <li><strong>スマートな動作:</strong> ダブルクリック起動時は即座に画面が閉じないよう待機。ターミナル実行時は即座に終了する洗練された挙動。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">スクリーンショット</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/logontime-main.png')">
+                                <img src="/img/logontime-main.png" alt="LogonTime 実行画面" class="screenshot-img">
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-terminal-fill me-1"></i>実行結果（標準出力）</h4>
+                                <p class="text-white-50 small mb-0">ログオン・ログオフのアクションと、計算された滞在時間が色分けされて見やすく表示されます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/logontime-help.png')">
+                                <img src="/img/logontime-help.png" alt="LogonTime ヘルプ画面" class="screenshot-img">
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-question-circle-fill me-1"></i>ヘルプ画面（--help）</h4>
+                                <p class="text-white-50 small mb-0">利用可能な引数やオプションの一覧（CSV/JSON出力など）をターミナル上でいつでも確認できます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">使用方法</h2>
+                    <div class="card-custom">
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="h3 text-accent mb-2">01</div>
+                                <h4 class="h6 fw-bold">簡易実行</h4>
+                                <p class="small mb-0 text-white-50">ファイル（LogonTime.exe）をダブルクリックするだけで、過去30日分のログを表示します。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">02</div>
+                                <h4 class="h6 fw-bold">期間指定</h4>
+                                <p class="small mb-0 text-white-50">ターミナルから <code>LogonTime.exe 14</code> のように日数を引数で渡すことで、取得期間を変更できます。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">03</div>
+                                <h4 class="h6 fw-bold">データ出力</h4>
+                                <p class="small mb-0 text-white-50"><code>--csv</code> または <code>--json</code> オプションを付与することで、外部ツール等との連携が容易になります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">更新履歴</h2>
+                    <div class="card-custom">
+                        <ul class="changelog-list mb-0">
+                            <li class="changelog-item">
+                                <span class="badge bg-accent me-2">v26.6.13.0</span> <span class="text-white-50 small">2026.06.13</span>
+                                <div class="mt-1 ps-1 text-white-50 small">.NET 10.0 / Native AOT移行、CSV/JSON出力、多言語(日英)対応。</div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v24.3.5.0</span>
+                                <div class="mt-1 ps-1 text-white-50 small">英語版OSに対応。</div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v23.10.31.1</span>
+                                <div class="mt-1 ps-1 text-white-50 small">ユーザーが不明の場合にエラーになるバグを修正。</div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v22.6.12.0</span>
+                                <div class="mt-1 ps-1 text-white-50 small">若干の軽量化。</div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v22.5.27.1</span>
+                                <div class="mt-1 ps-1 text-white-50 small">初期ローンチ。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                    <div class="mb-4 p-3 border border-accent rounded text-center">
+                        <p class="small text-white-50 mb-1">Standard Edition</p>
+                        <p class="h3 fw-bold mb-2">FREE</p>
+                        <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">GitHub で取得</a>
+                    </div>
+                    <div class="small text-white-50">
+                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> フリーウェア（個人・法人無料）</p>
+                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 二次配布禁止</p>
+                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず利用可能</p>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
+                    <table class="table table-sm table-dark spec-table mb-0">
+                        <tbody>
+                            <tr><th>OS</th><td>Windows 10 (1607+) / 11</td></tr>
+                            <tr><th>Server</th><td>Windows Server 2012+</td></tr>
+                            <tr><th>Arch</th><td>64bit (x64)</td></tr>
+                            <tr><th>Runtime</th><td>不要 (.NET 10 Native AOT)</td></tr>
+                            <tr><th>配布形態</th><td>単一実行ファイル</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center mt-4">
+                    <div class="mb-2">
+                        <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
+                        <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>

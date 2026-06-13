@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>chilili kobo</Company_Name>
+		<Address_1 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Japan</Country>
+		<Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name />
+			<Author_Last_Name />
+			<Author_Email>chilili.kobo@gmail.com</Author_Email>
+		</Contact_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Simple Stats</Program_Name>
+		<Program_Version>26.5.3.0</Program_Version>
+		<Program_Release_Month>05</Program_Release_Month>
+		<Program_Release_Day>03</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win10,Win11</Program_OS_Support>
+		<Program_Language>English,Japanese</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Utilities</Program_Specific_Category>
+		<Program_Category_Class>System Utilities::System Analysis</Program_Category_Class>
+		<Program_System_Requirements>Windows 10 or later</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Char_Desc_45>Real-time system monitor for desktop corner.</Char_Desc_45>
+			<Char_Desc_80>A compact real-time system monitor to visualize CPU, RAM, Disk, and Network load.</Char_Desc_80>
+			<Char_Desc_250>Simple Stats is a real-time system monitor that displays PC resource status and network information in a compact window. It's designed to provide essential insights with a minimal desktop footprint.</Char_Desc_250>
+			<Char_Desc_450>Simple Stats is a lightweight real-time system monitor designed to keep you informed about your PC's health. It visualizes CPU, Memory, Disk, and Network usage through intuitive gauges and provides detailed network info such as IP and DNS. Featuring an "Always on Top" dark theme and standalone executable design, it runs without installation or registry changes. Distributed as freeware via GitHub.</Char_Desc_450>
+			<Char_Desc_2000>
+				Simple Stats: Peace of mind in the corner of your desktop.
+
+				This tool is a compact, real-time system monitor designed to visualize your PC's resource status and network information with minimal system impact. Perfect for power users and developers who want to keep an eye on their system health without bulky software.
+
+				Key features:
+				- Real-time Monitoring: Track CPU, Memory, Disk, and Network load via intuitive graphical gauges.
+				- Network Details at a Glance: Instantly view Hostname, IP Address, Subnet, Gateway, and DNS information.
+				- Minimal &amp; Portable: A single standalone executable that requires no installation, no .NET runtimes, and no registry changes.
+				- Smart UI: High-visibility dark theme with "Always on Top" support. It auto-saves its window position and releases memory when minimized.
+				- Load Alerts: Gauges change color when resource usage exceeds 80% to alert you of potential bottlenecks.
+
+				Developed by chilili kobo, Simple Stats focuses on the concept of "Essential information in a minimal space". Available for free for both personal &amp; commercial use.
+			</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://chililikobo.github.io/en/simple-stats.html</Application_Info_URL>
+			<Application_Order_URL>https://github.com/chililikobo/SimpleStats/releases/latest</Application_Order_URL>
+			<Application_Screenshot_URL>https://chililikobo.github.io/img/simplestats-main.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://chililikobo.github.io/img/simplestats-icon256.png</Application_Icon_URL>
+			<Application_XML_File_URL>https://chililikobo.github.io/pad/simple-stats.xml</Application_XML_File_URL>
+		</Application_URLs>
+	</Web_Info>
+</XML_DIZ_INFO>

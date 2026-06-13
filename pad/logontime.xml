@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>chilili kobo</Company_Name>
+		<Address_1 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Japan</Country>
+		<Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name />
+			<Author_Last_Name />
+			<Author_Email>chilili.kobo@gmail.com</Author_Email>
+		</Contact_Info>
+	</Company_Info>
+	<Program_Info>
+    <Program_Name>LogonTime</Program_Name>
+    <Program_Version>26.6.13.0</Program_Version>
+    <Program_Release_Month>06</Program_Release_Month>
+    <Program_Release_Day>13</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win10,Win11</Program_OS_Support>
+		<Program_Language>English,Japanese</Program_Language>
+    <Program_Change_Info>Migrated to .NET 10.0 / Native AOT, implemented CSV/JSON options, and added multilingual (EN/JA) support.</Program_Change_Info>
+		<Program_Specific_Category>Utilities</Program_Specific_Category>
+    <Program_Category_Class>System Utilities::System Administration</Program_Category_Class>
+    <Program_System_Requirements>Windows 10 (1607+) / 11, Windows Server 2012+</Program_System_Requirements>
+    <File_Info>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+      <Char_Desc_45>Ultra-fast Windows logon log analyzer.</Char_Desc_45>
+      <Char_Desc_80>Analyzes Windows event logs to calculate user logon and logoff durations.</Char_Desc_80>
+      <Char_Desc_250>LogonTime is an ultra-fast, lightweight command-line tool that analyzes Windows event logs to calculate and display user logon/logoff durations. It runs as a single binary with zero external runtime dependencies.</Char_Desc_250>
+      <Char_Desc_450>LogonTime is an ultra-fast, lightweight command-line tool that analyzes Windows System event logs to extract user logon/logoff times and automatically calculate total active duration. It can be efficiently utilized to assist with your daily timecard data entry or serve as solid evidence of your working hours. Built with .NET 10 Native AOT technology, it requires no runtime installation and features CSV/JSON export support.</Char_Desc_450>
+      <Char_Desc_2000>
+        LogonTime: Turn hidden logs into reliable evidence.
+
+        This tool is an ultra-fast, lightweight command-line utility that analyzes Windows "System" event logs to extract user logon/logoff times and automatically calculate total active duration. It is highly effective for assisting with daily timecard data entry or serving as a solid audit trail for working hours during remote work.
+
+        Key features:
+        - Custom Time Period: Specify how many days of logs to retrieve via arguments (default: 30 days).
+        - Multi-format Output: Supports --csv and --json outputs for seamless script and tool integration alongside standard console output.
+        - Multilingual Support (i18n): Automatically detects OS language settings to display messages optimized for English or Japanese environments.
+        - Smart Behavior: Waits for user input when launched via double-click to prevent the window from closing immediately, while exiting instantly when run from a terminal.
+        - Minimal &amp; Portable: Built with .NET 10 Native AOT. It requires no .NET runtime installation and does not write to the Windows Registry. Operating as a single standalone executable file (.exe).
+
+        Developed by chilili kobo. Available for free for both personal and commercial use.
+      </Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+      <Application_Info_URL>https://chililikobo.github.io/en/logontime.html</Application_Info_URL>
+      <Application_Order_URL>https://github.com/chililikobo/LogonTime/releases/latest</Application_Order_URL>
+      <Application_Screenshot_URL>https://chililikobo.github.io/img/logontime-main-en.png</Application_Screenshot_URL>
+      <Application_Icon_URL>https://chililikobo.github.io/img/logontime-icon256.png</Application_Icon_URL>
+      <Application_XML_File_URL>https://chililikobo.github.io/pad/logontime.xml</Application_XML_File_URL>
+    </Application_URLs>
+	</Web_Info>
+</XML_DIZ_INFO>

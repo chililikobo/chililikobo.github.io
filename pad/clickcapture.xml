@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>chilili kobo</Company_Name>
+		<Address_1 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Japan</Country>
+		<Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name />
+			<Author_Last_Name />
+			<Author_Email>chilili.kobo@gmail.com</Author_Email>
+		</Contact_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>ClickCapture</Program_Name>
+		<Program_Version>26.6.13.1</Program_Version>
+		<Program_Release_Month>06</Program_Release_Month>
+		<Program_Release_Day>13</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other>Pro Edition: 500 JPY / month</Program_Cost_Other>
+		<Program_Type>Freeware (Free for personal use)</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win11,WinServer</Program_OS_Support>
+		<Program_Language>English,Japanese</Program_Language>
+    <Program_Change_Info>Added the ability to open the preview image in the default viewer by double-clicking it and added an "Open Last Image" option to the system tray menu.</Program_Change_Info>
+    <Program_Specific_Category>Utilities</Program_Specific_Category>
+		<Program_Category_Class>Graphic Apps::Screen Capture</Program_Category_Class>
+		<Program_System_Requirements>Windows 11 or Windows Server 2025 (64-bit)</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Char_Desc_45>Automated screenshot saver synced to clicks.</Char_Desc_45>
+			<Char_Desc_80>Auto-captures and saves screenshots in sync with your left-click operations.</Char_Desc_80>
+			<Char_Desc_250>ClickCapture is a background utility that automatically captures screenshots in sync with your mouse's left-click actions. Record your entire workflow as images without conscious effort. Smart filtering prevents saving duplicate identical images.</Char_Desc_250>
+      <Char_Desc_450>ClickCapture is a background utility that automatically captures and saves screenshots in sync with your left-click operations. Ideal for creating operation manuals, it features Smart Duplicate Filtering to prevent saving unchanged screens. It requires no installation, runs quietly, and can be toggled via a customizable hotkey (default is F9, F8 also available). Fully functional for personal use. A Pro license is required for enterprise domain environments.</Char_Desc_450>
+      <Char_Desc_2000>
+        Everything you need, captured just by clicking.
+
+        ClickCapture is a background utility that automatically captures and saves screenshots in sync with your mouse's "left-click" actions. Whether you are creating operation manuals or recording parameter settings during software installations, you can record your entire workflow as images without any conscious effort.
+
+        Key Features:
+        - Click-Synced Capture: Automatically saves the target window or entire screen as an image every time you click.
+        - Smart Duplicate Filtering: Intelligently skips saving if the screen remains unchanged, preventing your folders from overflowing with identical images.
+        - Auto Clipboard Transfer: Copies the captured image directly to your clipboard for instant pasting.
+        - Instant ON/OFF via Hotkey: If you no longer need to capture during your work, simply press the assigned hotkey (default is "F9", "F8" is also available) to instantly toggle the capture feature ON or OFF.
+        - Lightweight &amp; Portable: Requires no installation and no runtimes. Runs as a single, standalone executable in the system tray.
+
+				Main Use Cases:
+				- Creating operation manuals and guides
+				- Recording installer parameters
+				- Collecting screens for e-learning/presentations
+				- Recording UI elements for RPA development
+
+				Editions:
+				ClickCapture is fully functional with no limits as the Free Edition for personal use. A Pro Edition license (unrestricted, commercial use OK) is required when running the software on domain-joined PCs or enterprise environments.
+			</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://chililikobo.github.io/en/clickcapture.html</Application_Info_URL>
+			<Application_Order_URL>https://github.com/chililikobo/ClickCapture/releases/latest</Application_Order_URL>
+			<Application_Screenshot_URL>https://chililikobo.github.io/img/clickcapture-main-en.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://chililikobo.github.io/img/clickcapture-icon256.png</Application_Icon_URL>
+			<Application_XML_File_URL>https://chililikobo.github.io/pad/clickcapture.xml</Application_XML_File_URL>
+		</Application_URLs>
+	</Web_Info>
+</XML_DIZ_INFO>
