@@ -47,8 +47,15 @@
 
     <header class="hero-product text-center">
         <div class="container">
-            <img src="/img/ohnuki-san-plus-icon256.png" alt="Ohnuki-san Plus" class="hero-product-icon">
-            <h1 class="display-4 fw-bold mb-3">Ohnuki-san <span class="text-accent">Plus</span></h1>
+
+            <!-- アイコンとタイトルを横並びにし、全体を中央揃えにする -->
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <!-- me-3 または me-4 でアイコンの右側に余白を作ります。mb-0で下余白を消します。 -->
+                <img src="/img/ohnuki-san-plus-icon256.png" alt="Ohnuki-san Plus" class="hero-product-icon me-4 mb-0">
+                <!-- h1タグも mb-0 にして、アイコンとの縦ズレを防ぎます -->
+                <h1 class="display-4 fw-bold mb-0">Ohnuki-san <span class="text-accent">Plus</span></h1>
+            </div>
+
             <p class="lead text-white-50 mb-5">システム情報を一瞬で集約。エンジニアのための情報ユーティリティ。</p>
             <div class="d-inline-block">
                 <a href="https://chililikobo.gumroad.com/l/rskilq" target="_blank" class="buy-button">

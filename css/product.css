@@ -34,8 +34,8 @@
 .hero-product-icon {
     width: 96px; /* お好みで 96px 〜 128px 程度 */
     height: 96px;
-    margin-bottom: 1.5rem; /* タイトルとの間隔 */
     object-fit: contain;
+    /* margin-bottom: 1.5rem; は横並びにするため削除 */
 }
 
 /* セクション見出し (赤い左線) */

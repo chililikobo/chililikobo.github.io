@@ -71,5 +71,5 @@
     width: 64px; /* サイズはお好みで調整してください */
     height: 64px;
     object-fit: contain; /* 画像の比率を維持して表示 */
-    align-self: start; /* 左寄せにする場合 */
+    /* align-self: start; は親要素のFlexboxで制御するため削除 */
 }
