@@ -167,3 +167,32 @@
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+.badge-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* バッジ間の距離 */
+    flex-wrap: wrap;
+}
+
+/* すべてのバッジの「箱」に共通のルール */
+.badge-item {
+    height: 50px; /* ここで高さを統一 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* Softpedia専用：背景白と角丸 */
+.badge-bg-white {
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* 画像の高さ制限 */
+.badge-item img {
+    max-height: 40px;
+    width: auto;
+}
