@@ -182,10 +182,17 @@
                                 <tr>
                                     <td class="text-start fw-bold" colspan="3">[ Terms of Use ]</td>
                                 </tr>
+                                <!-- 1. ドメイン環境のサポート（どちらもOKになったことを強調） -->
                                 <tr>
-                                    <td class="text-start">Domain / Enterprise Deployment</td>
-                                    <td><span class="text-danger">Personal & Workgroup Use</span></td>
-                                    <td><span class="text-accent">Enterprise & Commercial Use</span></td>
+                                    <td class="text-start">Domain Environment Support</td>
+                                    <td><i class="bi bi-check-circle-fill text-accent"></i> <span class="ms-1">Supported</span></td>
+                                    <td><i class="bi bi-check-circle-fill text-accent"></i> <span class="ms-1">Supported</span></td>
+                                </tr>
+                                <!-- 2. 商業利用・企業への導入（Liteは個人/非営利のみ、Plusは商用OK） -->
+                                <tr>
+                                    <td class="text-start">Commercial & Enterprise Use</td>
+                                    <td><span class="text-danger fw-bold">Personal / Non-commercial Only</span></td>
+                                    <td><span class="text-accent fw-bold">Allowed</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">License Activation</td>
@@ -201,22 +208,6 @@
                         </table>
                     </div>
 
-                    <div class="card-custom border-danger mt-4" style="background: rgba(220, 53, 69, 0.05);">
-                        <h3 class="h6 fw-bold text-danger mb-2">
-                            <i class="bi bi-exclamation-triangle-fill me-2"></i>Regarding Domain Environments
-                        </h3>
-                        <p class="small mb-3">
-                            Ohnuki-san Lite is designed for personal use and small workgroup environments. <strong>Operation in domain environments (Active Directory, etc.) is not supported.</strong>
-                        </p>
-                        <p class="small mb-4 text-white-50">
-                            If you need to bulk collect and manage information for corporate IT asset management or PC kitting of domain-joined devices, please use the premium version, <strong>Ohnuki-san Plus</strong>.
-                        </p>
-                        <div class="text-center">
-                            <a href="/en/ohnuki-san-plus.html" class="btn btn-outline-danger btn-sm px-4">
-                                View details for Ohnuki-san Plus
-                            </a>
-                        </div>
-                    </div>
                 </section>
 
                 <section class="mb-5">
@@ -265,8 +256,19 @@
                     <h2 class="section-title">Changelog</h2>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
+
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
+                                <span class="badge bg-accent me-2">v26.6.21.0</span> <span class="text-white-50 small">2026.06.21</span>
+                                <div class="mt-1 ps-1 text-white-50 small">
+                                    Lifted usage restrictions for domain environments.<br />
+                                    Added Markdown export functionality.<br />
+                                    Migrated Wi-Fi information collection to the native API for improved robustness.<br />
+                                    Fixed minor bugs and improved overall stability.
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
                                 <div class="mt-1 ps-1 text-white-50 small">Added Windows Defender status retrieval. Minor bug fixes.</div>
                             </li>
                             <li class="changelog-item mt-3">

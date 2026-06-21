@@ -56,12 +56,12 @@
             <p class="lead text-white-50 mb-5">PCの「今」を素早くチェック。シンプルさを追求したフリー版ユーティリティ。</p>
             <div class="d-inline-block">
                 <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="buy-button">
-                        <i class="bi bi-github me-1"></i> 無料ダウンロード（GitHub）
-                    </a>
-                    <p class="small text-white-50 mt-3">※個人・法人問わず無料でご利用いただけます</p>
-                </div>
+                    <i class="bi bi-github me-1"></i> 無料ダウンロード（GitHub）
+                </a>
+                <p class="small text-white-50 mt-3">※個人・法人問わず無料でご利用いただけます</p>
             </div>
-</header>
+        </div>
+    </header>
 
     <div class="container">
         <div class="row">
@@ -182,15 +182,22 @@
                                 <tr>
                                     <td class="text-start fw-bold" colspan="3">【利用条件】</td>
                                 </tr>
+                                <!-- 1. ドメイン環境のサポート -->
                                 <tr>
-                                    <td class="text-start">ドメイン・組織内PCでの実行</td>
-                                    <td><span class="text-danger">制限あり(個人限定)</span></td>
-                                    <td><span class="text-accent">制限なし(商用可)</span></td>
+                                    <td class="text-start">ドメイン環境での利用</td>
+                                    <td><i class="bi bi-check-circle-fill text-accent"></i> <span class="ms-1">対応</span></td>
+                                    <td><i class="bi bi-check-circle-fill text-accent"></i> <span class="ms-1">対応</span></td>
+                                </tr>
+                                <!-- 2. 商業利用・企業への導入 -->
+                                <tr>
+                                    <td class="text-start">業務利用・法人導入</td>
+                                    <td><span class="text-danger fw-bold">個人・非営利目的のみ</span></td>
+                                    <td><span class="text-accent fw-bold">利用可能</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">ライセンス認証</td>
                                     <td>不要</td>
-                                    <td>要認証</td>
+                                    <td>必要</td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">価格</td>
@@ -201,22 +208,6 @@
                         </table>
                     </div>
 
-                    <div class="card-custom border-danger mt-4" style="background: rgba(220, 53, 69, 0.05);">
-                        <h3 class="h6 fw-bold text-danger mb-2">
-                            <i class="bi bi-exclamation-triangle-fill me-2"></i>ドメイン環境でのご利用について
-                        </h3>
-                        <p class="small mb-3">
-                            Ohnuki-san Liteは個人利用および小規模ワークグループ環境向けに設計されており、<strong>ドメイン環境（Active Directory等）での動作はサポートしておりません。</strong>
-                        </p>
-                        <p class="small mb-4 text-white-50">
-                            企業のIT資産管理や、ドメイン参加PCのキッティング業務で情報を一括取得・管理される場合は、上位版の <strong>Ohnuki-san Plus</strong> をご利用ください。
-                        </p>
-                        <div class="text-center">
-                            <a href="/ohnuki-san-plus.html" class="btn btn-outline-danger btn-sm px-4">
-                                Ohnuki-san Plus の詳細を見る
-                            </a>
-                        </div>
-                    </div>
                 </section>
 
                 <section class="mb-5">
@@ -266,8 +257,19 @@
                     <h2 class="section-title">更新履歴</h2>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
+
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
+                                <span class="badge bg-accent me-2">v26.6.21.0</span> <span class="text-white-50 small">2026.06.21</span>
+                                <div class="mt-1 ps-1 text-white-50 small">
+                                    ドメイン環境での利用制限を解除しました。<br />
+                                    Markdown形式でのエクスポート機能を追加しました。<br />
+                                    Wi-Fi情報の収集処理をネイティブAPIベースに移行し、堅牢性を向上させました。<br />
+                                    その他、軽微なバグ修正および安定性の向上。
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
                                 <div class="mt-1 ps-1 text-white-50 small">Windows Defender のステータス取得機能を追加。軽微なバグの修正。</div>
                             </li>
                             <li class="changelog-item mt-3">
