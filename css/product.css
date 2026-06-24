@@ -203,3 +203,11 @@
 .badge-bg-white img {
     height: 35px; /* ★ 35pxに縮小 */
 }
+
+.table-dark .text-success {
+    color: #22c55e !important; /* 明るく視認性の高いグリーン */
+}
+
+.table-dark .text-danger {
+    color: #ef4444 !important; /* 少し明るめで柔らかなレッド */
+}
