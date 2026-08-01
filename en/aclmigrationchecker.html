@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B8PSQRQ7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4B8PSQRQ7X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL Migration Checker | chilili kobo</title>
+    <meta name="description" content="A dedicated check tool to verify access control list (ACL) differences between source and destination during data migrations such as file servers. Portable and no installation required.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="chilili kobo">
+    <meta property="og:title" content="ACL Migration Checker | chilili kobo">
+    <meta property="og:description" content="Automatically verify access control list (ACL) differences during file server migrations. A portable checker tool requiring no runtime.">
+    <meta property="og:url" content="https://chililikobo.github.io/en/aclmigrationchecker.html">
+    <meta property="og:image" content="https://chililikobo.github.io/img/og-aclmigrationchecker-en.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ACL Migration Checker | chilili kobo">
+    <meta name="twitter:description" content="Automatically verify access control list (ACL) differences during file server migrations. A portable checker tool requiring no runtime.">
+    <meta name="twitter:image" content="https://chililikobo.github.io/img/og-aclmigrationchecker-en.png">
+    <meta name="twitter:site" content="@chililikobo">
+
+    <link rel="canonical" href="https://chililikobo.github.io/en/aclmigrationchecker.html">
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/aclmigrationchecker.html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/aclmigrationchecker.html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/aclmigrationchecker.html">
+
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body class="product-page">
+
+    <div id="header-placeholder"></div>
+
+    <header class="hero-product text-center">
+        <div class="container">
+
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="/img/aclmigrationchecker-icon256.png" alt="ACL Migration Checker" class="hero-product-icon me-4 mb-0">
+                <h1 class="display-4 fw-bold mb-0">ACL Migration <span class="text-accent">Checker</span></h1>
+            </div>
+
+            <p class="lead text-white-50 mb-5">Automatically verify access control list (ACL) differences during file server migrations. A portable tool you can carry on a USB drive.</p>
+            <div class="d-inline-block">
+                <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="buy-button">
+                    <i class="bi bi-github me-1"></i> Download on GitHub
+                </a>
+                <p class="small text-white-50 mt-3">*No installation required. Runs as a portable app.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section class="mb-5">
+                    <div class="card-custom border-accent" style="background: rgba(220, 53, 69, 0.05);">
+                        <h2 class="h5 fw-bold text-accent mb-3">
+                            <i class="bi bi-rocket-takeoff-fill me-2"></i>No installation required, portable design
+                        </h2>
+                        <p class="small mb-0">
+                            ACL Migration Checker is designed to be portable, allowing you to carry it on a USB flash drive or other removable media.
+                            <br><br>
+                            It requires no additional installations such as the .NET runtime. Simply place the downloaded folder anywhere, and you can immediately launch and use it on various PCs. To uninstall, just delete the entire folder.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">Product Overview</h2>
+                    <p class="lead fw-bold text-accent">"An access rights verification tool for reliable data migration."</p>
+                    <p>ACL Migration Checker is a dedicated tool to verify if there are any differences in access control lists (ACLs) between the source and destination during data migrations for file servers or storage servers.</p>
+                    <p>It is highly effective not only for migrations in Active Directory environments but also for verifying the reconfiguration and reassignment of permissions in Workgroup environments where migrating SIDs (Security Identifiers) is difficult.</p>
+
+                    <div class="card-custom py-4 mt-4">
+                        <h3 class="h5 fw-bold mb-3 text-center">Key Features</h3>
+                        <ul class="mb-0">
+                            <li><strong>Scan and Save ACLs:</strong> Retrieves ACL information set on source and destination folders/files and saves it in a lightweight JSON.GZ format.</li>
+                            <li><strong>Compare Before and After Migration:</strong> Matches the two saved datasets to automatically detect and list missing permissions, excessive privileges, and mismatched accounts.</li>
+                            <li><strong>CSV Export:</strong> Output comparison results in CSV format. Ideal for creating post-migration reports or checklists for corrections.</li>
+                            <li><strong>Multilingual Support (EN/JA):</strong> Automatically switches the interface language based on your OS language settings, ensuring smooth operation across various environments.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">Screenshots</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/aclchecker-main-en.png')">
+                                <img src="/img/aclchecker-main-en.png" alt="ACL Migration Checker Scan Screen" class="screenshot-img" style="background: #333; height:250px; object-fit: cover; width:100%;">
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-search me-1"></i>Scan & Save Feature</h4>
+                                <p class="text-white-50 small mb-0">Specify the target path to acquire and save access rights information.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/aclchecker-compare-en.png')">
+                                <img src="/img/aclchecker-compare-en.png" alt="ACL Migration Checker Comparison Result Screen" class="screenshot-img" style="background: #333; height:250px; object-fit: cover; width:100%;">
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>Difference Comparison & Listing</h4>
+                                <p class="text-white-50 small mb-0">Load the acquired data to automatically detect and display the differences before and after migration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">How to Use</h2>
+                    <div class="card-custom">
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="h3 text-accent mb-2">01</div>
+                                <h4 class="h6 fw-bold">Acquire ACL Info</h4>
+                                <p class="small mb-0 text-white-50">Run this software in both the source and destination environments to scan and save access rights information.</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">02</div>
+                                <h4 class="h6 fw-bold">Compare Data</h4>
+                                <p class="small mb-0 text-white-50">Load the saved source and destination data to execute the comparison process.</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">03</div>
+                                <h4 class="h6 fw-bold">Check Differences & CSV Export</h4>
+                                <p class="small mb-0 text-white-50">Check the detected differences on the screen. Export the results in CSV format if necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="section-title">Changelog</h2>
+                    <div class="card-custom">
+                        <ul class="changelog-list mb-0">
+                            <li class="changelog-item">
+                                <span class="badge bg-accent me-2">v26.7.31.2</span> <span class="text-white-50 small">Jul 31, 2026</span>
+                                <div class="mt-1 ps-1 text-white-50 small">Initial release.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                    <div class="mb-4 p-3 border border-accent rounded text-center">
+                        <p class="small text-white-50 mb-1">Standard Edition</p>
+                        <p class="h3 fw-bold mb-2">FREE</p>
+                        <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">Get it on GitHub</a>
+                    </div>
+
+                    <div class="small text-white-50 mb-4">
+                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal & Commercial)</p>
+                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Redistribution Prohibited</p>
+                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> Commercial Use Allowed</p>
+                    </div>
+
+                    <div class="border-top border-secondary pt-4 text-center">
+                        <p class="small text-white-50 mb-2" style="font-size: 0.75rem;">External Libraries</p>
+                        <ul class="small text-white-50 text-start ps-3 mb-0" style="font-size: 0.75rem;">
+                            <li>Avalonia UI Framework</li>
+                            <li>CommunityToolkit.Mvvm</li>
+                            <li>System.IO.FileSystem.AccessControl</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-custom">
+                    <h3 class="h5 fw-bold mb-4 text-accent">System Requirements</h3>
+                    <table class="table table-sm table-dark spec-table mb-0">
+                        <tbody>
+                            <tr><th>OS</th><td>Windows 10 / 11</td></tr>
+                            <tr><th>Server</th><td>Windows Server 2016+</td></tr>
+                            <tr><th>Runtime</th><td>None (Portable)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center mt-4">
+                    <div class="mb-2">
+                        <a href="terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">Terms of Service</a>
+                        <a href="terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>
