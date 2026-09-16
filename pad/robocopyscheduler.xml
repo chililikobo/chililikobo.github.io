@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+    <MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <Company_Info>
+    <Company_Name>chilili kobo</Company_Name>
+    <Address_1 />
+    <City_Town />
+    <State_Province />
+    <Zip_Postal_Code />
+    <Country>Japan</Country>
+    <Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+    <Contact_Info>
+      <Author_First_Name />
+      <Author_Last_Name />
+      <Author_Email>chilili.kobo@gmail.com</Author_Email>
+    </Contact_Info>
+  </Company_Info>
+  <Program_Info>
+    <Program_Name>Robocopy Scheduler</Program_Name>
+    <Program_Version>26.9.14.0</Program_Version>
+    <Program_Release_Month>09</Program_Release_Month>
+    <Program_Release_Day>14</Program_Release_Day>
+    <Program_Release_Year>2026</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
+    <Program_Cost_Other_CP />
+    <Program_Cost_Other>Pro Edition: Required for commercial scheduled execution</Program_Cost_Other>
+    <Program_Type>Freeware (Free for personal use)</Program_Type>
+    <Program_Release_Status>Major Update</Program_Release_Status>
+    <Program_Install_Support>No Install Support</Program_Install_Support>
+    <Program_OS_Support>Win10,Win11,WinServer</Program_OS_Support>
+    <Program_Language>English,Japanese</Program_Language>
+    <Program_Change_Info>Major version update (Full redesign &amp; rewrite / Migrated to .NET 10 and Avalonia UI).</Program_Change_Info>
+    <Program_Specific_Category>Utilities</Program_Specific_Category>
+    <Program_Category_Class>System Utilities::Backup &amp; Restore</Program_Category_Class>
+    <Program_System_Requirements>Windows 10, Windows 11, or Windows Server 2016/2019/2022/2025 (64-bit)</Program_System_Requirements>
+    <File_Info>
+      <File_Size_Bytes />
+      <File_Size_K />
+      <File_Size_MB />
+    </File_Info>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Count />
+      <Expire_Based_On />
+      <Expire_Other_Info />
+      <Expire_Month />
+      <Expire_Day />
+      <Expire_Year />
+    </Expire_Info>
+  </Program_Info>
+  <Program_Descriptions>
+    <English>
+      <Char_Desc_45>GUI scheduler for Windows Robocopy tasks.</Char_Desc_45>
+      <Char_Desc_80>Intuitive GUI frontend and scheduler for Windows standard Robocopy tasks.</Char_Desc_80>
+      <Char_Desc_250>Robocopy Scheduler is an intuitive GUI frontend and scheduling tool for Windows Robocopy. Easily configure advanced backup options like mirror or update, and run automated background tasks without memorizing complex command line arguments.</Char_Desc_250>
+      <Char_Desc_450>Robocopy Scheduler is an intuitive GUI frontend and schedule manager designed to automate Windows Robocopy tasks. Easily configure backup modes like mirror (/MIR) or safe add (/E), multi-threading, SMB compression, and permission options. Supports flexible scheduling (including Cron), sleep prevention, CSV log exports, and notifications via Slack or ntfy.sh. Portable standalone app with no external runtime required.</Char_Desc_450>
+      <Char_Desc_2000>
+        Automate and simplify Windows standard Robocopy tasks without complex commands.
+
+        Robocopy Scheduler is an intuitive GUI frontend and scheduling management tool designed to automate and simplify Windows standard "Robocopy" command tasks. Without remembering complex command-line arguments, you can easily configure advanced file transfer settings and run automated background backups.
+
+        Key Features:
+        - Intuitive GUI &amp; Advanced Options: Easily configure backup modes such as Mirror (/MIR), Safe Add (/E), or Update (/E /XO), multi-threading, SMB compression (/COMPRESS), and bypassing access denial (/ZB).
+        - Flexible Automated Scheduling: Supports Daily, Hourly, Weekly, Monthly, and Custom (Cron) schedule expressions.
+        - Sleep Prevention &amp; Tray Residency: Blocks system sleep while waiting for schedules and supports background startup on Windows boot.
+        - Log Management &amp; CSV Export: Displays execution history and error details in real-time with CSV export capability.
+        - Multi-Channel Notifications: Automatically sends backup results to Slack Webhooks or ntfy.sh.
+        - Lightweight &amp; Portable: Built with .NET 10 (Native AOT) as a standalone portable application with no external runtime requirements.
+
+        Editions:
+        - Free Edition: Fully free for personal use and unmanaged devices. In corporate environments, manual execution is available.
+        - Pro Edition: Unlocks automated scheduled execution in corporate environments (e.g., domain-joined PCs or Entra ID).
+      </Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://chililikobo.github.io/en/robocopyscheduler.html</Application_Info_URL>
+      <Application_Order_URL>https://github.com/chililikobo/RobocopyScheduler/releases/latest</Application_Order_URL>
+      <Application_Screenshot_URL>https://chililikobo.github.io/img/robocopyscheduler-main-en.png</Application_Screenshot_URL>
+      <Application_Icon_URL>https://chililikobo.github.io/img/robocopyscheduler-icon256.png</Application_Icon_URL>
+      <Application_XML_File_URL>https://chililikobo.github.io/pad/robocopyscheduler.xml</Application_XML_File_URL>
+    </Application_URLs>
+  </Web_Info>
+</XML_DIZ_INFO>
