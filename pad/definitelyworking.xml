@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>chilili kobo</Company_Name>
+		<Address_1 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>Japan</Country>
+		<Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name />
+			<Author_Last_Name />
+			<Author_Email>chilili.kobo@gmail.com</Author_Email>
+		</Contact_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>DefinitelyWorking</Program_Name>
+		<Program_Version>26.9.19.0</Program_Version>
+		<Program_Release_Month>09</Program_Release_Month>
+		<Program_Release_Day>19</Program_Release_Day>
+		<Program_Release_Year>2026</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win10,Win11,WinServer2016+</Program_OS_Support>
+		<Program_Language>English,Japanese</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Desktop</Program_Specific_Category>
+		<Program_Category_Class>Desktop::Other</Program_Category_Class>
+		<Program_System_Requirements>Windows 10/11, Windows Server 2016+</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Char_Desc_45>Display a fake complex working screen.</Char_Desc_45>
+			<Char_Desc_80>A stealth joke tool displaying a fake ultra-complex working screen on monitor.</Char_Desc_80>
+			<Char_Desc_250>DefinitelyWorking is a stealth productivity simulator and joke application designed to display ultra-complex, high-tech-looking screens on your monitor. It gives the illusion that you are engaged in deep, critical engineering work.</Char_Desc_250>
+			<Char_Desc_450>DefinitelyWorking is a stealth productivity simulator and joke application designed to display ultra-complex, high-tech-looking screens on your monitor. It gives the illusion that you are engaged in deep, critical engineering work when you need to make your screen look extremely busy. Instantly toggle between 5 high-tech themes (Hacker, AI, Quant, DevOps, Quantum) using F1-F5 keys. Portable, no installation or runtime required.</Char_Desc_450>
+			<Char_Desc_2000>
+				DefinitelyWorking is a stealth productivity simulator and joke application designed to display ultra-complex, high-tech-looking screens on your monitor. 
+
+				It gives the illusion that you are engaged in deep, critical engineering work when you need to make your screen look "extremely busy" at the office or during remote work sessions.
+
+				Key Features:
+				1. 5 Switchable "Working Hard" Themes
+				Instantly toggle between 5 high-tech theme presets using F1-F5 hotkeys:
+				- F1: SysAdmin / Cyberpunk Hacker (Matrix code rain and live attack logs)
+				- F2: AI Research / AGI LLM Cluster (Epoch, loss function, GPU temp)
+				- F3: Stonks / Wall Street Quant (Diamond Hands trading engine and live tickers)
+				- F4: DevOps / Server Infrastructure Monitor (CPU, memory leaks, tech debt)
+				- F5: Quantum Sync / Subspace Analyzer (Schrodinger's bug debugging)
+
+				2. Dynamic Humor Log Generation
+				Displays hilarious real-time updating progress bars, terminal output, and status metrics packed with programmer and office worker memes.
+
+				3. Stealth UI Switching
+				In addition to key bindings (F1-F5), a semi-transparent stealth dropdown appears in the bottom-right corner when hovered over with the mouse for discreet theme switching.
+
+				4. Ultra-Fast Portable Operation
+				Compiled with Native AOT technology, it launches instantly without footprint or dependency overhead. No .NET Runtime or installation is required.
+
+				Developed by chilili kobo. Available as freeware for personal and commercial use.
+			</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>https://chililikobo.github.io/en/definitelyworking.html</Application_Info_URL>
+			<Application_Order_URL>https://github.com/chililikobo/DefinitelyWorking/releases/latest</Application_Order_URL>
+			<Application_Screenshot_URL>https://chililikobo.github.io/img/dw-sysadmin.png</Application_Screenshot_URL>
+			<Application_Icon_URL>https://chililikobo.github.io/img/definitelyworking-icon256.png</Application_Icon_URL>
+			<Application_XML_File_URL>https://chililikobo.github.io/pad/definitelyworking.xml</Application_XML_File_URL>
+		</Application_URLs>
+	</Web_Info>
+</XML_DIZ_INFO>
