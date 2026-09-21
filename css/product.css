@@ -178,7 +178,7 @@
 
 /* すべてのバッジの「箱」に共通のルール */
 .badge-item {
-    height: 40px; /* ★ 全体の高さを40pxに統一 */
+    height: 55px; /* ★ 全体の高さを55pxに統一 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,14 +194,14 @@
 
 /* 基本の画像サイズ（Product Hunt, AlternativeToなど） */
 .badge-item img {
-    height: 40px; /* 親要素の40pxにぴったり合わせる */
+    height: 55px; /* 親要素の55pxにぴったり合わせる */
     width: auto;
     display: block; /* <a>タグ内での不要な隙間を防ぐ */
 }
 
 /* Softpediaの画像だけ少し小さくする（箱の中で上下2.5pxずつの余白ができます） */
 .badge-bg-white img {
-    height: 35px; /* ★ 35pxに縮小 */
+    height: 50px; /* ★ 50pxに縮小 */
 }
 
 .table-dark .text-success {
