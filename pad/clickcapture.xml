@@ -21,9 +21,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>ClickCapture</Program_Name>
-		<Program_Version>26.6.18.0</Program_Version>
-		<Program_Release_Month>06</Program_Release_Month>
-		<Program_Release_Day>18</Program_Release_Day>
+		<Program_Version>26.9.25.0</Program_Version>
+		<Program_Release_Month>09</Program_Release_Month>
+		<Program_Release_Day>25</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
 		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Cost_Other_CP />
@@ -33,7 +33,7 @@
 		<Program_Install_Support>No Install Support</Program_Install_Support>
 		<Program_OS_Support>Win11,WinServer</Program_OS_Support>
     <Program_Language>Arabic,Chinese (Simplified),Chinese (Traditional),Dutch,English,French,German,Hindi,Indonesian,Italian,Japanese,Korean,Polish,Portuguese (Brazilian),Russian,Spanish,Thai,Turkish,Vietnamese</Program_Language>
-    <Program_Change_Info>Implemented multilingual support, making the application interface now available in 19 languages.</Program_Change_Info>
+    <Program_Change_Info>Updated duplicate image detection algorithm and enhanced auto-start (Task Scheduler) stability.</Program_Change_Info>
     <Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>Graphic Apps::Screen Capture</Program_Category_Class>
 		<Program_System_Requirements>Windows 11 or Windows Server 2025 (64-bit)</Program_System_Requirements>
