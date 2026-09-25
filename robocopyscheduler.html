@@ -52,7 +52,9 @@
                 <h1 class="display-4 fw-bold mb-0">Robocopy <span class="text-accent">Scheduler</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-5">Robocopyを直感的にGUI操作。安全・確実な自動バックアップを実現。</p>
+            <p class="lead text-white fw-bold mb-2">Robocopyをコマンドラインの複雑さなしに自動化</p>
+            <p class="text-white-50 mb-5">直感的なスタンドアロンGUIで、高度なファイル同期・ミラーバックアップ・バックグラウンドスケジュールを簡単構成。</p>
+
             <div class="d-inline-block">
                 <a href="https://github.com/chililikobo/RobocopyScheduler/releases/latest" target="_blank" class="buy-button mb-2">
                     <i class="bi bi-download me-1"></i> 無料でダウンロードする
@@ -257,7 +259,32 @@
                 <section class="mb-5">
                     <h2 class="section-title">よくあるご質問 (FAQ)</h2>
                     <div class="card-custom">
-                        <!-- 1. 企業環境とスケジュール制限 -->
+                        <!-- 1. SmartScreen 警告対策 -->
+                        <div class="faq-item mb-4">
+                            <h3 class="h6 fw-bold text-white mb-2">
+                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. 起動時にWindows SmartScreenの画面（「WindowsによってPCが保護されました」）が表示されますが問題ありませんか？
+                            </h3>
+                            <div class="ps-4">
+                                <p class="small text-white-50 mb-0">
+                                    <strong>A.</strong> はい、安全にご利用いただけます。本アプリはインディー製ユーティリティであり高額なEVデジタル署名を保持していないため、初回起動時にWindows SmartScreenの警告ポップアップが表示される場合があります。<br>
+                                    起動する場合は、警告ポップアップ上の<strong>「詳細情報」</strong>をクリックし、表示される<strong>「実行」</strong>ボタンをクリックしてください。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 2. Windows Task Scheduler との違い -->
+                        <div class="faq-item mb-4">
+                            <h3 class="h6 fw-bold text-white mb-2">
+                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. タスクスケジューラやバッチファイルでRobocopyを実行するのと何が違いますか？
+                            </h3>
+                            <div class="ps-4">
+                                <p class="small text-white-50 mb-0">
+                                    <strong>A.</strong> 複雑なRobocopyパラメーター（/MIR、/ZB、/MTなど）を含むバッチスクリプトの作成や運用・デバッグは煩雑になりがちです。Robocopy Schedulerを使用することで、GUIでの直感的なパラメーター構成、スリープ防止機能、リアルタイムログ閲覧、CSVエクスポート、Slack/ntfyによるエラー通知などを、バッチファイルを管理することなく手軽に導入・運用できます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3. 企業環境とスケジュール制限 -->
                         <div class="faq-item mb-4">
                             <h3 class="h6 fw-bold text-white mb-2">
                                 <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. 企業環境で自動スケジュール実行が選択できません（手動のみになります）。
@@ -270,7 +297,7 @@
                             </div>
                         </div>
 
-                        <!-- 2. ランタイム依存関係 -->
+                        <!-- 4. ランタイム依存関係 -->
                         <div class="faq-item mb-4">
                             <h3 class="h6 fw-bold text-white mb-2">
                                 <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. .NET Runtime等の追加インストールは必要ですか？
@@ -283,7 +310,7 @@
                             </div>
                         </div>
 
-                        <!-- 3. スリープ防止機能 -->
+                        <!-- 5. スリープ防止機能 -->
                         <div class="faq-item mb-4">
                             <h3 class="h6 fw-bold text-white mb-2">
                                 <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. バックアップ待機中にPCがスリープして実行がスキップされませんか？
@@ -295,7 +322,7 @@
                             </div>
                         </div>
 
-                        <!-- 4. Robocopyの終了コードについて -->
+                        <!-- 6. Robocopyの終了コードについて -->
                         <div class="faq-item mb-4">
                             <h3 class="h6 fw-bold text-white mb-2">
                                 <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. ログに終了コード（Exit Code）が記録されますが、エラー判定の基準を教えてください。
@@ -307,7 +334,7 @@
                             </div>
                         </div>
 
-                        <!-- 5. 外部通知について -->
+                        <!-- 7. 外部通知について -->
                         <div class="faq-item mb-0">
                             <h3 class="h6 fw-bold text-white mb-2">
                                 <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. バックアップ完了時やエラー発生時に外部へ通知することはできますか？
@@ -333,7 +360,7 @@
                                 </div>
                             </li>
 
-                            <li class="changelog-item">
+                            <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.9.14.0</span> <span class="text-white-50 small">2026.09.14</span>
                                 <div class="mt-1 ps-1 text-white-50 small">
                                     メジャーバージョンアップ。UI・機能をフルリニューアルし、.NET 10 および Avalonia UI へ刷新しました。
