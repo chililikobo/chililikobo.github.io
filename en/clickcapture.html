@@ -71,19 +71,25 @@
                     <p class="lead fw-bold text-accent">"Everything you need, captured just by clicking."</p>
                     <p>ClickCapture is a background utility that automatically captures and saves screenshots in sync with your mouse's "left-click" actions. An ideal lightweight alternative to the deprecated Windows Problem Steps Recorder (PSR), it allows you to record your entire workflow for operation manuals, QA testing, or setup logs without any conscious effort.</p>
 
-                    <div class="row mt-4">
+                    <div class="row mt-4 g-4">
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-mouse text-accent me-2"></i>Click-Synced Capture</h3>
-                            <p class="small text-white-50">Automatically saves the target window or entire screen as an image every time you click.</p>
+                            <p class="small text-white-50 mb-0">Automatically saves the target window or entire screen as an image every time you click.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-bounding-box text-accent me-2"></i>Rectangular Area Capture</h3>
+                            <p class="small text-white-50 mb-0">By dragging while holding down the <strong>Ctrl</strong> key, you can cut out and capture any rectangular area.</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-magic text-accent me-2"></i>Smart Duplicate Filtering</h3>
-                            <p class="small text-white-50">Intelligently skips saving if the screen remains unchanged, preventing your folders from overflowing with identical images.</p>
+                            <p class="small text-white-50 mb-0">Intelligently skips saving if the screen remains unchanged, preventing your folders from overflowing with identical images.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-keyboard text-accent me-2"></i>Instant ON/OFF via Hotkey</h3>
+                            <p class="small text-white-50 mb-0">If you no longer need to capture during your work, simply press the assigned hotkey to instantly toggle the capture feature ON or OFF.<br />(Default is "F9", "F8" is also available)</p>
                         </div>
                     </div>
-
-                    <h3 class="h6 fw-bold text-white mt-3"><i class="bi bi-keyboard text-accent me-2"></i>Instant ON/OFF via Hotkey</h3>
-                    <p class="small text-white-50">If you no longer need to capture during your work, simply press the assigned hotkey ("F8" or "F9") to instantly toggle the capture feature ON or OFF (Default is "F9").</p>
+                
                 </section>
 
                 <section class="mb-5">
@@ -113,6 +119,11 @@
                             <tbody>
                                 <tr>
                                     <td class="text-start">Left-click synced capture</td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Rectangular area capture <small class="text-white-50">(Ctrl+Drag)</small></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
@@ -239,7 +250,7 @@
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold">Executing Captures</h4>
-                                <p class="small mb-0 text-white-50">Images are saved automatically just by left-clicking while the capture feature is ON.</p>
+                                <p class="small mb-0 text-white-50">Images are saved automatically just by left-clicking while the capture feature is ON. You can also capture a rectangular area by dragging while holding the Ctrl key.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
@@ -341,7 +352,14 @@
                         <ul class="changelog-list mb-0">
 
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.9.25.0</span> <span class="text-white-50 small">2026.09.25</span>
+                                <span class="badge bg-accent me-2">v26.9.27.0</span> <span class="text-white-50 small">2026.09.27</span>
+                                <div class="mt-1 ps-1 text-white-50 small">
+                                    Added the "Rectangular Area Capture" feature, allowing you to capture a specific area by dragging with the mouse while holding the Ctrl key.
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.9.25.0</span> <span class="text-white-50 small">2026.09.25</span>
                                 <div class="mt-1 ps-1 text-white-50 small">
                                     Updated duplicate image detection algorithm<br />
                                     Improved Task Scheduler handling for auto-start stability

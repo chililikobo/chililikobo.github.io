@@ -71,19 +71,25 @@
                     <p class="lead fw-bold text-accent">「操作するだけで必要な画像がすべて揃う。」</p>
                     <p>ClickCaptureは、マウスの「左クリック」操作に連動して、自動的に画面キャプチャを取得・保存する常駐型ユーティリティです。非推奨（廃止）となったWindowsの「ステップ記録ツール（PSR）」に代わる軽量かつ高機能な代替ソフトとして、操作マニュアル作成やQAテスト、環境構築ログなど、意識することなく操作の流れをすべて画像として記録できます。</p>
 
-                    <div class="row mt-4">
+                    <div class="row mt-4 g-4">
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-mouse text-accent me-2"></i>左クリック連動</h3>
-                            <p class="small text-white-50">クリックするたびに、対象のウィンドウまたはフルスクリーンを自動的に画像として保存します。</p>
+                            <p class="small text-white-50 mb-0">クリックするたびに、対象のウィンドウまたはフルスクリーンを自動的に画像として保存します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-bounding-box text-accent me-2"></i>矩形範囲キャプチャ</h3>
+                            <p class="small text-white-50 mb-0"><strong>Ctrl</strong>キーを押しながらドラッグすることで、任意の矩形範囲を切り取ってキャプチャできます。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-magic text-accent me-2"></i>重複画像のスキップ</h3>
-                            <p class="small text-white-50">画面に変化がない場合は保存をスキップし、不要な画像でフォルダが溢れるのをインテリジェントに防ぎます。</p>
+                            <p class="small text-white-50 mb-0">画面に変化がない場合は保存をスキップし、不要な画像でフォルダが溢れるのをインテリジェントに防ぎます。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-keyboard text-accent me-2"></i>ホットキーによる即座のON/OFF</h3>
+                            <p class="small text-white-50 mb-0">作業中にキャプチャが不要になった場合、ホットキーを押すだけで即座にキャプチャ機能のON/OFFを切り替えられます。<br />（デフォルトは「F9」、「F8」も利用可能です）</p>
                         </div>
                     </div>
 
-                    <h3 class="h6 fw-bold text-white mt-3"><i class="bi bi-keyboard text-accent me-2"></i>ホットキーによる即座のON/OFF</h3>
-                    <p class="small text-white-50">作業中にキャプチャが不要になった場合、ホットキーを押すだけで即座にキャプチャ機能のON/OFFを切り替えられます。<br />（デフォルトは「F9」、「F8」も利用可能です）</p>
                 </section>
 
                 <section class="mb-5">
@@ -114,6 +120,11 @@
                                 <!-- 機能一覧 -->
                                 <tr>
                                     <td class="text-start">左クリック連動キャプチャ</td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">矩形範囲キャプチャ <small class="text-white-50">(Ctrl+ドラッグ)</small></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
@@ -242,7 +253,7 @@
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold">キャプチャの実行</h4>
-                                <p class="small mb-0 text-white-50">キャプチャ機能がONの状態で左クリックを行うだけで自動的に画像が保存されます。</p>
+                                <p class="small mb-0 text-white-50">キャプチャ機能がONの状態で左クリックを行うと画像が保存されます。Ctrlキー＋ドラッグによる矩形範囲の切り取りも可能です。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
@@ -349,7 +360,14 @@
                         <ul class="changelog-list mb-0">
 
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.9.25.0</span> <span class="text-white-50 small">2026.09.25</span>
+                                <span class="badge bg-accent me-2">v26.9.27.0</span> <span class="text-white-50 small">2026.09.27</span>
+                                <div class="mt-1 ps-1 text-white-50 small">
+                                    Ctrlキーを押しながらマウスでドラッグして指定する「矩形範囲キャプチャ機能」を追加しました。
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.9.25.0</span> <span class="text-white-50 small">2026.09.25</span>
                                 <div class="mt-1 ps-1 text-white-50 small">
                                     重複画像判定アルゴリズムの更新<br />
                                     自動起動（タスクスケジューラ）処理の改善と安定化
