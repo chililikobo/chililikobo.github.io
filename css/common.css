@@ -126,6 +126,14 @@ footer {
         color: var(--accent-red) !important;
     }
 
+    /* フッター内のアイコン画像の高さをX（1.5rem）と完全に合わせる */
+    .footer-icon img {
+        height: 1.5rem;
+        width: auto;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+
 /* リンク一覧のスタイル */
 footer ul.list-inline a {
     color: var(--text-main); /* index に合わせて白に近い色に */
