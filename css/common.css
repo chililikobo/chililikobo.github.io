@@ -133,7 +133,7 @@ footer {
     /* X（フォントアイコン）の視覚的な上下位置を微調整（少し下げる） */
     .footer-icon i {
         position: relative;
-        top: 2px; 
+        top: 1px; 
     }
 
     /* フッター内のアイコン画像の高さをX（1.5rem）と完全に合わせる */
