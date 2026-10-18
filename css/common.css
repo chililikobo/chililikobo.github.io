@@ -120,17 +120,26 @@ footer {
     font-size: 1.5rem;
     text-decoration: none;
     transition: 0.3s;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    vertical-align: middle;
 }
 
     .footer-icon:hover {
         color: var(--accent-red) !important;
     }
 
+    /* X（フォントアイコン）の視覚的な上下位置を微調整（少し下げる） */
+    .footer-icon i {
+        position: relative;
+        top: 2px; 
+    }
+
     /* フッター内のアイコン画像の高さをX（1.5rem）と完全に合わせる */
     .footer-icon img {
         height: 1.5rem;
         width: auto;
-        vertical-align: middle;
         object-fit: contain;
     }
 
