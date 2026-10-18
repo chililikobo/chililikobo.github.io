@@ -114,33 +114,26 @@ footer {
     text-align: center;
 }
 
-/* SNSアイコン用（text-white と style="1.5rem" の役割を統合） */
+/* SNSアイコン用 */
 .footer-icon {
-    color: #ffffff !important;
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: 0.3s;
-    display: inline-flex; 
-    align-items: center; 
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    vertical-align: middle;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
+    /* ホバー時の透過演出 */
     .footer-icon:hover {
-        color: var(--accent-red) !important;
+        opacity: 0.7;
     }
 
-    /* X（フォントアイコン）の視覚的な上下位置を微調整（少し下げる） */
-    .footer-icon i {
-        position: relative;
-        top: 1px; 
-    }
-
-    /* フッター内のアイコン画像の高さをX（1.5rem）と完全に合わせる */
+    /* 全SNSアイコン画像のサイズ・位置を一括で完全に揃える */
     .footer-icon img {
-        height: 1.5rem;
+        height: 1.5rem; /* 24px相当（好みに応じて 1.25rem〜1.5rem 等で一元管理可能） */
         width: auto;
         object-fit: contain;
+        display: block;
     }
 
 /* リンク一覧のスタイル */
