@@ -1,4 +1,4 @@
-﻿/* ==========================================
+/* ==========================================
    共通設定 (common.css)
    ========================================== */
 :root {
@@ -96,6 +96,15 @@ html[lang="en"] body {
 .navbar-toggler-icon {
     /* 背景が黒いので、標準のアイコンを白っぽく見えるようフィルタをかける */
     filter: invert(1);
+}
+
+/* 汎用ホバーアクセントカラー */
+.hover-red {
+    transition: color 0.2s ease;
+}
+
+.hover-red:hover {
+    color: var(--accent-red) !important;
 }
 
 /* ボタン共通 */

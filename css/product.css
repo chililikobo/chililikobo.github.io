@@ -77,7 +77,9 @@
     padding: 15px 40px;
     border-radius: 50px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.3s;
     border: none;
     text-align: center;
@@ -88,6 +90,15 @@
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
     }
+
+/* CTAカード内のアウトラインボタン（.buy-buttonと並ぶボタンの垂直・水平中央揃え） */
+.card-custom .btn-outline-danger,
+.card-custom .btn-outline-light,
+.card-custom .btn-outline-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* 更新履歴 */
 .changelog-list {
@@ -424,40 +435,31 @@
     scroll-margin-top: 125px;
 }
 
-/* 更新履歴用アコーディオンボタン */
-.changelog-accordion-btn {
-    background-color: rgba(255, 255, 255, 0.03) !important;
-    border: 1px solid var(--border-dark) !important;
+/* 更新履歴用アコーディオン */
+#olderChangelogAccordion .accordion-item {
+    border-top: 1px solid var(--border-dark) !important;
+}
+
+#olderChangelogAccordion .accordion-button {
+    background-color: transparent !important;
     color: rgba(255, 255, 255, 0.75) !important;
-    font-size: 0.85rem !important;
-    transition: 0.2s ease;
+    font-size: 0.875rem !important;
+    font-weight: 500;
+    padding: 0.75rem 0 !important;
+    box-shadow: none !important;
 }
 
-.changelog-accordion-btn:hover {
-    border-color: var(--accent-red) !important;
-    color: #fff !important;
-    background-color: rgba(220, 53, 69, 0.08) !important;
-}
-
-.changelog-accordion-btn.collapsed .hide-text {
-    display: none;
-}
-
-.changelog-accordion-btn.collapsed .show-text {
-    display: inline;
-}
-
-.changelog-accordion-btn:not(.collapsed) {
-    background-color: rgba(220, 53, 69, 0.08) !important;
-    border-color: var(--border-dark) !important;
+#olderChangelogAccordion .accordion-button:hover {
     color: #fff !important;
 }
 
-.changelog-accordion-btn:not(.collapsed) .show-text {
-    display: none;
+#olderChangelogAccordion .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: #fff !important;
 }
 
-.changelog-accordion-btn:not(.collapsed) .hide-text {
-    display: inline;
+#olderChangelogAccordion .accordion-body {
+    padding: 0.5rem 0 0 0 !important;
+    background-color: transparent !important;
 }
 

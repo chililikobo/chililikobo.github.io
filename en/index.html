@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -127,81 +127,95 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-6">
-                            <span class="text-accent fw-bold me-3">2026.05.30</span> ClickCapture v26.5.30.3 Released
+                <!-- Older Announcements (Items after top 5 in an accordion) -->
+                <div class="accordion-item bg-dark text-white border-top border-secondary">
+                    <h3 class="accordion-header" id="olderInfoHeading">
+                        <button id="olderInfoBtn" class="accordion-button collapsed text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#olderInfoCollapse" aria-expanded="false" aria-controls="olderInfoCollapse">
+                            <span class="d-flex align-items-center"><i class="bi bi-clock-history text-accent me-2"></i>View Older Announcements</span>
                         </button>
-                    </h2>
-                    <div id="info-item-6" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Initial release of ClickCapture.
-                        </div>
-                    </div>
-                </div>
+                    </h3>
+                    <div id="olderInfoCollapse" class="accordion-collapse collapse" aria-labelledby="olderInfoHeading">
+                        <div class="accordion accordion-flush" id="olderInfoAccordion">
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-5">
-                            <span class="text-accent fw-bold me-3">2026.05.03</span> Simple Stats v26.5.3.0 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-5" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Initial release of Simple Stats.
-                        </div>
-                    </div>
-                </div>
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-6">
+                                        <span class="text-accent fw-bold me-3">2026.05.30</span> ClickCapture v26.5.30.3 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-6" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Initial release of ClickCapture.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-4">
-                            <span class="text-accent fw-bold me-3">2026.04.21</span> Ohnuki-san Lite v26.4.21.0 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-4" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Initial release of Ohnuki-san Lite.
-                        </div>
-                    </div>
-                </div>
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-5">
+                                        <span class="text-accent fw-bold me-3">2026.05.03</span> Simple Stats v26.5.3.0 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-5" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Initial release of Simple Stats.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-3">
-                            <span class="text-accent fw-bold me-3">2026.04.18</span> Ohnuki-san Dashboard v26.4.18.0 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-3" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Launched "Ohnuki-san Dashboard," a tool for graphical visualization of system information. It enables intuitive analysis by importing reports generated with Plus.
-                        </div>
-                    </div>
-                </div>
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-4">
+                                        <span class="text-accent fw-bold me-3">2026.04.21</span> Ohnuki-san Lite v26.4.21.0 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-4" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Initial release of Ohnuki-san Lite.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-1">
-                            <span class="text-accent fw-bold me-3">2026.04.09</span> Official website renewed
-                        </button>
-                    </h2>
-                    <div id="info-item-1" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            We have launched this website as the new hub for chilili kobo.<br>
-                            We will post updates on development progress and software release information here.
-                        </div>
-                    </div>
-                </div>
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-3">
+                                        <span class="text-accent fw-bold me-3">2026.04.18</span> Ohnuki-san Dashboard v26.4.18.0 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-3" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Launched "Ohnuki-san Dashboard," a tool for graphical visualization of system information. It enables intuitive analysis by importing reports generated with Plus.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-2">
-                            <span class="text-accent fw-bold me-3">2026.04.01</span> Ohnuki-san Plus v26.4.1.7 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-2" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Based on the original "Ohnuki-san," we have released "Ohnuki-san Plus" with a refreshed UI and enhanced features.
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-1">
+                                        <span class="text-accent fw-bold me-3">2026.04.09</span> Official website renewed
+                                    </button>
+                                </h3>
+                                <div id="info-item-1" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        We have launched this website as the new hub for chilili kobo.<br>
+                                        We will post updates on development progress and software release information here.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-2">
+                                        <span class="text-accent fw-bold me-3">2026.04.01</span> Ohnuki-san Plus v26.4.1.7 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-2" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Based on the original "Ohnuki-san," we have released "Ohnuki-san Plus" with a refreshed UI and enhanced features.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

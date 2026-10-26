@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // --- 4. Pro版プランへのスムーズスクロール初期化 ---
     initProPlansScroll();
+
+    // --- 5. サイドバー法的リンクの自動生成 ---
+    initSidebarLegalLinks();
 });
 
 // --- ヘッダーのリンクを英語対応にする ---
@@ -130,13 +133,57 @@ let galleryItems = [];
 let currentGalleryIdx = 0;
 let galleryModalInstance = null;
 
-function initGallery() {
-    const modalEl = document.getElementById('imageModal');
-    if (!modalEl) return;
+function ensureImageModal() {
+    let modalEl = document.getElementById('imageModal');
+    if (modalEl) return modalEl;
 
+    const path = window.location.pathname;
+    const isEnglish = path.includes('/en/');
+
+    const prevLabel = isEnglish ? "Previous image" : "前の画像";
+    const nextLabel = isEnglish ? "Next image" : "次の画像";
+    const keyHint = isEnglish ? "Navigate with keyboard Left / Right arrow keys" : "キーボードの ← → キーでも移動できます";
+
+    const modalHtml = `
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-secondary">
+                <div class="modal-header border-bottom border-secondary py-2 px-3">
+                    <div class="d-flex align-items-center">
+                        <span id="galleryTitle" class="fw-bold text-white me-2"></span>
+                        <span id="galleryCounter" class="badge bg-secondary"></span>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 position-relative text-center bg-black d-flex align-items-center justify-content-center" style="min-height: 350px;">
+                    <button type="button" class="gallery-nav-btn prev-btn" onclick="galleryNav(-1)" aria-label="${prevLabel}">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <img src="" id="modalImage" class="img-fluid" alt="Screenshot" style="max-height: 75vh; object-fit: contain;">
+                    <button type="button" class="gallery-nav-btn next-btn" onclick="galleryNav(1)" aria-label="${nextLabel}">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-footer border-top border-secondary py-2 px-3 justify-content-between">
+                    <p id="galleryDesc" class="small text-white-50 mb-0"></p>
+                    <span class="small text-white-50 d-none d-md-inline" id="galleryKeyHint"><i class="bi bi-keyboard me-1"></i>${keyHint}</span>
+                </div>
+            </div>
+        </div>
+    </div>`;
+
+    document.body.insertAdjacentHTML('beforeend', modalHtml);
+    return document.getElementById('imageModal');
+}
+
+function initGallery() {
     // ページ内のすべてのスクリーンショットコンテナを取得
     const containers = document.querySelectorAll('.screenshot-container');
     if (containers.length === 0) return;
+
+    // モーダル要素が存在することを確認（無ければ自動注入）
+    const modalEl = ensureImageModal();
+    if (!modalEl) return;
 
     galleryItems = [];
     containers.forEach((container, idx) => {
@@ -155,9 +202,11 @@ function initGallery() {
 
         // クリックでギャラリーを開く
         container.style.cursor = 'pointer';
-        container.addEventListener('click', function () {
-            openGallery(idx);
-        });
+        if (!container.getAttribute('onclick')) {
+            container.addEventListener('click', function () {
+                openGallery(idx);
+            });
+        }
     });
 
     // モーダル内に前へ・次へボタンがなければ自動追加
@@ -188,15 +237,19 @@ function initGallery() {
     }
 
     // キーボードの矢印キーで前後の画像へ移動
-    document.addEventListener('keydown', function (e) {
-        if (modalEl.classList.contains('show') && galleryItems.length > 1) {
-            if (e.key === 'ArrowLeft') {
-                galleryNav(-1);
-            } else if (e.key === 'ArrowRight') {
-                galleryNav(1);
+    if (!window._galleryKeydownBound) {
+        document.addEventListener('keydown', function (e) {
+            const currentModal = document.getElementById('imageModal');
+            if (currentModal && currentModal.classList.contains('show') && galleryItems.length > 1) {
+                if (e.key === 'ArrowLeft') {
+                    galleryNav(-1);
+                } else if (e.key === 'ArrowRight') {
+                    galleryNav(1);
+                }
             }
-        }
-    });
+        });
+        window._galleryKeydownBound = true;
+    }
 }
 
 function updateGalleryView() {
@@ -205,6 +258,7 @@ function updateGalleryView() {
     const modalImg = document.getElementById('modalImage');
     if (modalImg) {
         modalImg.src = item.src;
+        modalImg.alt = item.title || 'Screenshot';
     }
 
     const titleEl = document.getElementById('galleryTitle');
@@ -214,22 +268,43 @@ function updateGalleryView() {
 
     const counterEl = document.getElementById('galleryCounter');
     if (counterEl) {
-        counterEl.textContent = `${currentGalleryIdx + 1} / ${galleryItems.length}`;
+        if (galleryItems.length > 1) {
+            counterEl.textContent = `${currentGalleryIdx + 1} / ${galleryItems.length}`;
+            counterEl.style.display = '';
+        } else {
+            counterEl.style.display = 'none';
+        }
     }
 
     const descEl = document.getElementById('galleryDesc');
     if (descEl) {
         descEl.textContent = item.desc;
     }
+
+    // 画像が1枚だけの場合は前へ・次へボタンおよびキーボード案内を非表示にする
+    const modalEl = document.getElementById('imageModal');
+    if (modalEl) {
+        const navBtns = modalEl.querySelectorAll('.gallery-nav-btn');
+        navBtns.forEach(btn => {
+            btn.style.display = galleryItems.length > 1 ? '' : 'none';
+        });
+        const keyHint = modalEl.querySelector('.modal-footer .d-none.d-md-inline, #galleryKeyHint');
+        if (keyHint) {
+            keyHint.style.display = galleryItems.length > 1 ? '' : 'none';
+        }
+    }
 }
 
 function openGallery(idx) {
+    if (galleryItems.length === 0) {
+        initGallery();
+    }
     if (idx >= 0 && idx < galleryItems.length) {
         currentGalleryIdx = idx;
     }
     updateGalleryView();
 
-    const modalEl = document.getElementById('imageModal');
+    const modalEl = ensureImageModal();
     if (modalEl && typeof bootstrap !== 'undefined') {
         const modal = bootstrap.Modal.getOrCreateInstance ? bootstrap.Modal.getOrCreateInstance(modalEl) : (galleryModalInstance || (galleryModalInstance = new bootstrap.Modal(modalEl)));
         if (modal) {
@@ -246,6 +321,9 @@ function galleryNav(direction) {
 
 // 従来の showImage(src) との互換性維持
 function showImage(src) {
+    if (galleryItems.length === 0) {
+        initGallery();
+    }
     const idx = galleryItems.findIndex(item => item.src === src);
     if (idx !== -1) {
         openGallery(idx);
@@ -311,8 +389,39 @@ function copyToClipboard() {
     });
 }
 
+// ==========================================
+// 共通 サイドバー法的リンクの自動生成
+// ==========================================
+function initSidebarLegalLinks() {
+    const sidebar = document.querySelector('.sticky-sidebar');
+    if (!sidebar) return;
+
+    // 既に法的リンクが存在する場合は多重追加しない
+    if (sidebar.querySelector('a[href*="terms.html"]')) return;
+
+    const path = window.location.pathname;
+    const isEnglish = path.includes('/en/');
+    const prefix = isEnglish ? '/en' : '';
+
+    const termsText = isEnglish ? 'Terms of Service' : '利用規約';
+    const privacyText = isEnglish ? 'Privacy Policy' : 'プライバシーポリシー';
+    const lawText = isEnglish ? 'Commercial Disclosure' : '特定商取引法に基づく表記';
+
+    const html = `
+    <div class="sidebar-legal-links text-center mb-4">
+        <div class="mb-2">
+            <a href="${prefix}/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">${termsText}</a>
+            <a href="${prefix}/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">${privacyText}</a>
+        </div>
+        <a href="${prefix}/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">${lawText}</a>
+    </div>`;
+
+    sidebar.insertAdjacentHTML('beforeend', html);
+}
+
 // グローバルスコープへの明示的な登録（HTMLのインライン onclick からの確実な呼び出しを担保）
 window.openGallery = openGallery;
 window.galleryNav = galleryNav;
 window.showImage = showImage;
 window.copyToClipboard = copyToClipboard;
+window.initSidebarLegalLinks = initSidebarLegalLinks;

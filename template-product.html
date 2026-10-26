@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+================================================================================
+  chilili kobo - 新規プロダクト用ランディングページテンプレート
+================================================================================
+  【使用手順】
+  1. このファイルを複製し、プロダクト識別名（例: `mytool.html`）にリネームします。
+  2. 英語ページを作成する場合は、`en/mytool.html` として複製します。
+  3. 下記のプレースホルダーを置換・編集してください:
+     - [TOOL_NAME] : ツール名（例: ClickCapture）
+     - [TOOL_NAME_ACCENT] : ツール名の強調部分（例: Capture）
+     - [TOOL_SLUG] : URLスラッグ（例: clickcapture）
+     - [TOOL_CATCHCOPY] : キャッチコピー
+     - [TOOL_DESCRIPTION] : 詳細説明文
+     - [DOWNLOAD_URL] : GitHubリリース等のダウンロードリンク
+     - [GUMROAD_URL] : Gumroad有料プランリンク（※Pro版がある場合のみ）
+================================================================================
+-->
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B8PSQRQ7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4B8PSQRQ7X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TOOL_NAME] | chilili kobo - Smart PC Utilities</title>
+    <meta name="description" content="[TOOL_CATCHCOPY]">
+
+    <!-- OGP (Open Graph Protocol) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="chilili kobo">
+    <meta property="og:title" content="[TOOL_NAME] | chilili kobo - Smart PC Utilities">
+    <meta property="og:description" content="[TOOL_CATCHCOPY]">
+    <meta property="og:url" content="https://chililikobo.github.io/[TOOL_SLUG].html">
+    <meta property="og:image" content="https://chililikobo.github.io/img/og-[TOOL_SLUG].png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="[TOOL_NAME] | chilili kobo - Smart PC Utilities">
+    <meta name="twitter:description" content="[TOOL_CATCHCOPY]">
+    <meta name="twitter:image" content="https://chililikobo.github.io/img/og-[TOOL_SLUG].png">
+    <meta name="twitter:site" content="@chililikobo">
+
+    <!-- Canonical & Alternate Links -->
+    <link rel="canonical" href="https://chililikobo.github.io/[TOOL_SLUG].html">
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/[TOOL_SLUG].html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/[TOOL_SLUG].html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/[TOOL_SLUG].html">
+
+    <!-- Icons & Stylesheets -->
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body class="product-page">
+
+    <!-- ヘッダー自動挿入プレースホルダー (common.js が読み込みます) -->
+    <div id="header-placeholder"></div>
+
+    <!-- ヒーローヘッダー -->
+    <header class="hero-product text-center">
+        <div class="container">
+
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="/img/[TOOL_SLUG]-icon256.png" alt="[TOOL_NAME]" class="hero-product-icon me-4 mb-0">
+                <h1 class="display-4 fw-bold mb-0">[TOOL_NAME_PREFIX] <span class="text-accent">[TOOL_NAME_ACCENT]</span></h1>
+            </div>
+
+            <p class="lead text-white-50 mb-3">[TOOL_CATCHCOPY]</p>
+
+            <!-- 信頼性・特徴ハイライトピル -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 対応</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-lightning-charge text-accent me-1"></i>.NET 10 Native AOT (超高速)</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>完全ポータブル・レジストリ不使用</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-shield-check text-success me-1"></i>商用・個人利用可能</span>
+            </div>
+
+            <div class="d-inline-block">
+                <a href="[DOWNLOAD_URL]" target="_blank" class="buy-button mb-2">
+                    <i class="bi bi-download me-1"></i> 無料でダウンロードする
+                </a>
+                <p class="small text-white-50 mt-1 mb-2">※インストール不要・USBから直接起動可能</p>
+                <!-- 有料プランがある場合のみ以下を有効化 -->
+                <!--
+                <a href="#pro-plans" class="d-inline-block text-accent small text-decoration-none">
+                    <i class="bi bi-briefcase me-1"></i>Pro版プラン・価格を見る ↓
+                </a>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div class="container">
+        <div class="row">
+
+            <!-- 左メインカラム -->
+            <div class="col-lg-8">
+
+                <!-- 1. 製品説明 & 4つの特徴グリッド -->
+                <section class="mb-5">
+                    <h2 class="section-title">製品説明</h2>
+
+                    <p class="lead fw-bold text-accent mb-3">「[TOOL_HEADLINE]」</p>
+                    <p class="text-white-75 mb-4">[TOOL_DESCRIPTION]</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-check-lg text-accent me-2"></i>特徴タイトル 1</h3>
+                            <p class="small text-white-75 mb-0">特徴1の説明文をここに記載します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning-charge text-accent me-2"></i>特徴タイトル 2</h3>
+                            <p class="small text-white-75 mb-0">特徴2の説明文をここに記載します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-shield-lock text-accent me-2"></i>特徴タイトル 3</h3>
+                            <p class="small text-white-75 mb-0">特徴3の説明文をここに記載します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-gear text-accent me-2"></i>特徴タイトル 4</h3>
+                            <p class="small text-white-75 mb-0">特徴4の説明文をここに記載します。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 主なユースケース -->
+                <section class="mb-5">
+                    <h2 class="section-title">主なユースケース</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-check2-circle text-accent me-2"></i>ユースケース 1</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-check2-circle text-accent me-2"></i>ユースケース 2</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-check2-circle text-accent me-2"></i>ユースケース 3</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-check2-circle text-accent me-2"></i>ユースケース 4</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. スクリーンショット (クリックで拡大ギャラリーモーダルが連動) -->
+                <section class="mb-5">
+                    <h2 class="section-title">スクリーンショット</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます（矢印キーで前後の画像へ移動可能）。</p>
+
+                    <div class="row g-4">
+                        <!-- 画像 1 (インデックス: 0) -->
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
+                                <img src="/img/[TOOL_SLUG]-main.png" alt="メイン画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-window me-1"></i>メイン画面</h4>
+                                <p class="text-white-50 small mb-0">メイン画面の説明文をここに記載します。</p>
+                            </div>
+                        </div>
+
+                        <!-- 画像 2 (インデックス: 1) -->
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(1)">
+                                <img src="/img/[TOOL_SLUG]-sub.png" alt="設定画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-gear me-1"></i>設定画面</h4>
+                                <p class="text-white-50 small mb-0">設定画面の説明文をここに記載します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. 使用方法 (3ステップ) -->
+                <section class="mb-5">
+                    <h2 class="section-title">使用方法</h2>
+                    <div class="card-custom text-center">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="h3 text-accent mb-2">01</div>
+                                <h4 class="h6 fw-bold">解凍・起動</h4>
+                                <p class="small mb-0 text-white-50">ZIPを展開し、実行ファイルをダブルクリックして起動します。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">02</div>
+                                <h4 class="h6 fw-bold">設定・操作</h4>
+                                <p class="small mb-0 text-white-50">直感的な画面に従い、必要な設定や操作を行います。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">03</div>
+                                <h4 class="h6 fw-bold">完了</h4>
+                                <p class="small mb-0 text-white-50">タスクが完了し、レポートやデータが出力されます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. よくある質問 (FAQ アコーディオン) -->
+                <section class="mb-5">
+                    <h2 class="section-title">よくある質問 (FAQ)</h2>
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>商用利用や会社PCでの利用は無料ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、個人利用・法人利用を問わず完全無料でご利用いただけます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>管理者権限（UAC昇格）やインストールは必要ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    いいえ、インストールやレジストリ変更は不要です。標準ユーザー権限で単一の実行ファイルから即座にお使いいただけます。
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 6. ボトムCTAカード -->
+                <section class="mb-5">
+                    <div class="card-custom text-center p-4 border-accent bg-accent-soft">
+                        <h2 class="h4 fw-bold text-white mb-2">[TOOL_NAME] で作業を快適に</h2>
+                        <p class="small text-white-50 mb-4">インストール不要・完全無料。今すぐダウンロードしてお試しください。</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="[DOWNLOAD_URL]" target="_blank" class="buy-button">
+                                <i class="bi bi-download me-1"></i> 無料でダウンロードする
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. 更新履歴 -->
+                <section class="mb-5">
+                    <h2 class="section-title">更新履歴</h2>
+                    <div class="card-custom">
+                        <!-- 最新の5件は常に表示 -->
+                        <ul class="changelog-list mb-0">
+                            <li class="changelog-item">
+                                <span class="badge bg-accent me-2">v1.0.0.0</span> <span class="text-white-50 small">2026.01.01</span>
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    [TOOL_NAME] 初版リリース。
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 6件以上ある場合はアコーディオンを使用 (5件以下の場合は不要)
+                        <div class="accordion accordion-flush mt-3" id="olderChangelogAccordion">
+                            <div class="accordion-item bg-transparent border-0">
+                                <div class="accordion-header" id="olderChangelogHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#olderChangelogCollapse" aria-expanded="false" aria-controls="olderChangelogCollapse">
+                                        <i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴
+                                    </button>
+                                </div>
+                                <div id="olderChangelogCollapse" class="accordion-collapse collapse" aria-labelledby="olderChangelogHeading" data-bs-parent="#olderChangelogAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="changelog-list mb-0">
+                                            <li class="changelog-item">
+                                                <span class="badge bg-secondary me-2">v0.9.0.0</span> <span class="text-white-50 small">2025.12.01</span>
+                                                <div class="mt-1 ps-1 text-white-75 small">ベータ版リリース。</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 右カラム：スティッキーサイドバー -->
+            <div class="col-lg-4">
+                <div class="sticky-sidebar">
+
+                    <!-- ダウンロードカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                        <div class="mb-4 p-3 border border-accent rounded text-center">
+                            <p class="small text-white-50 mb-1">Standard Edition</p>
+                            <p class="h3 fw-bold mb-2">FREE</p>
+                            <a href="[DOWNLOAD_URL]" target="_blank" class="buy-button">
+                                <i class="bi bi-download me-1"></i> GitHub で取得
+                            </a>
+                        </div>
+
+                        <div class="small text-white-50 mb-4">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> ユーザー登録不要</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 広告表示なし</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず完全無料</p>
+                        </div>
+
+                        <!-- 信頼の外部評価・掲載バッジ（※実績がある場合） -->
+                        <!--
+                        <div class="border-top border-secondary pt-4 text-center">
+                            <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                            <div class="badge-row">
+                                <div class="badge-item">
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <img src="/img/goforest.gif" alt="窓の杜">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+
+                    <!-- 【有料Pro版がある場合のみ使用】サブスクリプションカード -->
+                    <!--
+                    <div class="card-custom mb-4" id="pro-plans">
+                        <h3 class="h5 fw-bold mb-3 text-accent">サブスクリプション</h3>
+                        <div class="alert alert-trial py-2 px-3 mb-4 rounded text-center">
+                            <i class="bi bi-gift-fill me-2"></i><strong>初回1ヶ月無料トライアル実施中！</strong>
+                        </div>
+                        <div class="mb-4 p-3 border border-secondary rounded text-center">
+                            <p class="small text-white-50 mb-1">月額プラン</p>
+                            <p class="h3 fw-bold mb-2">¥ 500 <small class="text-white-50 plan-unit">/ 月</small></p>
+                            <a href="[GUMROAD_URL]?monthly=true" target="_blank" class="btn btn-outline-danger w-100 fw-bold btn-sm">1ヶ月無料で試す</a>
+                        </div>
+                        <div class="mb-4 p-3 border border-accent rounded text-center bg-accent-soft">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">年額プラン</p>
+                                <span class="badge bg-accent plan-badge">実質2ヶ月分無料！</span>
+                            </div>
+                            <p class="h3 fw-bold mb-2">¥ 5,000 <small class="text-white-50 plan-unit">/ 年</small></p>
+                            <a href="[GUMROAD_URL]?yearly=true" target="_blank" class="btn btn-danger w-100 fw-bold">1ヶ月無料で試す</a>
+                        </div>
+                    </div>
+                    -->
+
+                    <!-- 動作環境スペックカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 10 / 11</td></tr>
+                                <tr><th>Arch</th><td>64bit (x64)</td></tr>
+                                <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
+                                <tr><th>配布形態</th><td>単一実行ファイル (.exe)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> インストール不要。レジストリを汚さずポータブルに動作します。
+                        </p>
+                    </div>
+
+                    <!-- ※サイドバー末尾の法的リンク（利用規約等）は common.js により自動生成されます -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- フッター自動挿入プレースホルダー -->
+    <div id="footer-placeholder"></div>
+
+    <!-- スクリプト (Bootstrap & common.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>

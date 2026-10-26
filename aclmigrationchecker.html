@@ -53,12 +53,27 @@
                 <h1 class="display-4 fw-bold mb-0">ACL Migration <span class="text-accent">Checker</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-5">ファイルサーバー移行時のアクセス権（ACL）差異を自動検証。USBで持ち運べるポータブルツール。</p>
+            <p class="lead text-white-50 mb-3">ファイルサーバー移行時のアクセス権（ACL）差異を自動検証。USBで持ち運べるポータブルツール。</p>
+
+            <!-- 信頼性・特徴ハイライト -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 / Server 対応</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>完全ポータブル・レジストリ不使用</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-check2-all text-success me-1"></i>商用・個人完全無料</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-award text-warning me-1"></i>窓の杜 / Vector / Softpedia 掲載</span>
+            </div>
+
             <div class="d-inline-block">
-                <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="buy-button">
+                <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="buy-button mb-2">
                     <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
                 </a>
-                <p class="small text-white-50 mt-3">※インストール不要・ポータブルで動作します</p>
+                <p class="small text-white-50 mt-1 mb-2">※インストール不要・ポータブル・商用利用可能</p>
+                <a href="#how-to-use" class="d-inline-block text-accent small text-decoration-none">
+                    <i class="bi bi-question-circle me-1"></i>使い方・比較手順を見る ↓
+                </a>
             </div>
         </div>
     </header>
@@ -66,65 +81,106 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <section class="mb-5">
-                    <div class="card-custom border-accent bg-accent-soft">
-                        <h2 class="h5 fw-bold text-accent mb-3">
-                            <i class="bi bi-rocket-takeoff-fill me-2"></i>インストール不要のポータブル設計
-                        </h2>
-                        <p class="small mb-0">
-                            ACL Migration Checkerはポータブルに設計されており、USBメモリ等に入れて持ち運ぶことが可能です。
-                            <br><br>
-                            .NETランタイム等の追加インストールは一切不要で、ダウンロードしたフォルダを任意の場所に配置するだけで、様々なPCですぐに起動して利用できます。アンインストールはフォルダごと削除するだけです。
-                        </p>
-                    </div>
-                </section>
 
+                <!-- 1. 製品説明 -->
                 <section class="mb-5">
                     <h2 class="section-title">製品説明</h2>
-                    <p class="lead fw-bold text-accent">「確実なデータ移行のための、アクセス権検証ツール。」</p>
-                    <p>ACL Migration Checkerは、ファイルサーバーやストレージサーバーのデータ移行（マイグレーション）において、移行元と移行先のアクセス権（ACL）に差異がないかを検証するための専用チェックツールです。</p>
-                    <p>Active Directory環境での移行はもちろんのこと、SID（セキュリティ識別子）の移行が困難なWorkgroup環境における権限の再設定・付け直し作業の確認・検証に強力な威力を発揮します。</p>
 
-                    <div class="card-custom py-4 mt-4">
-                        <h3 class="h5 fw-bold mb-3 text-center">主な特徴</h3>
-                        <ul class="mb-0">
-                            <li><strong>アクセス権のスキャンと保存:</strong> 移行元・移行先のフォルダやファイルに設定されているACL情報を取得し、軽量なJSON.GZ形式で保存します。</li>
-                            <li><strong>移行前後の差分比較:</strong> 保存した2つのデータを突き合わせ、権限の欠落や過剰付与、アカウントの不一致を自動で検出・リストアップします。</li>
-                            <li><strong>CSVエクスポート:</strong> 比較結果をCSV形式で出力可能。移行後のレポート作成や修正用のチェックリストとして活用できます。</li>
-                            <li><strong>多言語対応 (日本語 / 英語):</strong> OSの言語設定に合わせて自動的にインターフェース言語が切り替わり、幅広い環境でスムーズに利用できます。</li>
-                        </ul>
+                    <p class="lead fw-bold text-accent mb-3">「確実なデータ移行のための、アクセス権検証ツール。」</p>
+                    <p class="text-white-75 mb-4">ACL Migration Checkerは、ファイルサーバーやNAS、クラウドストレージへのデータ移行（マイグレーション）作業において、移行元と移行先のアクセス権（ACL）に不一致や欠落がないかを自動照合・検証するための専用ツールです。Active Directory環境での移行はもちろん、SID（セキュリティ識別子）の移行が困難なWorkgroup環境での権限再付与チェックにも威力を発揮します。</p>
+
+                    <!-- 特徴 4選グリッド -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-search text-accent me-2"></i>アクセス権のスキャンと保存</h3>
+                            <p class="small text-white-75 mb-0">移行元・移行先それぞれのフォルダやファイルに設定されたACL情報を網羅的に収集し、軽量なJSON.GZ形式で保存します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-arrow-left-right text-accent me-2"></i>移行前後の自動差分比較</h3>
+                            <p class="small text-white-75 mb-0">保存した2つのデータを突き合わせ、権限の欠落、過剰付与、アカウント・グループの不一致を瞬時に自動検出してリストアップします。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-spreadsheet text-accent me-2"></i>CSVエクスポート対応</h3>
+                            <p class="small text-white-75 mb-0">検出された差異の一覧をCSV形式で出力可能。移行作業後のエビデンス提出や、修正用チェックリストとしてそのまま活用できます。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-translate text-accent me-2"></i>日英バイリンガル対応</h3>
+                            <p class="small text-white-75 mb-0">OSの言語環境に合わせて日本語・英語のUIが自動で切り替わります。国内外のグローバルな移行現場でもスムーズに運用可能です。</p>
+                        </div>
                     </div>
                 </section>
 
+                <!-- 2. 主な検証項目 -->
+                <section class="mb-5">
+                    <h2 class="section-title">主な検証項目</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>権限の欠落・不足</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>意図しない過剰付与</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-x text-accent me-2"></i>SID・アカウント不一致</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-diagram-2 text-accent me-2"></i>継承（Inheritance）状態</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-x text-accent me-2"></i>フォルダ・ファイル不在</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-badge text-accent me-2"></i>所有者（Owner）比較</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. 主なユースケース -->
+                <section class="mb-5">
+                    <h2 class="section-title">主なユースケース</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-hdd-network text-accent me-2"></i>ファイルサーバー（NAS/Windows Server）移行完了後のACL完全性監査</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-people text-accent me-2"></i>Active Directoryドメイン移行・再編に伴う共有フォルダのアクセス権検証</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-arrow-repeat text-accent me-2"></i>Workgroup環境でSID引き継ぎができない場合の権限再設定ミス検知</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-journal-check text-accent me-2"></i>データ移行プロジェクトにおける監査提出用CSVエビデンスの作成</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. スクリーンショット -->
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます。</p>
+
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/aclchecker-main.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
                                 <img src="/img/aclchecker-main.png" alt="ACL Migration Checker スキャン画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-search me-1"></i>スキャン・保存機能</h4>
-                                <p class="text-white-50 small mb-0">対象のパスを指定し、アクセス権情報を取得・保存します。</p>
+                                <p class="text-white-50 small mb-0">対象パスを指定し、アクセス権情報を取得して圧縮JSON形式で保存します。</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/aclchecker-compare.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(1)">
                                 <img src="/img/aclchecker-compare.png" alt="ACL Migration Checker 比較結果画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>差分比較・リストアップ</h4>
-                                <p class="text-white-50 small mb-0">取得したデータを読み込み、移行前後の差異を自動検出して一覧表示します。</p>
+                                <p class="text-white-50 small mb-0">取得したデータを読み込み、移行前後の差異を自動検出して色分け表示します。</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="mb-5">
+                <!-- 5. 使用方法 -->
+                <section class="mb-5" id="how-to-use">
                     <h2 class="section-title">使用方法</h2>
-                    <div class="card-custom">
-                        <div class="row g-4 text-center">
+                    <div class="card-custom text-center">
+                        <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold">ACL情報の取得</h4>
@@ -132,108 +188,170 @@
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">データの比較</h4>
-                                <p class="small mb-0 text-white-50">保存した移行元・移行先のデータを読み込み、比較処理を実行します。</p>
+                                <h4 class="h6 fw-bold">データの照合</h4>
+                                <p class="small mb-0 text-white-50">保存した移行元・移行先のデータを読み込み、差分比較処理を実行します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold">差異確認とCSV出力</h4>
-                                <p class="small mb-0 text-white-50">検出された差異を画面上で確認。必要に応じてCSV形式で結果をエクスポートします。</p>
+                                <p class="small mb-0 text-white-50">検出された差異を一覧で確認し、必要に応じてCSV形式でレポートを出力します。</p>
                             </div>
+                        </div>
+                    </div>
+                    <p class="small text-white-50 text-center mt-3 mb-0">
+                        <i class="bi bi-magic me-1 text-accent"></i> ネットワーク越しに両サーバーが直接疎通しなくても、ファイル単位で持ち運んでオフライン比較が可能です。
+                    </p>
+                </section>
+
+                <!-- 6. よくある質問 (FAQ) -->
+                <section class="mb-5">
+                    <h2 class="section-title">よくある質問 (FAQ)</h2>
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>移行元と移行先のサーバーが直接通信できない環境でも比較できますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、可能です。本ツールは「スキャン結果の保存」と「2つのデータの比較」が完全に分離されています。移行元サーバーで保存したスキャンデータ（JSON.GZ）をUSBメモリ等で移行先や管理用PCにコピーするだけで、完全にオフラインで比較検証が行えます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>商用利用や企業内での利用は無料ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、個人利用・法人利用を問わず完全無料でご利用いただけます。SIer様のデータ移行案件や社内ファイルサーバー更改プロジェクトでも自由にご活用いただけます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>大容量ストレージや数万ファイルでも動作しますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい。ACLスキャンデータはGzip圧縮形式（.json.gz）で保存されるため、ファイル容量を最小限に抑えつつ大量のファイル・フォルダ情報を効率的に処理できるように設計されています。
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 7. ボトムCTAカード -->
+                <section class="mb-5">
+                    <div class="card-custom text-center p-4 border-accent bg-accent-soft">
+                        <h2 class="h4 fw-bold text-white mb-2">ファイルサーバー移行のアクセス権差異を確実にチェック</h2>
+                        <p class="small text-white-50 mb-4">インストール不要・完全無料。GitHubから今すぐダウンロードしてご利用いただけます。</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
+                            </a>
                         </div>
                     </div>
                 </section>
 
+                <!-- 8. 更新履歴 -->
                 <section class="mb-5">
                     <h2 class="section-title">更新履歴</h2>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
                                 <span class="badge bg-accent me-2">v26.7.31.2</span> <span class="text-white-50 small">2026.07.31</span>
-                                <div class="mt-1 ps-1 text-white-50 small">初版公開（ローンチ）</div>
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    初版公開（ローンチ）。ACL情報の取得・保存、移行前後の差分比較、CSVエクスポート機能を実装。
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </section>
             </div>
 
+            <!-- 右カラム：サイドバー -->
             <div class="col-lg-4">
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
-                    <div class="mb-4 p-3 border border-accent rounded text-center">
-                        <p class="small text-white-50 mb-1">Standard Edition</p>
-                        <p class="h3 fw-bold mb-2">FREE</p>
-                        <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">GitHub で取得</a>
-                    </div>
+                <div class="sticky-sidebar">
 
-                    <div class="small text-white-50 mb-4">
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> フリーウェア（個人・法人無料）</p>
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 二次配布禁止</p>
-                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず利用可能</p>
-                    </div>
+                    <!-- ダウンロードカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                        <div class="mb-4 p-3 border border-accent rounded text-center">
+                            <p class="small text-white-50 mb-1">Standard Edition</p>
+                            <p class="h3 fw-bold mb-2">FREE</p>
+                            <a href="https://github.com/chililikobo/AclMigrationChecker/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> GitHub で取得
+                            </a>
+                        </div>
 
-                    <div class="border-top border-secondary pt-4 text-center">
-                        <!-- ★mt-2 を外し pt-4 にして、線の下の余白を少し広げました -->
-                        <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                        <div class="small text-white-50 mb-4">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> フリーウェア（個人・法人無料）</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 二次配布禁止</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず完全無料</p>
+                        </div>
 
-                        <div class="badge-row">
-                            <div class="badge-item badge-bg-white">
-                                <a href="https://www.softpedia.com/get/System/File-Management/ACL-Migration-Checker.shtml" target="_blank" rel="noopener">
-                                    <img src="https://www.softpedia.com/_img/softpedia_100_clean.webp" alt="100% CLEAN Softpedia">
-                                </a>
+                        <!-- 信頼の外部評価・掲載実績 -->
+                        <div class="border-top border-secondary pt-4 text-center">
+                            <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                            <div class="badge-row">
+                                <div class="badge-item badge-bg-white">
+                                    <a href="https://www.softpedia.com/get/System/File-Management/ACL-Migration-Checker.shtml" target="_blank" rel="noopener">
+                                        <img src="https://www.softpedia.com/_img/softpedia_100_clean.webp" alt="100% CLEAN Softpedia">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://alternativeto.net/software/acl-migration-checker/about/" target="_blank" rel="noopener">
+                                        <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://www.vector.co.jp/soft/winnt/util/se524483.html" target="_blank" rel="noopener">
+                                        <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://forest.watch.impress.co.jp/docs/digest/2141531.html" target="_blank" rel="noopener">
+                                        <img src="/img/goforest.gif" alt="窓の杜">
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="badge-item">
-                                <a href="https://alternativeto.net/software/acl-migration-checker/about/" target="_blank" rel="noopener">
-                                    <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://www.vector.co.jp/soft/winnt/util/se524483.html" target="_blank" rel="noopener">
-                                    <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://forest.watch.impress.co.jp/docs/digest/2141531.html" target="_blank" rel="noopener">
-                                    <img src="/img/goforest.gif" alt="madonomori">
-                                </a>
-                            </div>
-
                         </div>
                     </div>
-                </div>
 
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
-                    <table class="table table-sm table-dark spec-table mb-0">
-                        <tbody>
-                            <tr><th>OS</th><td>Windows 10 / 11</td></tr>
-                            <tr><th>Server</th><td>Windows Server 2016+</td></tr>
-                            <tr><th>Runtime</th><td>不要（ポータブル）</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="text-center mt-4">
-                    <div class="mb-2">
-                        <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
-                        <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                    <!-- 動作環境スペックカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 10 / 11</td></tr>
+                                <tr><th>Server</th><td>Windows Server 2016+</td></tr>
+                                <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> インストール不要。実行ファイル単体で動作します。
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-dark border-secondary">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 text-center">
-                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                    <!-- フッター法的リンク -->
+                    <div class="text-center mb-4">
+                        <div class="mb-2">
+                            <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
+                            <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                        </div>
+                        <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
+                    </div>
+
                 </div>
             </div>
         </div>

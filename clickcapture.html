@@ -475,7 +475,7 @@
                         <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="buy-button">
                             <i class="bi bi-download me-1"></i> 無料でダウンロードする
                         </a>
-                        <a href="#pro-plans" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center">
+                        <a href="#pro-plans" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-2">
                             <i class="bi bi-briefcase me-2"></i> Pro版について詳しく見る
                         </a>
                     </div>
@@ -527,14 +527,13 @@
                         <!-- 過去の更新履歴 (アコーディオンで展開) -->
                         <div class="accordion accordion-flush mt-3" id="olderChangelogAccordion">
                             <div class="accordion-item bg-transparent border-0">
-                                <div class="accordion-header" id="olderChangelogHeader">
-                                    <button class="accordion-button collapsed changelog-accordion-btn py-2 px-3 rounded small" type="button" data-bs-toggle="collapse" data-bs-target="#olderChangelogCollapse" aria-expanded="false" aria-controls="olderChangelogCollapse">
-                                        <span class="show-text"><i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴を表示する</span>
-                                        <span class="hide-text"><i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴を閉じる</span>
+                                <div class="accordion-header" id="olderChangelogHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#olderChangelogCollapse" aria-expanded="false" aria-controls="olderChangelogCollapse">
+                                        <i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴
                                     </button>
                                 </div>
-                                <div id="olderChangelogCollapse" class="accordion-collapse collapse" aria-labelledby="olderChangelogHeader" data-bs-parent="#olderChangelogAccordion">
-                                    <div class="accordion-body px-0 pt-3 pb-0">
+                                <div id="olderChangelogCollapse" class="accordion-collapse collapse" aria-labelledby="olderChangelogHeading" data-bs-parent="#olderChangelogAccordion">
+                                    <div class="accordion-body">
                                         <ul class="changelog-list mb-0">
                                             <li class="changelog-item">
                                                 <span class="badge bg-secondary me-2">v26.6.7.2</span> <span class="text-white-50 small">2026.06.07</span>
@@ -685,34 +684,6 @@
                         </div>
                         <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 拡大スクリーンショットモーダル (ギャラリー機能付き) -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-dark border-secondary">
-                <div class="modal-header border-bottom border-secondary py-2 px-3">
-                    <div class="d-flex align-items-center">
-                        <span id="galleryTitle" class="fw-bold text-white me-2">メインウィンドウ</span>
-                        <span id="galleryCounter" class="badge bg-secondary">1 / 6</span>
-                    </div>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 position-relative text-center bg-black d-flex align-items-center justify-content-center" style="min-height: 350px;">
-                    <button type="button" class="gallery-nav-btn prev-btn" onclick="galleryNav(-1)" aria-label="前の画像">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <img src="" id="modalImage" class="img-fluid" alt="スクリーンショット" style="max-height: 75vh; object-fit: contain;">
-                    <button type="button" class="gallery-nav-btn next-btn" onclick="galleryNav(1)" aria-label="次の画像">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                </div>
-                <div class="modal-footer border-top border-secondary py-2 px-3 justify-content-between">
-                    <p id="galleryDesc" class="small text-white-50 mb-0">キャプチャの実行とキャプチャ対象エリアの選択が行えます。</p>
-                    <span class="small text-white-50 d-none d-md-inline"><i class="bi bi-keyboard me-1"></i>キーボードの ← → キーでも移動できます</span>
                 </div>
             </div>
         </div>

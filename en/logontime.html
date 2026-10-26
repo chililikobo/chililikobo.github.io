@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -53,12 +53,27 @@
                 <h1 class="display-4 fw-bold mb-0">Logon<span class="text-accent">Time</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-5">Instantly analyze event logs. An ultra-fast command-line tool to automatically calculate PC usage duration.</p>
+            <p class="lead text-white-50 mb-3">Instantly analyze event logs. An ultra-fast command-line tool to automatically calculate PC active duration.</p>
+
+            <!-- Feature Pills -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 / Server</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-lightning-charge text-accent me-1"></i>.NET 10 Native AOT (Ultra-Fast)</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>Portable & No Registry Footprint</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-check2-all text-success me-1"></i>100% Free (Personal & Commercial)</span>
+            </div>
+
             <div class="d-inline-block">
-                <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="buy-button">
-                    <i class="bi bi-github me-1"></i> Download on GitHub
+                <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="buy-button mb-2">
+                    <i class="bi bi-github me-1"></i> Download Free on GitHub
                 </a>
-                <p class="small text-white-50 mt-3">*No installation required. Runs as a standalone app.</p>
+                <p class="small text-white-50 mt-1 mb-2">*No installation required. Runs as a standalone app.</p>
+                <a href="#how-to-use" class="d-inline-block text-accent small text-decoration-none">
+                    <i class="bi bi-terminal me-1"></i>Command Arguments & Usage Guide ↓
+                </a>
             </div>
         </div>
     </header>
@@ -66,192 +81,302 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <section class="mb-5">
-                    <div class="card-custom border-accent bg-accent-soft">
-                        <h2 class="h5 fw-bold text-accent mb-3">
-                            <i class="bi bi-rocket-takeoff-fill me-2"></i>No additional runtimes needed
-                        </h2>
-                        <p class="small mb-0">
-                            LogonTime is built with <strong>.NET 10 Native AOT</strong> technology.
-                            <br><br>
-                            It requires no .NET runtime installation and does not write to the Windows Registry. Operating as a single standalone executable file (.exe), it launches ultra-fast with minimal system footprint.
-                        </p>
-                    </div>
-                </section>
 
+                <!-- 1. Product Description -->
                 <section class="mb-5">
                     <h2 class="section-title">Product Overview</h2>
-                    <p class="lead fw-bold text-accent">"Turn hidden logs into reliable evidence."</p>
-                    <p>LogonTime is an ultra-fast, lightweight command-line tool that analyzes Windows "System" event logs to extract user logon/logoff times and automatically calculate total active duration.</p>
-                    <p>It can be efficiently utilized to assist with your daily timecard data entry or serve as solid evidence (audit trails) of your working hours during remote work.</p>
 
-                    <div class="card-custom py-4 mt-4">
-                        <h3 class="h5 fw-bold mb-3 text-center">Key Features</h3>
-                        <ul class="mb-0">
-                            <li><strong>Custom Time Period:</strong> Specify how many days of logs to retrieve via arguments (default: 30 days).</li>
-                            <li><strong>Multi-format Output:</strong> Supports <code>--csv</code> and <code>--json</code> outputs for seamless script and tool integration alongside standard console output.</li>
-                            <li><strong>Multilingual Support (i18n):</strong> Automatically detects OS language settings to display messages optimized for English or Japanese environments.</li>
-                            <li><strong>Smart Behavior:</strong> Waits for user input when launched via double-click to prevent the window from closing immediately, while exiting instantly when run from a terminal.</li>
-                        </ul>
+                    <p class="lead fw-bold text-accent mb-3">"Turn hidden logs into reliable evidence."</p>
+                    <p class="text-white-75 mb-4">LogonTime is an ultra-fast, lightweight command-line tool that parses Windows "System" event logs to extract user logon/logoff times and automatically calculate total active duration. It serves as an accurate, objective record for daily timesheet verification or remote work audit trails.</p>
+
+                    <!-- Feature Grid -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-calendar-range text-accent me-2"></i>Flexible Time Range</h3>
+                            <p class="small text-white-75 mb-0">Specify how many days of logs to inspect using command arguments (defaults to the past 30 days).</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-code text-accent me-2"></i>CSV & JSON Export</h3>
+                            <p class="small text-white-75 mb-0">Beyond standard color-coded console output, easily export data via <code>--csv</code> or <code>--json</code> for script automation.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-translate text-accent me-2"></i>Multilingual Support (i18n)</h3>
+                            <p class="small text-white-75 mb-0">Automatically switches output messages between English and Japanese according to your system locale.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning text-accent me-2"></i>.NET 10 Native AOT</h3>
+                            <p class="small text-white-75 mb-0">Zero .NET runtime installation required. Operating as a single standalone executable with near-instant execution.</p>
+                        </div>
                     </div>
                 </section>
 
+                <!-- 2. Analyzed Metrics -->
+                <section class="mb-5">
+                    <h2 class="section-title">Analyzed Metrics & Capabilities</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-box-arrow-in-right text-accent me-2"></i>Logon Start Times</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-box-arrow-right text-accent me-2"></i>Logoff / Shutdown Times</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-clock-history text-accent me-2"></i>Active Session Duration</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person text-accent me-2"></i>Logged-in Username</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-calendar3 text-accent me-2"></i>Daily Log Aggregation</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-file-earmark-spreadsheet text-accent me-2"></i>CSV / JSON Data Output</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Primary Use Cases -->
+                <section class="mb-5">
+                    <h2 class="section-title">Primary Use Cases</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>Objective working hours evidence during remote work and telecommuting</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-pencil-square text-accent me-2"></i>Verifying boot and shutdown times when filling monthly timesheets or correcting timecards</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-terminal text-accent me-2"></i>Automating monthly attendance log collection to CSV via PowerShell scheduled tasks</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>Auditing unexpected after-hours or late-night workstation utilization</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Screenshots -->
                 <section class="mb-5">
                     <h2 class="section-title">Screenshots</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>Click any image to enlarge.</p>
+
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/logontime-main-en.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
                                 <img src="/img/logontime-main-en.png" alt="LogonTime Console Output" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-terminal-fill me-1"></i>Execution Result (Standard Output)</h4>
-                                <p class="text-white-50 small mb-0">Logon/logoff actions and calculated durations are color-coded for easy viewing.</p>
+                                <p class="text-white-50 small mb-0">Logon/logoff actions and calculated durations are color-coded for quick review.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/logontime-help-en.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(1)">
                                 <img src="/img/logontime-help-en.png" alt="LogonTime Help Screen" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-question-circle-fill me-1"></i>Help Screen (--help)</h4>
-                                <p class="text-white-50 small mb-0">Displays a list of available arguments and options, including CSV and JSON export preferences right in your terminal.</p>
+                                <p class="text-white-50 small mb-0">Lists all available arguments and options including CSV and JSON export preferences.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="mb-5">
+                <!-- 5. How to Use -->
+                <section class="mb-5" id="how-to-use">
                     <h2 class="section-title">How to Use</h2>
-                    <div class="card-custom">
-                        <div class="row g-4 text-center">
+                    <div class="card-custom text-center">
+                        <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold">Simple Run</h4>
-                                <p class="small mb-0 text-white-50">Just double-click the executable (LogonTime.exe) to display logs from the past 30 days.</p>
+                                <p class="small mb-0 text-white-50">Double-click LogonTime.exe to view the past 30 days of logs (window pauses automatically).</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">Specify Period</h4>
-                                <p class="small mb-0 text-white-50">Pass the number of days as an argument from the terminal, such as <code>LogonTime.exe 14</code>, to change the tracking period.</p>
+                                <h4 class="h6 fw-bold">Custom Period</h4>
+                                <p class="small mb-0 text-white-50">Specify the number of days as a command argument, such as <code>LogonTime.exe 14</code>.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
-                                <h4 class="h6 fw-bold">Export Data</h4>
-                                <p class="small mb-0 text-white-50">Add the <code>--csv</code> or <code>--json</code> options to easily integrate data with external tools or automated scripts.</p>
+                                <h4 class="h6 fw-bold">Data Export</h4>
+                                <p class="small mb-0 text-white-50">Append <code>--csv</code> or <code>--json</code> to redirect outputs into scripts or spreadsheet files.</p>
                             </div>
+                        </div>
+                    </div>
+                    <p class="small text-white-50 text-center mt-3 mb-0">
+                        <i class="bi bi-magic me-1 text-accent"></i> Seamlessly integrates into shell scripts and pipe redirection without hanging.
+                    </p>
+                </section>
+
+                <!-- 6. FAQ -->
+                <section class="mb-5">
+                    <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Are administrator privileges (UAC elevation) required?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    No. In standard Windows client editions, regular standard user permissions can read the System event log entries needed to extract your own logon history.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Can I integrate this with corporate attendance systems?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Yes. Using <code>LogonTime.exe --csv > attendance.csv</code> lets you redirect the output directly to a CSV file for automated parsing in Excel or integration with corporate timekeeping systems.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Is it free for commercial and enterprise use?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Yes, LogonTime is completely free for both commercial and personal use. Feel free to use it across company PCs for telecommuting verification.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 7. Bottom CTA -->
+                <section class="mb-5">
+                    <div class="card-custom text-center p-4 border-accent bg-accent-soft">
+                        <h2 class="h4 fw-bold text-white mb-2">Analyze PC Usage Duration Instantly</h2>
+                        <p class="small text-white-50 mb-4">Single executable, Native AOT ultra-fast speed. Download from GitHub today.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> Download on GitHub
+                            </a>
                         </div>
                     </div>
                 </section>
 
+                <!-- 8. Changelog -->
                 <section class="mb-5">
                     <h2 class="section-title">Changelog</h2>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
+
                             <li class="changelog-item">
                                 <span class="badge bg-accent me-2">v26.6.13.0</span> <span class="text-white-50 small">Jun 13, 2026</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Migrated to .NET 10.0 / Native AOT, implemented CSV/JSON options, and added multilingual (EN/JA) support.</div>
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    Migrated to .NET 10.0 / Native AOT, added CSV/JSON export options, and implemented multilingual (EN/JA) support.
+                                </div>
                             </li>
+
                             <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v24.3.5.0</span> <span class="text-white-50 small">Mar 5, 2024</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Added support for English OS environments.</div>
-                            </li>
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v23.10.31.1</span> <span class="text-white-50 small">Oct 31, 2023</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Fixed a bug that caused an error when the username was unknown.</div>
-                            </li>
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v22.6.12.0</span> <span class="text-white-50 small">Jun 12, 2022</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Slightly optimized for a lighter footprint.</div>
-                            </li>
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v22.5.27.1</span> <span class="text-white-50 small">May 27, 2022</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Initial release.</div>
-                            </li>
+                                            <span class="badge bg-secondary me-2">v24.3.5.0</span> <span class="text-white-50 small">Mar 5, 2024</span>
+                                            <div class="mt-1 ps-1 text-white-75 small">Added support for English OS environments.</div>
+                                        </li>
+
+                                        <li class="changelog-item mt-3">
+                                            <span class="badge bg-secondary me-2">v23.10.31.1</span> <span class="text-white-50 small">Oct 31, 2023</span>
+                                            <div class="mt-1 ps-1 text-white-75 small">Fixed a bug when the username was unidentified.</div>
+                                        </li>
+
+                                        <li class="changelog-item mt-3">
+                                            <span class="badge bg-secondary me-2">v22.6.12.0</span> <span class="text-white-50 small">Jun 12, 2022</span>
+                                            <div class="mt-1 ps-1 text-white-75 small">Optimized binary footprint and processing speed.</div>
+                                        </li>
+
+                                        <li class="changelog-item mt-3">
+                                            <span class="badge bg-secondary me-2">v22.5.27.1</span> <span class="text-white-50 small">May 27, 2022</span>
+                                            <div class="mt-1 ps-1 text-white-75 small">Initial release.</div>
+                                        </li>
+
                         </ul>
+
                     </div>
                 </section>
             </div>
 
+            <!-- Right Column Sidebar -->
             <div class="col-lg-4">
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
-                    <div class="mb-4 p-3 border border-accent rounded text-center">
-                        <p class="small text-white-50 mb-1">Standard Edition</p>
-                        <p class="h3 fw-bold mb-2">FREE</p>
-                        <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">Get it on GitHub</a>
-                    </div>
+                <div class="sticky-sidebar">
 
-                    <div class="small text-white-50 mb-4">
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal & Commercial)</p>
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Redistribution Prohibited</p>
-                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> Commercial Use Allowed</p>
-                    </div>
+                    <!-- Download Card -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                        <div class="mb-4 p-3 border border-accent rounded text-center">
+                            <p class="small text-white-50 mb-1">Standard Edition</p>
+                            <p class="h3 fw-bold mb-2">FREE</p>
+                            <a href="https://github.com/chililikobo/LogonTime/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> Get on GitHub
+                            </a>
+                        </div>
 
-                    <div class="border-top border-secondary pt-4 text-center">
-                        <!-- ★mt-2 を外し pt-4 にして、線の下の余白を少し広げました -->
-                        <p class="small text-white-50 mb-3 badge-title">Trusted & Featured On</p>
+                        <div class="small text-white-50 mb-4">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal & Commercial)</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Redistribution Prohibited</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 100% Free for commercial use</p>
+                        </div>
 
-                        <div class="badge-row">
-                            <div class="badge-item badge-bg-white">
-                                <a href="https://www.softpedia.com/get/System/System-Info/LogonTime.shtml" target="_blank" rel="noopener">
-                                    <img src="https://www.softpedia.com/_img/softpedia_100_free.webp" alt="100% FREE Softpedia">
-                                </a>
+                        <!-- External Badges -->
+                        <div class="border-top border-secondary pt-4 text-center">
+                            <p class="small text-white-50 mb-3 badge-title">Trusted & Featured On</p>
+                            <div class="badge-row">
+                                <div class="badge-item badge-bg-white">
+                                    <a href="https://www.softpedia.com/get/System/System-Info/LogonTime.shtml" target="_blank" rel="noopener">
+                                        <img src="https://www.softpedia.com/_img/softpedia_100_free.webp" alt="100% FREE Softpedia">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://alternativeto.net/software/logontime/about/" target="_blank" rel="noopener">
+                                        <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://www.vector.co.jp/soft/winnt/util/se524450.html" target="_blank" rel="noopener">
+                                        <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://forest.watch.impress.co.jp/docs/digest/2117287.html" target="_blank" rel="noopener">
+                                        <img src="/img/goforest.gif" alt="MadonoMori">
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="badge-item">
-                                <a href="https://alternativeto.net/software/logontime/about/" target="_blank" rel="noopener">
-                                    <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://www.vector.co.jp/soft/winnt/util/se524450.html" target="_blank" rel="noopener">
-                                    <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://forest.watch.impress.co.jp/docs/digest/2117287.html" target="_blank" rel="noopener">
-                                    <img src="/img/goforest.gif" alt="madonomori">
-                                </a>
-                            </div>
-
                         </div>
                     </div>
-                </div>
 
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-4 text-accent">System Requirements</h3>
-                    <table class="table table-sm table-dark spec-table mb-0">
-                        <tbody>
-                            <tr><th>OS</th><td>Windows 10 (1607+) / 11</td></tr>
-                            <tr><th>Server</th><td>Windows Server 2012+</td></tr>
-                            <tr><th>Arch</th><td>64-bit (x64)</td></tr>
-                            <tr><th>Runtime</th><td>None (.NET 10 Native AOT)</td></tr>
-                            <tr><th>Format</th><td>Single Executable</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="text-center mt-4">
-                    <div class="mb-2">
-                        <a href="terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">Terms of Service</a>
-                        <a href="terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">Privacy Policy</a>
+                    <!-- System Requirements -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-4 text-accent">Requirements</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 10 (1607+) / 11</td></tr>
+                                <tr><th>Server</th><td>Windows Server 2012+</td></tr>
+                                <tr><th>Arch</th><td>64-bit (x64)</td></tr>
+                                <tr><th>Runtime</th><td>None (.NET 10 Native AOT)</td></tr>
+                                <tr><th>Format</th><td>Single Executable (.exe)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> Truly portable. Runs directly from USB drives without installation.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-dark border-secondary">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 text-center">
-                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                    <!-- Legal Links -->
+                    <div class="text-center mb-4">
+                        <div class="mb-2">
+                            <a href="/en/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">Terms of Service</a>
+                            <a href="/en/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">Privacy Policy</a>
+                        </div>
+                        <a href="/en/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">Commercial Disclosure</a>
+                    </div>
+
                 </div>
             </div>
         </div>

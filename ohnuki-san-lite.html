@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohnuki-san Lite | chilili kobo - Simple PC System Info</title>
-    <meta name="description" content="PCの基本情報をクイックに確認。Ohnuki-san Liteは、インストール不要で使える完全無料のシステム情報表示ツールです。">
+    <meta name="description" content="PCの基本情報をクイックに確認。Ohnuki-san Liteは、インストール不要で使える完全無料・オープンなシステム情報表示ツールです。">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="chilili kobo">
@@ -53,12 +53,27 @@
                 <h1 class="display-4 fw-bold mb-0">Ohnuki-san <span class="text-accent">Lite</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-5">PCの「今」を素早くチェック。シンプルさを追求したフリー版ユーティリティ。</p>
+            <p class="lead text-white-50 mb-3">PCの「今」を素早くチェック。シンプルさを追求したフリー版ユーティリティ。</p>
+
+            <!-- 信頼性・特徴ハイライト -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 対応</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>完全ポータブル・レジストリ不使用</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-check2-all text-success me-1"></i>商用・個人問わず完全無料</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-award text-warning me-1"></i>窓の杜 / Vector / Softpedia 掲載</span>
+            </div>
+
             <div class="d-inline-block">
-                <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="buy-button">
+                <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="buy-button mb-2">
                     <i class="bi bi-github me-1"></i> 無料ダウンロード（GitHub）
                 </a>
-                <p class="small text-white-50 mt-3">※個人・法人問わず無料でご利用いただけます</p>
+                <p class="small text-white-50 mt-1 mb-2">※登録不要・広告なし・完全無料でお使いいただけます</p>
+                <a href="/ohnuki-san-plus.html" class="d-inline-block text-accent small text-decoration-none">
+                    <i class="bi bi-arrow-up-right-circle me-1"></i>より高度な機能が必要な方は「Plus版」を見る →
+                </a>
             </div>
         </div>
     </header>
@@ -66,40 +81,67 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
+
+                <!-- 1. 製品説明 -->
                 <section class="mb-5">
                     <h2 class="section-title">製品説明</h2>
-                    <p class="lead fw-bold text-accent">「必要な情報を、必要な時に、最速で。」</p>
-                    <p>Ohnuki-san Liteは、上位版「Plus」の使い勝手はそのままに、日常的なPC管理に不可欠な基本情報の表示に特化したフリーソフトウェアです。</p>
 
-                    <div class="row mt-4">
+                    <p class="lead fw-bold text-accent mb-3">「必要な情報を、必要な時に、最速で。」</p>
+                    <p class="text-white-75 mb-4">Ohnuki-san Lite（オオヌキサン・ライト）は、上位版「Ohnuki-san Plus」の軽快な使い勝手を受け継ぎ、日常的なPC確認やスペック調査に不可欠な基本情報の表示に特化した完全無料のWindowsユーティリティです。面倒なインストールや設定は一切なく、USBメモリ等に入れて持ち運ぶだけで、どのPCでも即座に詳細スペックやシリアル番号を正確に確認・HTML出力できます。</p>
+
+                    <!-- 特徴 4選グリッド -->
+                    <div class="row g-4">
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning text-accent me-2"></i>インストール不要</h3>
-                            <p class="small text-white-50">レジストリを汚さず、実行ファイル一つで動作。USBメモリに入れて持ち運ぶことも可能です。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning text-accent me-2"></i>完全インストール不要</h3>
+                            <p class="small text-white-75 mb-0">レジストリを変更せず、実行ファイル単体で動作。USBメモリから直接起動でき、現場でのPCキッティングや点検にも最適です。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-display text-accent me-2"></i>直感的なUI</h3>
-                            <p class="small text-white-50">難しい設定は一切なし。起動した瞬間にスペックやシリアル番号を一画面に表示します。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-display text-accent me-2"></i>直感的な即応UI</h3>
+                            <p class="small text-white-75 mb-0">起動するだけで自動的にスペックや各種識別番号をスキャンし、整理されたHTMLレポートをブラウザ上に素早く展開します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-code text-accent me-2"></i>Markdown / HTML出力</h3>
+                            <p class="small text-white-75 mb-0">ブラウザでの閲覧に加え、社内Wikiやチケット管理に貼り付けやすいMarkdown形式でのエクスポートにも対応しています。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-shield-check text-accent me-2"></i>商用・法人でも完全無料</h3>
+                            <p class="small text-white-75 mb-0">個人利用はもちろん、企業・官公庁でのIT資産調査やドメイン環境でも制限なく無料でご利用いただけます。</p>
                         </div>
                     </div>
                 </section>
 
+                <!-- 2. 主な表示項目 -->
                 <section class="mb-5">
                     <h2 class="section-title">主な表示項目</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-6 col-md-4"><i class="bi bi-cpu me-2"></i>CPU / メモリ</div>
-                            <div class="col-6 col-md-4"><i class="bi bi-windows me-2"></i>OSバージョン</div>
-                            <div class="col-6 col-md-4"><i class="bi bi-hash me-2"></i>BIOSシリアル</div>
-                            <div class="col-6 col-md-4"><i class="bi bi-hdd-network me-2"></i>IP / MACアドレス</div>
-                            <div class="col-6 col-md-4"><i class="bi bi-device-ssd me-2"></i>ストレージ構成</div>
-                            <div class="col-6 col-md-4"><i class="bi bi-info-circle me-2"></i>モデル名・メーカー</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-cpu text-accent me-2"></i>CPU型番・コア数</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-memory text-accent me-2"></i>実装メモリ容量</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-windows text-accent me-2"></i>OSバージョン・ビルド</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-hash text-accent me-2"></i>BIOSシリアル番号</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-hdd-network text-accent me-2"></i>IP・MACアドレス</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-device-ssd text-accent me-2"></i>ドライブ・ストレージ容量</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-info-circle text-accent me-2"></i>PCメーカー・型番</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-box-seam text-accent me-2"></i>インストールソフト一覧</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-patch-check text-accent me-2"></i>KB更新履歴・Defender</div>
                         </div>
                     </div>
-                    <p class="small text-white-50 mt-3">
-                        <i class="bi bi-arrow-right-circle me-1 text-accent"></i> より詳細なレポート出力や資産管理が必要な場合は <a href="/ohnuki-san-plus.html" class="text-accent text-decoration-none">Ohnuki-san Plus</a> をご検討ください。
-                    </p>
                 </section>
 
+                <!-- 3. 主なユースケース -->
+                <section class="mb-5">
+                    <h2 class="section-title">主なユースケース</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>中古PC購入時や譲渡時のスペック・シリアル番号確認</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-usb-symbol text-accent me-2"></i>USBメモリから即起動して複数PCの基本台帳を作成</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-headset text-accent me-2"></i>ヘルプデスク対応時のユーザーPC環境（OS/IP/ソフト）情報収集</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>Windows Defender稼働状態や最新Update適用の確認</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Plus版との機能比較 -->
                 <section class="mb-5">
                     <h2 class="section-title">Plus版との機能比較</h2>
                     <div class="table-responsive">
@@ -113,7 +155,7 @@
                             </thead>
                             <tbody>
                                 <tr class="table-active text-white fw-bold">
-                                    <td colspan="3" class="text-start">基本診断</td>
+                                    <td colspan="3" class="text-start">基本診断・レポート</td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">PC・OSの基本スペック<br><small class="text-white-50">(CPU・メモリ・OSビルド等)</small></td>
@@ -126,18 +168,18 @@
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">Windows Update 更新履歴</td>
+                                    <td class="text-start">Windows Update 更新履歴・Defender</td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">HTMLレポート出力機能</td>
+                                    <td class="text-start">HTML / Markdown レポート自動出力</td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
 
                                 <tr class="table-active text-white fw-bold">
-                                    <td colspan="3" class="text-start">ネットワーク・インフラ</td>
+                                    <td colspan="3" class="text-start">ネットワーク・インフラ深層情報</td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">基本IP構成<br><small class="text-white-50">(IPアドレス・DNS設定等)</small></td>
@@ -145,7 +187,7 @@
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">企業内プロキシ設定の抽出</td>
+                                    <td class="text-start">企業内プロキシ設定の自動抽出</td>
                                     <td><i class="bi bi-x-lg text-white-50"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
@@ -155,21 +197,21 @@
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">Active Directory構造の解析</td>
+                                    <td class="text-start">Active Directory構造・ドメイン参加解析</td>
                                     <td><i class="bi bi-x-lg text-white-50"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
 
                                 <tr class="table-active text-white fw-bold">
-                                    <td colspan="3" class="text-start">詳細調査・サーバー管理</td>
+                                    <td colspan="3" class="text-start">詳細調査・サーバー管理・デバイス</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">Windows サービス一覧<br><small class="text-white-50">(稼働状況・実行パス等)</small></td>
+                                    <td class="text-start">Windows サービス一覧<br><small class="text-white-50">(稼働状況・実行パス・スタートアップ)</small></td>
                                     <td><i class="bi bi-x-lg text-white-50"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">周辺機器・デバイス詳細診断<br><small class="text-white-50">(PnP全デバイスの列挙)</small></td>
+                                    <td class="text-start">周辺機器・デバイス詳細診断<br><small class="text-white-50">(PnP全デバイスの列挙・ハードウェアID)</small></td>
                                     <td><i class="bi bi-x-lg text-white-50"></i></td>
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
@@ -180,45 +222,52 @@
                                 </tr>
 
                                 <tr class="table-active text-white fw-bold">
-                                    <td colspan="3" class="text-start">利用条件・ライセンス</td>
+                                    <td colspan="3" class="text-start">利用条件・ライセンス形態</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-start">業務利用・法人導入<br><small class="text-white-50">(ドメイン環境含む)</small></td>
-                                    <td>可能</td>
-                                    <td>推奨</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-start">ライセンス認証</td>
-                                    <td>不要</td>
-                                    <td>必要</td>
+                                    <td class="text-start">オフライン・スレーブモード運用</td>
+                                    <td><i class="bi bi-x-lg text-white-50"></i></td>
+                                    <td><span class="text-success fw-bold">利用可能（最長30日）</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">価格</td>
-                                    <td>無料</td>
-                                    <td>月額 500円〜</td>
+                                    <td><span class="text-success fw-bold">完全無料</span></td>
+                                    <td>月額 500円〜（年額 5,000円）</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="text-end mt-2">
+                        <a href="/ohnuki-san-plus.html" class="text-accent small text-decoration-none fw-bold">
+                            <i class="bi bi-arrow-right-circle me-1"></i>Ohnuki-san Plus の詳細・無料体験はこちら →
+                        </a>
+                    </div>
                 </section>
 
+                <!-- 5. スクリーンショット -->
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます。</p>
 
                     <div class="row g-4">
-
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/ohnukisanlite-main.png')">
-                                <img src="/img/ohnukisanlite-main.png" alt="レポート結果" class="screenshot-img">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
+                                <img src="/img/ohnukisanlite-main.png" alt="レポート結果画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-browser-chrome me-1"></i>ブラウザでのレポート表示</h4>
-                                <p class="text-white-50 small mb-0">自動的にブラウザで詳細なレポートが立ち上がります。</p>
+                                <p class="text-white-50 small mb-0">診断完了後、自動的にブラウザで詳細なスペック一覧レポートが立ち上がります。</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
+                <!-- 6. 使用方法 -->
                 <section class="mb-5">
                     <h2 class="section-title">使用方法</h2>
                     <div class="card-custom text-center">
@@ -226,25 +275,89 @@
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold">解凍・実行</h4>
-                                <p class="small mb-0 text-white-50">ファイルを解凍し、実行ファイルを起動します。</p>
+                                <p class="small mb-0 text-white-50">ダウンロードしたZIPを解凍し、実行ファイルを起動します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold">自動スキャン</h4>
-                                <p class="small mb-0 text-white-50">起動と同時にPC内部の深層情報を一括取得します。</p>
+                                <p class="small mb-0 text-white-50">起動と同時にPCのスペックや各種情報を瞬時に一括取得します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold">レポート表示</h4>
-                                <p class="small mb-0 text-white-50">完了後、レポートが自動生成されブラウザが起動します。</p>
+                                <p class="small mb-0 text-white-50">完了後、レポートが自動生成されデフォルトブラウザで確認できます。</p>
                             </div>
                         </div>
                     </div>
-                    <p class="small text-white-50 text-center">
+                    <p class="small text-white-50 text-center mt-3 mb-0">
                         <i class="bi bi-magic me-1 text-accent"></i> 面倒な操作は一切不要。実行からレポート確認までがシームレスに完結します。
                     </p>
                 </section>
 
+                <!-- 7. よくある質問 (FAQ) -->
+                <section class="mb-5">
+                    <h2 class="section-title">よくある質問 (FAQ)</h2>
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>商用利用や会社PCでの利用は無料ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、個人利用・法人利用を問わず完全無料でご利用いただけます。商用環境でのIT資産管理やキッティング点検などでも自由にご活用いただけます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>レジストリやシステムに変更は加わりますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    いいえ、レジストリの書き込みや常駐プロセスの登録は一切行いません。不要になった際はフォルダごと削除するだけで完全にアンインストールされます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Ohnuki-san Plus との違いは何ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Lite版は日常的な基本スペック確認に特化しています。Plus版ではさらに、企業内プロキシ設定、静的ルーティング、Active Directory詳細、稼働中サービス一覧、全PnPデバイス詳細、オフライン環境で30日間利用できる「スレーブモード」に対応しています。
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 8. ボトムCTAカード -->
+                <section class="mb-5">
+                    <div class="card-custom text-center p-4 border-accent bg-accent-soft">
+                        <h2 class="h4 fw-bold text-white mb-2">手軽にPCシステム情報をチェック</h2>
+                        <p class="small text-white-50 mb-4">インストール不要・完全無料。GitHubから今すぐダウンロードしてご利用いただけます。</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> 無料ダウンロード（GitHub）
+                            </a>
+                            <a href="/ohnuki-san-plus.html" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-2">
+                                <i class="bi bi-lightning-charge me-2"></i> Ohnuki-san Plus を見る
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 9. 更新履歴 -->
                 <section class="mb-5">
                     <h2 class="section-title">更新履歴</h2>
                     <div class="card-custom">
@@ -252,121 +365,144 @@
 
                             <li class="changelog-item">
                                 <span class="badge bg-accent me-2">v26.7.11.0</span> <span class="text-white-50 small">2026.07.11</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
-                                    Wi-Fi取得処理の安定化
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    Wi-Fi取得処理の安定化と例外ハンドリングの強化を行いました。
                                 </div>
                             </li>
 
                             <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.7.4.0</span> <span class="text-white-50 small">2026.07.04</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
-                                    データ取得エラーの詳細をレポート内に記録するように変更しました。
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    データ取得エラーの詳細をレポート内に詳細ログとして記録するように仕様変更しました。
                                 </div>
                             </li>
 
                             <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.6.21.0</span> <span class="text-white-50 small">2026.06.21</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
-                                    ドメイン環境での利用制限を解除しました。<br />
-                                    Markdown形式でのエクスポート機能を追加しました。<br />
-                                    Wi-Fi情報の収集処理をネイティブAPIベースに移行し、堅牢性を向上させました。<br />
-                                    その他、軽微なバグ修正および安定性の向上。
-                                </div>
-                            </li>
+                                            <span class="badge bg-secondary me-2">v26.6.21.0</span> <span class="text-white-50 small">2026.06.21</span>
+                                            <div class="mt-1 ps-1 text-white-50 small">
+                                                ドメイン環境での利用制限を解除しました。<br>
+                                                Markdown形式でのエクスポート機能を追加しました。<br>
+                                                Wi-Fi情報の収集処理をネイティブAPIベースに移行し、堅牢性を向上させました。<br>
+                                                その他、軽微なバグ修正および安定性の向上。
+                                            </div>
+                                        </li>
+
                             <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Windows Defender のステータス取得機能を追加。軽微なバグの修正。</div>
-                            </li>
+                                            <span class="badge bg-secondary me-2">v26.4.25.0</span> <span class="text-white-50 small">2026.04.25</span>
+                                            <div class="mt-1 ps-1 text-white-50 small">
+                                                Windows Defender のステータス取得機能を追加。軽微なバグの修正。
+                                            </div>
+                                        </li>
+
                             <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.4.23.0</span> <span class="text-white-50 small">2026.04.23</span>
-                                <div class="mt-1 ps-1 text-white-50 small">オフラインモード判定の実装</div>
-                                <div class="mt-1 ps-1 text-white-50 small">Entra ID (ドメイン) 参加状態の確認機能を追加</div>
-                            </li>
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.4.21.0</span> <span class="text-white-50 small">2026.04.21</span>
-                                <div class="mt-1 ps-1 text-white-50 small">Ohnuki-san Lite リリース。</div>
-                            </li>
+                                            <span class="badge bg-secondary me-2">v26.4.23.0</span> <span class="text-white-50 small">2026.04.23</span>
+                                            <div class="mt-1 ps-1 text-white-50 small">
+                                                オフラインモード判定の実装。<br>
+                                                Entra ID（ドメイン）参加状態の確認機能を追加。
+                                            </div>
+                                        </li>
                         </ul>
+
+                        <!-- 過去の更新履歴 (アコーディオンで展開) -->
+                        <div class="accordion accordion-flush mt-3" id="olderChangelogAccordion">
+                            <div class="accordion-item bg-transparent border-0">
+                                <div class="accordion-header" id="olderChangelogHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#olderChangelogCollapse" aria-expanded="false" aria-controls="olderChangelogCollapse">
+                                        <i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴
+                                    </button>
+                                </div>
+                                <div id="olderChangelogCollapse" class="accordion-collapse collapse" aria-labelledby="olderChangelogHeading" data-bs-parent="#olderChangelogAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="changelog-list mb-0">
+
+                                            <li class="changelog-item">
+                                            <span class="badge bg-secondary me-2">v26.4.21.0</span> <span class="text-white-50 small">2026.04.21</span>
+                                            <div class="mt-1 ps-1 text-white-50 small">
+                                                Ohnuki-san Lite 初版リリース。
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </div>
 
+            <!-- 右カラム：サイドバー -->
             <div class="col-lg-4">
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
-                    <div class="mb-4 p-3 border border-accent rounded text-center">
-                        <p class="small text-white-50 mb-1">Lite Edition</p>
-                        <p class="h3 fw-bold mb-2">FREE</p>
-                        <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="btn btn-danger w-100 fw-bold">GitHub で取得</a>
-                    </div>
-                    <div class="small text-white-50 mb-4">
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> ユーザー登録不要</p>
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 広告表示なし</p>
-                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず利用可能</p>
-                    </div>
+                <div class="sticky-sidebar">
 
-                    <div class="border-top border-secondary pt-4 text-center">
-                        <!-- ★mt-2 を外し pt-4 にして、線の下の余白を少し広げました -->
-                        <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                    <!-- ダウンロードカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">Download</h3>
+                        <div class="mb-4 p-3 border border-accent rounded text-center">
+                            <p class="small text-white-50 mb-1">Lite Edition</p>
+                            <p class="h3 fw-bold mb-2">FREE</p>
+                            <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-github me-1"></i> GitHub で取得
+                            </a>
+                        </div>
+                        <div class="small text-white-50 mb-4">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> ユーザー登録不要</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 広告表示なし</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用・非商用問わず完全無料</p>
+                        </div>
 
-                        <div class="badge-row">
-                            <div class="badge-item badge-bg-white">
-                                <a href="https://www.softpedia.com/get/System/Ohnuki-san-Lite.shtml" target="_blank" rel="noopener">
-                                    <img src="https://www.softpedia.com/_img/softpedia_100_free.webp" alt="100% FREE Softpedia">
-                                </a>
+                        <!-- 信頼の外部評価・掲載実績 -->
+                        <div class="border-top border-secondary pt-4 text-center">
+                            <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                            <div class="badge-row">
+                                <div class="badge-item badge-bg-white">
+                                    <a href="https://www.softpedia.com/get/System/Ohnuki-san-Lite.shtml" target="_blank" rel="noopener">
+                                        <img src="https://www.softpedia.com/_img/softpedia_100_free.webp" alt="100% FREE Softpedia">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://alternativeto.net/software/ohnuki-san-lite/about/" target="_blank" rel="noopener">
+                                        <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://www.vector.co.jp/soft/winnt/util/se528836.html" target="_blank" rel="noopener">
+                                        <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
+                                    </a>
+                                </div>
+                                <div class="badge-item">
+                                    <a href="https://forest.watch.impress.co.jp/docs/digest/2107297.html" target="_blank" rel="noopener">
+                                        <img src="/img/goforest.gif" alt="窓の杜">
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="badge-item">
-                                <a href="https://alternativeto.net/software/ohnuki-san-lite/about/" target="_blank" rel="noopener">
-                                    <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://www.vector.co.jp/soft/winnt/util/se528836.html" target="_blank" rel="noopener">
-                                    <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://forest.watch.impress.co.jp/docs/digest/2107297.html" target="_blank" rel="noopener">
-                                    <img src="/img/goforest.gif" alt="madonomori">
-                                </a>
-                            </div>
-
                         </div>
                     </div>
-                </div>
 
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
-                    <table class="table table-sm table-dark spec-table mb-0">
-                        <tbody>
-                            <tr><th>OS</th><td>Windows 10 / 11</td></tr>
-                            <tr><th>Arch</th><td>64bit (x64)</td></tr>
-                            <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="text-center mt-4">
-                    <div class="mb-2">
-                        <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
-                        <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                    <!-- 動作環境スペックカード -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 10 / 11</td></tr>
+                                <tr><th>Arch</th><td>64bit (x64)</td></tr>
+                                <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> インストール不要。実行ファイル単体で動作します。
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-dark border-secondary">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 text-center">
-                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                    <!-- フッター法的リンク -->
+                    <div class="text-center mb-4">
+                        <div class="mb-2">
+                            <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
+                            <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                        </div>
+                        <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
+                    </div>
+
                 </div>
             </div>
         </div>
