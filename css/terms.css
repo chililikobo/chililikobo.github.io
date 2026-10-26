@@ -82,3 +82,7 @@
         filter: invert(86%) hue-rotate(180deg) brightness(1.2);
     }
 
+/* 制定日・改定日 */
+.terms-date {
+    margin-top: 50px;
+}

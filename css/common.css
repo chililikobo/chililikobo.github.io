@@ -44,6 +44,10 @@ html[lang="en"] body {
     background-color: var(--accent-red) !important;
 }
 
+.bg-accent-soft {
+    background-color: rgba(220, 53, 69, 0.05) !important;
+}
+
 .border-accent {
     border-color: var(--accent-red) !important;
 }
