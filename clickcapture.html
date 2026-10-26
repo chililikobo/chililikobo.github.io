@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -52,13 +52,25 @@
                 <h1 class="display-4 fw-bold mb-0">Click<span class="text-accent">Capture</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-5">インストール不要で使える Windows PSR 代替ツール</p>
+            <p class="lead text-white-50 mb-3">インストール不要で使える Windows PSR（ステップ記録ツール）代替ユーティリティ</p>
+
+            <!-- 信頼性・特徴ハイライト -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 11 対応</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>USBから即実行・レジストリ不使用</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-award text-warning me-1"></i>窓の杜 / Vector / Softpedia 掲載</span>
+            </div>
 
             <div class="d-inline-block">
                 <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="buy-button mb-2">
                     <i class="bi bi-download me-1"></i> 無料でダウンロードする
                 </a>
-                <p class="small text-white-50 mt-2">※Free Editionとして制限なしでご利用いただけます（個人利用の場合）</p>
+                <p class="small text-white-50 mt-1 mb-2">※Free Editionとして制限なしで完全無料（個人利用の場合）</p>
+                <a href="#demo" class="d-inline-block text-accent small text-decoration-none">
+                    <i class="bi bi-play-circle-fill me-1"></i>実際の動作デモを見る ↓
+                </a>
             </div>
         </div>
     </header>
@@ -69,48 +81,52 @@
                 <section class="mb-5">
                     <h2 class="section-title">製品説明</h2>
 
-                    <div class="card-custom card-highlight-accent p-4 mb-4">
-                        <h3 class="h5 fw-bold text-white mb-2"><i class="bi bi-robot me-2"></i>AIを活用した2分間のドキュメント作成ワークフロー</h3>
-                        <p class="small text-white-50 mb-3">
-                            スクリーンショットの整理や手動での手順書作成に何時間も費やす必要はありません。ClickCaptureとお好みのAIアシスタントを組み合わせるだけで、ドキュメント作成の全工程を自動化できます：
-                        </p>
-                        <ol class="small text-white mb-0 ps-3">
-                            <li>ClickCaptureを起動し、インストーラーやセットアップ手順をポチポチ操作して進める。</li>
-                            <li>自動保存されたスクリーンショット群をそのまま任意のマルチモーダルAIに投入する。</li>
-                            <li>AIに指示する：<em>「これらの画像をもとに、パラメータ表付きのセットアップ手順書を作成して」</em><br><strong>➔ たった2分足らずで完了！</strong></li>
-                        </ol>
-                    </div>
+                    <p class="lead fw-bold text-accent mb-3">「操作するだけで必要な画像がすべて揃う。」</p>
+                    <p class="text-white-75 mb-4">ClickCapture（クリック・キャプチャ）は、マウスの「左クリック」操作に連動して自動的に画面キャプチャを取得・保存する常駐型ユーティリティです。廃止されたWindows「ステップ記録ツール（PSR）」の代替としてはもちろん、アプリのセットアップ手順やパラメータ記録に最適です。インストール不要の完全ポータブル仕様のため、USBメモリから起動して不特定多数のPCで即座に使用できます。</p>
 
-                    <p class="lead fw-bold text-accent">「操作するだけで必要な画像がすべて揃う。」</p>
-                    <p>ClickCaptureは、マウスの「左クリック」操作に連動して自動的に画面キャプチャを取得・保存する常駐型ユーティリティです。廃止されたWindows「ステップ記録ツール（PSR）」の代替としてはもちろん、アプリのセットアップ手順やパラメータ記録に最適です。インストール不要の完全ポータブル仕様のため、USBメモリから起動して不特定多数のPCで即座に使用できます。</p>
-
-                    <div class="row mt-4 g-4">
+                    <div class="row g-4">
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-mouse text-accent me-2"></i>左クリック連動</h3>
-                            <p class="small text-white-50 mb-0">クリックするたびに、対象のウィンドウまたはフルスクリーンを自動的に画像として保存します。</p>
+                            <p class="small text-white-75 mb-0">クリックするたびに、対象のウィンドウまたはフルスクリーンを自動的に画像として連番保存します。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-bounding-box text-accent me-2"></i>矩形範囲キャプチャ</h3>
-                            <p class="small text-white-50 mb-0"><strong>Ctrl</strong>キーを押しながらドラッグすることで、任意の矩形範囲を切り取ってキャプチャできます。</p>
+                            <p class="small text-white-75 mb-0"><strong>Ctrl</strong>キーを押しながらドラッグすることで、任意の矩形範囲を切り取ってキャプチャできます。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-magic text-accent me-2"></i>重複画像のスキップ</h3>
-                            <p class="small text-white-50 mb-0">画面に変化がない場合は保存をスキップし、不要な画像でフォルダが溢れるのをインテリジェントに防ぎます。</p>
+                            <p class="small text-white-75 mb-0">画面に変化がない場合は保存をスキップし、不要な画像でフォルダが溢れるのをインテリジェントに防ぎます。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-keyboard text-accent me-2"></i>ホットキーによる即座のON/OFF</h3>
-                            <p class="small text-white-50 mb-0">作業中にキャプチャが不要になった場合、ホットキーを押すだけで即座にキャプチャ機能のON/OFFを切り替えられます。<br />（デフォルトは「F9」、「F8」も利用可能です）</p>
+                            <p class="small text-white-75 mb-0">作業中にキャプチャが不要になった場合、ホットキーを押すだけで即座にキャプチャ機能のON/OFFを切り替えられます。<br />（デフォルトは「F9」、「F8」も選択可能です）</p>
                         </div>
                     </div>
 
                     <!-- 動作デモGIF -->
-                    <div class="mt-4">
+                    <div id="demo" class="mt-4 mb-4">
                         <div class="card-custom p-2 text-center shadow">
                             <img src="/img/ClickCapture_ani.gif" alt="ClickCapture 動作デモ" class="img-fluid rounded">
                         </div>
                         <p class="small text-white-50 text-center mt-2 mb-0">
-                            <i class="bi bi-play-circle me-1 text-accent"></i>クリック連動と保存先フォルダへの自動保存の様子
+                            <i class="bi bi-play-circle me-1 text-accent"></i>動作デモ: 左クリック操作に連動して保存先フォルダへ画像が自動蓄積されます
                         </p>
+                    </div>
+
+                    <!-- おすすめ活用法：AIドキュメント生成連携 -->
+                    <div class="card-custom card-highlight-accent p-4 mb-0">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-accent me-2">おすすめ活用法</span>
+                            <h3 class="h5 fw-bold text-white mb-0"><i class="bi bi-robot me-2"></i>AIを活用した2分間のドキュメント作成ワークフロー</h3>
+                        </div>
+                        <p class="small text-white-75 mb-3">
+                            スクリーンショットの整理や手動での手順書作成に何時間も費やす必要はありません。ClickCaptureとお好みのAIアシスタント（ChatGPT, Claude, Gemini等）を組み合わせるだけで、ドキュメント作成の全工程を劇的に自動化できます：
+                        </p>
+                        <ol class="small text-white-75 mb-0 ps-3">
+                            <li class="mb-1">ClickCaptureを起動し、インストーラーやセットアップ手順をポチポチ操作して進める。</li>
+                            <li class="mb-1">自動保存されたスクリーンショット群をそのまま任意のマルチモーダルAIに投入する。</li>
+                            <li>AIに指示する：<em>「これらの画像をもとに、パラメータ表付きのセットアップ手順書を作成して」</em><br><strong class="text-accent">➔ たった2分足らずで完了！</strong></li>
+                        </ol>
                     </div>
 
                 </section>
@@ -119,17 +135,17 @@
                     <h2 class="section-title">主なユースケース</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-12 col-md-6"><i class="bi bi-robot me-2"></i>AIによる手順書の自動生成 <span class="text-nowrap">（スクショをAIへ投入）</span></div>
-                            <div class="col-12 col-md-6"><i class="bi bi-clipboard-data me-2"></i>インストーラ実行時のパラメータ記録</div>
-                            <div class="col-12 col-md-6"><i class="bi bi-book me-2"></i>操作マニュアルや解説ガイドの作成</div>
-                            <div class="col-12 col-md-6"><i class="bi bi-display me-2"></i>Eラーニング・プレゼン資料の画面収集</div>
+                            <div class="col-12 col-md-6"><i class="bi bi-robot text-accent me-2"></i>AIによる手順書の自動生成 <span class="text-nowrap text-white-50">（スクショをAIへ投入）</span></div>
+                            <div class="col-12 col-md-6"><i class="bi bi-clipboard-data text-accent me-2"></i>インストーラ実行時のパラメータ記録</div>
+                            <div class="col-12 col-md-6"><i class="bi bi-book text-accent me-2"></i>操作マニュアルや解説ガイドの作成</div>
+                            <div class="col-12 col-md-6"><i class="bi bi-display text-accent me-2"></i>Eラーニング・プレゼン資料の画面収集</div>
                         </div>
                     </div>
                 </section>
 
                 <section class="mb-5">
                     <h2 class="section-title">エディションと機能比較</h2>
-                    <p>ClickCaptureには「Free Edition」と「Pro Edition」の2つのエディションがあります。両エディション間で機能の差はありません。</p>
+                    <p class="text-white-75">ClickCaptureには「Free Edition」と「Pro Edition」の2つのエディションがあります。両エディション間で機能の差はありません。</p>
                     <div class="table-responsive">
                         <table class="table table-dark table-bordered align-middle text-center small compare-table">
                             <thead class="table-secondary text-dark">
@@ -167,113 +183,159 @@
                                     <td><i class="bi bi-check-circle-fill text-success"></i></td>
                                 </tr>
 
-                                <!-- カテゴリ区切り：背景色をつけて見出しとトーンを合わせる -->
+                                <!-- カテゴリ区切り -->
                                 <tr class="table-active text-white fw-bold">
                                     <td colspan="3" class="text-start">利用条件・ライセンス</td>
                                 </tr>
 
                                 <!-- 条件一覧 -->
                                 <tr>
-                                    <td class="text-start">業務利用・法人導入<br><small class="text-white-50">(ドメイン環境含む)</small></td>
-                                    <td><span class="text-danger fw-bold">制限あり<br>（利用不可）</span></td>
-                                    <td><span class="text-success fw-bold">制限なし<br>（商用可）</span></td>
+                                    <td class="text-start">業務利用・法人導入<br><small class="text-white-50">(ドメイン参加PC等)</small></td>
+                                    <td><span class="text-danger fw-bold">制限あり<br>（個人利用のみ）</span></td>
+                                    <td><span class="text-success fw-bold">制限なし<br>（商用利用可）</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">ライセンス認証</td>
                                     <td>不要</td>
-                                    <td>要認証</td>
+                                    <td>要認証（最大3台）</td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">価格</td>
                                     <td>無料</td>
-                                    <td>月額 500円〜</td>
+                                    <td>月額 500円〜（年額 5,000円）</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </section>
 
-                <section class="mb-5">
-                    <h2 class="section-title">ライセンスと利用端末制限</h2>
-
-                    <div class="limit-alert limit-alert-border small mb-0">
+                    <!-- ライセンスに関する注意事項 -->
+                    <div class="limit-alert limit-alert-border small mt-3 mb-0">
                         <h3 class="h6 fw-bold text-danger mb-2">
-                            <i class="bi bi-exclamation-triangle-fill me-2"></i>ライセンスに関する重要な注意事項
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>ライセンスに関する注意事項
                         </h3>
                         <p class="mb-2 text-white">Pro Editionのライセンスは、<strong>1ライセンスにつき最大3台まで</strong>の端末で使用可能です。</p>
-                        <p class="mb-0 text-white-50 small">※同時に4台以上の端末で同一ライセンスを利用した場合、システムにより検知され、該当の<strong>ライセンスは自動的に無効（ロック）</strong>となりますので十分にご注意ください。複数環境やチームでの大規模な運用の場合は、必要台数分のライセンスをご購入ください。</p>
+                        <p class="mb-2 text-white-50 small">※同時に4台以上の端末で同一ライセンスを利用した場合、システム検知により該当の<strong>ライセンスは自動的に無効（ロック）</strong>となりますのでご注意ください。複数環境やチームで運用の場合は、必要台数分のライセンスをご購入ください。</p>
+                        <div class="p-2 bg-dark rounded border border-secondary mt-2">
+                            <p class="mb-0 text-white-75 small">
+                                <i class="bi bi-shield-check text-success me-1"></i><strong>PC移行時の安心対応：</strong>
+                                PCの買い替えや端末移行時も特別な解除手続きは不要で、そのまま新しいPCでご利用いただけます。万が一認証や端末制限等でお困りの際もお気軽に<a href="/contact.html" class="text-accent text-decoration-none">お問い合わせ</a>ください。
+                            </p>
+                        </div>
                     </div>
 
+                    <!-- モバイル用 クイックアクション (PCでは非表示) -->
+                    <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
+                        <h3 class="h6 fw-bold text-white mb-2"><i class="bi bi-lightning-charge text-accent me-1"></i>ダウンロード・ご購入</h3>
+                        <p class="small text-white-50 mb-3">個人利用なら完全無料。商用利用は初月無料でお試しいただけます。</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="buy-button">
+                                <i class="bi bi-download me-1"></i> 無料版をダウンロード
+                            </a>
+                            <a href="#pro-plans" class="btn btn-outline-danger fw-bold btn-sm py-2">
+                                <i class="bi bi-briefcase me-1"></i> Pro版プラン詳細を見る（月額¥500〜）
+                            </a>
+                        </div>
+                    </div>
                 </section>
-
 
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます（矢印キーで前後の画像へ移動可能）。</p>
 
                     <div class="row g-4">
                         <!-- 1. メインウィンドウ -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-main.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
                                 <img src="/img/clickcapture-main.png" alt="メインウィンドウ" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-window me-1"></i>メインウィンドウ</h4>
-                                <p class="text-white-50 small mb-0">キャプチャの実行とキャプチャ対象エリアの選択が行えます。</p>
+                                <p class="text-white-75 small mb-0">キャプチャの実行とキャプチャ対象エリアの選択が行えます。</p>
                             </div>
                         </div>
 
                         <!-- 2. 矩形範囲キャプチャ -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-rect.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(1)">
                                 <img src="/img/clickcapture-rect.png" alt="矩形範囲キャプチャ" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-bounding-box me-1"></i>矩形範囲キャプチャ</h4>
-                                <p class="text-white-50 small mb-0">Ctrlキーを押しながらドラッグすることで、選択した赤い枠のエリアのみを切り取ってキャプチャできます。</p>
+                                <p class="text-white-75 small mb-0">Ctrlキーを押しながらドラッグすることで、選択した赤い枠のエリアのみを切り取ってキャプチャできます。</p>
                             </div>
                         </div>
 
                         <!-- 3. 詳細設定の展開 -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-set.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(2)">
                                 <img src="/img/clickcapture-set.png" alt="詳細設定の展開" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-gear me-1"></i>詳細設定の展開</h4>
-                                <p class="text-white-50 small mb-0">詳細設定を展開すると各種設定が行えます。</p>
+                                <p class="text-white-75 small mb-0">詳細設定を展開すると各種保存形式やスキップ条件の設定が行えます。</p>
                             </div>
                         </div>
 
                         <!-- 4. 多言語選択メニュー 1 -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-lang1.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(3)">
                                 <img src="/img/clickcapture-lang1.png" alt="多言語選択メニュー 1" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-translate me-1"></i>多言語選択メニュー (1/2)</h4>
-                                <p class="text-white-50 small mb-0">新たに多言語表示に対応し、設定画面からお好みの言語のUIへ切り替えられるようになりました。</p>
+                                <p class="text-white-75 small mb-0">新たに多言語表示に対応し、設定画面からお好みの言語UIへ切り替え可能です。</p>
                             </div>
                         </div>
 
                         <!-- 5. 多言語選択メニュー 2 -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-lang2.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(4)">
                                 <img src="/img/clickcapture-lang2.png" alt="多言語選択メニュー 2" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-translate me-1"></i>多言語選択メニュー (2/2)</h4>
-                                <p class="text-white-50 small mb-0">日本語や英語をはじめ、ユーザーの環境に合わせて全19言語の表示をサポートしています。</p>
+                                <p class="text-white-75 small mb-0">日本語や英語をはじめ、環境に合わせて全19言語の表示をサポートしています。</p>
                             </div>
                         </div>
 
                         <!-- 6. 企業環境の検出画面 -->
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('/img/clickcapture-ent.png')">
+                            <div class="screenshot-container shadow" onclick="openGallery(5)">
                                 <img src="/img/clickcapture-ent.png" alt="企業環境の検出画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-building me-1"></i>企業環境の検出画面</h4>
-                                <p class="text-white-50 small mb-0">ドメイン参加PCではPro版ライセンスが必要です。</p>
+                                <p class="text-white-75 small mb-0">ドメイン参加PCではPro版ライセンスが必要です。</p>
                             </div>
                         </div>
 
@@ -287,17 +349,17 @@
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold">起動と常駐</h4>
-                                <p class="small mb-0 text-white-50">設定によりWindows起動時にバックグラウンド（タスクトレイ）で常駐起動します。</p>
+                                <p class="small mb-0 text-white-75">設定によりWindows起動時にバックグラウンド（タスクトレイ）で常駐起動します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold">キャプチャの実行</h4>
-                                <p class="small mb-0 text-white-50">キャプチャ機能がONの状態で左クリックを行うと画像が保存されます。Ctrlキー＋ドラッグによる矩形範囲の切り取りも可能です。</p>
+                                <p class="small mb-0 text-white-75">キャプチャ機能がONの状態で左クリックを行うと画像が保存されます。Ctrlキー＋ドラッグによる矩形切り取りも可能です。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold">保存・確認</h4>
-                                <p class="small mb-0 text-white-50">実行ファイルと同じ階層の「Capture」フォルダ内に日付ごとの連番で蓄積されます。</p>
+                                <p class="small mb-0 text-white-75">実行ファイルと同じ階層の「Capture」フォルダ内に日付ごとの連番で蓄積されます。</p>
                             </div>
                         </div>
                     </div>
@@ -305,116 +367,142 @@
 
                 <section class="mb-5">
                     <h2 class="section-title">よくあるご質問 (FAQ)</h2>
-                    <div class="card-custom">
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
                         <!-- 1. 重複排除の疑問 -->
-                        <div class="faq-item mb-4">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. クリックしても画像が保存されません（キャプチャできていないようです）。
+                        <div class="accordion-item bg-dark border-secondary">
+                            <h3 class="accordion-header" id="faq-h1">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c1" aria-expanded="false" aria-controls="faq-c1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. クリックしても画像が保存されません（キャプチャできていないようです）。
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-0">
+                            <div id="faq-c1" class="accordion-collapse collapse" aria-labelledby="faq-h1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> 「画面に変化がないときは保存しない」設定が有効になっていませんか？<br>
                                     この設定がオンの場合、前回キャプチャした画像と全く同じ画面領域であれば、重複したファイル作成を防ぐためにあえて保存を行いません。変化がないと判定されている可能性があるため、一度設定をオフにして動作をご確認ください。
-                                </p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 2. 管理者権限の疑問 -->
-                        <div class="faq-item mb-4">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. なぜ起動時に管理者権限が必要なのですか？
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h2">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. なぜ起動時に管理者権限が必要なのですか？
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-0">
+                            <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> 他のアプリケーションに対してマウス操作を監視・キャプチャする（グローバルフック）機能を使用するためです。<br>
                                     Windowsのセキュリティ仕様上、管理者権限がないアプリは他アプリの入力情報を正しく検知できないため、本アプリの機能をフルに活用するために必須となっています。
-                                </p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- 3. SmartScreen警告（追加分） -->
-                        <div class="faq-item mb-4">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. 起動時に「WindowsによってPCが保護されました」（SmartScreen）と画面が出ますが安全ですか？
+                        <!-- 3. SmartScreen警告 -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h3">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. 起動時に「WindowsによってPCが保護されました」（SmartScreen）と表示されますが安全ですか？
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-0">
+                            <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> はい、完全に安全です。ClickCaptureはインディー開発による軽量なソフトウェアであり、高額なEVコードサイン証明書を組み込んでいないため、Windows SmartScreenにより標準的な青い警告画面が表示される場合があります。<br>
                                     アプリを起動するには、画面上の<strong>「詳細情報」</strong>をクリックし、次に現れる<strong>「実行」</strong>ボタンを選択してください。
-                                </p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 4. セキュリティソフトの疑問 -->
-                        <div class="faq-item mb-4">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. セキュリティソフト（ウイルス対策ソフト）に警告されました。
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h4">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. セキュリティソフト（ウイルス対策ソフト）に警告されました。
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-0">
+                            <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> マウス操作を監視する技術（フック）を使用しているため、稀にセキュリティソフトが「挙動が疑わしいアプリ」として誤検知する場合があります。<br>
                                     もし信頼できる環境で本アプリをご利用の場合は、恐れ入りますが各セキュリティソフトの除外設定を行ってご利用ください。
-                                </p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 5. 表示倍率の疑問 -->
-                        <div class="faq-item mb-4">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. キャプチャされた画像の範囲がずれてしまいます。
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h5">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. キャプチャされた画像の範囲がずれてしまいます。
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-0">
+                            <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> Windowsの「ディスプレイ表示倍率（スケーリング）」の設定が100%以外（125%や150%など）になっている場合に発生することがあります。<br>
                                     表示倍率を変更した場合は、アプリを一度終了し、再起動してから再度お試しください。
-                                </p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 6. クリップボードへの転送に関する疑問 -->
-                        <div class="faq-item mb-0">
-                            <h3 class="h6 fw-bold text-white mb-2">
-                                <i class="bi bi-question-circle-fill text-accent me-2"></i>Q. 右クリックメニューから「貼り付け」を左クリックしてもファイルがペーストされません。
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h6">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c6" aria-expanded="false" aria-controls="faq-c6">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. 右クリックメニューから「貼り付け」を左クリックしてもファイルがペーストされません。
+                                </button>
                             </h3>
-                            <div class="ps-4">
-                                <p class="small text-white-50 mb-2">
-                                    <strong>A.</strong> アプリ設定の「キャプチャ画像をクリップボードにコピーする」が有効になっている場合、左クリックした瞬間にクリップボードの内容がキャプチャ画像で上書きされてしまうため、ファイルの貼り付け処理がキャンセルされてしまいます。
-                                </p>
-                                <p class="small text-white-50 mb-2">
-                                    ファイル等のコピー＆ペーストを行う場合は、以下のいずれかの方法でご対応ください。
-                                </p>
-                                <ul class="small text-white-50 mb-0">
-                                    <li><strong>設定を変更する（推奨）：</strong> アプリのメインウィンドウの「詳細設定」内にある「キャプチャ画像をクリップボードにコピーする」のチェックを外してOFFにしてください。</li>
-                                    <li><strong>キーボード操作を使用する：</strong> 左クリックを使わず、キーボードの「Ctrl + V」ショートカットで貼り付けを行ってください。</li>
-                                    <li><strong>一時的に機能を停止する：</strong> 設定したホットキー（デフォルトは「F9」）で一時的にキャプチャ機能をOFFにしてから貼り付け操作を行ってください。</li>
-                                </ul>
+                            <div id="faq-c6" class="accordion-collapse collapse" aria-labelledby="faq-h6" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <p class="mb-2"><strong>A.</strong> アプリ設定の「キャプチャ画像をクリップボードにコピーする」が有効になっている場合、左クリックした瞬間にクリップボードの内容がキャプチャ画像で上書きされてしまうため、ファイルの貼り付け処理がキャンセルされてしまいます。</p>
+                                    <p class="mb-2">ファイル等のコピー＆ペーストを行う場合は、以下のいずれかの方法でご対応ください。</p>
+                                    <ul class="mb-0 ps-3">
+                                        <li><strong>設定を変更する（推奨）：</strong> アプリのメインウィンドウの「詳細設定」内にある「キャプチャ画像をクリップボードにコピーする」のチェックを外してOFFにしてください。</li>
+                                        <li><strong>キーボード操作を使用する：</strong> 左クリックを使わず、キーボードの「Ctrl + V」ショートカットで貼り付けを行ってください。</li>
+                                        <li><strong>一時的に機能を停止する：</strong> 設定したホットキー（デフォルトは「F9」）で一時的にキャプチャ機能をOFFにしてから貼り付け操作を行ってください。</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
+
+                <!-- ページ下部CTAカード -->
+                <div class="card-custom text-center py-4 bg-accent-soft border-accent mb-5">
+                    <h3 class="h5 fw-bold text-white mb-2">まずは無料版で試してみませんか？</h3>
+                    <p class="small text-white-50 mb-3">個人利用なら完全無料。インストール不要でZIPを展開するだけで今すぐお使いいただけます。</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="buy-button">
+                            <i class="bi bi-download me-1"></i> 無料でダウンロードする
+                        </a>
+                        <a href="#pro-plans" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center">
+                            <i class="bi bi-briefcase me-2"></i> Pro版について詳しく見る
+                        </a>
+                    </div>
+                </div>
 
                 <section class="mb-5">
                     <h2 class="section-title">更新履歴</h2>
                     <div class="card-custom">
+                        <!-- 最新の5件 -->
                         <ul class="changelog-list mb-0">
-
                             <li class="changelog-item">
                                 <span class="badge bg-accent me-2">v26.10.2.0</span> <span class="text-white-50 small">2026.10.2</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
+                                <div class="mt-1 ps-1 text-white-75 small">
                                     Ctrlキー押下による矩形キャプチャ時のインジケーター切り替え機能（赤丸 / 赤枠）を追加
                                 </div>
                             </li>
 
                             <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.9.27.0</span> <span class="text-white-50 small">2026.09.27</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
+                                <div class="mt-1 ps-1 text-white-75 small">
                                     Ctrlキーを押しながらマウスでドラッグして指定する「矩形範囲キャプチャ機能」を追加しました。
                                 </div>
                             </li>
 
                             <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.9.25.0</span> <span class="text-white-50 small">2026.09.25</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
+                                <div class="mt-1 ps-1 text-white-75 small">
                                     重複画像判定アルゴリズムの更新<br />
                                     自動起動（タスクスケジューラ）処理の改善と安定化
                                 </div>
@@ -422,157 +510,209 @@
 
                             <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.6.18.0</span> <span class="text-white-50 small">2026.06.18</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
+                                <div class="mt-1 ps-1 text-white-75 small">
                                     アプリの多言語化に対応し、全19言語をサポートしました。
                                 </div>
                             </li>
 
                             <li class="changelog-item mt-3">
                                 <span class="badge bg-secondary me-2">v26.6.13.1</span> <span class="text-white-50 small">2026.06.13</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
+                                <div class="mt-1 ps-1 text-white-75 small">
                                     メイン画面のプレビュー画像をダブルクリックして、既定のビューワーで開く機能を追加しました。<br>
                                     タスクトレイメニューに「最新の画像を開く」項目を追加しました。
                                 </div>
                             </li>
-
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.6.7.2</span> <span class="text-white-50 small">2026.06.07</span>
-                                <div class="mt-1 ps-1 text-white-50 small">
-                                    キャプチャ機能のON/OFF切り替え用ホットキーを「F8」または「F9」から選択できる設定を追加。（デフォルトは「F9」）<br>
-                                    アプリケーションの多重起動を禁止する機能を追加。
-                                </div>
-                            </li>
-
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.6.2.0</span> <span class="text-white-50 small">2026.06.02</span>
-                                <div class="mt-1 ps-1 text-white-50 small">画像保存・フォルダ操作の安定性向上、およびUIの微調整。</div>
-                            </li>
-
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.5.30.3</span> <span class="text-white-50 small">2026.05.30</span>
-                                <div class="mt-1 ps-1 text-white-50 small">ClickCapture リリース。</div>
-                            </li>
                         </ul>
+
+                        <!-- 過去の更新履歴 (アコーディオンで展開) -->
+                        <div class="accordion accordion-flush mt-3" id="olderChangelogAccordion">
+                            <div class="accordion-item bg-transparent border-0">
+                                <div class="accordion-header" id="olderChangelogHeader">
+                                    <button class="accordion-button collapsed changelog-accordion-btn py-2 px-3 rounded small" type="button" data-bs-toggle="collapse" data-bs-target="#olderChangelogCollapse" aria-expanded="false" aria-controls="olderChangelogCollapse">
+                                        <span class="show-text"><i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴を表示する</span>
+                                        <span class="hide-text"><i class="bi bi-clock-history text-accent me-2"></i>過去の更新履歴を閉じる</span>
+                                    </button>
+                                </div>
+                                <div id="olderChangelogCollapse" class="accordion-collapse collapse" aria-labelledby="olderChangelogHeader" data-bs-parent="#olderChangelogAccordion">
+                                    <div class="accordion-body px-0 pt-3 pb-0">
+                                        <ul class="changelog-list mb-0">
+                                            <li class="changelog-item">
+                                                <span class="badge bg-secondary me-2">v26.6.7.2</span> <span class="text-white-50 small">2026.06.07</span>
+                                                <div class="mt-1 ps-1 text-white-75 small">
+                                                    キャプチャ機能のON/OFF切り替え用ホットキーを「F8」または「F9」から選択できる設定を追加。（デフォルトは「F9」）<br>
+                                                    アプリケーションの多重起動を禁止する機能を追加。
+                                                </div>
+                                            </li>
+
+                                            <li class="changelog-item mt-3">
+                                                <span class="badge bg-secondary me-2">v26.6.2.0</span> <span class="text-white-50 small">2026.06.02</span>
+                                                <div class="mt-1 ps-1 text-white-75 small">画像保存・フォルダ操作の安定性向上、およびUIの微調整。</div>
+                                            </li>
+
+                                            <li class="changelog-item mt-3">
+                                                <span class="badge bg-secondary me-2">v26.5.30.3</span> <span class="text-white-50 small">2026.05.30</span>
+                                                <div class="mt-1 ps-1 text-white-75 small">ClickCapture リリース。</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
             </div>
 
             <div class="col-lg-4">
-                <div class="card-custom mb-4">
-                    <h3 class="h5 fw-bold mb-3 text-accent">ダウンロード</h3>
-                    <p class="small text-white-50 mb-3">個人利用の場合はFree Editionとしてすべての機能を無料でご利用いただけます。</p>
-                    <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="btn btn-outline-light w-100 fw-bold mb-4"><i class="bi bi-github me-2"></i>GitHubからダウンロード</a>
+                <div class="sticky-sidebar">
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">ダウンロード</h3>
+                        <p class="small text-white-75 mb-3">個人利用の場合はFree Editionとしてすべての機能を完全無料でご利用いただけます。</p>
+                        <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" class="btn btn-outline-light w-100 fw-bold mb-4">
+                            <i class="bi bi-github me-2"></i>GitHubからダウンロード
+                        </a>
 
-                    <div class="border-top border-secondary pt-4 mt-2 text-center">
-                        <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
+                        <div class="border-top border-secondary pt-3 mt-2 text-center">
+                            <p class="small text-white-50 mb-3 badge-title">信頼の外部評価・掲載実績</p>
 
-                        <div class="badge-row">
-                            <div class="badge-item badge-bg-white">
-                                <a href="https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/ClickCapture.shtml" target="_blank" rel="noopener">
-                                    <img src="https://www.softpedia.com/_img/softpedia_100_clean.webp" alt="100% CLEAN Softpedia">
-                                </a>
+                            <div class="badge-row">
+                                <div class="badge-item badge-bg-white">
+                                    <a href="https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Capture/ClickCapture.shtml" target="_blank" rel="noopener">
+                                        <img src="https://www.softpedia.com/_img/softpedia_100_clean.webp" alt="100% CLEAN Softpedia">
+                                    </a>
+                                </div>
+
+                                <div class="badge-item">
+                                    <a href="https://www.producthunt.com/products/clickcapture?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-clickcapture" target="_blank" rel="noopener noreferrer">
+                                        <img alt="Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1175444&amp;theme=light&amp;t=1781914869207">
+                                    </a>
+                                </div>
+
+                                <div class="badge-item">
+                                    <a href="https://alternativeto.net/software/clickcapture/about/" target="_blank" rel="noopener">
+                                        <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
+                                    </a>
+                                </div>
+
+                                <div class="badge-item">
+                                    <a href="https://www.vector.co.jp/soft/winnt/art/se524470.html" target="_blank" rel="noopener">
+                                        <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
+                                    </a>
+                                </div>
+
+                                <div class="badge-item">
+                                    <a href="https://forest.watch.impress.co.jp/docs/digest/2114216.html" target="_blank" rel="noopener">
+                                        <img src="/img/goforest.gif" alt="窓の杜">
+                                    </a>
+                                </div>
+
                             </div>
+                        </div>
 
-                            <div class="badge-item">
-                                <a href="https://www.producthunt.com/products/clickcapture?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-clickcapture" target="_blank" rel="noopener noreferrer">
-                                    <img alt="Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1175444&amp;theme=light&amp;t=1781914869207">
-                                </a>
+                    </div>
+
+                    <div class="card-custom" id="pro-plans">
+                        <h3 class="h5 fw-bold mb-2 text-accent">Pro Edition サブスクリプション</h3>
+                        <p class="small text-white-75 mb-3">企業内（ドメイン参加PC）や業務でのご利用にはPro Editionのライセンスが必要です。</p>
+
+                        <div class="alert alert-trial py-2 px-3 mb-3 rounded text-center">
+                            <i class="bi bi-gift-fill me-2"></i><strong>初回1ヶ月無料トライアル実施中！</strong>
+                        </div>
+
+                        <!-- 月額プラン -->
+                        <div class="mb-3 p-3 border border-secondary rounded text-center">
+                            <p class="small text-white-50 mb-1">月額プラン</p>
+                            <p class="h3 fw-bold mb-2">¥ 500 <small class="text-white-50 plan-unit">/ 月</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/ascvm?monthly=true" target="_blank" class="btn btn-outline-danger w-100 fw-bold btn-sm">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 1ヶ月無料で試す
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">月額サブスクリプション（いつでも解約可）</p>
+                        </div>
+
+                        <!-- 年額プラン -->
+                        <div class="mb-3 p-3 border border-accent rounded text-center bg-accent-soft">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">年額プラン</p>
+                                <span class="badge bg-accent plan-badge">実質2ヶ月分無料！</span>
                             </div>
+                            <p class="h3 fw-bold mb-2">¥ 5,000 <small class="text-white-50 plan-unit">/ 年</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/ascvm?yearly=true" target="_blank" class="btn btn-danger w-100 fw-bold">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 年額プランで申し込む
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">年間一括払い（¥417相当/月）</p>
+                        </div>
 
-                            <div class="badge-item">
-                                <a href="https://alternativeto.net/software/clickcapture/about/" target="_blank" rel="noopener">
-                                    <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="AlternativeTo">
-                                </a>
-                            </div>
+                        <!-- 端末制限の注意事項 -->
+                        <div class="limit-alert limit-alert-danger small mb-3">
+                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> 端末制限の注意事項</strong>
+                            <p class="small text-white mb-0 mt-1 limit-note">
+                                1ライセンスにつき<strong>3台まで</strong>使用可能です。PC移行時も特別な解除手続きは不要です（お困りの際はサポートまで）。
+                            </p>
+                        </div>
 
-                            <div class="badge-item">
-                                <a href="https://www.vector.co.jp/soft/winnt/art/se524470.html" target="_blank" rel="noopener">
-                                    <img src="https://www.vector.co.jp/images/vector_b01.gif" alt="Vector">
-                                </a>
-                            </div>
+                        <div class="small text-white-75 mb-3">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 初回1ヶ月は費用が発生しません</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 期間中の解約もいつでも可能です</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用利用・最新版アップデート込</p>
+                        </div>
 
-                            <div class="badge-item">
-                                <a href="https://forest.watch.impress.co.jp/docs/digest/2114216.html" target="_blank" rel="noopener">
-                                    <img src="/img/goforest.gif" alt="madonomori">
-                                </a>
-                            </div>
-
+                        <!-- Gumroad決済の安心表記 -->
+                        <div class="border-top border-secondary pt-2 text-center">
+                            <p class="note-text text-white-50 mb-0">
+                                <i class="bi bi-shield-lock me-1"></i>決済はGumroad（SSL暗号化決済）で安全に処理されます
+                            </p>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="card-custom">
-                    <h3 class="h5 fw-bold mb-3 text-accent">Pro Edition サブスクリプション</h3>
-                    <p class="small text-white-50 mb-3">企業内（ドメイン参加PC）でのご利用にはPro Editionのライセンスが必要です。</p>
-
-                    <div class="alert alert-trial py-2 px-3 mb-4 rounded text-center">
-                        <i class="bi bi-gift-fill me-2"></i><strong>初回1ヶ月無料トライアル実施中！</strong>
-                    </div>
-
-                    <div class="mb-4 p-3 border border-secondary rounded text-center">
-                        <p class="small text-white-50 mb-1">月額プラン</p>
-                        <p class="h3 fw-bold mb-2">¥ 500 <small class="text-white-50 plan-unit">/ 月</small></p>
-                        <a href="https://chililikobo.gumroad.com/l/ascvm?monthly=true" target="_blank" class="btn btn-outline-danger w-100 fw-bold btn-sm">1ヶ月無料で試す</a>
-                    </div>
-
-                    <div class="mb-4 p-3 border border-accent rounded text-center bg-accent-soft">
-                        <div class="d-flex justify-content-between align-items-center mb-1">
-                            <p class="small text-white-50 mb-0">年額プラン</p>
-                            <span class="badge bg-accent plan-badge">実質2ヶ月分無料！</span>
-                        </div>
-                        <p class="h3 fw-bold mb-2">¥ 5,000 <small class="text-white-50 plan-unit">/ 年</small></p>
-                        <a href="https://chililikobo.gumroad.com/l/ascvm?yearly=true" target="_blank" class="btn btn-danger w-100 fw-bold">1ヶ月無料で試す</a>
-                    </div>
-
-                    <div class="limit-alert limit-alert-danger small mb-4">
-                        <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> 端末制限の注意事項</strong>
-                        <p class="small text-white mb-0 mt-1 limit-note">
-                            1ライセンスにつき<strong>3台まで</strong>使用可能です。3台を超えて利用した場合、ライセンスは<strong>自動的に無効</strong>となります。
+                    <div class="card-custom mt-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">動作環境</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 11<br />Windows Server 2025</td></tr>
+                                <tr><th>Arch</th><td>64bit (x64)</td></tr>
+                                <tr><th>Runtime</th><td>不要</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> インストール不要・レジストリ変更なし。USBメモリから直接実行可能です。
                         </p>
                     </div>
 
-                    <div class="small text-white-50">
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 初回1ヶ月は費用が発生しません</p>
-                        <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 期間中の解約も可能です</p>
-                        <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 商用利用・最新版アップデート込</p>
+                    <div class="text-center mt-4 mb-4">
+                        <div class="mb-2">
+                            <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
+                            <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
+                        </div>
+                        <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
                     </div>
-                </div>
-
-                <div class="card-custom mt-4">
-                    <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
-                    <table class="table table-sm table-dark spec-table mb-0">
-                        <tbody>
-                            <tr><th>OS</th><td>Windows 11<br />Windows Server 2025</td></tr>
-                            <tr><th>Arch</th><td>64bit (x64)</td></tr>
-                            <tr><th>Runtime</th><td>不要</td></tr>
-                        </tbody>
-                    </table>
-                    <p class="small text-white-50 mt-3 mb-0">
-                        <i class="bi bi-info-circle me-1"></i> インストール不要・レジストリ変更なし。USBメモリから直接実行可能です。
-                    </p>
-                </div>
-
-                <div class="text-center mt-4">
-                    <div class="mb-2">
-                        <a href="/terms.html#terms" class="text-secondary small text-decoration-none mx-2 hover-red">利用規約</a>
-                        <a href="/terms.html#privacy" class="text-secondary small text-decoration-none mx-2 hover-red">プライバシーポリシー</a>
-                    </div>
-                    <a href="/terms.html#commercial-law" class="text-secondary small text-decoration-none hover-red">特定商取引法に基づく表記</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- 拡大スクリーンショットモーダル (ギャラリー機能付き) -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content bg-dark border-secondary">
-                <div class="modal-header border-0">
+                <div class="modal-header border-bottom border-secondary py-2 px-3">
+                    <div class="d-flex align-items-center">
+                        <span id="galleryTitle" class="fw-bold text-white me-2">メインウィンドウ</span>
+                        <span id="galleryCounter" class="badge bg-secondary">1 / 6</span>
+                    </div>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0 text-center">
-                    <img src="" id="modalImage" class="img-fluid rounded-bottom">
+                <div class="modal-body p-0 position-relative text-center bg-black d-flex align-items-center justify-content-center" style="min-height: 350px;">
+                    <button type="button" class="gallery-nav-btn prev-btn" onclick="galleryNav(-1)" aria-label="前の画像">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <img src="" id="modalImage" class="img-fluid" alt="スクリーンショット" style="max-height: 75vh; object-fit: contain;">
+                    <button type="button" class="gallery-nav-btn next-btn" onclick="galleryNav(1)" aria-label="次の画像">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-footer border-top border-secondary py-2 px-3 justify-content-between">
+                    <p id="galleryDesc" class="small text-white-50 mb-0">キャプチャの実行とキャプチャ対象エリアの選択が行えます。</p>
+                    <span class="small text-white-50 d-none d-md-inline"><i class="bi bi-keyboard me-1"></i>キーボードの ← → キーでも移動できます</span>
                 </div>
             </div>
         </div>

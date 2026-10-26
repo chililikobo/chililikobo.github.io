@@ -1,10 +1,10 @@
-﻿/* ==========================================
+/* ==========================================
    製品詳細ページ専用 (product.css)
    ========================================== */
 
 /* ページ全体の余白 */
 .product-page {
-    padding-bottom: 100px;
+    padding-bottom: 0;
 }
 
 /* 戻るリンクのナビゲーション */
@@ -285,3 +285,179 @@
 .limit-alert strong {
     font-size: 1rem;
 }
+
+/* ==========================================
+   追加改善スタイル (Sticky, ギャラリー, FAQ, コントラスト)
+   ========================================== */
+
+/* テキストコントラスト向上 (75% 不透明度) */
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* PC時の追従サイドバー */
+@media (min-width: 992px) {
+    .sticky-sidebar {
+        position: sticky;
+        top: 105px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--border-dark) transparent;
+        padding-right: 2px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Pro版プランのハイライト演出 */
+@keyframes planPulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); border-color: var(--accent-red); }
+    50% { box-shadow: 0 0 20px 4px rgba(220, 53, 69, 0.4); border-color: #ff4d5e; }
+    100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+.plan-highlight {
+    animation: planPulse 1.2s ease-in-out;
+}
+
+/* スクリーンショットの拡大ヒント */
+.screenshot-container {
+    position: relative;
+}
+
+.screenshot-overlay {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    opacity: 0.85;
+    transition: 0.25s ease;
+    pointer-events: none;
+}
+
+.screenshot-container:hover .screenshot-overlay {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* ギャラリーモーダル ナビゲーションボタン */
+.gallery-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    z-index: 10;
+}
+
+.gallery-nav-btn:hover {
+    background: var(--accent-red);
+    color: #fff;
+    border-color: var(--accent-red);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.gallery-nav-btn.prev-btn {
+    left: 15px;
+}
+
+.gallery-nav-btn.next-btn {
+    right: 15px;
+}
+
+@media (max-width: 576px) {
+    .gallery-nav-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .gallery-nav-btn.prev-btn {
+        left: 8px;
+    }
+    .gallery-nav-btn.next-btn {
+        right: 8px;
+    }
+}
+
+/* ダークモード用アコーディオン (FAQ) */
+.product-page .accordion-item {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border-dark) !important;
+}
+
+.product-page .accordion-button {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    font-weight: 600;
+}
+
+.product-page .accordion-button:not(.collapsed) {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+.product-page .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.product-page .accordion-body {
+    background-color: var(--bg-card);
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+}
+
+/* アンカーリンクジャンプ時に固定ヘッダーで隠れないよう余白を確保 */
+.product-page #demo,
+.product-page #pro-plans,
+.product-page section[id],
+.product-page div[id] {
+    scroll-margin-top: 125px;
+}
+
+/* 更新履歴用アコーディオンボタン */
+.changelog-accordion-btn {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid var(--border-dark) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: 0.85rem !important;
+    transition: 0.2s ease;
+}
+
+.changelog-accordion-btn:hover {
+    border-color: var(--accent-red) !important;
+    color: #fff !important;
+    background-color: rgba(220, 53, 69, 0.08) !important;
+}
+
+.changelog-accordion-btn.collapsed .hide-text {
+    display: none;
+}
+
+.changelog-accordion-btn.collapsed .show-text {
+    display: inline;
+}
+
+.changelog-accordion-btn:not(.collapsed) {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+    border-color: var(--border-dark) !important;
+    color: #fff !important;
+}
+
+.changelog-accordion-btn:not(.collapsed) .show-text {
+    display: none;
+}
+
+.changelog-accordion-btn:not(.collapsed) .hide-text {
+    display: inline;
+}
+
