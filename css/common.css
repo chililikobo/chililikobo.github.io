@@ -173,7 +173,7 @@ footer p.small {
 }
 
 /* アンカーリンクでジャンプした際、ナビに隠れないように余白を作る */
-section[id] {
+section[id], #pro-plans {
     scroll-margin-top: 150px; /* ナビの高さより少し多めに設定 */
 }
 

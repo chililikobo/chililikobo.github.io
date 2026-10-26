@@ -347,13 +347,31 @@ function initProPlansScroll() {
         const sidebar = document.querySelector('.sticky-sidebar');
 
         if (window.innerWidth >= 992 && sidebar) {
+            // 1. サイドバー内部のスクロール（proPlansをサイドバー表示領域の先頭へ）
             sidebar.scrollTo({
                 top: proPlans.offsetTop,
                 behavior: 'smooth'
             });
+
+            // 2. ページ全体（window）のスクロール
+            // サイドバーがまだ固定位置（ナビ直下）に達していない場合や画面外の場合、
+            // サイドバー上部がナビ直下（top: 100px）に来るようページ全体もスクロール
+            const sidebarRect = sidebar.getBoundingClientRect();
+            if (sidebarRect.top > 110 || sidebarRect.top < 90) {
+                const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+                const targetWindowY = currentScrollY + sidebarRect.top - 100;
+                window.scrollTo({
+                    top: Math.max(0, targetWindowY),
+                    behavior: 'smooth'
+                });
+            }
         } else {
             proPlans.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+
+        try {
+            history.replaceState(null, null, '#pro-plans');
+        } catch (_) {}
 
         proPlans.classList.remove('plan-highlight');
         void proPlans.offsetWidth;
