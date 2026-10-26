@@ -1,75 +1,153 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>404 Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | chilili kobo</title>
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --border-dark: #333333;
+            --accent-red: #dc3545;
+            --accent-red-hover: #bb2d3b;
         }
-
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .error-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 12px;
+            padding: 40px 30px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--accent-red);
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+        }
+        .btn-home {
+            background-color: var(--accent-red);
+            color: #ffffff !important;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+        }
+        .btn-home:hover {
+            background-color: var(--accent-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(220, 53, 69, 0.4);
+        }
+        .brand-logo {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+        .countdown-badge {
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border-dark);
+            color: #aaa;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.875rem;
             display: inline-block;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .text-accent {
+            color: var(--accent-red) !important;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 id="title">404 Not Found</h1>
-        <p id="message"></p>
-        <p><span id="timer">5</span> <span id="unit">seconds</span></p>
-        <a href="/" id="link"></a>
+    <div class="error-card">
+        <a href="/">
+            <img src="/img/chilili600x600.png" alt="chilili kobo" class="brand-logo">
+        </a>
+        <div class="error-code">404</div>
+        <h1 class="h4 fw-bold mb-3" id="title">ページが見つかりません</h1>
+        <p class="text-white-50 mb-4" id="message">アクセスしようとしたページは削除されたか、URLが変更された可能性があります。</p>
+        
+        <div class="mb-4">
+            <span class="countdown-badge">
+                <i class="bi bi-clock-history me-1 text-accent"></i>
+                <span id="timer">5</span> <span id="unit">秒後にトップページへ自動転送されます</span>
+            </span>
+        </div>
+
+        <div>
+            <a href="/" class="btn-home" id="link">
+                <i class="bi bi-house-door-fill me-2"></i><span id="link-text">トップページへ戻る</span>
+            </a>
+        </div>
     </div>
 
     <script>
-        // 表示する文言の定義
         const contents = {
             ja: {
-                title: "404 ページが見つかりません",
-                message: "お探しのページは見つかりませんでした。",
-                unit: "秒後にトップページへ転送されます。",
-                link: "トップページへ戻る"
+                title: "ページが見つかりません",
+                message: "アクセスしようとしたページは削除されたか、URLが変更された可能性があります。",
+                unit: "秒後にトップページへ自動転送されます",
+                linkText: "トップページへ戻る",
+                homeUrl: "/"
             },
             en: {
-                title: "404 Not Found",
-                message: "The page you are looking for could not be found.",
-                unit: "seconds until redirect to home.",
-                link: "Return to home page"
+                title: "Page Not Found",
+                message: "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+                unit: "seconds until redirect to home",
+                linkText: "Return to Home",
+                homeUrl: "/en/"
             }
         };
 
-        // ブラウザの言語判定（日本語なら'ja'、それ以外は'en'）
-        const lang = (navigator.language.startsWith('ja')) ? 'ja' : 'en';
+        const isEnglish = (navigator.language && !navigator.language.startsWith('ja')) || window.location.pathname.startsWith('/en/');
+        const lang = isEnglish ? 'en' : 'ja';
         const data = contents[lang];
 
-        // 画面への適用
-        document.getElementById('title').innerText = data.title;
-        document.getElementById('message').innerText = data.message;
-        document.getElementById('unit').innerText = data.unit;
-        document.getElementById('link').innerText = data.link;
-        document.getElementById('link').href = "/";
+        document.getElementById('title').textContent = data.title;
+        document.getElementById('message').textContent = data.message;
+        document.getElementById('unit').textContent = data.unit;
+        document.getElementById('link-text').textContent = data.linkText;
+        document.getElementById('link').href = data.homeUrl;
 
-        // リダイレクト処理
         let count = 5;
         const timerEl = document.getElementById('timer');
-
         const redirect = () => {
             if (count > 0) {
-                timerEl.innerText = count;
+                timerEl.textContent = count;
                 count--;
                 setTimeout(redirect, 1000);
             } else {
-                window.location.href = '/';
+                window.location.href = data.homeUrl;
             }
         };
         window.onload = redirect;
     </script>
 </body>
+</html>
 </html>
