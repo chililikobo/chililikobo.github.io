@@ -21,19 +21,19 @@
   </Company_Info>
   <Program_Info>
     <Program_Name>PinSharp ICO</Program_Name>
-    <Program_Version>26.10.25.0</Program_Version>
-    <Program_Release_Month>10</Program_Release_Month>
-    <Program_Release_Day>25</Program_Release_Day>
+    <Program_Version>26.11.1.0</Program_Version>
+    <Program_Release_Month>11</Program_Release_Month>
+    <Program_Release_Day>01</Program_Release_Day>
     <Program_Release_Year>2026</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Cost_Other_CP />
-    <Program_Cost_Other />
+    <Program_Cost_Other>Pro Edition: One-time purchase lifetime license via Gumroad</Program_Cost_Other>
     <Program_Type>Freeware</Program_Type>
-    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Release_Status>Major Update</Program_Release_Status>
     <Program_Install_Support>No Install Support</Program_Install_Support>
     <Program_OS_Support>Win10,Win11</Program_OS_Support>
-    <Program_Language>English</Program_Language>
-    <Program_Change_Info />
+    <Program_Language>English,Japanese</Program_Language>
+    <Program_Change_Info>Added Pro Edition with JPEG/BMP/WebP support, batch &amp; recursive folder conversion, shape masks (Rounded/Circle), destination routing, headless CLI, bilingual EN/JA toggle, and settings persistence.</Program_Change_Info>
     <Program_Specific_Category>Graphics</Program_Specific_Category>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Program_System_Requirements>Windows 10/11 (64-bit x64)</Program_System_Requirements>
@@ -54,43 +54,49 @@
   </Program_Info>
   <Program_Descriptions>
     <English>
-      <Char_Desc_45>Ultra-sharp Windows icon builder from PNG.</Char_Desc_45>
-      <Char_Desc_80>Build ultra-sharp Windows ICO files down to 16x16. Drop PNG, auto-generated.</Char_Desc_80>
-      <Char_Desc_250>PinSharp ICO is an ultra-sharp Windows icon builder. Simply drop a 256x256 PNG to generate multi-size ICO files. Relentlessly engineered to keep fine lines, contrast, and vibrant colors crisp down to 16x16 without blur or halo artifacts.</Char_Desc_250>
-      <Char_Desc_450>PinSharp ICO is an ultra-sharp Windows icon builder that solves the blur and contrast loss typical of micro-downscaling. Simply drag and drop a 256x256 PNG to automatically build high-fidelity multi-size ICO files (16 to 256px). Features zero-halo boundary clamping to keep 1px lines, slits, and vivid colors crisp even at 16x16. Portable, standalone executable powered by Native AOT—no runtime installation required.</Char_Desc_450>
-      <Char_Desc_2000>
-        PinSharp ICO is an ultra-sharp Windows icon builder dedicated to extreme downscaling clarity from 256px down to 16px.
+      <Char_Desc_45>Ultra-sharp Windows icon (.ico) builder.</Char_Desc_45>
+      <Char_Desc_80>Ultra-sharp Windows icon builder down to 16x16 with batch &amp; shape masks.</Char_Desc_80>
+      <Char_Desc_250>PinSharp ICO is an ultra-sharp Windows icon builder. Drag-and-drop images to build crisp 16x16 to 256px ICO files with zero-halo clamping. Free Edition supports PNG. Pro Edition adds JPEG/BMP/WebP, batch folder conversion, shape masks, and CLI.</Char_Desc_250>
+      <Char_Desc_450>PinSharp ICO is an ultra-sharp Windows icon builder that solves blur and contrast loss in micro-downscaling. Free Edition creates crisp multi-size ICO files (16 to 256px) from PNG with zero-halo clamping. Pro Edition adds JPEG, BMP, and WebP support, batch multi-file &amp; recursive folder conversion, modern shape masks (Square, Rounded, Circle), output routing, and headless CLI automation. Standalone Native AOT portable app with no runtime needed.</Char_Desc_450>
+      <Char_Desc_2000>PinSharp ICO is an ultra-sharp Windows icon (.ico) builder designed for extreme downscaling clarity from 256px down to 16px.
 
-        Standard downscaling tools frequently introduce frustrating artifacts when generating icons: white outlines fade into muddy gray, tight dark slits vanish, and edges blur out into vague silhouettes at 16x16 or 24x24. PinSharp ICO tackles this extreme compression process (a 1/256 area reduction) through a dedicated perceptual downscaling engine, preserving crisp contrast for fine borders, typography, and narrow gaps.
+Standard downscaling tools frequently introduce artifacts: white outlines fade into gray, tight dark slits vanish, and edges blur at 16x16 or 24x24. PinSharp ICO tackles this extreme compression through a dedicated edge-preserving engine, maintaining crisp contrast for fine borders, typography, and narrow gaps.
 
-        Key Features:
-        1. Engineered for Extreme 256px to 16px Downscaling
-        Retains high contrast and vibrant color intensity for delicate outlines and slits even when compressed down to micro-pixel dimensions.
+Key Features:
+1. Ultra-Sharp Micro-Downscaling
+Retains high contrast for delicate outlines and narrow slits without muddy halos.
 
-        2. Automated Instant Saving on Drag-and-Drop
-        Simply drop your 256x256 PNG file into the window. Processing starts instantly, saving the finished .ico file into the same directory without prompting save dialogs.
+2. Automated Instant Saving on Drag-and-Drop
+Drop an image (or folder in Pro) into the window. Processing starts instantly, saving the finished .ico automatically.
 
-        3. Complete Coverage of All 11 Standard Windows Sizes
-        Fully supports 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256 px. Quickly switch configurations using presets (All, Standard, Compact) or individual toggle buttons.
+3. All 11 Standard Windows Sizes
+Supports 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256 px. Switch with presets (All, Standard, Compact) in one click.
 
-        4. Zero-Halo Boundary Clamping
-        Employs mathematical local bounding box clamping to fundamentally eliminate unnatural white halos and ringing artifacts around high-contrast contours.
+4. Modern Shape Masks (Pro Edition)
+Clip icons into modern Rounded corners or circular shapes with anti-aliasing. Non-square photos are automatically centered.
 
-        5. Ascending Size Previews
-        Instantly displays up to 5 result preview thumbnails in ascending order (smallest first) upon completion, allowing immediate legibility checks.
+5. Expanded Formats &amp; Batch Conversion (Pro Edition)
+Directly converts JPEG, BMP, WebP alongside PNG. Drop multiple images or entire directories to convert recursively.
 
-        6. Ultra-Fast Portable Execution
-        Compiled with Native AOT technology, it launches instantly without footprint or dependency overhead. No .NET runtime or installation is required.
+6. Flexible Output Destinations (Pro Edition)
+Save next to source, auto-create an 'icons/' subfolder, or choose a custom folder. Auto-numbering prevents overwrites.
 
-        Developed by chilili kobo. Available as freeware for personal and commercial use.
-      </Char_Desc_2000>
+7. Headless Command Line Interface (Pro Edition)
+Run batch icon generation directly from Command Prompt, PowerShell, or local build scripts.
+
+8. Native AOT Compilation &amp; Portability
+Standalone portable app built with .NET 10 Native AOT. Zero registry impact and no runtime installation required.
+
+Editions:
+- Free Edition: 100% free for personal &amp; commercial use (PNG input, 1 file at a time, square shape).
+- Pro Edition: One-time purchase lifetime license (JPEG/BMP/WebP, batch &amp; folders, shape masks, CLI).</Char_Desc_2000>
     </English>
   </Program_Descriptions>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>https://chililikobo.github.io/en/pinsharpico.html</Application_Info_URL>
       <Application_Order_URL>https://github.com/chililikobo/PinSharpICO/releases/latest</Application_Order_URL>
-      <Application_Screenshot_URL>https://chililikobo.github.io/img/pinsharpico-main.png</Application_Screenshot_URL>
+      <Application_Screenshot_URL>https://chililikobo.github.io/img/pinsharpico-main-en.png</Application_Screenshot_URL>
       <Application_Icon_URL>https://chililikobo.github.io/img/pinsharpico256.png</Application_Icon_URL>
       <Application_XML_File_URL>https://chililikobo.github.io/pad/pinsharpico.xml</Application_XML_File_URL>
     </Application_URLs>

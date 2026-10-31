@@ -13,18 +13,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PinSharp ICO | chilili kobo - Smart PC Utilities</title>
-    <meta name="description" content="256pxから16pxへの極小化をとことん追求。256×256のPNG画像をドロップするだけで、16×16でもディテールを研ぎ澄ます高鮮鋭なWindows用アイコンファイル（.ico）を全自動生成。ポータブルでインストール不要。">
+    <meta name="description" content="256pxから16pxへの極小化をとことん追求。画像をドロップするだけで、16×16でもディテールを研ぎ澄ます高鮮鋭なWindows用アイコンファイル（.ico）を全自動生成。無料のFree版に加え、一括変換・形状マスク・複数画像形式・CLI対応のPro版（買い切り永久ライセンス）も登場。ポータブルでインストール不要。">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="chilili kobo">
     <meta property="og:title" content="PinSharp ICO | chilili kobo - Smart PC Utilities">
-    <meta property="og:description" content="256px→16pxをとことん追求。ドラッグ＆ドロップで即座に鮮鋭なアイコン（.ico）を一括生成するWindowsユーティリティ。">
+    <meta property="og:description" content="256px→16pxをとことん追求。ドラッグ＆ドロップで鮮鋭なアイコン（.ico）を即座に生成するWindowsユーティリティ。無料のFree版と、複数形式・一括変換・形状マスク・CLI自動化対応のPro版（買い切り）を提供。">
     <meta property="og:url" content="https://chililikobo.github.io/pinsharpico.html">
     <meta property="og:image" content="https://chililikobo.github.io/img/og-pinsharpico.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PinSharp ICO | chilili kobo - Smart PC Utilities">
-    <meta name="twitter:description" content="256px→16pxをとことん追求。ドラッグ＆ドロップで即座に鮮鋭なアイコン（.ico）を一括生成するWindowsユーティリティ。">
+    <meta name="twitter:description" content="256px→16pxをとことん追求。ドラッグ＆ドロップで鮮鋭なアイコン（.ico）を即座に生成するWindowsユーティリティ。無料のFree版と、複数形式・一括変換・形状マスク・CLI自動化対応のPro版（買い切り）を提供。">
     <meta name="twitter:image" content="https://chililikobo.github.io/img/og-pinsharpico.png">
     <meta name="twitter:site" content="@chililikobo">
 
@@ -62,17 +62,32 @@
                 <span class="d-none d-sm-inline text-secondary">|</span>
                 <span><i class="bi bi-usb-drive text-accent me-1"></i>完全ポータブル・レジストリ不使用</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-gift text-accent me-1"></i>個人・商用 完全無料</span>
+                <span><i class="bi bi-gift text-accent me-1"></i>Free版（個人・商用無料） / Pro版（買い切り）</span>
             </div>
 
             <div class="d-inline-block">
-                <a href="https://github.com/chililikobo/PinSharpICO/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button mb-2">
-                    <i class="bi bi-download me-1"></i> 無料でダウンロードする
-                </a>
-                <p class="small text-white-50 mt-1 mb-2">※Free Editionとして個人・商用問わず完全無料でご利用いただけます</p>
-                <a href="#how-to-use" class="d-inline-block text-accent small text-decoration-none">
-                    <i class="bi bi-question-circle me-1"></i>使い方・機能詳細を見る ↓
-                </a>
+                <div class="d-flex justify-content-center gap-3 flex-wrap mb-2">
+                    <a href="https://github.com/chililikobo/PinSharpICO/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
+                        <i class="bi bi-download me-1"></i> 無料でダウンロード
+                    </a>
+                    <a href="https://chililikobo.gumroad.com/l/vefjk" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-3 rounded-pill text-nowrap">
+                        <i class="bi bi-stars me-1 text-accent"></i> Pro版を購入（買い切り）
+                    </a>
+                </div>
+                <p class="small text-white-50 mt-1 mb-2">※Free Editionは個人・商用問わず完全無料 / Pro Editionは月額不要の永久ライセンス</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap small">
+                    <a href="#edition-comparison" class="text-accent text-decoration-none">
+                        <i class="bi bi-table me-1"></i>エディション比較を見る ↓
+                    </a>
+                    <span class="text-secondary">|</span>
+                    <a href="#how-to-use" class="text-accent text-decoration-none">
+                        <i class="bi bi-question-circle me-1"></i>使い方を見る ↓
+                    </a>
+                    <span class="text-secondary">|</span>
+                    <a href="#pro-edition" class="text-accent text-decoration-none">
+                        <i class="bi bi-shield-check me-1"></i>Pro版ライセンス情報 ↓
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -86,26 +101,34 @@
                     <h2 class="section-title">製品説明</h2>
 
                     <p class="lead fw-bold text-accent mb-3">「256pxから16pxへ。極小ドットへの凝縮をとことん追求。」</p>
-                    <p class="text-white-75 mb-3">PinSharp ICO（ピンシャープ・アイシーオー）は、一般的な画像縮小ツールでアイコンを作成した際に起こりがちな「白い枠線がグレーに沈んでしまう」「黒いスリットが埋まって消える」「輪郭がボケてエッジを失う」といった現象を解決するために設計された専用ユーティリティです。</p>
+                    <p class="text-white-75 mb-3">PinSharp ICO（ピンシャープ・アイコ）は、一般的な画像縮小ツールでアイコンを作成した際に起こりがちな「白い枠線がグレーに沈んでしまう」「黒いスリットが埋まって消える」「輪郭がボケてエッジを失う」といった現象を解決するために設計された専用ユーティリティです。</p>
                     <p class="text-white-75 mb-4">256×256pxの原画からわずか16×16px（面積比1/256）へと凝縮される過酷な縮小プロセスをとことん追求。細い境界線、文字、微小な隙間のコントラストを鮮明に保ち、タスクバーやタイトルバー、エクスプローラーの極小表示でも美しく際立つWindows標準のマルチサイズICOファイルを一瞬で書き出します。</p>
 
-                    <!-- 特徴 4選グリッド -->
+                    <!-- 特徴 6選グリッド -->
                     <div class="row g-4">
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-bullseye text-accent me-2"></i>極小特化の鮮鋭化設計</h3>
-                            <p class="small text-white-75 mb-0">256pxから16pxへの極小化でも、細い枠線や文字、微小な隙間が背景に埋もれず、パキッと浮かび上がります。</p>
+                            <p class="small text-white-75 mb-0">16×16や24×24などの極小化でも、細い枠線や文字、微小な隙間が背景に埋もれずパキッと浮かび上がります。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-box-arrow-in-down text-accent me-2"></i>ドラッグ＆ドロップ即保存</h3>
-                            <p class="small text-white-75 mb-0">256×256のPNGをドロップするだけで即座に変換開始。元ファイルと同じ場所に同名ICOを全自動保存します。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-box-arrow-in-down text-accent me-2"></i>ドラッグ＆ドロップ全自動保存</h3>
+                            <p class="small text-white-75 mb-0">画像をウィンドウにドロップするだけで即座に変換開始。面倒な保存ボタン操作なしで同名ICOを自動保存します。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-grid-3x3 text-accent me-2"></i>全11サイズを完全網羅</h3>
-                            <p class="small text-white-75 mb-0">16, 20, 24, 32, 40, 48, 64, 72, 96, 128, 256pxに対応。ワンクリックで切り替え可能なプリセットも完備。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-grid-3x3 text-accent me-2"></i>Windows標準全11サイズ完全網羅</h3>
+                            <p class="small text-white-75 mb-0">16, 20, 24, 32, 40, 48, 64, 72, 96, 128, 256pxに対応。All / Standard / Compact のプリセットも完備。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-shield-check text-accent me-2"></i>白フチ浮き（ハロー現象）ゼロ</h3>
                             <p class="small text-white-75 mb-0">一般的なシャープ化で発生しやすい輪郭の不自然な白浮きを、数学的な境界クランプにより原理的に防止します。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-image text-accent me-2"></i>多彩な形式 ＆ 一括変換 <span class="badge bg-danger ms-1">Pro</span></h3>
+                            <p class="small text-white-75 mb-0">PNGに加えJPEG、BMP、WebPにも対応。複数画像やフォルダごと（サブフォルダ再帰探索）の一括変換が可能です。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-bounding-box-circles text-accent me-2"></i>角丸・丸型マスク ＆ CLI自動化 <span class="badge bg-danger ms-1">Pro</span></h3>
+                            <p class="small text-white-75 mb-0">モダンな角丸や円形アイコンへの自動切り抜きに対応。さらにコマンドライン（CLI）からのバッチ自動化も完備。</p>
                         </div>
                     </div>
 
@@ -115,15 +138,117 @@
                             <i class="bi bi-rocket-takeoff-fill text-accent me-2"></i>完全ポータブル・超高速Native AOT動作
                         </h3>
                         <p class="small text-white-75 mb-2">
-                            PinSharp ICOはNative AOT技術でネイティブコンパイルされており、.NETランタイムの追加インストールは一切不要です。
+                            PinSharp ICOは.NET 10のNative AOT技術でネイティブコンパイルされており、.NETランタイムの追加インストールは一切不要です。
                         </p>
                         <p class="small text-white-75 mb-0">
-                            展開したフォルダ内の「PinSharpICO.exe」を実行するだけでどのPCでも即座に起動します。レジストリを変更せず、USBメモリから直接実行可能です。不要になった際もフォルダごと削除するだけで完全にアンインストールできます。
+                            展開したフォルダ内の「PinSharpICO.exe」を実行するだけでどのWindows PCでも即座に起動します。レジストリを変更せず、USBメモリから直接実行可能です。不要になった際もフォルダごと削除するだけで完全にアンインストールできます。
                         </p>
                     </div>
                 </section>
 
-                <!-- 2. スクリーンショット -->
+                <!-- 2. エディション比較（Free版 vs Pro版） -->
+                <section class="mb-5" id="edition-comparison">
+                    <h2 class="section-title">エディション比較（Free版 vs Pro版）</h2>
+                    <p class="text-white-75 mb-4">
+                        PinSharp ICOには、手軽に使える<strong>「Free Edition（無料版）」</strong>と、複数形式・一括変換・形状マスク・CLI自動化などプロの現場で役立つ強力な機能を備えた<strong>「Pro Edition（買い切り版）」</strong>があります。Free版も個人・商用問わず完全無料でご利用いただけます。
+                    </p>
+
+                    <div class="table-responsive mb-4">
+                        <table class="table table-dark table-bordered align-middle text-center small compare-table mb-0">
+                            <thead class="table-secondary text-dark">
+                                <tr>
+                                    <th class="text-start">機能項目</th>
+                                    <th>Free Edition (無料版)</th>
+                                    <th>Pro Edition (製品版)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- カテゴリ: 画質・基本機能 -->
+                                <tr class="table-active text-white fw-bold">
+                                    <td colspan="3" class="text-start text-accent"><i class="bi bi-image me-1"></i> 基本画質・プレビュー</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Windows標準全11サイズ対応<br><small class="text-white-50">(16, 20, 24, 32, 40, 48, 64, 72, 96, 128, 256px)</small></td>
+                                    <td><i class="bi bi-check-circle-fill text-success me-1"></i>全11サイズ</td>
+                                    <td><i class="bi bi-check-circle-fill text-success me-1"></i>全11サイズ</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">極小サイズ高鮮明処理<br><small class="text-white-50">(16×16 / 24×24のエッジ保護・ハロー防止)</small></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">仕上がりプレビュー表示<br><small class="text-white-50">(小さい順に最大5サイズの1:1等倍表示)</small></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">日英UI言語切り替え &amp; 設定自動保存<br><small class="text-white-50">([F2]キー切替 / settings.json自動保存)</small></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+
+                                <!-- カテゴリ: フォーマット・変換効率 -->
+                                <tr class="table-active text-white fw-bold">
+                                    <td colspan="3" class="text-start text-accent"><i class="bi bi-collection me-1"></i> 対応形式・一括処理・マスク</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">対応画像フォーマット</td>
+                                    <td><span class="badge bg-secondary">PNG のみ (.png)</span></td>
+                                    <td><span class="text-success fw-bold">PNG, JPEG, BMP, WebP</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">一括変換（バッチ処理）</td>
+                                    <td>1ファイルずつ</td>
+                                    <td><span class="text-success fw-bold">複数ファイル ＆ フォルダ一括<br><small class="text-white-50">(サブフォルダ再帰探索対応)</small></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">形状マスク（アイコン切り抜き）</td>
+                                    <td>四角形<br><small class="text-white-50">(元画像の形のまま)</small></td>
+                                    <td><span class="text-success fw-bold">四角形・角丸・円形<br><small class="text-white-50">(Square / Rounded / Circle)</small></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">出力先フォルダー管理</td>
+                                    <td>元画像と同じフォルダー</td>
+                                    <td><span class="text-success fw-bold">同じ場所 / icons/ サブ / 任意指定<br><small class="text-white-50">(同名ファイル自動連番で保護)</small></span></td>
+                                </tr>
+
+                                <!-- カテゴリ: 自動化・ライセンス -->
+                                <tr class="table-active text-white fw-bold">
+                                    <td colspan="3" class="text-start text-accent"><i class="bi bi-terminal me-1"></i> 自動化・ライセンス体系</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">コマンドライン実行 (CLI)</td>
+                                    <td><span class="text-secondary">非対応</span></td>
+                                    <td><span class="text-success fw-bold"><i class="bi bi-check-circle-fill text-success me-1"></i>完全対応<br><small class="text-white-50">(ローカルスクリプト自動化)</small></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">料金・ライセンス形態</td>
+                                    <td><span class="text-white fw-bold">完全無料</span><br><small class="text-white-50">(個人・商用問わず自由)</small></td>
+                                    <td><span class="text-accent fw-bold">有料買い切り（永久ライセンス）</span><br><small class="text-white-50">(月額費用なし・永久アップデート)</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pro版の注目機能カード -->
+                    <div class="row g-4 mt-1">
+                        <div class="col-md-6">
+                            <div class="card-custom h-100 p-4 mb-0">
+                                <h3 class="h6 fw-bold text-accent mb-2"><i class="bi bi-bounding-box-circles me-2"></i>角丸・丸型への切り抜きマスク</h3>
+                                <p class="small text-white-75 mb-0">元画像の形のまま書き出す「Square」に加え、今風のデスクトップ/スマホアプリアイコンに最適な「Rounded（角丸）」、アバターやバッジに最適な「Circle（丸型）」をワンクリックで選択可能。正方形でない画像も自動で中央に合わせて滑らかにアンチエイリアス処理されます。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-custom h-100 p-4 mb-0">
+                                <h3 class="h6 fw-bold text-accent mb-2"><i class="bi bi-folder-symlink me-2"></i>フォルダごと一括変換 ＆ 複数形式</h3>
+                                <p class="small text-white-75 mb-0">PNGに加えて写真のJPEG、BMP、WebP画像にも完全対応。画像ファイルをまとめてドロップするのはもちろん、フォルダをドロップすればサブフォルダ内の画像も自動探索して一括でICO化します。同名ファイルは自動で連番付与されるため上書き事故も防げます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. スクリーンショット -->
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
                     <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます（矢印キーで前後の画像へ移動可能）。</p>
@@ -141,13 +266,29 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-window-fullscreen me-1"></i>メイン操作画面</h4>
-                                <p class="text-white-75 small mb-0">PNG画像をドラッグ＆ドロップするだけで即座にICOファイルを書き出すシンプルな操作環境。</p>
+                                <p class="text-white-75 small mb-0">画像をドラッグ＆ドロップするだけで即座にICOファイルを書き出すシンプルな操作環境。</p>
                             </div>
                         </div>
 
-                        <!-- 2. 画質比較 -->
+                        <!-- 2. ライセンス認証画面 -->
                         <div class="col-md-6 mb-3">
                             <div class="screenshot-container shadow" onclick="openGallery(1)">
+                                <img src="/img/pinsharpico-license.png" alt="ライセンス認証画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-key me-1"></i>ライセンス認証画面</h4>
+                                <p class="text-white-75 small mb-0">購入時のメールアドレスとライセンスキーを入力し、即座にPro版機能を有効化できます。</p>
+                            </div>
+                        </div>
+
+                        <!-- 3. 画質比較 -->
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(2)">
                                 <img src="/img/pinsharpico-compare.png" alt="一般的な縮小ツールとの画質比較" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
@@ -163,31 +304,156 @@
                     </div>
                 </section>
 
-                <!-- 3. 使用方法 -->
+                <!-- 4. 使用方法 -->
                 <section class="mb-5" id="how-to-use">
                     <h2 class="section-title">使用方法</h2>
-                    <div class="card-custom">
+
+                    <!-- GUIでの使い方 -->
+                    <h3 class="h5 fw-bold text-white mb-3"><i class="bi bi-window me-2 text-accent"></i>画面から使う場合 (GUI)</h3>
+                    <div class="card-custom mb-4">
                         <div class="row g-4 text-center">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold text-white">アプリ起動</h4>
-                                <p class="small mb-0 text-white-75">展開したフォルダ内の「PinSharpICO.exe」をダブルクリックして起動します。</p>
+                                <p class="small mb-0 text-white-75">ZIPを展開し「PinSharpICO.exe」を起動します（インストール不要）。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold text-white">ドロップ</h4>
-                                <p class="small mb-0 text-white-75">256×256ピクセルの正方形PNG画像を中央のドロップエリアへドラッグ＆ドロップします。</p>
+                                <p class="small mb-0 text-white-75">画像（またはフォルダ【Pro】）を中央へドロップ。必要に応じてサイズ・形状・保存先も選べます。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold text-white">自動保存完了</h4>
-                                <p class="small mb-0 text-white-75">自動で変換が行われ、元画像と同じフォルダに「ファイル名.ico」が即座に生成されます。</p>
+                                <p class="small mb-0 text-white-75">一瞬でICOが自動保存されプレビュー表示。「エクスプローラーで表示」ですぐに確認できます。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CLIでの使い方 (Pro版限定) -->
+                    <h3 class="h5 fw-bold text-white mb-3"><i class="bi bi-terminal me-2 text-accent"></i>コマンドラインから使う場合 (CLI) <span class="badge bg-danger ms-2 font-monospace">Pro Edition</span></h3>
+                    <div class="card-custom p-4">
+                        <p class="small text-white-75 mb-2">
+                            コマンドプロンプト、PowerShell、ローカルのビルドスクリプト等から直接バッチ実行できます。
+                        </p>
+                        <p class="small text-warning mb-3">
+                            <i class="bi bi-exclamation-triangle-fill me-1"></i><strong>ご注意:</strong> PC固有のライセンス認証を行っているため、使い捨てのクラウドCI/CD環境（GitHub-hostedランナー等）には対応しておりません。開発PCやビルドマシン等のローカル環境でご利用ください。
+                        </p>
+
+                        <h4 class="h6 fw-bold text-white mb-2"><i class="bi bi-code-slash text-accent me-2"></i>基本構文</h4>
+                        <pre class="bg-black text-light p-3 rounded border border-secondary font-monospace small mb-3"><code>PinSharpICO.exe &lt;画像ファイルやフォルダのパス...&gt; [オプション]</code></pre>
+
+                        <h4 class="h6 fw-bold text-white mb-2"><i class="bi bi-sliders text-accent me-2"></i>主なオプション</h4>
+                        <div class="table-responsive mb-3">
+                            <table class="table table-dark table-sm table-bordered align-middle small mb-0">
+                                <thead class="table-secondary text-dark">
+                                    <tr>
+                                        <th style="width: 28%;">オプション</th>
+                                        <th>説明</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>-o, --output &lt;パス&gt;</code></td>
+                                        <td>出力先フォルダー（または単一ファイル時の出力 .ico パス）を指定</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--subfolder</code></td>
+                                        <td>元画像と同じ階層に自動で <code>icons/</code> フォルダーを作成して保存</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-c, --shape &lt;形状&gt;</code></td>
+                                        <td>形状マスクを指定 (<code>square</code>: 四角, <code>rounded</code>: 角丸, <code>circle</code>: 丸型)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-s, --sizes &lt;サイズ&gt;</code></td>
+                                        <td>生成するサイズをカンマ区切りで指定 (例: <code>16,32,48,256</code>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-h, --help</code></td>
+                                        <td>コマンドラインのヘルプを表示</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4 class="h6 fw-bold text-white mb-2"><i class="bi bi-terminal-fill text-accent me-2"></i>実行例</h4>
+                        <pre class="bg-black text-light p-3 rounded border border-secondary font-monospace small mb-0"><code># 1. 画像をアイコンにする（一番シンプル）
+PinSharpICO.exe "my_icon.png"
+
+# 2. 写真をおしゃれな角丸アイコンにする
+PinSharpICO.exe "photo.jpg" --shape rounded
+
+# 3. イラストを丸型アイコンにする
+PinSharpICO.exe "avatar.webp" --shape circle
+
+# 4. フォルダ内の全画像を角丸にして別のフォルダへ一括保存
+PinSharpICO.exe "D:\Images" -o "D:\Icons" --shape rounded
+
+# 5. 元画像と同じ階層の 'icons/' フォルダへ自動保存
+PinSharpICO.exe "D:\Images" --subfolder
+
+# 6. 生成するサイズを限定して高速変換
+PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
+                    </div>
+                </section>
+
+                <!-- 5. Pro版の購入とライセンス登録 -->
+                <section class="mb-5" id="pro-edition">
+                    <h2 class="section-title">Pro版の購入とライセンス登録</h2>
+
+                    <div class="card-custom border-accent bg-accent-soft p-4 mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <span class="badge bg-danger mb-2 font-monospace">LIFETIME LICENSE</span>
+                                <h3 class="h4 fw-bold text-white mb-2">PinSharp ICO Pro Edition</h3>
+                                <p class="text-white-75 small mb-2">
+                                    月額サブスクリプションではなく、一度のご購入でずっと使える<strong>買い切り（永久ライセンス）</strong>です。将来のバージョンアップも含めて追加料金なしでご利用いただけます。
+                                </p>
+                                <div class="small text-white-50">
+                                    <span><i class="bi bi-shield-check text-accent me-1"></i>SSL暗号化決済（Gumroad）</span>
+                                    <span class="mx-2">|</span>
+                                    <span><i class="bi bi-laptop text-accent me-1"></i>ご自身のPCで利用可能・PC買い替え時再認証OK</span>
+                                    <span class="mx-2">|</span>
+                                    <span><i class="bi bi-wifi-off text-accent me-1"></i>普段は完全オフライン動作</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 text-center text-lg-end mt-3 mt-lg-0">
+                                <a href="https://chililikobo.gumroad.com/l/vefjk" target="_blank" rel="noopener noreferrer" class="buy-button text-nowrap px-4 py-3 shadow">
+                                    <i class="bi bi-cart-fill me-2"></i> Gumroadで購入する
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ライセンス有効化手順 -->
+                    <h3 class="h5 fw-bold text-white mb-3"><i class="bi bi-key me-2 text-accent"></i>ライセンス有効化の手順</h3>
+                    <div class="license-box mb-4">
+                        <div class="license-step">
+                            <div class="step-badge">1</div>
+                            <div>
+                                <strong class="text-white">購入・認証画面を開く</strong>
+                                <p class="small text-white-75 mb-0">アプリ画面右上にある<strong>「Pro へアップグレード」</strong>ボタンをクリックします。</p>
+                            </div>
+                        </div>
+                        <div class="license-step">
+                            <div class="step-badge">2</div>
+                            <div>
+                                <strong class="text-white">キーとメールアドレスを入力</strong>
+                                <p class="small text-white-75 mb-0">購入後にGumroadからメールで届いた「ライセンスキー」と「メールアドレス」を入力します。</p>
+                            </div>
+                        </div>
+                        <div class="license-step mb-0">
+                            <div class="step-badge">3</div>
+                            <div>
+                                <strong class="text-white">「有効化」をクリック</strong>
+                                <p class="small text-white-75 mb-0">認証が完了すると、即座にすべてのPro機能（一括変換、複数フォーマット、形状マスク、CLI等）が解放されます。</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- 4. よくある質問 (FAQ) -->
+                <!-- 6. よくある質問 (FAQ) -->
                 <section class="mb-5">
                     <h2 class="section-title">よくあるご質問 (FAQ)</h2>
 
@@ -202,63 +468,119 @@
                             </h3>
                             <div id="faq-c1" class="accordion-collapse collapse" aria-labelledby="faq-h1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> はい、個人利用・商用利用を問わず完全無料でご利用いただけます。商用アプリケーションやWebサービス、配布ソフトウェアのアイコン作成にもご自由にお使いいただけます。
+                                    <strong>A.</strong> はい、Free版・Pro版ともに個人利用・商用利用を問わずご活用いただけます。自社アプリや商用サービス、クライアントワークでのアイコン作成にもご自由にお使いいただけます（Pro版ライセンスはご購入いただいたご本人が管理するPCでご利用いただけます）。
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 2. インストールと権限 -->
+                        <!-- 2. Pro版ライセンス形態 -->
                         <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h2">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. インストールや管理者権限は必要ですか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Pro版のライセンス形態（買い切り / サブスク）について教えてください。
                                 </button>
                             </h3>
                             <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> 一切不要です。ZIPファイルを任意の場所に展開して実行するだけでそのまま動作します。レジストリを使用せず、管理者権限も不要なため、USBメモリ等に入れて持ち運ぶことも可能です。
+                                    <strong>A.</strong> <strong>買い切り（月額料金なしの永久ライセンス）</strong>です。一度ご購入いただければ、将来のバージョンアップも含めて追加費用なしでずっとご利用いただけます。
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 3. 入力画像について -->
+                        <!-- 3. PC買い替え時のライセンス引き継ぎ -->
                         <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h3">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. どのような元画像を用意すればよいですか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. PCを買い替えた場合、Pro版のライセンスは引き継げますか？
                                 </button>
                             </h3>
                             <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> <strong>256×256ピクセルの正方形PNG画像</strong>をご用意ください。アイコンとして綺麗に仕上げるため、背景が透過（アルファチャンネル付き）のPNG画像を推奨します。
+                                    <strong>A.</strong> はい、ご購入者ご本人が管理する新しいPCで再度ライセンスキーを入力して認証いただけます。万が一PC移行時などで再認証ができない場合は、お手数ですがサポート（<a href="mailto:chilili.kobo@gmail.com" class="text-accent">chilili.kobo@gmail.com</a>）までご連絡いただければ迅速に対応いたします。
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 4. なぜ綺麗に縮小できるのか -->
+                        <!-- 4. オフライン動作とネット通信 -->
                         <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h4">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. なぜ一般的な画像編集ソフトよりも綺麗に縮小できるのですか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Pro版の利用に常時インターネット接続は必要ですか？
                                 </button>
                             </h3>
                             <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> 初回のライセンス登録時のみ正規購入確認のためインターネット通信を行いますが、一度登録すれば普段は<strong>オフライン（ネット接続なし）環境でも問題なく動作</strong>します。画像データや個人情報をインターネット上に送信することは一切ありません。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. クラウドCI/CD環境での利用 -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h-ci">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c-ci" aria-expanded="false" aria-controls="faq-c-ci">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. クラウドCI/CD環境（GitHub Actions等）で自動実行できますか？
+                                </button>
+                            </h3>
+                            <div id="faq-c-ci" class="accordion-collapse collapse" aria-labelledby="faq-h-ci" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> いいえ、PC固有のライセンス認証を行っているため、実行ごとにインスタンスが破棄・再生成される使い捨てのクラウドCI/CD環境（GitHub-hostedランナー等）には対応しておりません。開発PCや固定されたビルドマシン等のローカル環境でのスクリプト自動化にご利用ください。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. 入力画像フォーマット -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h5">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. どのような元画像に対応していますか？
+                                </button>
+                            </h3>
+                            <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Free版は<strong>PNG画像（.png）</strong>に対応しています。Pro版はPNGに加え、デジカメ写真やイラストでよく使われる<strong>JPEG（.jpg / .jpeg）、BMP（.bmp）、WebP（.webp）</strong>に対応しています。Pro版では正方形でない長方形の画像でも、自動で中央に合わせて綺麗に切り抜きます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. インストールと権限 -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h6">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c6" aria-expanded="false" aria-controls="faq-c6">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. インストールや管理者権限は必要ですか？
+                                </button>
+                            </h3>
+                            <div id="faq-c6" class="accordion-collapse collapse" aria-labelledby="faq-h6" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> 一切不要です。ZIPファイルを任意の場所に展開して実行するだけでそのまま動作します。レジストリを使用せず、管理者権限も不要なため、USBメモリ等に入れて持ち運ぶことも可能です。アンインストール時もフォルダごと削除するだけで完全に消去できます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. なぜ綺麗に縮小できるのか -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h7">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c7" aria-expanded="false" aria-controls="faq-c7">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. なぜ一般的な画像編集ソフトよりも綺麗に縮小できるのですか？
+                                </button>
+                            </h3>
+                            <div id="faq-c7" class="accordion-collapse collapse" aria-labelledby="faq-h7" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> 一般的な画像編集ソフトの汎用縮小（バイリニアやバイキュービック等）は、平均化処理によって細い線や微小なスリットのコントラストを薄いグレーに沈めてしまいます。PinSharp ICOは極小アイコン専用のエッジ保護アルゴリズムと白フチ浮き（ハロー）を防ぐ数学的クランプ処理を施すため、16×16pxでも鮮明なコントラストが維持されます。
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 5. SmartScreen警告 -->
+                        <!-- 8. SmartScreen警告 -->
                         <div class="accordion-item bg-dark border-secondary border-top">
-                            <h3 class="accordion-header" id="faq-h5">
-                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                            <h3 class="accordion-header" id="faq-h8">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c8" aria-expanded="false" aria-controls="faq-c8">
                                     <i class="bi bi-question-circle text-accent me-2"></i>Q. 起動時に「WindowsによってPCが保護されました」（SmartScreen）と表示されます。
                                 </button>
                             </h3>
-                            <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faqAccordion">
+                            <div id="faq-c8" class="accordion-collapse collapse" aria-labelledby="faq-h8" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> インディー開発による配布ファイルのため、初回起動時にWindows SmartScreenの警告画面が表示される場合があります。アプリを起動するには、画面上の<strong>「詳細情報」</strong>をクリックし、次に現れる<strong>「実行」</strong>ボタンを選択してください。
+                                    <strong>A.</strong> 個人開発による配布ファイルのため、初回起動時にWindows SmartScreenの警告画面が表示される場合があります。アプリを起動するには、画面上の<strong>「詳細情報」</strong>をクリックし、次に現れる<strong>「実行」</strong>ボタンを選択してください。
                                 </div>
                             </div>
                         </div>
@@ -266,24 +588,42 @@
                     </div>
                 </section>
 
-                <!-- 5. 下部CTAカード -->
+                <!-- 7. 下部CTAカード -->
                 <div class="card-custom text-center py-4 bg-accent-soft border-accent mb-5">
                     <h3 class="h5 fw-bold text-white mb-2">今すぐ鮮鋭なアイコンを作成してみませんか？</h3>
-                    <p class="small text-white-75 mb-3">個人利用・商用利用ともに完全無料。インストール不要でZIPを展開するだけで今すぐお使いいただけます。</p>
+                    <p class="small text-white-75 mb-3">基本機能はずっと無料。さらに強力な一括変換や形状マスク、CLIを活用したい方はPro版をお選びいただけます。</p>
                     <div class="d-flex justify-content-center gap-3 flex-wrap">
                         <a href="https://github.com/chililikobo/PinSharpICO/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
-                            <i class="bi bi-download me-1"></i> 無料でダウンロードする
+                            <i class="bi bi-download me-1"></i> 無料でダウンロード
+                        </a>
+                        <a href="https://chililikobo.gumroad.com/l/vefjk" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-2 text-nowrap">
+                            <i class="bi bi-stars me-1 text-accent"></i> Pro版を購入（買い切り）
                         </a>
                     </div>
                 </div>
 
-                <!-- 6. 更新履歴 -->
+                <!-- 8. 更新履歴 -->
                 <section class="mb-5">
                     <h2 class="section-title">更新履歴</h2>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.10.25.0</span> <span class="text-white-50 small">2026.10.25</span>
+                                <span class="badge bg-danger me-2">v26.11.1.0</span> <span class="text-white-50 small">2026.11.01</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <strong class="text-white">PinSharp ICO Pro版の実装 &amp; 機能強化</strong>
+                                    <ul class="mb-0 mt-1 ps-3 text-white-75">
+                                        <li>JPEG, BMP, WebP 画像の読み込みに対応 (Pro)</li>
+                                        <li>複数ファイル＆フォルダごと（サブフォルダ再帰探索）の一括変換に対応 (Pro)</li>
+                                        <li>角丸（Rounded）や円形（Circle）への形状マスク切り抜き機能を追加 (Pro)</li>
+                                        <li>保存先フォルダー選択（同じ場所 / iconsフォルダ / 任意フォルダ指定）に対応 (Pro)</li>
+                                        <li>コマンドライン（CLI）からのヘッドレス自動実行に対応 (Pro)</li>
+                                        <li>日本語・英語の表示切り替え（[F2] キー）に対応</li>
+                                        <li>選んだサイズや設定の自動保存（settings.json）に対応</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item">
+                                <span class="badge bg-secondary me-2">v26.10.25.0</span> <span class="text-white-50 small">2026.10.25</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     初版公開（ローンチ）。256px→16px極小特化鮮鋭化エンジン、ドラッグ＆ドロップ自動保存、Windows標準全11サイズ出力を実装。
                                 </div>
@@ -300,10 +640,10 @@
 
                     <!-- ダウンロードカード (Free Edition) -->
                     <div class="card-custom mb-4">
-                        <h3 class="h5 fw-bold mb-3 text-accent">ダウンロード</h3>
-                        <p class="small text-white-75 mb-3">個人利用・商用利用を問わず、すべての機能を完全無料でご利用いただけます。</p>
-                        <a href="https://github.com/chililikobo/PinSharpICO/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light w-100 fw-bold mb-4">
-                            <i class="bi bi-github me-2"></i>GitHubからダウンロード
+                        <h3 class="h5 fw-bold mb-3 text-accent"><i class="bi bi-gift me-2"></i>Free Edition</h3>
+                        <p class="small text-white-75 mb-3">個人利用・商用利用を問わず、すべての基本機能を完全無料でご利用いただけます。</p>
+                        <a href="https://github.com/chililikobo/PinSharpICO/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light w-100 fw-bold mb-3">
+                            <i class="bi bi-github me-2"></i>GitHubから無料ダウンロード
                         </a>
 
                         <div class="border-top border-secondary pt-3 mt-2">
@@ -315,6 +655,38 @@
                         </div>
                     </div>
 
+                    <!-- Pro Edition 買い切りカード -->
+                    <div class="card-custom mb-4 border-accent bg-accent-soft" id="pro-plans">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h3 class="h5 fw-bold mb-0 text-white"><i class="bi bi-stars text-accent me-2"></i>Pro Edition</h3>
+                            <span class="badge bg-danger font-monospace">買い切り永久ライセンス</span>
+                        </div>
+                        <p class="small text-white-75 mb-3">複数画像形式・一括バッチ・角丸/円形マスク・CLI自動化を備えたプロ向け拡張版。</p>
+
+                        <div class="p-3 border border-secondary rounded text-center mb-3 bg-dark">
+                            <div class="small text-white-50 mb-1">Lifetime License</div>
+                            <p class="h4 fw-bold mb-2 text-white">永久ライセンス <small class="text-white-50 plan-unit">（月額費用なし）</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/vefjk" target="_blank" rel="noopener noreferrer" class="btn btn-danger w-100 fw-bold py-2 shadow-sm text-nowrap">
+                                <i class="bi bi-cart-fill me-1"></i> Gumroadで購入する
+                            </a>
+                            <p class="note-text text-white-50 mt-2 mb-0">一度の購入で最新版への永久アップデート付き</p>
+                        </div>
+
+                        <div class="small text-white-75 mb-3">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> JPEG, BMP, WebP 画像対応</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> フォルダごと一括＆サブフォルダ再帰探索</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 角丸（Rounded）＆ 円形（Circle）マスク</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> コマンドライン（CLI）完全対応</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 本人管理PCで利用可・PC買い替え時再認証OK</p>
+                        </div>
+
+                        <div class="border-top border-secondary pt-2 text-center">
+                            <p class="note-text text-white-50 mb-0">
+                                <i class="bi bi-shield-lock me-1"></i>決済はGumroad（SSL暗号化決済）で安全に処理されます
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- 動作環境カード -->
                     <div class="card-custom mt-4">
                         <h3 class="h5 fw-bold mb-3 text-accent">動作環境</h3>
@@ -322,8 +694,10 @@
                             <tbody>
                                 <tr><th>OS</th><td>Windows 10 / 11</td></tr>
                                 <tr><th>Arch</th><td>64bit (x64)</td></tr>
-                                <tr><th>入力画像</th><td>256×256 PNG画像</td></tr>
+                                <tr><th>入力形式</th><td>PNG (Free)<br>PNG, JPEG, BMP, WebP (Pro)</td></tr>
                                 <tr><th>出力サイズ</th><td>16〜256px（全11サイズ）</td></tr>
+                                <tr><th>形状マスク</th><td>四角 (Free)<br>四角・角丸・円形 (Pro)</td></tr>
+                                <tr><th>CLI実行</th><td>対応 (Pro)</td></tr>
                                 <tr><th>Runtime</th><td>不要（Native AOT）</td></tr>
                             </tbody>
                         </table>
