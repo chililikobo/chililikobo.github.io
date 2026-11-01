@@ -62,8 +62,22 @@
 
             <div class="accordion accordion-flush border border-secondary rounded overflow-hidden" id="infoAccordion">
 
+                <!-- Show top 5 announcements (older items are placed in the accordion below) -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-13">
+                            <span class="text-accent fw-bold me-3">2026.11.01</span> ClickCapture v26.11.1.0 Update
+                        </button>
+                    </h2>
+                    <div id="info-item-13" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            Improved license activation handling and system tray window management, along with stability enhancements and bug fixes for capture operations, rectangular selection, and overlay indicators.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-12">
                             <span class="text-accent fw-bold me-3">2026.11.01</span> PinSharp ICO v26.11.1.0 Released (Pro Edition Launch)
                         </button>
@@ -114,33 +128,7 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-8">
-                            <span class="text-accent fw-bold me-3">2026.07.31</span> ACL Migration Checker v26.7.31.2 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-8" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Initial release of ACL Migration Checker.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-7">
-                            <span class="text-accent fw-bold me-3">2026.06.13</span> LogonTime v26.6.13.0 Update
-                        </button>
-                    </h2>
-                    <div id="info-item-7" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Migrated to .NET 10.0 / Native AOT, implemented CSV and JSON export options, and added multilingual (EN/JA) support.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Older Announcements (Items after top 5 in an accordion) -->
+                <!-- Older Announcements (Items older than the top 5 are stored in this accordion) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
                         <button id="olderInfoBtn" class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#olderInfoCollapse" aria-expanded="false" aria-controls="olderInfoCollapse">
@@ -149,6 +137,32 @@
                     </h3>
                     <div id="olderInfoCollapse" class="accordion-collapse collapse" aria-labelledby="olderInfoHeading">
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-8">
+                                        <span class="text-accent fw-bold me-3">2026.07.31</span> ACL Migration Checker v26.7.31.2 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-8" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Initial release of ACL Migration Checker.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-7">
+                                        <span class="text-accent fw-bold me-3">2026.06.13</span> LogonTime v26.6.13.0 Update
+                                    </button>
+                                </h3>
+                                <div id="info-item-7" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Migrated to .NET 10.0 / Native AOT, implemented CSV and JSON export options, and added multilingual (EN/JA) support.
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
