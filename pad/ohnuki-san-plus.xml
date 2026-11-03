@@ -25,9 +25,9 @@
 		<Program_Release_Month>07</Program_Release_Month>
 		<Program_Release_Day>11</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
-		<Program_Cost_Dollars>3.50</Program_Cost_Dollars>
-		<Program_Cost_Other_CP>JPY</Program_Cost_Other_CP>
-		<Program_Cost_Other>500</Program_Cost_Other>
+		<Program_Cost_Dollars>4.00</Program_Cost_Dollars>
+		<Program_Cost_Other_CP />
+		<Program_Cost_Other>$39 USD / year</Program_Cost_Other>
 		<Program_Type>Shareware</Program_Type>
 		<Program_Release_Status>Minor Update</Program_Release_Status>
 		<Program_Install_Support>No Install Support</Program_Install_Support>
@@ -46,7 +46,7 @@
 			<Has_Expire_Info>Y</Has_Expire_Info>
 			<Expire_Count>30</Expire_Count>
 			<Expire_Based_On>Days</Expire_Based_On>
-			<Expire_Other_Info>1-month free trial. Subscription: 500 JPY/month or 5000 JPY/year. (Final price depends on the exchange rate.)</Expire_Other_Info>
+			<Expire_Other_Info>1-month free trial. Subscription: $4 USD/month or $39 USD/year.</Expire_Other_Info>
 			<Expire_Month />
 			<Expire_Day />
 			<Expire_Year />
@@ -57,7 +57,7 @@
 			<Char_Desc_45>Portable PC system information utility.</Char_Desc_45>
 			<Char_Desc_80>View PC system info with style. Portable, no installation required.</Char_Desc_80>
 			<Char_Desc_250>Ohnuki-san Plus is a smart, portable utility designed for usability and style. It allows you to check PC system information with a sophisticated interface. No installation required. Features a 1-month free trial for all new users.</Char_Desc_250>
-			<Char_Desc_450>Ohnuki-san Plus is a high-performance, portable system utility. Since it requires no installation, you can run it directly from any location. Experience all features with a 1-month free trial. Subscriptions are processed via Gumroad: approx. $3.50 (500 JPY) monthly or $35.00 (5000 JPY) annually. Please note: The final price in USD may vary slightly due to exchange rates from the base price in JPY.</Char_Desc_450>
+			<Char_Desc_450>Ohnuki-san Plus is a high-performance, portable system utility. Since it requires no installation, you can run it directly from any location. Experience all features with a 1-month free trial. Subscriptions are processed securely via Gumroad: $4.00 USD monthly or $39.00 USD annually (save 2 months with the annual plan).</Char_Desc_450>
 			<Char_Desc_2000>
 				Check your PC system information at a glance. Ohnuki-san Plus is a smart utility designed for usability and style.
 
@@ -67,11 +67,11 @@
 
 				Pricing &amp; Trial:
 				- 1-month free trial for all new users.
-				- Monthly Plan: 500 JPY (Approx. $3.50 USD)
-				- Annual Plan: 5000 JPY (Approx. $35.00 USD)
+				- Monthly Plan: $4.00 USD / month
+				- Annual Plan: $39.00 USD / year (Save 2 months!)
 
 				*Payments are securely processed via Gumroad.
-				*While the base price is set in Japanese Yen (JPY), Gumroad will automatically convert this to your local currency (USD, etc.) at the current exchange rate during checkout.
+
 
 				Developed by chilili kobo, this tool provides a premium experience for system management.
 			</Char_Desc_2000>
