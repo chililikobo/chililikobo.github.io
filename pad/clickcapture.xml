@@ -21,19 +21,19 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>ClickCapture</Program_Name>
-		<Program_Version>26.11.1.0</Program_Version>
+		<Program_Version>26.11.3.0</Program_Version>
 		<Program_Release_Month>11</Program_Release_Month>
-		<Program_Release_Day>1</Program_Release_Day>
+		<Program_Release_Day>3</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
 		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Cost_Other_CP />
-		<Program_Cost_Other>Pro Edition: $4 USD / month ($39 USD / year)</Program_Cost_Other>
+		<Program_Cost_Other>Pro Edition: $4 USD / month ($39 USD / year), Lifetime $69 USD</Program_Cost_Other>
 		<Program_Type>Freeware (Free for personal use)</Program_Type>
 		<Program_Release_Status>Minor Update</Program_Release_Status>
 		<Program_Install_Support>No Install Support</Program_Install_Support>
 		<Program_OS_Support>Win11,WinServer</Program_OS_Support>
     <Program_Language>Arabic,Chinese (Simplified),Chinese (Traditional),Dutch,English,French,German,Hindi,Indonesian,Italian,Japanese,Korean,Polish,Portuguese (Brazilian),Russian,Spanish,Thai,Turkish,Vietnamese</Program_Language>
-    <Program_Change_Info>Improved license activation, tray minimizing/restoring window management, and capture stability</Program_Change_Info>
+    <Program_Change_Info>Added Lifetime licenses and multi-seat activation support, 20-capture free trial for domain environments, purchase plan selector, and tray sync fixes</Program_Change_Info>
     <Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>Graphic Apps::Screen Capture</Program_Category_Class>
 		<Program_System_Requirements>Windows 11 or Windows Server 2025 (64-bit)</Program_System_Requirements>
@@ -57,7 +57,7 @@
 			<Char_Desc_45>Automated screenshot saver synced to clicks.</Char_Desc_45>
 			<Char_Desc_80>Auto-captures and saves screenshots in sync with your left-click operations.</Char_Desc_80>
 			<Char_Desc_250>ClickCapture is a background utility that automatically captures screenshots in sync with your mouse's left-click actions. Record your entire workflow as images without conscious effort. Smart filtering prevents saving duplicate identical images.</Char_Desc_250>
-      <Char_Desc_450>ClickCapture is a background utility that automatically captures and saves screenshots in sync with your left-click operations. Ideal for creating operation manuals, it features Smart Duplicate Filtering to prevent saving unchanged screens. It requires no installation, runs quietly, and can be toggled via a customizable hotkey (default is F9, F8 also available). Fully functional for personal use. A Pro license is required for enterprise domain environments.</Char_Desc_450>
+      <Char_Desc_450>ClickCapture is a background utility that automatically captures and saves screenshots in sync with your left-click operations. Ideal for creating operation manuals, it features Smart Duplicate Filtering to prevent saving unchanged screens. It requires no installation, runs quietly, and can be toggled via a customizable hotkey (default is F9, F8 also available). Fully functional for personal use, with a 20-capture free trial for enterprise domains.</Char_Desc_450>
       <Char_Desc_2000>
         Everything you need, captured just by clicking.
 
@@ -77,7 +77,7 @@
 				- Recording UI elements for RPA development
 
 				Editions:
-				ClickCapture is fully functional with no limits as the Free Edition for personal use. A Pro Edition license (unrestricted, commercial use OK) is required when running the software on domain-joined PCs or enterprise environments.
+				ClickCapture is fully functional with no limits as the Free Edition for personal use. A 20-capture free trial per session is included for enterprise domain environments. A Pro Edition license (unrestricted, commercial use OK) is available in Monthly, Yearly, or Lifetime options.
 			</Char_Desc_2000>
 		</English>
 	</Program_Descriptions>

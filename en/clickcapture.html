@@ -67,7 +67,7 @@
                 <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button mb-2">
                     <i class="bi bi-download me-1"></i> Download for Free
                 </a>
-                <p class="small text-white-50 mt-1 mb-2">*Free Edition is 100% free with no limits (for personal use)</p>
+                <p class="small text-white-50 mt-1 mb-2">*Free Edition is 100% free (unlimited for personal use / 20 captures per session trial for corporate PCs)</p>
                 <a href="#demo" class="d-inline-block text-accent small text-decoration-none">
                     <i class="bi bi-play-circle-fill me-1"></i>Watch live demo ↓
                 </a>
@@ -192,18 +192,18 @@
 
                                 <tr>
                                     <td class="text-start">Business & Corporate Use<br><small class="text-white-50">(Including domain-joined PCs)</small></td>
-                                    <td><span class="text-danger fw-bold">Restricted<br>(Personal use only)</span></td>
+                                    <td><span class="text-warning fw-bold">Trial (20 captures/session)</span><br><small class="text-white-50">(Unlimited for personal use)</small></td>
                                     <td><span class="text-success fw-bold">Unrestricted<br>(Commercial use OK)</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">License Activation</td>
                                     <td>Not required</td>
-                                    <td>Required (up to 3 PCs)</td>
+                                    <td>Required (3 PCs per seat / Multi-seat & Lifetime License support)</td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">Price</td>
                                     <td>Free</td>
-                                    <td>From $4 USD / mo.<br><small class="text-white-50">($39 USD / year)</small></td>
+                                    <td>From $4 USD / mo.<br><small class="text-white-50">($39 USD / yr / Lifetime $69 USD)</small></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -214,8 +214,9 @@
                         <h3 class="h6 fw-bold text-danger mb-2">
                             <i class="bi bi-exclamation-triangle-fill me-2"></i>Licensing Information
                         </h3>
-                        <p class="mb-2 text-white">Each Pro Edition license can be activated on <strong>up to 3 devices</strong> simultaneously.</p>
-                        <p class="mb-2 text-white-50 small">*Running on 4 or more devices simultaneously triggers automatic security locking. For team or enterprise deployment, please purchase additional licenses as needed.</p>
+                        <p class="mb-2 text-white">Each Pro Edition license can be activated on <strong>up to 3 devices</strong> simultaneously. Multi-seat (quantity) activations are also supported.</p>
+                        <p class="mb-2 text-white-50 small">*On domain-joined PCs (corporate networks), a free trial limit of 20 captures per session is applied (restarting the app resets the trial). A Pro Edition license is required for continuous unlimited usage.</p>
+                        <p class="mb-2 text-white-50 small">*Running on 4 or more devices simultaneously per single license triggers automatic security locking. For team or enterprise deployment, please purchase additional licenses as needed.</p>
                         <div class="p-2 bg-dark rounded border border-secondary mt-2">
                             <p class="mb-0 text-white-75 small">
                                 <i class="bi bi-shield-check text-success me-1"></i><strong>Seamless PC Migration:</strong>
@@ -227,13 +228,13 @@
                     <!-- Mobile-Only Quick Action -->
                     <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
                         <h3 class="h6 fw-bold text-white mb-2"><i class="bi bi-lightning-charge text-accent me-1"></i>Download & Purchase</h3>
-                        <p class="small text-white-50 mb-3">100% free for personal use. Commercial users can get started with a 1-month free trial.</p>
+                        <p class="small text-white-50 mb-3">100% free for personal use. Commercial users can get started with a 1-month free trial or Lifetime license.</p>
                         <div class="d-grid gap-2">
                             <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
                                 <i class="bi bi-download me-1"></i> Download Free Edition
                             </a>
                             <a href="#pro-plans" class="btn btn-outline-danger fw-bold btn-sm py-2">
-                                <i class="bi bi-briefcase me-1"></i> View Pro Plans (from $4/mo.)
+                                <i class="bi bi-briefcase me-1"></i> View Pro Plans (from $4/mo. / Lifetime $69)
                             </a>
                         </div>
                     </div>
@@ -337,7 +338,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-building me-1"></i>Enterprise Environment Detection</h4>
-                                <p class="text-white-75 small mb-0">Domain-joined PCs in corporate networks require a Pro Edition license.</p>
+                                <p class="text-white-75 small mb-0">Domain-joined PCs include a 20-capture free trial per session. Continuous unlimited use requires Pro Edition.</p>
                             </div>
                         </div>
                     </div>
@@ -413,7 +414,22 @@
                             <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> Yes, it is 100% safe. ClickCapture is a lightweight indie utility and does not include an expensive corporate EV code-signing certificate, causing Windows SmartScreen to display a standard caution dialog.<br>
-                                    To run the application, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>.
+                                    To run the application, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>.<br>
+                                    Additionally, the binary is thoroughly verified clean on VirusTotal with 0/66 detections (<a href="https://www.virustotal.com/gui/file/b2581fa4ccceb6e516d532c9882279ca1f010acae6952d5fed8f5831c69ddb52" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View VirusTotal Scan Report (0/66)</a>).
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enterprise Trial in Corporate Domain -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h-domain">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c-domain" aria-expanded="false" aria-controls="faq-c-domain">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Can I test ClickCapture in an enterprise / domain-joined environment?
+                                </button>
+                            </h3>
+                            <div id="faq-c-domain" class="accordion-collapse collapse" aria-labelledby="faq-h-domain" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Yes! Starting with v26.11.3.0, ClickCapture provides a free trial of 20 captures per session on domain-joined PCs. Restarting the application resets the session limit, allowing you to thoroughly evaluate functionality in your corporate environment. For continuous unlimited usage, please purchase a Pro Edition license (Monthly, Yearly, or Lifetime).
                                 </div>
                             </div>
                         </div>
@@ -474,7 +490,7 @@
                 <!-- Bottom CTA Card -->
                 <div class="card-custom text-center py-4 bg-accent-soft border-accent mb-5">
                     <h3 class="h5 fw-bold text-white mb-2">Ready to try the Free Edition?</h3>
-                    <p class="small text-white-50 mb-3">100% free for personal use. Zero installation required—simply extract the ZIP and run.</p>
+                    <p class="small text-white-50 mb-3">100% free for personal use. Corporate PCs include a 20-capture free trial. Simply extract the ZIP and run.</p>
                     <div class="d-flex justify-content-center gap-3 flex-wrap">
                         <a href="https://github.com/chililikobo/ClickCapture/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
                             <i class="bi bi-download me-1"></i> Download for Free
@@ -492,7 +508,17 @@
                         <!-- Latest 5 items -->
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.11.1.0</span> <span class="text-white-50 small">2026.11.01</span>
+                                <span class="badge bg-accent me-2">v26.11.3.0</span> <span class="text-white-50 small">2026.11.03</span>
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    Added support for Lifetime licenses and multi-seat (quantity) activation.<br>
+                                    Added a 20-capture free trial for domain-joined (enterprise) environments.<br>
+                                    Added license purchase plan menu (Monthly/Yearly/Lifetime) and active plan display.<br>
+                                    Fixed synchronization issues between task tray menu and capture ON/OFF state.
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.11.1.0</span> <span class="text-white-50 small">2026.11.01</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     Improved license activation handling (prevented unintended use count consumption on email mismatch, added masking for sensitive license inputs).<br>
                                     Improved window position and state management when minimizing to and restoring from the system tray.<br>
@@ -521,13 +547,6 @@
                                     Improved Task Scheduler handling for auto-start stability.
                                 </div>
                             </li>
-
-                            <li class="changelog-item mt-3">
-                                <span class="badge bg-secondary me-2">v26.6.18.0</span> <span class="text-white-50 small">2026.06.18</span>
-                                <div class="mt-1 ps-1 text-white-75 small">
-                                    Implemented multilingual UI support across 19 languages.
-                                </div>
-                            </li>
                         </ul>
 
                         <!-- Older changelog entries (collapsed) -->
@@ -542,6 +561,13 @@
                                     <div class="accordion-body">
                                         <ul class="changelog-list mb-0">
                                             <li class="changelog-item">
+                                                <span class="badge bg-secondary me-2">v26.6.18.0</span> <span class="text-white-50 small">2026.06.18</span>
+                                                <div class="mt-1 ps-1 text-white-75 small">
+                                                    Implemented multilingual UI support across 19 languages.
+                                                </div>
+                                            </li>
+
+                                            <li class="changelog-item mt-3">
                                                 <span class="badge bg-secondary me-2">v26.6.13.1</span> <span class="text-white-50 small">2026.06.13</span>
                                                 <div class="mt-1 ps-1 text-white-75 small">
                                                     Added double-click on preview image to open in default viewer.<br>
@@ -627,11 +653,11 @@
 
                     <!-- Pro Edition Card -->
                     <div class="card-custom" id="pro-plans">
-                        <h3 class="h5 fw-bold mb-2 text-accent">Pro Edition Subscription</h3>
-                        <p class="small text-white-75 mb-3">A Pro Edition license is required for use in commercial workflows or corporate domain-joined PCs.</p>
+                        <h3 class="h5 fw-bold mb-2 text-accent">Pro Edition License Plans</h3>
+                        <p class="small text-white-75 mb-3">A Pro Edition license is required for continuous unlimited usage in corporate domain-joined PCs or commercial workflows.</p>
 
                         <div class="alert alert-trial py-2 px-3 mb-3 rounded text-center">
-                            <i class="bi bi-gift-fill me-2"></i><strong>1-Month Free Trial Available!</strong>
+                            <i class="bi bi-gift-fill me-2"></i><strong>1-Month Free Trial for Subscriptions!</strong>
                         </div>
 
                         <!-- Monthly Plan -->
@@ -657,16 +683,29 @@
                             <p class="note-text text-white-50 mt-1 mb-0">Annual billing (~$3.25 / mo.)</p>
                         </div>
 
+                        <!-- Lifetime License -->
+                        <div class="mb-3 p-3 border border-secondary rounded text-center">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">Lifetime License</p>
+                                <span class="badge bg-danger plan-badge font-monospace">LIFETIME</span>
+                            </div>
+                            <p class="h3 fw-bold mb-2">$ 69 <small class="text-white-50 plan-unit">/ one-time</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/jmial" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger w-100 fw-bold btn-sm">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Buy on Gumroad
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">One-time payment (no subscriptions, multi-seat supported)</p>
+                        </div>
+
                         <!-- Device Limit Notice -->
                         <div class="limit-alert limit-alert-danger small mb-3">
-                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> Device Limit Notice</strong>
+                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> Device Limit & Multi-Seat Notice</strong>
                             <p class="small text-white mb-0 mt-1 limit-note">
-                                Valid on up to <strong>3 devices</strong> per license. No manual deactivation required when migrating to a new PC.
+                                Valid on up to <strong>3 devices</strong> per license. Multi-seat (quantity) activations are supported. No manual deactivation required when migrating to a new PC.
                             </p>
                         </div>
 
                         <div class="small text-white-75 mb-3">
-                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> First month is 100% free</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> First month of subscription is 100% free</p>
                             <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Cancel anytime during the trial period</p>
                             <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> Commercial use & latest updates included</p>
                         </div>
