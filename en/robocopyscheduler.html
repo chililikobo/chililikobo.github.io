@@ -136,7 +136,7 @@
                 <!-- 4. Free vs. Pro Feature Comparison -->
                 <section class="mb-5">
                     <h2 class="section-title">Free vs. Pro Feature Comparison</h2>
-                    <p class="text-white-75">Robocopy Scheduler is available in two editions: "Free Edition" and "Pro Edition". All core capabilities are free for personal and non-managed devices.</p>
+                    <p class="text-white-75">Robocopy Scheduler is available in two editions: "Free Edition" and "Pro Edition". All features are completely free for personal or unmanaged devices. In corporate environments, a 14-day free trial is available upon initial launch to evaluate all Pro features (including scheduled execution).</p>
                     <div class="table-responsive">
                         <table class="table table-dark table-bordered align-middle text-center small compare-table mb-0">
                             <thead class="table-secondary text-dark">
@@ -332,7 +332,8 @@
                             <div id="faq-c1" class="accordion-collapse collapse" aria-labelledby="faq-h1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> Yes, it is completely safe. As an indie PC utility without an expensive corporate EV certificate, Windows SmartScreen presents this initial advisory dialog for new executables.<br>
-                                    To launch, click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>.
+                                    To launch, click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>.<br>
+                                    Additionally, the binary is thoroughly verified clean on VirusTotal with 0/59 detections (<a href="https://www.virustotal.com/gui/file/7f0d97b6e058bdba79bbab743f21f992abcca0e7bf4751404440cafb54de20d4" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View VirusTotal Scan Report (0/59)</a>).
                                 </div>
                             </div>
                         </div>
@@ -361,6 +362,7 @@
                             <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
                                     <strong>A.</strong> Automated scheduled background execution on domain-joined PCs or Microsoft Entra ID (Azure AD) corporate machines requires a Pro Edition subscription license.<br>
+                                    A 14-day free trial is available upon initial launch to evaluate all Pro features (including scheduled execution) in enterprise environments.<br>
                                     Even on Free Edition, immediate manual backup execution using the "Run Now" button is completely unrestricted.
                                 </div>
                             </div>
@@ -446,7 +448,20 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.9.27.0</span> <span class="text-white-50 small">2026.09.27</span>
+                                <span class="badge bg-accent me-2">v26.11.7.0</span> <span class="text-white-50 small">2026.11.07</span>
+                                <div class="mt-1 ps-1 text-white-75 small">
+                                    Added 14-day free trial feature for corporate environments (evaluate Pro features)<br>
+                                    Added "Discard Settings" button in General Settings<br>
+                                    Added warning/confirmation dialog on app exit to prevent accidental stoppage of background schedules<br>
+                                    Added "Exit" button to the main window<br>
+                                    Added license type display and direct purchase links<br>
+                                    Optimized command arguments when using the /LOG option (added /TEE, removed /NJH and /NJS)<br>
+                                    UI/UX improvements, bug fixes, and general stability enhancements
+                                </div>
+                            </li>
+
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.9.27.0</span> <span class="text-white-50 small">2026.09.27</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     Fixed an issue where sleep prevention could become inactive after resuming from system sleep.
                                 </div>
