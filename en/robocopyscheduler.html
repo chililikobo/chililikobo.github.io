@@ -69,7 +69,7 @@
                 <a href="https://github.com/chililikobo/RobocopyScheduler/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button mb-2">
                     <i class="bi bi-download me-1"></i> Download for Free
                 </a>
-                <p class="small text-white-50 mt-1 mb-2">*Free Edition is 100% free with all features (for personal & non-managed PCs)</p>
+                <p class="small text-white-50 mt-1 mb-2">*Free Edition is 100% free for personal use (14-day free trial for enterprise environments)</p>
                 <a href="#demo" class="d-inline-block text-accent small text-decoration-none">
                     <i class="bi bi-play-circle-fill me-1"></i>Watch live demo ↓
                 </a>
@@ -174,7 +174,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-start">Automated scheduled execution in corporate networks<br><small class="text-white-50">(Domain-joined PCs / Entra ID environments)</small></td>
-                                    <td><span class="text-danger fw-bold">Manual only<br>(Schedule restricted)</span></td>
+                                    <td><span class="text-warning fw-bold">14-Day Free Trial</span><br><small class="text-white-50">(Manual only after trial)</small></td>
                                     <td><span class="text-success fw-bold">Unrestricted<br>(Auto-schedule OK)</span></td>
                                 </tr>
 
@@ -189,18 +189,18 @@
                                 </tr>
                                 <tr>
                                     <td class="text-start">Corporate & Business Deployment<br><small class="text-white-50">(Including domain networks)</small></td>
-                                    <td><span class="text-warning fw-bold">Manual backups only</span></td>
+                                    <td><span class="text-warning fw-bold">14-Day Free Trial</span><br><small class="text-white-50">(Manual only after trial)</small></td>
                                     <td><span class="text-success fw-bold">Unrestricted (Commercial OK)</span></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">License Activation</td>
                                     <td>Not required</td>
-                                    <td>Required (up to 3 PCs)</td>
+                                    <td>Required (3 PCs per seat)<br><small class="text-white-50">(Multi-seat & Lifetime License support)</small></td>
                                 </tr>
                                 <tr>
                                     <td class="text-start">Price</td>
                                     <td>Free</td>
-                                    <td>From $4 USD / mo.<br><small class="text-white-50">($39 USD / year)</small></td>
+                                    <td>From $4 USD / mo.<br><small class="text-white-50">($39 USD / yr / Lifetime $69 USD)</small></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -211,7 +211,8 @@
                         <h3 class="h6 fw-bold text-danger mb-2">
                             <i class="bi bi-exclamation-triangle-fill me-2"></i>Licensing Information
                         </h3>
-                        <p class="mb-2 text-white">Each Pro Edition license can be activated on <strong>up to 3 devices</strong> simultaneously.</p>
+                        <p class="mb-2 text-white">Each Pro Edition license can be activated on <strong>up to 3 devices</strong> simultaneously. Multi-seat (quantity) activations are also supported.</p>
+                        <p class="mb-2 text-white-50 small">*In corporate environments (domain-joined PCs), a 14-day free trial is available upon initial launch to evaluate all Pro features (including automated scheduled execution). After the trial period ends, backups are restricted to manual execution; a Pro Edition license is required for continuous automated scheduling.</p>
                         <p class="mb-2 text-white-50 small">*Using a single license on 4 or more machines simultaneously will trigger automated license locking. For team or enterprise deployment, please purchase additional licenses as needed.</p>
                         <div class="p-2 bg-dark rounded border border-secondary mt-2">
                             <p class="mb-0 text-white-75 small">
@@ -224,13 +225,13 @@
                     <!-- Mobile-Only Quick Action -->
                     <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
                         <h3 class="h6 fw-bold text-white mb-2"><i class="bi bi-lightning-charge text-accent me-1"></i>Download & Purchase</h3>
-                        <p class="small text-white-50 mb-3">100% free for personal use. Commercial automated schedules can be evaluated with a 1-month free trial.</p>
+                        <p class="small text-white-50 mb-3">100% free for personal use. Commercial users can get started with a 1-month free trial or Lifetime license.</p>
                         <div class="d-grid gap-2">
                             <a href="https://github.com/chililikobo/RobocopyScheduler/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
                                 <i class="bi bi-download me-1"></i> Download Free Edition
                             </a>
                             <a href="#pro-plans" class="btn btn-outline-danger fw-bold btn-sm py-2">
-                                <i class="bi bi-briefcase me-1"></i> View Pro Plans (from $4/mo.)
+                                <i class="bi bi-briefcase me-1"></i> View Pro Plans (from $4/mo. / Lifetime $69)
                             </a>
                         </div>
                     </div>
@@ -352,18 +353,17 @@
                             </div>
                         </div>
 
-                        <!-- 3. Enterprise environment -->
+                        <!-- 3. Enterprise environment trial -->
                         <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h3">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Scheduled auto-execution is disabled in my corporate environment (only manual run is allowed).
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Can I evaluate automated scheduled backups on corporate (domain-joined) PCs?
                                 </button>
                             </h3>
                             <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> Automated scheduled background execution on domain-joined PCs or Microsoft Entra ID (Azure AD) corporate machines requires a Pro Edition subscription license.<br>
-                                    A 14-day free trial is available upon initial launch to evaluate all Pro features (including scheduled execution) in enterprise environments.<br>
-                                    Even on Free Edition, immediate manual backup execution using the "Run Now" button is completely unrestricted.
+                                    <strong>A.</strong> Yes! Starting with v26.11.7.0, a <strong>14-day free trial</strong> is automatically activated upon initial launch on domain-joined PCs or Microsoft Entra ID corporate machines. You can evaluate all Pro features—including automated background schedules—using Free Edition.<br>
+                                    To continue using scheduled auto-execution after the 14-day trial period, please purchase a Pro Edition license (Monthly, Yearly, or Lifetime). Immediate manual backup execution via the "Run Now" button remains completely free and unrestricted even after the trial ends.
                                 </div>
                             </div>
                         </div>
@@ -519,11 +519,11 @@
 
                     <!-- Pro Edition Card -->
                     <div class="card-custom" id="pro-plans">
-                        <h3 class="h5 fw-bold mb-2 text-accent">Pro Edition Subscription</h3>
+                        <h3 class="h5 fw-bold mb-2 text-accent">Pro Edition License Plans</h3>
                         <p class="small text-white-75 mb-3">A Pro Edition license is required for scheduled automated background backups in corporate environments.</p>
 
                         <div class="alert alert-trial py-2 px-3 mb-3 rounded text-center">
-                            <i class="bi bi-gift-fill me-2"></i><strong>1-Month Free Trial Available!</strong>
+                            <i class="bi bi-gift-fill me-2"></i><strong>1-Month Free Trial for Subscriptions!</strong>
                         </div>
 
                         <!-- Monthly Plan -->
@@ -549,16 +549,29 @@
                             <p class="note-text text-white-50 mt-1 mb-0">Annual billing (~$3.25 / mo.)</p>
                         </div>
 
+                        <!-- Lifetime License -->
+                        <div class="mb-3 p-3 border border-secondary rounded text-center">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">Lifetime License</p>
+                                <span class="badge bg-danger plan-badge font-monospace">LIFETIME</span>
+                            </div>
+                            <p class="h3 fw-bold mb-2">$ 69 <small class="text-white-50 plan-unit">/ one-time</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/ptkjs" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger w-100 fw-bold btn-sm">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Buy on Gumroad
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">One-time payment (no subscriptions, multi-seat supported)</p>
+                        </div>
+
                         <!-- Device Limit Notice -->
                         <div class="limit-alert limit-alert-danger small mb-3">
-                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> Device Limit Notice</strong>
+                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> Device Limit & Multi-Seat Notice</strong>
                             <p class="small text-white mb-0 mt-1 limit-note">
-                                Valid on up to <strong>3 devices</strong> per license. Seamless PC migration without manual deactivation.
+                                Valid on up to <strong>3 devices</strong> per license. Multi-seat (quantity) activations are supported. No manual deactivation required when migrating to a new PC.
                             </p>
                         </div>
 
                         <div class="small text-white-75 mb-3">
-                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> First month is 100% free</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> First month of subscription is 100% free</p>
                             <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Cancel anytime during the trial period</p>
                             <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> Commercial use & latest updates included</p>
                         </div>
