@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>chilili kobo</MASTER_PAD_EDITOR>
+    <MASTER_PAD_INFO>Portable Application Description (PAD) 4.0</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <Company_Info>
+    <Company_Name>chilili kobo</Company_Name>
+    <Address_1 />
+    <City_Town />
+    <State_Province />
+    <Zip_Postal_Code />
+    <Country>Japan</Country>
+    <Company_WebSite_URL>https://chililikobo.github.io/en/</Company_WebSite_URL>
+    <Contact_Info>
+      <Author_First_Name />
+      <Author_Last_Name />
+      <Author_Email>chilili.kobo@gmail.com</Author_Email>
+    </Contact_Info>
+  </Company_Info>
+  <Program_Info>
+    <Program_Name>Ohnuki-san Hub</Program_Name>
+    <Program_Version>26.11.22.0</Program_Version>
+    <Program_Release_Month>11</Program_Release_Month>
+    <Program_Release_Day>22</Program_Release_Day>
+    <Program_Release_Year>2026</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
+    <Program_Cost_Other_CP />
+    <Program_Cost_Other>Pro License: $7 USD / month ($49 USD / year / Lifetime $99 USD Special Offer, Reg. $119)</Program_Cost_Other>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Release_Status>New Release</Program_Release_Status>
+    <Program_Install_Support>No Install Support</Program_Install_Support>
+    <Program_OS_Support>Win10,Win11,WinServer</Program_OS_Support>
+    <Program_Language>English,Japanese</Program_Language>
+    <Program_Change_Info>Initial release of Ohnuki-san Hub (with bundled OhnukiSan.exe v26.11.22.0): Analytics Dashboard, Create Scanner, Pro License management, and Quick Guide.</Program_Change_Info>
+    <Program_Specific_Category>Utilities</Program_Specific_Category>
+    <Program_Category_Class>System Utilities::System Analysis</Program_Category_Class>
+    <Program_System_Requirements>Windows 10, Windows 11, or Windows Server (64-bit x64)</Program_System_Requirements>
+    <File_Info>
+      <File_Size_Bytes />
+      <File_Size_K />
+      <File_Size_MB />
+    </File_Info>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Count />
+      <Expire_Based_On />
+      <Expire_Other_Info />
+      <Expire_Month />
+      <Expire_Day />
+      <Expire_Year />
+    </Expire_Info>
+  </Program_Info>
+  <Program_Descriptions>
+    <English>
+      <Char_Desc_45>Windows PC asset scanner &amp; fleet analytics.</Char_Desc_45>
+      <Char_Desc_80>Portable Windows PC asset scanner builder, fleet analytics &amp; CSV ledger tool.</Char_Desc_80>
+      <Char_Desc_250>Ohnuki-san Hub creates portable Windows PC asset scanners (OhnukiSan.exe) and aggregates HTML reports into fleet KPIs, interactive charts, and unlimited Excel CSV ledgers. Hub is 100% free with an optional Pro License.</Char_Desc_250>
+      <Char_Desc_450>Ohnuki-san Hub unifies portable Windows PC scanner creation and fleet analytics in one Native AOT app. Export OhnukiSan.exe (Free/Pro) to USB or ZIP, scan offline, and drop HTML reports for 5 KPIs, 4 charts, and unlimited CSV export. Hub is 100% free. Pro License unlocks continuous multi-PC scanning (disable .dat auto-delete), 1/3/7/14/30-day expiry for advance/remote ZIP prep, and clean licensed report headers without Trial marks.</Char_Desc_450>
+      <Char_Desc_2000>Ohnuki-san Hub is the management console for the portable Windows PC IT asset scanner OhnukiSan.exe. Unifying Free (ex-Lite), Pro (ex-Plus), and Dashboard in one Native AOT app, it lets IT teams deploy scanners and analyze HTML reports in 3 steps.
+
+Key Features:
+- Portable Scanner Export: Export OhnukiSan.exe (and optional ohnuki-pro.dat) as a ZIP archive, ready-to-run USB/folder package, standalone .dat file, or Free executable.
+- Multi-PC Analytics Dashboard: Load Free &amp; Pro HTML reports via folder or drag-and-drop. Inspect 5 KPIs, 4 cross-filtering donut charts (Manufacturer, OS, Build, Chassis), quick filters, Compare/Ledger toggle, and property inspector.
+- Unlimited Excel CSV Export: Export aggregated or filtered inventory data to UTF-8 (with BOM) CSV files with zero device or row limits.
+- Standard (Free) &amp; Detailed (Pro) Audits: Collect hardware, OS, storage, network, security, users/groups, software, updates, printers, and paths in Free mode; unlock Share/NTFS permissions, VPN, Proxy, Routing, Event Logs, AD / Entra ID, Services, Tasks, and PnP Devices in Pro mode.
+- Local &amp; Offline Security: Inventory stays local with zero OhnukiSan.exe network requests. Licensed Hubs use machine-bound AES-256-GCM and 30-day offline grace.
+- Sample Demo &amp; Bilingual UI: Test with "Try with 5 Sample PCs". Supports EN/JP (--lang-en / --lang-ja) with zero .NET dependencies.
+
+Editions:
+- Hub &amp; Standard (Free): 100% free with unlimited Analytics, CSV export, Free scanner export, and a 24h one-shot Pro Trial (reports show Trial (Unregistered)).
+- Pro License ($7/mo, $49/yr, Lifetime $99 Special Offer / Reg. $119): Unlocks continuous multi-PC scanning from 1 USB/share (disable .dat auto-delete), 1/3/7/14/30-day expiry for advance prep or remote ZIP rollout, and licensed HTML/MD/CSV stamps with project notes for client delivery and audit evidence.
+
+Note: Reports from legacy Ohnuki-san Lite or Plus are not compatible with Ohnuki-san Hub.</Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>https://chililikobo.github.io/en/ohnuki-san-hub.html</Application_Info_URL>
+      <Application_Order_URL>https://github.com/chililikobo/OhnukisanHub/releases/latest</Application_Order_URL>
+      <Application_Screenshot_URL>https://chililikobo.github.io/img/ohnuki-san-hub-analytics-en.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>https://chililikobo.github.io/img/ohnuki-san-hub-icon256.png</Application_Icon_URL>
+      <Application_XML_File_URL>https://chililikobo.github.io/pad/ohnuki-san-hub.xml</Application_XML_File_URL>
+    </Application_URLs>
+  </Web_Info>
+</XML_DIZ_INFO>

@@ -65,6 +65,19 @@
                 <!-- 最新の5件を表示（古いお知らせは下記のアコーディオン内に格納） -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-17">
+                            <span class="text-accent fw-bold me-3">2026.11.22</span> Ohnuki-san Hub v26.11.22.0 リリース
+                        </button>
+                    </h2>
+                    <div id="info-item-17" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            従来の Ohnuki-san Lite（→ Free）・Plus（→ Pro）・Dashboard を1つに統合した管理コンソール「Ohnuki-san Hub（大抜さん Hub）」を新規公開しました。ポータブル調査ツール作成、複数台HTMLレポート集計・比較、無制限Excel用CSV出力に対応しています。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-16">
                             <span class="text-accent fw-bold me-3">2026.11.07</span> Robocopy Scheduler v26.11.7.0 アップデート
                         </button>
@@ -115,19 +128,6 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-12">
-                            <span class="text-accent fw-bold me-3">2026.11.01</span> PinSharp ICO v26.11.1.0 リリース（Pro版登場）
-                        </button>
-                    </h2>
-                    <div id="info-item-12" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            複数画像形式（JPEG/BMP/WebP）、一括＆フォルダ再帰変換、角丸・円形マスク、保存先指定、CLI自動化に対応した「Pro Edition」を新たに実装しました。
-                        </div>
-                    </div>
-                </div>
-
                 <!-- 過去のお知らせ (最新5件より古いものをアコーディオンに格納) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
@@ -139,6 +139,19 @@
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
 
                             <div class="accordion-item bg-dark text-white">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-12">
+                                        <span class="text-accent fw-bold me-3">2026.11.01</span> PinSharp ICO v26.11.1.0 リリース（Pro版登場）
+                                    </button>
+                                </h3>
+                                <div id="info-item-12" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        複数画像形式（JPEG/BMP/WebP）、一括＆フォルダ再帰変換、角丸・円形マスク、保存先指定、CLI自動化に対応した「Pro Edition」を新たに実装しました。
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-11">
                                         <span class="text-accent fw-bold me-3">2026.10.25</span> PinSharp ICO v26.10.25.0 リリース
@@ -299,56 +312,16 @@
                     <div class="card h-100 shadow">
                         <div class="card-body p-4 d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="/img/ohnuki-san-plus-icon256.png" alt="Ohnuki-san Plus" class="product-icon me-3 mb-0">
-                                <h3 class="h4 card-title fw-bold mb-0">Ohnuki-san Plus</h3>
+                                <img src="/img/ohnuki-san-hub-icon256.png" alt="Ohnuki-san Hub" class="product-icon me-3 mb-0">
+                                <h3 class="h4 card-title fw-bold mb-0">Ohnuki-san Hub</h3>
                             </div>
-                            <p class="card-text mb-4">システム情報を素早く取得・管理するためのユーティリティ。さらに使いやすく、パワフルに進化しました。</p>
+                            <p class="card-text mb-4">従来の Free（旧Lite）・Pro（旧Plus）・Dashboard を1本に統合。PC調査ツールの作成から複数台HTMLレポート集計・無制限Excel用CSV出力まで完結します。</p>
                             <div class="mt-auto">
-                                <a href="https://chililikobo.gumroad.com/l/rskilq" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
-                                    Gumroad で取得
-                                </a>
-                                <div class="text-center">
-                                    <a href="/ohnuki-san-plus.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-5">
-                    <div class="card h-100 shadow">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="/img/ohnuki-san-lite-icon256.png" alt="Ohnuki-san Lite" class="product-icon me-3 mb-0">
-                                <h3 class="h4 card-title fw-bold mb-0">Ohnuki-san Lite</h3>
-                            </div>
-                            <p class="card-text mb-4">PCの基本情報をクイックに確認。インストール不要・完全無料の軽量ユーティリティ。</p>
-                            <div class="mt-auto">
-                                <a href="https://github.com/chililikobo/OhnukisanLite/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
+                                <a href="https://github.com/chililikobo/OhnukisanHub/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
                                     <i class="bi bi-github me-1"></i> GitHub で取得
                                 </a>
                                 <div class="text-center">
-                                    <a href="/ohnuki-san-lite.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-5">
-                    <div class="card h-100 shadow">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="/img/ohnuki-san-dashboard-icon256.png" alt="Ohnuki-san Dashboard" class="product-icon me-3 mb-0">
-                                <h3 class="h4 card-title fw-bold mb-0">Ohnuki-san Dashboard</h3>
-                            </div>
-                            <p class="card-text mb-4">Plusで収集したデータを「見える化」。直感的なグラフやツリーで構成を瞬時に把握できる分析ツール。</p>
-                            <div class="mt-auto">
-                                <a href="https://github.com/chililikobo/OhnukisanDashboard/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
-                                    <i class="bi bi-github me-1"></i> GitHub で取得
-                                </a>
-                                <div class="text-center">
-                                    <a href="/ohnuki-san-dashboard.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
+                                    <a href="/ohnuki-san-hub.html" class="text-accent fw-bold text-decoration-none">詳細を見る →</a>
                                 </div>
                             </div>
                         </div>

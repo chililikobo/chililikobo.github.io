@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B8PSQRQ7X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4B8PSQRQ7X');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohnuki-san Hub（大抜さん Hub） | chilili kobo - Windows IT資産管理コンソール</title>
+    <meta name="description" content="Ohnuki-sanシリーズのFree（旧Lite）・Pro（旧Plus）・Dashboardを1本に統合。ポータブル調査ツール作成から複数台HTMLレポートの集計・CSV出力まで完結するWindows IT資産管理コンソール。">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="chilili kobo">
+    <meta property="og:title" content="Ohnuki-san Hub（大抜さん Hub） | chilili kobo">
+    <meta property="og:description" content="調査ツールの作成と複数台レポートの一括集計・CSV出力を統合。オフラインPC対応のWindows IT資産管理コンソール。">
+    <meta property="og:url" content="https://chililikobo.github.io/ohnuki-san-hub.html">
+    <meta property="og:image" content="https://chililikobo.github.io/img/og-ohnuki-san-hub.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ohnuki-san Hub（大抜さん Hub） | chilili kobo">
+    <meta name="twitter:description" content="調査ツールの作成と複数台レポートの一括集計・CSV出力を統合。オフラインPC対応のWindows IT資産管理コンソール。">
+    <meta name="twitter:image" content="https://chililikobo.github.io/img/og-ohnuki-san-hub.png">
+    <meta name="twitter:site" content="@chililikobo">
+
+    <link rel="canonical" href="https://chililikobo.github.io/ohnuki-san-hub.html">
+    <link rel="alternate" hreflang="ja" href="https://chililikobo.github.io/ohnuki-san-hub.html">
+    <link rel="alternate" hreflang="en" href="https://chililikobo.github.io/en/ohnuki-san-hub.html">
+    <link rel="alternate" hreflang="x-default" href="https://chililikobo.github.io/ohnuki-san-hub.html">
+
+    <link rel="icon" href="/img/chililikobo.ico">
+    <link rel="apple-touch-icon" href="/img/chilili600x600.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body class="product-page">
+
+    <div id="header-placeholder"></div>
+
+    <header class="hero-product text-center">
+        <div class="container">
+
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="/img/ohnuki-san-hub-icon256.png" alt="Ohnuki-san Hub" class="hero-product-icon me-4 mb-0">
+                <h1 class="display-4 fw-bold mb-0">Ohnuki-san <span class="text-accent">Hub</span></h1>
+            </div>
+
+            <p class="lead text-white-50 mb-3">PC調査ツールの作成から複数台レポートの集計・CSV出力まで、1本に統合</p>
+
+            <!-- 信頼性・特徴ハイライト -->
+            <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 11 / 10 / Server</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-lightning-charge text-accent me-1"></i>Native AOT（ランタイム不要）</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>完全ポータブル</span>
+                <span class="d-none d-sm-inline text-secondary">|</span>
+                <span><i class="bi bi-shield-check text-success me-1"></i>Hub本体は無料・無制限</span>
+            </div>
+
+            <div class="d-inline-block">
+                <div class="d-flex justify-content-center gap-3 flex-wrap mb-2">
+                    <a href="https://github.com/chililikobo/OhnukisanHub/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
+                        <i class="bi bi-github me-1"></i> 無料でダウンロード
+                    </a>
+                    <a href="#pro-plans" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-3 rounded-pill text-nowrap">
+                        <i class="bi bi-stars me-1 text-accent"></i> Proライセンスを見る
+                    </a>
+                </div>
+                <p class="small text-white-50 mt-1 mb-2">※集計・CSV出力・Free作成はすべて無料・無制限（導入検証用の24hお試しPro作成にも対応）</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap small">
+                    <a href="#edition-comparison" class="text-accent text-decoration-none">
+                        <i class="bi bi-table me-1"></i>Free / Pro 比較 ↓
+                    </a>
+                    <span class="text-secondary">|</span>
+                    <a href="#how-to-use" class="text-accent text-decoration-none">
+                        <i class="bi bi-diagram-3 me-1"></i>3ステップの使い方 ↓
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- 左メインカラム -->
+            <div class="col-lg-8">
+
+                <!-- 1. 製品説明 -->
+                <section class="mb-5">
+                    <h2 class="section-title">製品説明</h2>
+
+                    <p class="lead fw-bold text-accent mb-3">「Free（旧Lite）・Pro（旧Plus）・Dashboard を、この1本に。」</p>
+                    <p class="text-white-75 mb-4">
+                        Ohnuki-san Hub（大抜さん Hub）は、PC情報スキャナー <code>OhnukiSan.exe</code> の作成と、回収したHTMLレポートの一括集計・CSV出力をこなす統合管理アプリです。従来の <strong>Lite（→ Free）</strong>・<strong>Plus（→ Pro）</strong>・<strong>Dashboard</strong> を1つに集約しました。
+                    </p>
+
+                    <!-- 旧製品ファイル非互換の注意書き -->
+                    <div class="limit-alert small mb-4">
+                        <strong class="d-block mb-1" style="color: #ffc107;">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>旧 Ohnuki-san Lite / Plus のファイルは扱えません
+                        </strong>
+                        <span class="text-white-75">
+                            過去の Lite / Plus で出力されたファイル・レポートには非対応です。Hub から書き出した最新の <code>OhnukiSan.exe</code>（Free / Pro）で作成したレポートをご使用ください。
+                        </span>
+                    </div>
+
+                    <!-- 特徴 4選グリッド -->
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-box-seam text-accent me-2"></i>調査ツールをワンクリック作成</h3>
+                            <p class="small text-white-75 mb-0">内蔵の <code>OhnukiSan.exe</code> を ZIP・USBフォルダ・<code>.dat</code> 単体としてすぐ書き出せます。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-pie-chart text-accent me-2"></i>複数台を一括集計・可視化</h3>
+                            <p class="small text-white-75 mb-0">レポートをドロップするだけで 5つのKPI・4種のグラフ表示・比較⇔台帳切替に対応。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-spreadsheet text-accent me-2"></i>無制限の Excel 用 CSV 出力</h3>
+                            <p class="small text-white-75 mb-0">UTF-8（BOM付き）の Excel 対応 CSV 台帳を、PC台数の制限なく出力できます。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-shield-lock text-accent me-2"></i>オフライン完結・外部送信ゼロ</h3>
+                            <p class="small text-white-75 mb-0"><code>OhnukiSan.exe</code> は外部通信ゼロ。資産データの外部送信もなく安全に運用できます。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 主なユースケース -->
+                <section class="mb-5">
+                    <h2 class="section-title">主なユースケース</h2>
+                    <div class="card-custom py-3">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-buildings text-accent me-2"></i>社内 PC の棚卸し・CSV 管理台帳の作成</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-usb-drive text-accent me-2"></i>顧客先での PC キッティング・納品前チェック</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>OS・空き容量・BitLocker 状態の横断確認</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-hdd-network text-accent me-2"></i>オフライン環境での詳細監査（AD・ログ・サービス等）</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. エディションと機能比較 -->
+                <section class="mb-5" id="edition-comparison">
+                    <h2 class="section-title">Free と Pro の違い</h2>
+                    <p class="text-white-75 mb-3">
+                        <strong>Hub 本体の集計・CSV 出力・Free 作成は無料・無制限</strong>です。未登録でも検証用のお試し Pro（24h・1回限り）を作成できますが、<strong>正規 Pro ライセンスを登録すると、複数台連続スキャン・客先納品対応の正規表記・最大30日の期限設定</strong>など実務向けの運用機能がすべて解放されます。
+                    </p>
+
+                    <div class="table-responsive mb-3">
+                        <table class="table table-dark table-bordered align-middle text-center small compare-table mb-0">
+                            <thead class="table-secondary text-dark">
+                                <tr>
+                                    <th class="text-start">機能</th>
+                                    <th>標準調査 (Free)</th>
+                                    <th>詳細監査 (Pro)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-start">Hub 集計ダッシュボード ＆ 無制限 CSV 出力</td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">基本情報<br><small class="text-white-50">ハード・OS・空き容量・ネットワーク・セキュリティ・ソフト・更新</small></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">詳細監査項目<br><small class="text-white-50">共有・NTFS権限・VPN・プロキシ・ルーティング・イベントログ・AD/Entra ID・サービス・PnP</small></td>
+                                    <td><i class="bi bi-x-lg text-white-50"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">複数台での連続 Pro スキャン<br><small class="text-white-50">（USBメモリ・共有フォルダ運用）</small></td>
+                                    <td>―<br><small class="text-white-50">（無制限・登録不要）</small></td>
+                                    <td><span class="text-success fw-bold">自動削除 OFF で何台でも連続スキャン可</span><br><small class="text-white-50">※未登録お試しは1回実行で <code>.dat</code> 自動削除</small></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">Pro トークンの有効期限</td>
+                                    <td>―<br><small class="text-white-50">（無期限）</small></td>
+                                    <td><span class="text-success fw-bold">1日・3日・7日・14日・30日から選択可能</span><br><small class="text-white-50">※未登録お試しは 24時間固定</small></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">出力レポートのライセンス表記<br><small class="text-white-50">（HTML / MD / CSV）</small></td>
+                                    <td>標準表記</td>
+                                    <td><span class="text-success fw-bold">正規ライセンス表記 ＆ 案件メモ表示</span><br><small class="text-white-50">※未登録お試しは <code>Trial (Unregistered)</code> 表記</small></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-start">価格</td>
+                                    <td><span class="text-white fw-bold">無料</span></td>
+                                    <td>月額 $7 / 年額 $49<br><small class="text-white-50">永続 Special Offer: $99（通常 $119）</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- お試しPro vs 正規Proライセンスの3大メリット -->
+                    <div class="card-custom border-accent bg-accent-soft p-4 mt-4 mb-3">
+                        <h3 class="h6 fw-bold text-white mb-3">
+                            <i class="bi bi-stars text-accent me-2"></i>お試し Pro（未登録）と正規 Pro ライセンスの違い — 導入の 3 つのメリット
+                        </h3>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="p-3 bg-dark rounded border border-secondary">
+                                    <h4 class="h6 fw-bold text-accent mb-1">
+                                        <i class="bi bi-file-earmark-check me-2"></i>1. 客先納品・監査証跡にそのまま使える「正規ライセンス表記」
+                                    </h4>
+                                    <p class="small text-white-75 mb-0">
+                                        未登録のお試し版では、出力されるレポート（HTML / MD / CSV）に <code class="text-warning">Trial (Unregistered)</code> 表記が入ります。正規 Pro ライセンスなら<strong>登録済みライセンス表記と案件・作業メモ</strong>（例：<code>Licensed to: ... | Project: ...</code>）に切り替わるため、顧客への納品物や社内の監査証跡としてそのまま提出できます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="p-3 bg-dark rounded border border-secondary">
+                                    <h4 class="h6 fw-bold text-accent mb-1">
+                                        <i class="bi bi-usb-drive me-2"></i>2. USBメモリ・共有フォルダで「複数台を連続スキャン」
+                                    </h4>
+                                    <p class="small text-white-75 mb-0">
+                                        お試し版は 1回スキャンするたびに <code>ohnuki-pro.dat</code> が自動削除されるため、複数台を調べる際は都度 Hub で作り直す必要があります。正規 Pro ライセンスでは自動削除を OFF にできるため、<strong>USB 1本や共有フォルダに入れたまま何台でも連続で Pro スキャン</strong>が可能です（置き忘れ防止の自動削除 ON も選択できます）。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="p-3 bg-dark rounded border border-secondary">
+                                    <h4 class="h6 fw-bold text-accent mb-1">
+                                        <i class="bi bi-calendar-check me-2"></i>3. 最大 30 日の有効期限で「前日準備」や「リモート社員への ZIP 配布」でも期限切れしない
+                                    </h4>
+                                    <p class="small text-white-75 mb-0">
+                                        お試し版は有効期限が<strong>24 時間固定</strong>のため、作業前日の仕込みやリモート社員へ ZIP を送って後日回収する運用では期限切れになりがちです。正規 Pro ライセンスは<strong>1日・3日・7日・14日・30日</strong>から柔軟に期限を設定でき、余裕をもって事前準備・配布・回収を行えます（期限経過後は自動で標準調査 Free に戻る安全設計）。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="small text-white-50 mb-0">
+                        <i class="bi bi-shield-lock text-accent me-1"></i>
+                        管理 PC の <code>license.dat</code> は端末固有 AES-256-GCM 暗号化＋最大30日オフライン猶予に対応。現場用 <code>ohnuki-pro.dat</code> には時計巻き戻し検知や実行後自己削除機能を備えています。
+                    </p>
+
+                    <!-- モバイル用 クイックアクション -->
+                    <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
+                        <h3 class="h6 fw-bold text-white mb-2"><i class="bi bi-lightning-charge text-accent me-1"></i>ダウンロード・Proライセンス</h3>
+                        <p class="small text-white-50 mb-3">集計・CSV・Freeは完全無料。連続スキャン・納品対応の正規表記・最大30日期限を解放するなら Pro ライセンスがおすすめです。</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://github.com/chililikobo/OhnukisanHub/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
+                                <i class="bi bi-github me-1"></i> 無料でダウンロード
+                            </a>
+                            <a href="#pro-plans" class="btn btn-outline-danger fw-bold btn-sm py-2">
+                                <i class="bi bi-stars me-1"></i> Proライセンスを見る（月額$7〜 / 永続 $99）
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. スクリーンショット -->
+                <section class="mb-5">
+                    <h2 class="section-title">スクリーンショット</h2>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックで拡大表示できます（矢印キーで移動可）。</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(0)">
+                                <img src="/img/ohnuki-san-hub-analytics.jpg" alt="集計・比較ダッシュボード画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-pie-chart me-1"></i>集計・比較ダッシュボード</h4>
+                                <p class="text-white-75 small mb-0">5つのKPI・4種のチャート・フィルタで全端末の状態を一目で把握。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(1)">
+                                <img src="/img/ohnuki-san-hub-scanner.jpg" alt="調査ツール作成画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-box-seam me-1"></i>調査ツール作成・書き出し</h4>
+                                <p class="text-white-75 small mb-0">Free / Pro やオプション（期限・自動削除）を選び、ZIP・USBフォルダ・.dat単体へワンクリック書き出し。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(2)">
+                                <img src="/img/ohnuki-san-hub-report.jpg" alt="Ohnuki-san HTMLレポート画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-file-earmark-code me-1"></i>生成される HTML レポート</h4>
+                                <p class="text-white-75 small mb-0">検索・印刷/PDF対応のHTMLレポートを生成（正規Pro版は正規ライセンス＆案件メモ表記付き）。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(3)">
+                                <img src="/img/ohnuki-san-hub-start.jpg" alt="集計・比較 スタート画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-folder-plus me-1"></i>ドラッグ＆ドロップ ＆ サンプル体験</h4>
+                                <p class="text-white-75 small mb-0">レポート読込のほか「HTMLサンプルを見る」「サンプル5台で体験する」ですぐ動作を試せます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(4)">
+                                <img src="/img/ohnuki-san-hub-license.jpg" alt="Proライセンス登録画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-key me-1"></i>Pro ライセンス登録</h4>
+                                <p class="text-white-75 small mb-0">お試し版とProの比較表・未登録で使える無料範囲の表示と、Gumroadキーの登録画面。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container shadow" onclick="openGallery(5)">
+                                <img src="/img/ohnuki-san-hub-guide.jpg" alt="はじめかたガイド画面" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>クリックで拡大
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-book me-1"></i>はじめかたガイド</h4>
+                                <p class="text-white-75 small mb-0">3ステップの使い方や調査ツールの違い、FAQをアプリ内に内蔵。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. 3ステップの使い方 -->
+                <section class="mb-5" id="how-to-use">
+                    <h2 class="section-title">使い方（3ステップ）</h2>
+                    <div class="card-custom text-center">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="h3 text-accent mb-2">01</div>
+                                <h4 class="h6 fw-bold text-white">調査ツールを作る</h4>
+                                <p class="small mb-0 text-white-75">USBやZIPへ <code>OhnukiSan.exe</code> を書き出します。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">02</div>
+                                <h4 class="h6 fw-bold text-white">対象 PC で実行</h4>
+                                <p class="small mb-0 text-white-75">各 PC でダブルクリック（オフラインで HTML 生成）。</p>
+                            </div>
+                            <div class="col-md-4 border-start border-secondary">
+                                <div class="h3 text-accent mb-2">03</div>
+                                <h4 class="h6 fw-bold text-white">集計・CSV 出力</h4>
+                                <p class="small mb-0 text-white-75">HTML を Hub にドロップして状態確認・CSV 保存。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="small text-white-50 text-center mt-3 mb-0">
+                        <i class="bi bi-stars me-1 text-accent"></i> 「サンプル5台で体験する」から、手元にレポートがなくてもすぐ試せます。
+                    </p>
+                </section>
+
+                <!-- 6. よくある質問 (FAQ) -->
+                <section class="mb-5">
+                    <h2 class="section-title">よくあるご質問 (FAQ)</h2>
+                    <div class="accordion accordion-flush card-custom p-0 overflow-hidden" id="faqAccordion">
+
+                        <div class="accordion-item bg-dark border-secondary">
+                            <h3 class="accordion-header" id="faq-h1">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c1" aria-expanded="false" aria-controls="faq-c1">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. 旧 Ohnuki-san Lite / Plus のファイルは読み込めますか？
+                                </button>
+                            </h3>
+                            <div id="faq-c1" class="accordion-collapse collapse" aria-labelledby="faq-h1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> いいえ、扱えません。旧 Lite（現 Free）・旧 Plus（現 Pro）・Dashboard を Hub に統合した際に形式を刷新したため、必ず Hub から書き出した最新の <code>OhnukiSan.exe</code> で生成した HTML レポートをご使用ください。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h2">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c2" aria-expanded="false" aria-controls="faq-c2">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Hub 本体の集計や CSV 出力は本当に無料・無制限ですか？
+                                </button>
+                            </h3>
+                            <div id="faq-c2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> はい。個人・法人を問わず、集計・グラフ分析・CSV 出力・標準調査（Free）の書き出しはすべて無料・台数無制限です。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h3">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c3" aria-expanded="false" aria-controls="faq-c3">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. 購入前に Pro 機能を試せますか？お試し版と正規版の違いは？
+                                </button>
+                            </h3>
+                            <div id="faq-c3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> はい。未登録のまま<strong>24時間有効・1回実行後に <code>ohnuki-pro.dat</code> が自動削除されるお試し版（Pro Trial）</strong>で全 Pro 項目をお試しいただけます。正規 Pro ライセンスを登録すると、主に以下の 3点が解放されます：<br>
+                                    ① レポート（HTML / MD / CSV）の <code>Trial (Unregistered)</code> 表記が<strong>正規ライセンス表記＋案件メモ</strong>になり、客先納品や監査証跡にそのまま使用可能<br>
+                                    ② 自動削除を OFF にして<strong>USB メモリや共有フォルダで複数台を連続スキャン</strong>可能<br>
+                                    ③ 有効期限を<strong>1日・3日・7日・14日・30日（最大30日）</strong>から設定でき、前日準備やリモート社員への ZIP 配布でも期限切れを防止
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h4">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. 収集データが外部へ送信されませんか？
+                                </button>
+                            </h3>
+                            <div id="faq-c4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> 送信されません。<code>OhnukiSan.exe</code> は外部通信を行わず、Hub の外部通信も Pro ライセンス認証・検証時の Gumroad API のみです（最大30日間のオフライン猶予に対応）。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h5">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c5" aria-expanded="false" aria-controls="faq-c5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. .NET のインストールは必要ですか？SmartScreen 警告が出た場合は？
+                                </button>
+                            </h3>
+                            <div id="faq-c5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Native AOT ビルドのため .NET ランタイムのインストールやレジストリ変更は不要です（フォルダ削除でアンインストール完了）。SmartScreen が表示された場合は<strong>「詳細情報」→「実行」</strong>で起動できます。UI 言語は OS に合わせて自動切替（<code>--lang-ja</code> / <code>--lang-en</code> も可）します。
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 7. ボトムCTAカード -->
+                <div class="card-custom text-center py-4 bg-accent-soft border-accent mb-5">
+                    <h3 class="h5 fw-bold text-white mb-2">PC 資産の調査・集計を、この1本で</h3>
+                    <p class="small text-white-75 mb-3">Hub 本体は無料・無制限。まずはダウンロードまたはサンプル5台体験をお試しください。</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="https://github.com/chililikobo/OhnukisanHub/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
+                            <i class="bi bi-github me-1"></i> 無料でダウンロード
+                        </a>
+                        <a href="#pro-plans" class="btn btn-outline-danger fw-bold d-inline-flex align-items-center justify-content-center px-4 py-2 text-nowrap">
+                            <i class="bi bi-stars me-1 text-accent"></i> Proライセンスプランを見る
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. 更新履歴 -->
+                <section class="mb-5">
+                    <h2 class="section-title">更新履歴</h2>
+                    <div class="card-custom">
+                        <ul class="changelog-list mb-0">
+                            <li class="changelog-item">
+                                <span class="badge bg-accent me-2">v26.11.22.0</span> <span class="text-white-50 small">2026.11.22</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <strong class="text-white">Ohnuki-san Hub 初版リリース</strong>（内蔵スキャナー v26.11.22.0 同梱）
+                                    <ul class="mb-0 mt-1 ps-3 text-white-75">
+                                        <li>集計・比較ダッシュボード（KPI・4種チャート・比較/台帳切替・サンプル5台体験・無制限 CSV 出力）</li>
+                                        <li>調査ツール作成（ZIP / フォルダ・USB / <code>.dat</code> 単体・Free / 24h Pro お試し / 自動削除設定）</li>
+                                        <li>Gumroad Pro ライセンス管理（月額 / 年額 / 永続、AES-256-GCM 保護、30日オフライン猶予）</li>
+                                        <li>はじめかたガイド・日英 UI 切替（<code>--lang-ja</code> / <code>--lang-en</code>）・多ロケール対応</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 右サイドバー（PC時追従） -->
+            <div class="col-lg-4">
+                <div class="sticky-sidebar">
+
+                    <!-- ダウンロードカード (Hub Free) -->
+                    <div class="card-custom mb-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent"><i class="bi bi-gift me-2"></i>ダウンロード（無料）</h3>
+                        <div class="mb-3 p-3 border border-accent rounded text-center">
+                            <p class="small text-white-50 mb-1">Ohnuki-san Hub + Free スキャナー</p>
+                            <p class="h3 fw-bold mb-2">FREE</p>
+                            <a href="https://github.com/chililikobo/OhnukisanHub/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button w-100">
+                                <i class="bi bi-github me-1"></i> GitHub で取得
+                            </a>
+                        </div>
+
+                        <div class="small text-white-75">
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 集計・CSV 出力は無料・無制限</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> 標準調査 (Free) 書き出し無制限</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> 事前検証用の24hお試しPro作成に対応</p>
+                        </div>
+                    </div>
+
+                    <!-- Proライセンスカード -->
+                    <div class="card-custom mb-4" id="pro-plans">
+                        <h3 class="h5 fw-bold mb-2 text-accent"><i class="bi bi-stars me-2"></i>Pro ライセンス</h3>
+                        <p class="small text-white-75 mb-2">お試し版の制限を解除し、実務・客先納品・複数台運用に対応：</p>
+                        <ul class="list-unstyled small text-white-75 mb-3">
+                            <li class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i><strong>正規ライセンス表記</strong>で客先納品・監査証跡にそのまま使用可</li>
+                            <li class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i>USB・共有フォルダで<strong>複数台を連続スキャン</strong>（自動削除OFF）</li>
+                            <li class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i><strong>最大 30 日</strong>期限で前日準備・リモートZIP配布でも安心</li>
+                        </ul>
+
+                        <!-- 月額プラン -->
+                        <div class="mb-3 p-3 border border-secondary rounded text-center">
+                            <p class="small text-white-50 mb-1">月額プラン</p>
+                            <p class="h3 fw-bold mb-2">$ 7 <small class="text-white-50 plan-unit">USD / 月</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/rskilq?monthly=true" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger w-100 fw-bold btn-sm">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 月額プランで申し込む
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">いつでも解約可</p>
+                        </div>
+
+                        <!-- 年額プラン -->
+                        <div class="mb-3 p-3 border border-accent rounded text-center bg-accent-soft">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">年額プラン</p>
+                                <span class="badge bg-accent plan-badge">約42%お得！</span>
+                            </div>
+                            <p class="h3 fw-bold mb-2">$ 49 <small class="text-white-50 plan-unit">USD / 年</small></p>
+                            <a href="https://chililikobo.gumroad.com/l/rskilq?yearly=true" target="_blank" rel="noopener noreferrer" class="btn btn-danger w-100 fw-bold">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> 年額プランで申し込む
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">約 $4.08 / 月相当</p>
+                        </div>
+
+                        <!-- 永続ライセンス（Lifetime） -->
+                        <div class="mb-3 p-3 border border-secondary rounded text-center">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="small text-white-50 mb-0">永続ライセンス</p>
+                                <span class="badge bg-danger plan-badge font-monospace">SPECIAL OFFER</span>
+                            </div>
+                            <p class="h3 fw-bold mb-1">
+                                <s class="text-white-50 fs-6 me-1">$119</s>
+                                $ 99 <small class="text-white-50 plan-unit">USD / 買い切り</small>
+                            </p>
+                            <p class="small text-accent fw-bold mb-2">Special Offer: $99 USD (Reg. $119)</p>
+                            <a href="https://chililikobo.gumroad.com/l/eriiyv" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger w-100 fw-bold btn-sm">
+                                <i class="bi bi-cart-fill me-1"></i> Gumroadで購入する
+                            </a>
+                            <p class="note-text text-white-50 mt-1 mb-0">月額不要・買い切り永続</p>
+                        </div>
+
+                        <div class="border-top border-secondary pt-2 text-center">
+                            <p class="note-text text-white-50 mb-0">
+                                <i class="bi bi-shield-lock me-1"></i>最大30日オフライン猶予 / Gumroad SSL決済
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 動作環境スペックカード -->
+                    <div class="card-custom mt-4">
+                        <h3 class="h5 fw-bold mb-3 text-accent">動作環境</h3>
+                        <table class="table table-sm table-dark spec-table mb-0">
+                            <tbody>
+                                <tr><th>OS</th><td>Windows 11 / 10 / Server</td></tr>
+                                <tr><th>Arch</th><td>64bit (x64)</td></tr>
+                                <tr><th>Runtime</th><td>不要 (Native AOT)</td></tr>
+                                <tr><th>出力</th><td>HTML / UTF-8 (BOM付) CSV</td></tr>
+                                <tr><th>言語</th><td>日本語 / English</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-white-50 mt-3 mb-0">
+                            <i class="bi bi-info-circle me-1"></i> インストール・レジストリ変更不要。
+                        </p>
+                    </div>
+
+                    <!-- ※サイドバー末尾の法的リンク（利用規約等）は common.js により自動生成されます -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>
