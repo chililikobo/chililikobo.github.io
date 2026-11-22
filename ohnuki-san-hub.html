@@ -195,6 +195,11 @@
                                     <td><span class="text-success fw-bold">正規ライセンス表記 ＆ 案件メモ表示</span><br><small class="text-white-50">※未登録お試しは <code>Trial (Unregistered)</code> 表記</small></td>
                                 </tr>
                                 <tr>
+                                    <td class="text-start">管理 PC のライセンス単位</td>
+                                    <td>台数制限なし</td>
+                                    <td><span class="text-white fw-bold">1ライセンス＝管理用 PC 1台</span><br><small class="text-white-50">※書き出したスキャナー（<code>OhnukiSan.exe</code>）は複数 PC で利用可</small></td>
+                                </tr>
+                                <tr>
                                     <td class="text-start">価格</td>
                                     <td><span class="text-white fw-bold">無料</span></td>
                                     <td>月額 $7 / 年額 $49<br><small class="text-white-50">永続 Special Offer: $99（通常 $119）</small></td>
@@ -242,10 +247,33 @@
                         </div>
                     </div>
 
-                    <p class="small text-white-50 mb-0">
+                    <p class="small text-white-50 mb-3">
                         <i class="bi bi-shield-lock text-accent me-1"></i>
                         管理 PC の <code>license.dat</code> は端末固有 AES-256-GCM 暗号化＋最大30日オフライン猶予に対応。現場用 <code>ohnuki-pro.dat</code> には時計巻き戻し検知や実行後自己削除機能を備えています。
                     </p>
+
+                    <!-- Pro ライセンス・複数 PC での利用に関する注意事項 -->
+                    <div class="limit-alert limit-alert-border small mt-3 mb-0">
+                        <h3 class="h6 fw-bold text-danger mb-2">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>Pro ライセンス・USB メモリ・複数 PC での利用に関する注意事項
+                        </h3>
+                        <p class="mb-2 text-white">
+                            Pro ライセンスは<strong>1ライセンスにつき管理用 PC 1台</strong>での利用を前提としています。複数台の管理用 PC で Pro 版を利用する場合は、台数分のライセンスをご購入ください。
+                        </p>
+                        <p class="mb-2 text-white-75 small">
+                            <i class="bi bi-check-circle-fill text-success me-1"></i><span class="fw-bold text-white">スキャナー（<code>OhnukiSan.exe</code>）は複数 PC で利用可能：</span>
+                            複数 PC で持ち歩いて使用するのは Hub 本体ではなく、Hub から書き出した <code>OhnukiSan.exe</code> と <code>ohnuki-pro.dat</code> です（USB メモリや共有フォルダから複数台を連続スキャン可能）。
+                        </p>
+                        <p class="mb-2 text-white-50 small">
+                            ※<code>license.dat</code> は認証した PC 固有の情報に紐づけて暗号化されるため、<code>OhnukiHub.exe</code> 本体は<span class="fw-bold text-white-75">管理用 PC のローカルフォルダ</span>へ配置してご利用ください。認証済みのフォルダを別 PC へコピーしたり、USB メモリ上の <code>OhnukiHub.exe</code> を別 PC で起動すると、端末不一致により <code>license.dat</code> が自動削除されて未認証（Free）状態に戻ります。その場合、元の PC に戻しても再認証が必要となり、PC 買い替え・移行用の認証回数枠を追加消費します。
+                        </p>
+                        <div class="p-2 bg-dark rounded border border-secondary mt-2">
+                            <p class="mb-0 text-white-75 small">
+                                <i class="bi bi-arrow-repeat text-success me-1"></i><span class="fw-bold text-white">アップデート・PC 移行時の引き継ぎ：</span>
+                                新バージョンへアップデートする際は、旧フォルダ内の <code>license.dat</code> を新しいフォルダへコピー（または上書き配置）することで、再認証や認証枠の消費なしに引き継げます。PC 買い替え・OS 再インストール時は移行用の余裕枠から再認証可能です（お困りの際は<a href="/contact.html" class="text-accent text-decoration-none">お問い合わせ</a>ください）。
+                            </p>
+                        </div>
+                    </div>
 
                     <!-- モバイル用 クイックアクション -->
                     <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
@@ -435,6 +463,21 @@
                         </div>
 
                         <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h-license">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c-license" aria-expanded="false" aria-controls="faq-c-license">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Pro ライセンスは複数 PC で使えますか？USB メモリ運用やアップデート時の注意点は？
+                                </button>
+                            </h3>
+                            <div id="faq-c-license" class="accordion-collapse collapse" aria-labelledby="faq-h-license" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Pro ライセンスは<strong>1ライセンスにつき管理用 PC 1台</strong>での利用を前提としています（複数台の管理用 PC で Pro 版を利用する場合は台数分のライセンスが必要です）。<br>
+                                    一方、Hub から書き出したスキャナー（<code>OhnukiSan.exe</code> と <code>ohnuki-pro.dat</code>）は、USB メモリや共有フォルダに入れて<strong>複数台の対象 PC をスキャン</strong>できます。<br>
+                                    ※<code>license.dat</code> は端末固有に暗号化されるため、<code>OhnukiHub.exe</code> 本体は管理用 PC のローカルフォルダへ配置してください。認証済みフォルダを別 PC へコピーしたり USB メモリ上の <code>OhnukiHub.exe</code> を別 PC で起動すると、端末不一致により <code>license.dat</code> が自動削除されて未認証（Free）状態に戻り、元の PC に戻しても再認証（PC 移行用認証枠の消費）が必要になります。なお、新バージョンへのアップデート時は旧フォルダの <code>license.dat</code> を新フォルダへコピー（または上書き配置）すれば、再認証・枠消費なしで引き継げます。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h4">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
                                     <i class="bi bi-question-circle text-accent me-2"></i>Q. 収集データが外部へ送信されませんか？
@@ -570,6 +613,14 @@
                                 <i class="bi bi-cart-fill me-1"></i> Gumroadで購入する
                             </a>
                             <p class="note-text text-white-50 mt-1 mb-0">月額不要・買い切り永続</p>
+                        </div>
+
+                        <!-- ライセンス・端末制限の注意事項 -->
+                        <div class="limit-alert limit-alert-danger small mb-3">
+                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> 1ライセンス＝管理 PC 1台</strong>
+                            <p class="small text-white mb-0 mt-1 limit-note">
+                                Pro ライセンスは<span class="fw-bold">管理用 PC 1台につき 1ライセンス</span>です（<code>OhnukiHub.exe</code> はローカルフォルダに配置してください）。書き出したスキャナー（<code>OhnukiSan.exe</code>＋<code>ohnuki-pro.dat</code>）は<span class="fw-bold">複数 PC で利用可能</span>です。
+                            </p>
                         </div>
 
                         <div class="border-top border-secondary pt-2 text-center">

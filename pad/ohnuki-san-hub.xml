@@ -58,21 +58,23 @@
       <Char_Desc_80>Portable Windows PC asset scanner builder, fleet analytics &amp; CSV ledger tool.</Char_Desc_80>
       <Char_Desc_250>Ohnuki-san Hub creates portable Windows PC asset scanners (OhnukiSan.exe) and aggregates HTML reports into fleet KPIs, interactive charts, and unlimited Excel CSV ledgers. Hub is 100% free with an optional Pro License.</Char_Desc_250>
       <Char_Desc_450>Ohnuki-san Hub unifies portable Windows PC scanner creation and fleet analytics in one Native AOT app. Export OhnukiSan.exe (Free/Pro) to USB or ZIP, scan offline, and drop HTML reports for 5 KPIs, 4 charts, and unlimited CSV export. Hub is 100% free. Pro License unlocks continuous multi-PC scanning (disable .dat auto-delete), 1/3/7/14/30-day expiry for advance/remote ZIP prep, and clean licensed report headers without Trial marks.</Char_Desc_450>
-      <Char_Desc_2000>Ohnuki-san Hub is the management console for the portable Windows PC IT asset scanner OhnukiSan.exe. Unifying Free (ex-Lite), Pro (ex-Plus), and Dashboard in one Native AOT app, it lets IT teams deploy scanners and analyze HTML reports in 3 steps.
+      <Char_Desc_2000>Ohnuki-san Hub is the management console for the portable Windows PC asset scanner OhnukiSan.exe. Unifying Free (ex-Lite), Pro (ex-Plus), and Dashboard in one Native AOT app, it deploys scanners and analyzes HTML reports in 3 steps.
 
 Key Features:
-- Portable Scanner Export: Export OhnukiSan.exe (and optional ohnuki-pro.dat) as a ZIP archive, ready-to-run USB/folder package, standalone .dat file, or Free executable.
-- Multi-PC Analytics Dashboard: Load Free &amp; Pro HTML reports via folder or drag-and-drop. Inspect 5 KPIs, 4 cross-filtering donut charts (Manufacturer, OS, Build, Chassis), quick filters, Compare/Ledger toggle, and property inspector.
-- Unlimited Excel CSV Export: Export aggregated or filtered inventory data to UTF-8 (with BOM) CSV files with zero device or row limits.
-- Standard (Free) &amp; Detailed (Pro) Audits: Collect hardware, OS, storage, network, security, users/groups, software, updates, printers, and paths in Free mode; unlock Share/NTFS permissions, VPN, Proxy, Routing, Event Logs, AD / Entra ID, Services, Tasks, and PnP Devices in Pro mode.
+- Portable Scanner Export: Export OhnukiSan.exe (and optional ohnuki-pro.dat) as a ZIP, USB/folder package, standalone .dat, or Free executable.
+- Multi-PC Analytics: Load Free &amp; Pro HTML reports via folder or drag-and-drop. Inspect 5 KPIs, 4 cross-filtering charts (Manufacturer, OS, Build, Chassis), quick filters, Compare/Ledger toggle, and property inspector.
+- Unlimited Excel CSV Export: Export inventory data to UTF-8 (BOM) CSV files with zero device or row limits.
+- Free &amp; Pro Audits: Collect hardware, OS, storage, network, security, users/groups, apps, updates, printers, and paths in Free mode; unlock Share/NTFS ACLs, VPN, Proxy, Routing, Event Logs, AD/Entra ID, Services, Tasks, and PnP in Pro.
 - Local &amp; Offline Security: Inventory stays local with zero OhnukiSan.exe network requests. Licensed Hubs use machine-bound AES-256-GCM and 30-day offline grace.
-- Sample Demo &amp; Bilingual UI: Test with "Try with 5 Sample PCs". Supports EN/JP (--lang-en / --lang-ja) with zero .NET dependencies.
+- Sample Demo &amp; Bilingual UI: Test with "Try with 5 Sample PCs". Supports EN/JP (--lang-en / --lang-ja) with no .NET required.
 
 Editions:
-- Hub &amp; Standard (Free): 100% free with unlimited Analytics, CSV export, Free scanner export, and a 24h one-shot Pro Trial (reports show Trial (Unregistered)).
-- Pro License ($7/mo, $49/yr, Lifetime $99 Special Offer / Reg. $119): Unlocks continuous multi-PC scanning from 1 USB/share (disable .dat auto-delete), 1/3/7/14/30-day expiry for advance prep or remote ZIP rollout, and licensed HTML/MD/CSV stamps with project notes for client delivery and audit evidence.
+- Hub &amp; Standard (Free): 100% free with unlimited Analytics, CSV export, Free scanner export, and a 24h one-shot Pro Trial (Trial stamp).
+- Pro License ($7/mo, $49/yr, Lifetime $99 Special Offer / Reg. $119): Unlocks continuous multi-PC scanning via USB/share (disable .dat auto-delete), 1/3/7/14/30-day expiry for advance prep or ZIP rollout, and licensed HTML/MD/CSV stamps with project notes.
 
-Note: Reports from legacy Ohnuki-san Lite or Plus are not compatible with Ohnuki-san Hub.</Char_Desc_2000>
+Notes:
+- 1 Pro License = 1 management PC (place OhnukiHub.exe in a local folder); exported OhnukiSan.exe + ohnuki-pro.dat can scan multiple target PCs.
+- Legacy Ohnuki-san Lite/Plus reports are not compatible with Hub.</Char_Desc_2000>
     </English>
   </Program_Descriptions>
   <Web_Info>

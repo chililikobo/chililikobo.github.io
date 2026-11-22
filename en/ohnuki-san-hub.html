@@ -195,6 +195,11 @@
                                     <td><span class="text-success fw-bold">Licensed header &amp; project note</span><br><small class="text-white-50">*Unregistered trial shows <code>Trial (Unregistered)</code></small></td>
                                 </tr>
                                 <tr>
+                                    <td class="text-start">Management PC Licensing</td>
+                                    <td>Unlimited PCs</td>
+                                    <td><span class="text-white fw-bold">1 license per management PC</span><br><small class="text-white-50">*Exported scanner (<code>OhnukiSan.exe</code>) works on multiple PCs</small></td>
+                                </tr>
+                                <tr>
                                     <td class="text-start">Price</td>
                                     <td><span class="text-white fw-bold">Free</span></td>
                                     <td>$7/mo. / $49/yr.<br><small class="text-white-50">Lifetime Special Offer: $99 (Reg. $119)</small></td>
@@ -242,10 +247,33 @@
                         </div>
                     </div>
 
-                    <p class="small text-white-50 mb-0">
+                    <p class="small text-white-50 mb-3">
                         <i class="bi bi-shield-lock text-accent me-1"></i>
                         Host <code>license.dat</code> uses machine-bound AES-256-GCM encryption with a 30-day offline grace period. Field <code>ohnuki-pro.dat</code> supports clock rollback protection and optional post-scan self-deletion.
                     </p>
+
+                    <!-- Pro License, USB Drives & Multiple PCs Notice -->
+                    <div class="limit-alert limit-alert-border small mt-3 mb-0">
+                        <h3 class="h6 fw-bold text-danger mb-2">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>Note: Pro Licensing, USB Drives &amp; Multiple PCs
+                        </h3>
+                        <p class="mb-2 text-white">
+                            Each Pro license is intended for <strong>1 management PC</strong>. To use Pro features on multiple management PCs, please purchase one license per PC.
+                        </p>
+                        <p class="mb-2 text-white-75 small">
+                            <i class="bi bi-check-circle-fill text-success me-1"></i><span class="fw-bold text-white">Scanner (<code>OhnukiSan.exe</code>) Works on Multiple PCs:</span>
+                            Carry the exported <code>OhnukiSan.exe</code> and <code>ohnuki-pro.dat</code> (not <code>OhnukiHub.exe</code> itself) on a USB drive or shared folder to scan multiple target PCs continuously (with auto-delete OFF).
+                        </p>
+                        <p class="mb-2 text-white-50 small">
+                            *Because <code>license.dat</code> is encrypted and bound to the activated PC, place <code>OhnukiHub.exe</code> in a <span class="fw-bold text-white-75">local folder on your management PC</span>. Copying an activated Hub folder to another PC or launching <code>OhnukiHub.exe</code> from a USB drive on a different PC automatically deletes <code>license.dat</code> due to the machine mismatch and reverts Hub to Free mode—requiring re-activation (consuming a PC migration slot) even after returning to the original PC.
+                        </p>
+                        <div class="p-2 bg-dark rounded border border-secondary mt-2">
+                            <p class="mb-0 text-white-75 small">
+                                <i class="bi bi-arrow-repeat text-success me-1"></i><span class="fw-bold text-white">Updates &amp; PC Migration:</span>
+                                When updating Hub to a newer version, copy <code>license.dat</code> from your previous folder into the new folder (or overwrite in place) to keep your activation without consuming a slot. Extra activation slots are provided as a buffer for PC replacement or OS reinstallation (if you need help, feel free to <a href="/en/contact.html" class="text-accent text-decoration-none">contact support</a>).
+                            </p>
+                        </div>
+                    </div>
 
                     <!-- Mobile-Only Quick Action -->
                     <div class="card-custom d-lg-none mt-4 text-center border-accent bg-accent-soft p-3">
@@ -435,6 +463,21 @@
                         </div>
 
                         <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h-license">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c-license" aria-expanded="false" aria-controls="faq-c-license">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Can I use one Pro License on multiple PCs? What about USB drives and updates?
+                                </button>
+                            </h3>
+                            <div id="faq-c-license" class="accordion-collapse collapse" aria-labelledby="faq-h-license" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Each Pro License is intended for <strong>1 management PC</strong> (to use Pro features on multiple management PCs, please purchase one license per PC).<br>
+                                    However, the exported scanner (<code>OhnukiSan.exe</code> + <code>ohnuki-pro.dat</code>) can be carried on a USB drive or placed in a shared folder to <strong>scan multiple target PCs</strong>.<br>
+                                    *Because <code>license.dat</code> is machine-bound, place <code>OhnukiHub.exe</code> in a local folder on your management PC. Copying an activated Hub folder to another PC or launching <code>OhnukiHub.exe</code> from a USB drive on a different PC automatically deletes <code>license.dat</code> and reverts Hub to Free mode, requiring re-activation (consuming a PC migration slot) even on the original PC. When updating to a newer version, copy <code>license.dat</code> from your previous folder into the new folder (or overwrite in place) to carry over your activation without consuming a slot.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h4">
                                 <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c4" aria-expanded="false" aria-controls="faq-c4">
                                     <i class="bi bi-question-circle text-accent me-2"></i>Q. Is any inventory data sent over the internet?
@@ -570,6 +613,14 @@
                                 <i class="bi bi-cart-fill me-1"></i> Buy on Gumroad
                             </a>
                             <p class="note-text text-white-50 mt-1 mb-0">One-time payment (no subscriptions)</p>
+                        </div>
+
+                        <!-- License & Management PC Limit Notice -->
+                        <div class="limit-alert limit-alert-danger small mb-3">
+                            <strong class="text-danger"><i class="bi bi-exclamation-circle-fill me-1"></i> 1 License per Management PC</strong>
+                            <p class="small text-white mb-0 mt-1 limit-note">
+                                Each Pro license is for <span class="fw-bold">1 management PC</span> (place <code>OhnukiHub.exe</code> in a local folder). The exported scanner (<code>OhnukiSan.exe</code> + <code>ohnuki-pro.dat</code>) can be used on <span class="fw-bold">multiple target PCs</span>.
+                            </p>
                         </div>
 
                         <div class="border-top border-secondary pt-2 text-center">
