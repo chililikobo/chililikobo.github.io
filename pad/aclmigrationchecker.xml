@@ -21,22 +21,22 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>ACL Migration Checker</Program_Name>
-		<Program_Version>26.7.31.2</Program_Version>
-		<Program_Release_Month>07</Program_Release_Month>
-		<Program_Release_Day>31</Program_Release_Day>
+		<Program_Version>26.11.23.0</Program_Version>
+		<Program_Release_Month>11</Program_Release_Month>
+		<Program_Release_Day>23</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
 		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Cost_Other_CP />
 		<Program_Cost_Other />
 		<Program_Type>Freeware</Program_Type>
-		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Release_Status>Major Update</Program_Release_Status>
 		<Program_Install_Support>No Install Support</Program_Install_Support>
 		<Program_OS_Support>Win10,Win11,WinServer2016+</Program_OS_Support>
 		<Program_Language>English,Japanese</Program_Language>
-		<Program_Change_Info />
+		<Program_Change_Info>Rebuilt scanning and comparison engine for major speed improvements, added 4-tier speed badge, Light/Dark themes, live EN/JA switching, Error Log view, Tree View diff filters/navigation, and updated .json.gz snapshot format.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File &amp; Disk Management</Program_Category_Class>
-		<Program_System_Requirements>Windows 10/11, Windows Server 2016+</Program_System_Requirements>
+		<Program_System_Requirements>Windows 10/11 (x64), Windows Server 2016/2019/2022/2025 (x64)</Program_System_Requirements>
 		<File_Info>
 			<File_Size_Bytes />
 			<File_Size_K />
@@ -55,32 +55,28 @@
 	<Program_Descriptions>
 		<English>
 			<Char_Desc_45>Verify access control list (ACL) differences.</Char_Desc_45>
-			<Char_Desc_80>Verify access control list (ACL) differences between source and destination.</Char_Desc_80>
-			<Char_Desc_250>ACL Migration Checker is a dedicated, portable tool to verify access control list (ACL) differences between source and destination during data migrations for file servers. It automatically detects missing permissions and mismatched accounts.</Char_Desc_250>
-			<Char_Desc_450>ACL Migration Checker is a dedicated tool to verify access control list (ACL) differences between source and destination during data migrations for file servers or storage servers. It saves ACL information in a lightweight format and automatically detects missing permissions, excessive privileges, and mismatched accounts. It is portable, requires no installation or runtime, supports CSV export, and automatically switches between EN and JA.</Char_Desc_450>
-			<Char_Desc_2000>
-				ACL Migration Checker: An access rights verification tool for reliable data migration.
+			<Char_Desc_80>High-speed ACL verification tool for file server migrations.</Char_Desc_80>
+			<Char_Desc_250>ACL Migration Checker is a high-speed, portable tool to verify access control list (ACL) differences between source and destination during file server migrations, supporting Active Directory and Workgroup environments.</Char_Desc_250>
+			<Char_Desc_450>ACL Migration Checker verifies access control list (ACL) differences between source and destination during file or storage server migrations. It rapidly scans ACLs into compact .json.gz snapshots, compares structures across differing hostnames or top folders (including Workgroup accounts and Deny rules), offers Tree View, Diff List, and Error Log views, switches Light/Dark themes and EN/JA live, and exports Excel-ready CSVs.</Char_Desc_450>
+			<Char_Desc_2000>ACL Migration Checker: High-speed access rights verification for reliable data migration.
 
-				ACL Migration Checker is a dedicated tool to verify if there are any differences in access control lists (ACLs) between the source and destination during data migrations for file servers or storage servers. 
+ACL Migration Checker is a dedicated verification tool designed to detect access control list (ACL) discrepancies between source and destination during file server and storage server migrations. It is highly effective in Active Directory environments as well as Workgroup environments where SID migration is difficult.
 
-				It is highly effective not only for migrations in Active Directory environments but also for verifying the reconfiguration and reassignment of permissions in Workgroup environments where migrating SIDs (Security Identifiers) is difficult.
+Key Features:
+- High-Speed Scanning &amp; Snapshots: Rapidly scans local drives and network shares into compact .json.gz files for offline comparison. Automatically selects the optimal scan mode with a 4-tier speed indicator badge in the header (ultra-fast mode on local NTFS as Admin).
+- Flexible Migration Comparison: Accurately compares folder structures and permissions (including Deny rules) even when hostnames, IP addresses, or top-level folder names change, including Workgroup local account matching, deep paths (&gt;260 chars), and junctions.
+- Three Workspace Views &amp; Side-by-Side ACL Details: Inspect differences in synchronized Tree View (Diffs Only, Folders Only, Prev/Next navigation, Open Folder), Diff List (status filters, keyword search, Copy Path), and Error Log, with exact permissions compared side by side below.
+- Themes, Live Language Switch &amp; CSV Export: Switch Light/Dark themes and English/Japanese live without restarting, and export diff results and error logs as Excel-ready CSV files.
+- Portable NativeAOT Design: Requires no installation, registry setup, or external .NET runtime. Note: .json.gz files from v26.11.23.0+ are not compatible with v1 (26.7.31.2).
 
-				Key Features:
-				- Scan and Save ACLs: Retrieves ACL information set on source and destination folders/files and saves it in a lightweight JSON.GZ format.
-				- Compare Before and After Migration: Matches the two saved datasets to automatically detect and list missing permissions, excessive privileges, and mismatched accounts.
-				- CSV Export: Output comparison results in CSV format. Ideal for creating post-migration reports or checklists for corrections.
-				- Multilingual Support (EN/JA): Automatically switches the interface language based on your OS language settings, ensuring smooth operation across various environments.
-				- No installation required, portable design: Carry it on a USB flash drive. It requires no additional installations such as the .NET runtime. 
-
-				Developed by chilili kobo. Available as freeware for personal and commercial use.
-			</Char_Desc_2000>
+Developed by chilili kobo. Freeware for personal and commercial use.</Char_Desc_2000>
 		</English>
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
 			<Application_Info_URL>https://chililikobo.github.io/en/aclmigrationchecker.html</Application_Info_URL>
 			<Application_Order_URL>https://github.com/chililikobo/AclMigrationChecker/releases/latest</Application_Order_URL>
-			<Application_Screenshot_URL>https://chililikobo.github.io/img/aclchecker-main-en.png</Application_Screenshot_URL>
+			<Application_Screenshot_URL>https://chililikobo.github.io/img/aclchecker-main-en.jpg</Application_Screenshot_URL>
 			<Application_Icon_URL>https://chililikobo.github.io/img/aclmigrationchecker-icon256.png</Application_Icon_URL>
 			<Application_XML_File_URL>https://chililikobo.github.io/pad/aclmigrationchecker.xml</Application_XML_File_URL>
 		</Application_URLs>

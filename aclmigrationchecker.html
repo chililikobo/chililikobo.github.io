@@ -86,26 +86,26 @@
                 <section class="mb-5">
                     <h2 class="section-title">製品説明</h2>
 
-                    <p class="lead fw-bold text-accent mb-3">「確実なデータ移行のための、アクセス権検証ツール。」</p>
-                    <p class="text-white-75 mb-4">ACL Migration Checkerは、ファイルサーバーやNAS、クラウドストレージへのデータ移行（マイグレーション）作業において、移行元と移行先のアクセス権（ACL）に不一致や欠落がないかを自動照合・検証するための専用ツールです。Active Directory環境での移行はもちろん、SID（セキュリティ識別子）の移行が困難なWorkgroup環境での権限再付与チェックにも威力を発揮します。</p>
+                    <p class="lead fw-bold text-accent mb-3">「確実なデータ移行のための、高速・高精度アクセス権検証ツール。」</p>
+                    <p class="text-white-75 mb-4">ACL Migration Checkerは、ファイルサーバーやNAS、ストレージサーバーのデータ移行（マイグレーション）作業において、移行元と移行先のアクセス権（ACL）に差異や欠落がないかを高速かつ正確に検証する専用チェックツールです。Active Directory環境での移行はもちろん、SID（セキュリティ識別子）の移行が困難なWorkgroup環境での権限再設定チェックにも強力な威力を発揮します。</p>
 
                     <!-- 特徴 4選グリッド -->
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-search text-accent me-2"></i>アクセス権のスキャンと保存</h3>
-                            <p class="small text-white-75 mb-0">移行元・移行先それぞれのフォルダやファイルに設定されたACL情報を網羅的に収集し、軽量なJSON.GZ形式で保存します。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning-charge text-accent me-2"></i>高速スキャン＆スナップショット保存</h3>
+                            <p class="small text-white-75 mb-0">ローカルドライブや共有フォルダを最適モードで高速スキャンし、ヘッダーの4段階速度バッジで表示（管理者モードでのローカルNTFSスキャンで最速動作）。軽量な <code>.json.gz</code> 形式で保存しオフライン比較も可能です。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-arrow-left-right text-accent me-2"></i>移行前後の自動差分比較</h3>
-                            <p class="small text-white-75 mb-0">保存した2つのデータを突き合わせ、権限の欠落、過剰付与、アカウント・グループの不一致を瞬時に自動検出してリストアップします。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-arrow-left-right text-accent me-2"></i>ホスト名・構成変更にも強い差分比較</h3>
+                            <p class="small text-white-75 mb-0">サーバー名・IPアドレス・トップフォルダ名が異なっていても配下の構成とACL（拒否権限含む）を正確に検証。Workgroup環境の同名アカウント照合、260文字超パス、ジャンクションにも対応します。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-spreadsheet text-accent me-2"></i>CSVエクスポート対応</h3>
-                            <p class="small text-white-75 mb-0">検出された差異の一覧をCSV形式で出力可能。移行作業後のエビデンス提出や、修正用チェックリストとしてそのまま活用できます。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-layout-split text-accent me-2"></i>3種類の画面ビュー＆並列ACL詳細</h3>
+                            <p class="small text-white-75 mb-0">左右同期「ツリー表示」（差分絞込・◀/▶ジャンプ）、「差分リスト」（状態フィルタ・検索）、「エラー一覧」を切り替え、画面下部の並列ペインで権限の違いを即座に精査できます。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-translate text-accent me-2"></i>日英バイリンガル対応</h3>
-                            <p class="small text-white-75 mb-0">OSの言語環境に合わせて日本語・英語のUIが自動で切り替わります。国内外のグローバルな移行現場でもスムーズに運用可能です。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>テーマ・日英ライブ切替＆CSV出力</h3>
+                            <p class="small text-white-75 mb-0">ヘッダーからライト／ダークテーマと日本語／英語表示を再起動なしで即時切替。比較結果やエラー一覧はExcelでそのまま開けるCSV形式で出力でき、監査エビデンス作成に最適です。</p>
                         </div>
                     </div>
                 </section>
@@ -115,12 +115,12 @@
                     <h2 class="section-title">主な検証項目</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>権限の欠落・不足</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>意図しない過剰付与</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-x text-accent me-2"></i>SID・アカウント不一致</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-diagram-2 text-accent me-2"></i>継承（Inheritance）状態</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-x text-accent me-2"></i>フォルダ・ファイル不在</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-badge text-accent me-2"></i>所有者（Owner）比較</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>権限の不足・不一致</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>拒否（Deny）権限の差異</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-check text-accent me-2"></i>Workgroup / AD アカウント照合</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-x text-accent me-2"></i>フォルダ・ファイルの欠損</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-plus text-accent me-2"></i>移行先の追加・余剰項目</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-exclamation-triangle text-accent me-2"></i>アクセス拒否等のエラー記録</div>
                         </div>
                     </div>
                 </section>
@@ -141,12 +141,12 @@
                 <!-- 4. スクリーンショット -->
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
-                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます。</p>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます（矢印キーで前後の画像へ移動可能）。</p>
 
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
                             <div class="screenshot-container shadow" onclick="openGallery(0)">
-                                <img src="/img/aclchecker-main.png" alt="ACL Migration Checker スキャン画面" class="screenshot-img">
+                                <img src="/img/aclchecker-main.jpg" alt="ACL Migration Checker ツリー表示画面" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>拡大表示
@@ -154,14 +154,14 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-search me-1"></i>スキャン・保存機能</h4>
-                                <p class="text-white-50 small mb-0">対象パスを指定し、アクセス権情報を取得して圧縮JSON形式で保存します。</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-diagram-3 me-1"></i>ツリー表示 ＆ 並列ACL詳細比較</h4>
+                                <p class="text-white-50 small mb-0">左右同期ツリー上で「差分のみ絞込」や ◀/▶ ジャンプを行いながら、画面下部の並列ペインで具体的な権限差異を確認できます。</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <div class="screenshot-container shadow" onclick="openGallery(1)">
-                                <img src="/img/aclchecker-compare.png" alt="ACL Migration Checker 比較結果画面" class="screenshot-img">
+                                <img src="/img/aclchecker-compare.jpg" alt="ACL Migration Checker 差分リスト画面" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>拡大表示
@@ -169,8 +169,8 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>差分比較・リストアップ</h4>
-                                <p class="text-white-50 small mb-0">取得したデータを読み込み、移行前後の差異を自動検出して色分け表示します。</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>差分リスト ＆ フィルタ・CSV出力</h4>
+                                <p class="text-white-50 small mb-0">一致・不一致・欠損・追加での絞り込みやキーワード検索、パスコピー・フォルダを開く、Excel対応CSVエクスポートに対応します。</p>
                             </div>
                         </div>
                     </div>
@@ -183,23 +183,23 @@
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
-                                <h4 class="h6 fw-bold">ACL情報の取得</h4>
-                                <p class="small mb-0 text-white-50">移行元・移行先それぞれの環境で本ソフトを実行し、アクセス権情報をスキャン・保存します。</p>
+                                <h4 class="h6 fw-bold">移行元のスキャン・保存</h4>
+                                <p class="small mb-0 text-white-50">「1. 移行元データ (基準)」にフォルダや共有パス（\\server\share）を指定してスキャン。別環境へ持ち運ぶ場合は .json.gz 形式で保存します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">データの照合</h4>
-                                <p class="small mb-0 text-white-50">保存した移行元・移行先のデータを読み込み、差分比較処理を実行します。</p>
+                                <h4 class="h6 fw-bold">移行先の指定と比較実行</h4>
+                                <p class="small mb-0 text-white-50">「2. 移行先データ (比較先)」に移行先パスまたは保存済み .json.gz ファイルを読み込み、「比較実行」をクリックします。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold">差異確認とCSV出力</h4>
-                                <p class="small mb-0 text-white-50">検出された差異を一覧で確認し、必要に応じてCSV形式でレポートを出力します。</p>
+                                <p class="small mb-0 text-white-50">ツリー表示・差分リスト・エラー一覧を切り替えて差異やスキップ項目を精査し、必要に応じてCSV形式でエクスポートします。</p>
                             </div>
                         </div>
                     </div>
                     <p class="small text-white-50 text-center mt-3 mb-0">
-                        <i class="bi bi-magic me-1 text-accent"></i> ネットワーク越しに両サーバーが直接疎通しなくても、ファイル単位で持ち運んでオフライン比較が可能です。
+                        <i class="bi bi-magic me-1 text-accent"></i> ネットワーク越しに両サーバーが直接疎通しなくても、スナップショット（.json.gz）を持ち運んでオフライン比較が可能です。
                     </p>
                 </section>
 
@@ -216,7 +216,7 @@
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    はい、可能です。本ツールは「スキャン結果の保存」と「2つのデータの比較」が完全に分離されています。移行元サーバーで保存したスキャンデータ（JSON.GZ）をUSBメモリ等で移行先や管理用PCにコピーするだけで、完全にオフラインで比較検証が行えます。
+                                    はい、可能です。本ツールは「スキャン結果の保存」と「2つのデータの比較」が完全に分離されています。移行元サーバーで保存したスキャンデータ（<code>.json.gz</code>）をUSBメモリ等で移行先や管理用PCにコピーするだけで、完全にオフラインで比較検証が行えます。
                                 </div>
                             </div>
                         </div>
@@ -237,12 +237,39 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading3">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>大容量ストレージや数万ファイルでも動作しますか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>大容量ストレージや数万ファイルでも高速に動作しますか？標準ユーザーのまま使えますか？
                                 </button>
                             </h3>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    はい。ACLスキャンデータはGzip圧縮形式（.json.gz）で保存されるため、ファイル容量を最小限に抑えつつ大量のファイル・フォルダ情報を効率的に処理できるように設計されています。
+                                    はい。v26.11.23.0 でスキャン・比較エンジンを全面刷新し、ローカルドライブ・共有フォルダともに大幅に高速化しました。通常は標準ユーザーで起動し、必要な場合のみヘッダーの「管理者として再起動」ボタンからパスと言語を引き継いで昇格できます（管理者モードでローカル NTFS ドライブをスキャンすると最速モードが自動有効になります）。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>旧版（v26.7.31.2）で保存した .json.gz ファイルは読み込めますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    いいえ、v26.11.23.0 以降の <code>.json.gz</code> 保存形式は全面刷新されたため、旧版（<code>26.7.31.2</code>）で作成したファイルとは互換性がありません（旧ファイルを開いた場合はエラー表示で安全に拒否されます）。必ず v26.11.23.0 以降で再スキャンしてください。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>起動時に Windows SmartScreen の警告が出た場合は安全ですか？実行ファイル単体で移動できますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、安全です。高額なEVコードサイン証明書を保持していないため初回起動時に SmartScreen の警告が表示される場合がありますが、画面上の<strong>「詳細情報」→「実行」</strong>で起動できます。本ソフトは外部へ一切通信を行わず、VirusTotal でも検知数ゼロ（0/66）が確認されています（<a href="https://www.virustotal.com/gui/file/259c4969452a7a6a678503a4a6f70699fd3c760062c8086a830131b92e6d5944" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">スキャンレポートを見る (0/66)</a>）。<br>
+                                    なお、ポータブル利用時は <code>AclMigrationChecker.exe</code> 単体ではなく、同梱の DLL（<code>av_libglesv2.dll</code> / <code>libHarfBuzzSharp.dll</code> / <code>libSkiaSharp.dll</code>）と同じフォルダに配置したままコピーしてください。
                                 </div>
                             </div>
                         </div>
@@ -269,7 +296,20 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.7.31.2</span> <span class="text-white-50 small">2026.07.31</span>
+                                <span class="badge bg-accent me-2">v26.11.23.0</span> <span class="text-white-50 small">2026.11.23</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>スキャン・比較処理を全面刷新し大幅に高速化（管理者モード時のローカル NTFS 高速スキャンに対応）</li>
+                                        <li>ヘッダーに 4 段階の速度インジケーター付きエンジンバッジ（超高速 / 高速 / 中速 / 低速）を追加</li>
+                                        <li>Workgroup 環境やサーバー名・トップフォルダ名が異なる環境での比較精度を強化（拒否権限・260文字超パス・ジャンクション等に対応）</li>
+                                        <li>UI を刷新（ライト／ダークテーマ切替、日英リアルタイム切替、エラー一覧画面、標準ユーザー起動＋「管理者として再起動」を追加）</li>
+                                        <li>ツリー表示での「差分のみ絞込」「フォルダのみ」・◀/▶ ジャンプ・フォルダを開く・右クリックメニュー、Excel 対応 CSV 出力を追加</li>
+                                        <li><strong class="text-warning">【重要】</strong><code>.json.gz</code> の保存形式を刷新（旧版 <code>26.7.31.2</code> で保存したファイルとは非互換）</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.7.31.2</span> <span class="text-white-50 small">2026.07.31</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     初版公開（ローンチ）。ACL情報の取得・保存、移行前後の差分比較、CSVエクスポート機能を実装。
                                 </div>
@@ -333,13 +373,13 @@
                         <h3 class="h5 fw-bold mb-4 text-accent">動作環境</h3>
                         <table class="table table-sm table-dark spec-table mb-0">
                             <tbody>
-                                <tr><th>OS</th><td>Windows 10 / 11</td></tr>
-                                <tr><th>Server</th><td>Windows Server 2016+</td></tr>
-                                <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
+                                <tr><th>OS</th><td>Windows 10 / 11 (x64)</td></tr>
+                                <tr><th>Server</th><td>Windows Server 2016 - 2025 (x64)</td></tr>
+                                <tr><th>Runtime</th><td>不要 (NativeAOT 自己完結型)</td></tr>
                             </tbody>
                         </table>
                         <p class="small text-white-50 mt-3 mb-0">
-                            <i class="bi bi-info-circle me-1"></i> インストール不要。実行ファイル単体で動作します。
+                            <i class="bi bi-info-circle me-1"></i> インストール不要・レジストリ不使用。同梱DLL（<code>av_libglesv2.dll</code> / <code>libHarfBuzzSharp.dll</code> / <code>libSkiaSharp.dll</code>）と同じフォルダのままUSB等で持ち運べます。
                         </p>
                     </div>
 

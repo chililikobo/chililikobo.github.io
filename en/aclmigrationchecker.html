@@ -86,26 +86,26 @@
                 <section class="mb-5">
                     <h2 class="section-title">Product Overview</h2>
 
-                    <p class="lead fw-bold text-accent mb-3">"Access rights verification for reliable data migration."</p>
-                    <p class="text-white-75 mb-4">ACL Migration Checker is a dedicated auditing utility that verifies whether access control lists (ACLs) match perfectly between source and destination storage during file server migrations. It provides robust verification not only in Active Directory environments but also in Workgroup scenarios where migrating SIDs is difficult and permissions must be manually reconfigured.</p>
+                    <p class="lead fw-bold text-accent mb-3">"High-speed, high-precision access rights verification for reliable data migration."</p>
+                    <p class="text-white-75 mb-4">ACL Migration Checker is a dedicated auditing utility that verifies whether access control lists (ACLs) match accurately between source and destination storage during file server and NAS migrations. It provides robust verification not only in Active Directory environments but also in Workgroup scenarios where migrating SIDs is difficult and permissions must be reconfigured.</p>
 
                     <!-- Feature Grid -->
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-search text-accent me-2"></i>Scan and Save ACLs</h3>
-                            <p class="small text-white-75 mb-0">Harvests complete ACL metadata from source and destination folders/files and saves it into lightweight, compressed JSON.GZ files.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning-charge text-accent me-2"></i>High-Speed Scanning &amp; Snapshots</h3>
+                            <p class="small text-white-75 mb-0">Rapidly scans local drives and network shares using the optimal mode displayed on a 4-tier header speed badge (ultra-fast on local NTFS as Admin). Saves compact <code>.json.gz</code> snapshots for offline comparison.</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-arrow-left-right text-accent me-2"></i>Automated Difference Comparison</h3>
-                            <p class="small text-white-75 mb-0">Cross-examines the two datasets to automatically detect missing permissions, excessive privileges, and mismatched accounts or groups.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-arrow-left-right text-accent me-2"></i>Flexible Comparison (Workgroup &amp; AD)</h3>
+                            <p class="small text-white-75 mb-0">Accurately detects permission differences (including Deny rules) even when hostnames, IPs, or top-level folder names change—including Workgroup local account matching, deep paths (&gt;260 chars), and junctions.</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-file-earmark-spreadsheet text-accent me-2"></i>CSV Export for Audit Reports</h3>
-                            <p class="small text-white-75 mb-0">Export comparison results to CSV format. Perfect for creating post-migration audit evidence or remediation punch-lists.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-layout-split text-accent me-2"></i>Three Views &amp; Side-by-Side ACL Details</h3>
+                            <p class="small text-white-75 mb-0">Switch between synchronized Tree View (diff filter &amp; Prev/Next jump), Diff List (status filters, search, Open Folder), and Error Log, while comparing exact permissions side by side in the bottom pane.</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-translate text-accent me-2"></i>Bilingual Interface (EN/JA)</h3>
-                            <p class="small text-white-75 mb-0">Automatically selects English or Japanese based on the host OS language setting for seamless global operations.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>Themes, Live Language Switch &amp; CSV Export</h3>
+                            <p class="small text-white-75 mb-0">Switch Light/Dark themes and English/Japanese live from the header without restarting. Export diff results and error logs as Excel-ready CSV files for audit evidence.</p>
                         </div>
                     </div>
                 </section>
@@ -115,12 +115,12 @@
                     <h2 class="section-title">Key Verification Capabilities</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>Missing Permissions</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>Unintended Excessive Rights</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-x text-accent me-2"></i>SID / Account Mismatches</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-diagram-2 text-accent me-2"></i>Inheritance Flag Discrepancies</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-x text-accent me-2"></i>Missing Files or Directories</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-badge text-accent me-2"></i>Owner Mismatches</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-lock text-accent me-2"></i>Rights Mismatches &amp; Gaps</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-shield-exclamation text-accent me-2"></i>Deny Rule Discrepancies</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-person-check text-accent me-2"></i>Workgroup / AD Account Matching</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-x text-accent me-2"></i>Missing in Destination</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-folder-plus text-accent me-2"></i>Extra Items in Destination</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-exclamation-triangle text-accent me-2"></i>Skipped / Access-Denied Logs</div>
                         </div>
                     </div>
                 </section>
@@ -141,12 +141,12 @@
                 <!-- 4. Screenshots -->
                 <section class="mb-5">
                     <h2 class="section-title">Screenshots</h2>
-                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>Click any image to enlarge.</p>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>Click any image to enlarge (use Left / Right arrow keys to navigate).</p>
 
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
                             <div class="screenshot-container shadow" onclick="openGallery(0)">
-                                <img src="/img/aclchecker-main-en.png" alt="ACL Migration Checker Scan Screen" class="screenshot-img">
+                                <img src="/img/aclchecker-main-en.jpg" alt="ACL Migration Checker Tree View Screen" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
@@ -154,14 +154,14 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-search me-1"></i>Scan & Save</h4>
-                                <p class="text-white-50 small mb-0">Specify target directory to scan and save ACL metadata into compressed JSON.GZ.</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-diagram-3 me-1"></i>Tree View &amp; Side-by-Side ACL Details</h4>
+                                <p class="text-white-50 small mb-0">Filter synchronized source/destination trees to diffs only, jump with Prev/Next, and compare exact permissions side by side below.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <div class="screenshot-container shadow" onclick="openGallery(1)">
-                                <img src="/img/aclchecker-compare-en.png" alt="ACL Migration Checker Comparison Screen" class="screenshot-img">
+                                <img src="/img/aclchecker-compare-en.jpg" alt="ACL Migration Checker Diff List Screen" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
@@ -169,8 +169,8 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>Comparison & Diff Listing</h4>
-                                <p class="text-white-50 small mb-0">Load both datasets to automatically detect and color-code discrepancies.</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-check me-1"></i>Diff List, Filtering &amp; CSV Export</h4>
+                                <p class="text-white-50 small mb-0">Filter by Match, Mismatch, Missing, or Extra status, search by path or name, copy paths or open folders, and export to Excel-ready CSV.</p>
                             </div>
                         </div>
                     </div>
@@ -183,23 +183,23 @@
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
-                                <h4 class="h6 fw-bold">Acquire ACLs</h4>
-                                <p class="small mb-0 text-white-50">Run the tool on both source and destination machines to scan and save ACL files.</p>
+                                <h4 class="h6 fw-bold">Scan or Load Source</h4>
+                                <p class="small mb-0 text-white-50">Enter or drop a folder or share path (\\server\share) into Source Data and click Scan. Save as .json.gz for offline use.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">Compare Data</h4>
-                                <p class="small mb-0 text-white-50">Load both saved JSON.GZ datasets into the tool to execute the diff engine.</p>
+                                <h4 class="h6 fw-bold">Specify Destination &amp; Compare</h4>
+                                <p class="small mb-0 text-white-50">Enter the destination path (or load a saved .json.gz snapshot) into Destination Data and click Run Comparison.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
-                                <h4 class="h6 fw-bold">Review & Export</h4>
-                                <p class="small mb-0 text-white-50">Inspect detected discrepancies on screen and export to CSV if needed.</p>
+                                <h4 class="h6 fw-bold">Review &amp; Export CSV</h4>
+                                <p class="small mb-0 text-white-50">Switch between Tree View, Diff List, and Error Log to inspect discrepancies and export results as CSV.</p>
                             </div>
                         </div>
                     </div>
                     <p class="small text-white-50 text-center mt-3 mb-0">
-                        <i class="bi bi-magic me-1 text-accent"></i> Offline comparison ready: No direct network route is required between source and destination servers.
+                        <i class="bi bi-magic me-1 text-accent"></i> Offline comparison ready: Carry .json.gz snapshots between isolated servers with no direct network route required.
                     </p>
                 </section>
 
@@ -216,7 +216,7 @@
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Yes. Scanning and comparing are separate operations. You can save scan results on an air-gapped source server, copy the JSON.GZ file via a USB drive to an admin laptop, and perform the comparison completely offline.
+                                    Yes. Scanning and comparing are separate operations. You can save scan results on an air-gapped source server, copy the <code>.json.gz</code> file via a USB drive to an admin laptop, and perform the comparison completely offline.
                                 </div>
                             </div>
                         </div>
@@ -237,12 +237,39 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading3">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Can it handle tens of thousands of files efficiently?
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Can it handle large directories quickly? Does it need Administrator privileges?
                                 </button>
                             </h3>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Yes. Scan data is compressed with Gzip (.json.gz) to minimize file size and memory footprint, allowing it to efficiently scan and compare large-scale directory trees.
+                                    Yes. The scanning and comparison engine was rebuilt in v26.11.23.0 for major speed improvements across both local drives and network shares. It starts as a Standard User by default, and clicking <strong>Restart as Admin</strong> in the header preserves your paths and UI language while unlocking ultra-fast scan mode on local NTFS drives.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Are .json.gz snapshots from v1 (26.7.31.2) compatible with v26.11.23.0?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    No. Snapshot files saved in <code>v26.11.23.0</code> or later use a redesigned format and are not compatible with files from <code>26.7.31.2</code> (older files are safely rejected with an error message). Please re-scan with v26.11.23.0 or newer.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Is it safe if Windows SmartScreen warns on launch? What files must stay together?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Yes, it is completely safe. Because this free indie utility does not carry an EV code-signing certificate, Windows SmartScreen may appear on first launch—click <strong>More info</strong> → <strong>Run anyway</strong> to start. The app makes zero external network requests and scored 0/66 detections on VirusTotal (<a href="https://www.virustotal.com/gui/file/259c4969452a7a6a678503a4a6f70699fd3c760062c8086a830131b92e6d5944" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View Scan Report (0/66)</a>).<br>
+                                    For portable use, keep <code>AclMigrationChecker.exe</code> together with its bundled native DLLs (<code>av_libglesv2.dll</code>, <code>libHarfBuzzSharp.dll</code>, <code>libSkiaSharp.dll</code>) in the same folder.
                                 </div>
                             </div>
                         </div>
@@ -269,9 +296,22 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.7.31.2</span> <span class="text-white-50 small">Jul 31, 2026</span>
+                                <span class="badge bg-accent me-2">v26.11.23.0</span> <span class="text-white-50 small">Nov 23, 2026</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Rebuilt scanning and comparison for major speed improvements across local drives and network shares (including ultra-fast local NTFS mode as Admin)</li>
+                                        <li>Added a 4-tier scan speed indicator badge (Turbo / Fast / Medium / Slow) in the header</li>
+                                        <li>Improved comparison accuracy across differing hosts, top folders, Workgroup environments, Deny rules, deep paths (&gt;260 chars), and junctions/symlinks</li>
+                                        <li>Redesigned UI with Light/Dark themes, live Japanese/English switch, Error Log view, and standard-user startup with on-demand Restart as Admin</li>
+                                        <li>Added Tree View diff filters (Diffs Only / Folders Only), Prev/Next navigation, Open Folder, right-click menu, and Excel-ready CSV export</li>
+                                        <li><strong class="text-warning">[BREAKING]</strong> Updated <code>.json.gz</code> snapshot format (not compatible with files from <code>26.7.31.2</code>)</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.7.31.2</span> <span class="text-white-50 small">Jul 31, 2026</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
-                                    Initial launch. Includes ACL scanning & saving, diff comparison engine, and CSV export.
+                                    Initial launch. Includes ACL scanning &amp; saving, diff comparison engine, and CSV export.
                                 </div>
                             </li>
                         </ul>
@@ -295,14 +335,14 @@
                         </div>
 
                         <div class="small text-white-50 mb-4">
-                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal & Commercial)</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal &amp; Commercial)</p>
                             <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Redistribution Prohibited</p>
                             <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> Commercial Use Allowed</p>
                         </div>
 
                         <!-- External Badges -->
                         <div class="border-top border-secondary pt-4 text-center">
-                            <p class="small text-white-50 mb-3 badge-title">Trusted & Featured On</p>
+                            <p class="small text-white-50 mb-3 badge-title">Trusted &amp; Featured On</p>
                             <div class="badge-row">
                                 <div class="badge-item badge-bg-white">
                                     <a href="https://www.softpedia.com/get/System/File-Management/ACL-Migration-Checker.shtml" target="_blank" rel="noopener">
@@ -333,13 +373,13 @@
                         <h3 class="h5 fw-bold mb-4 text-accent">Requirements</h3>
                         <table class="table table-sm table-dark spec-table mb-0">
                             <tbody>
-                                <tr><th>OS</th><td>Windows 10 / 11</td></tr>
-                                <tr><th>Server</th><td>Windows Server 2016+</td></tr>
-                                <tr><th>Runtime</th><td>None required (Portable)</td></tr>
+                                <tr><th>OS</th><td>Windows 10 / 11 (x64)</td></tr>
+                                <tr><th>Server</th><td>Windows Server 2016 - 2025 (x64)</td></tr>
+                                <tr><th>Runtime</th><td>None required (NativeAOT)</td></tr>
                             </tbody>
                         </table>
                         <p class="small text-white-50 mt-3 mb-0">
-                            <i class="bi bi-info-circle me-1"></i> Truly portable. Runs directly from USB drives without installation.
+                            <i class="bi bi-info-circle me-1"></i> Truly portable with no installation or registry footprint. Keep the .exe with its bundled DLLs (<code>av_libglesv2.dll</code>, <code>libHarfBuzzSharp.dll</code>, <code>libSkiaSharp.dll</code>) in the same folder.
                         </p>
                     </div>
 
