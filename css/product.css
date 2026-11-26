@@ -138,6 +138,37 @@
     transform: scale(1.05);
 }
 
+/* 縦長・可変アスペクト比HUDウィジェット用スクリーンショット（切り抜き防止） */
+.screenshot-container.screenshot-hud {
+    aspect-ratio: auto;
+    height: 360px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #1d2229 0%, #0d1014 100%);
+}
+
+.screenshot-container.screenshot-hud .screenshot-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.screenshot-container.screenshot-hud:hover .screenshot-img {
+    opacity: 0.92;
+    transform: scale(1.03);
+}
+
+@media (max-width: 576px) {
+    .screenshot-container.screenshot-hud {
+        height: 300px;
+    }
+}
+
 /* ライセンスボックス */
 .license-box {
     background-color: #252525;

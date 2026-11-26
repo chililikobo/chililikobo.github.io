@@ -14,18 +14,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Stats | chilili kobo - Real-time System Monitor</title>
-    <meta name="description" content="PCのリソース状況とネットワーク情報をコンパクトに表示。Simple Statsは、デスクトップの片隅で動作するリアルタイム・システムモニターです。">
+    <meta name="description" content="Win32 / GDI+ & .NET 10 NativeAOT製の超軽量デスクトップHUD（約3.0MB・レジストリ不使用）。壁紙レイヤー固定・ゴーストHUD・60秒波形・アクティブNIC自動追従に対応。">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="chilili kobo">
     <meta property="og:title" content="Simple Stats | chilili kobo - Real-time System Monitor">
-    <meta property="og:description" content="CPU、メモリ、ディスク、ネットワーク負荷を最小限のスペースで可視化。">
+    <meta property="og:description" content="Win32/GDI+ & .NET 10 NativeAOT製の超軽量デスクトップHUD。壁紙レイヤー固定・最前面ゴーストモード・60秒スパークラインでPCリソースとネットワークを可視化。">
     <meta property="og:url" content="https://chililikobo.github.io/simple-stats.html">
     <meta property="og:image" content="https://chililikobo.github.io/img/og-simple-stats.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simple Stats | chilili kobo - Real-time System Monitor">
-    <meta name="twitter:description" content="デスクトップの片隅で、PCの健康状態を最小限の負荷で可視化。">
+    <meta name="twitter:description" content="Win32/GDI+ & .NET 10 NativeAOT製の超軽量デスクトップHUD。壁紙レイヤー固定・最前面ゴーストモード・60秒スパークラインでPCリソースとネットワークを可視化。">
     <meta name="twitter:image" content="https://chililikobo.github.io/img/og-simple-stats.png">
     <meta name="twitter:site" content="@chililikobo">
 
@@ -53,15 +53,15 @@
                 <h1 class="display-4 fw-bold mb-0">Simple <span class="text-accent">Stats</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-3">デスクトップの片隅に、安心を。リソースとネットワークを可視化する最小限のモニター。</p>
+            <p class="lead text-white-50 mb-3">デスクトップに溶け込む、超軽量テレメトリHUD。リソースとネットワークを美しく可視化。</p>
 
             <!-- 信頼性・特徴ハイライト -->
             <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
-                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 対応</span>
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 (x64) 対応</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-pin-angle text-accent me-1"></i>常に最前面表示・位置自動保存</span>
+                <span><i class="bi bi-layers text-accent me-1"></i>壁紙レイヤー固定 / 最前面ゴーストHUD</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-usb-drive text-accent me-1"></i>単一ファイル・レジストリ不使用</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>単一ファイル (約3.0MB)・レジストリ不使用</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
                 <span><i class="bi bi-award text-warning me-1"></i>窓の杜 / Vector / Softpedia 掲載</span>
             </div>
@@ -70,7 +70,7 @@
                 <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button mb-2">
                     <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
                 </a>
-                <p class="small text-white-50 mt-1 mb-2">※インストール不要・商用個人完全無料・単一ファイルで動作</p>
+                <p class="small text-white-50 mt-1 mb-2">※インストール不要・ランタイム不要（.NET 10 NativeAOT）・商用個人完全無料</p>
                 <a href="#how-to-use" class="d-inline-block text-accent small text-decoration-none">
                     <i class="bi bi-question-circle me-1"></i>使い方・機能詳細を見る ↓
                 </a>
@@ -86,26 +86,34 @@
                 <section class="mb-5">
                     <h2 class="section-title">製品説明</h2>
 
-                    <p class="lead fw-bold text-accent mb-3">「必要な情報を、最小限のスペースで把握する。」</p>
-                    <p class="text-white-75 mb-4">Simple Stats（シンプル・スタッツ）は、PCのリソース使用状況とネットワーク構成情報をコンパクトな一画面に集約して表示する、リアルタイム・デスクトップモニターです。視認性の高いダークテーマを採用し、常に最前面（Topmost）にフローティング配置することで、日常業務やクリエイティブ作業を邪魔することなくPCの健康状態を常時モニタリングできます。</p>
+                    <p class="lead fw-bold text-accent mb-3">「作業を邪魔せず、PCの状態をひと目で把握する。」</p>
+                    <p class="text-white-75 mb-4">Simple Stats（シンプル・スタッツ）は、PCのリソース状況とネットワーク情報をデスクトップに控えめかつ美しく表示する常駐テレメトリHUDです。Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・実測ワーキングセット約 0.3 MB（プライベート約 7 MB）・ほぼ 0% のCPU負荷で軽快に動作します。</p>
 
-                    <!-- 特徴 4選グリッド -->
+                    <!-- 特徴 6選グリッド -->
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-speedometer text-accent me-2"></i>リアルタイム4大リソース監視</h3>
-                            <p class="small text-white-75 mb-0">CPU、メモリ、ディスク、ネットワークの負荷状況を直感的な円形ゲージと数値で常時リアルタイム可視化します。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-speedometer text-accent me-2"></i>リアルタイム監視 ＆ 60秒スパークライン</h3>
+                            <p class="small text-white-75 mb-0">タスクマネージャー準拠のCPU使用率・メモリ・物理ディスクI/O（R/W）・ドライブ容量バー・ネット送受信（▼/▲）を可視化。負荷に応じて緑→橙→赤へ滑らかに変化します。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-hdd-network text-accent me-2"></i>ネットワーク詳細の即時表示</h3>
-                            <p class="small text-white-75 mb-0">ホスト名、ローカルIPアドレス、サブネットマスク、デフォルトゲートウェイ、DNSサーバー情報を一目で確認可能。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-layers text-accent me-2"></i>邪魔しない2つの表示モード</h3>
+                            <p class="small text-white-75 mb-0">ウィンドウ背面に貼り付き <code>Win+D</code> でも消えない「壁紙レイヤー固定」（デフォルト）と、クリック透過＆マウス接近で自動フェードする「最前面ゴーストHUD」（<code>Ctrl + Alt</code> で一時操作）を切替可能。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-pin-angle text-accent me-2"></i>スマートな常駐・メモリ節約</h3>
-                            <p class="small text-white-75 mb-0">ウィンドウ位置の自動保存・復元に対応。最小化時は不要なメモリを即座に解放し、PCへの負荷を極限まで抑えます。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-pause-circle text-accent me-2"></i>全画面自動一時停止</h3>
+                            <p class="small text-white-75 mb-0">フルスクリーンゲームやプレゼン実行中は描画と補助タイマーを自動停止し、パフォーマンスや表示を妨げません。</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-exclamation-triangle text-accent me-2"></i>過負荷アラートカラー表示</h3>
-                            <p class="small text-white-75 mb-0">リソース負荷が一定以上（80%超）に達するとゲージの色が警告カラーに変化し、PCのボトルネックを素早く知らせます。</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>4テーマ・3レイアウト・3フォントサイズ</h3>
+                            <p class="small text-white-75 mb-0">Obsidian Glass / Pure Wallpaper / Cyber Cyan / Frost Light の4テーマ、Standard / Minimal Zen / Compact Mini の3レイアウト、小/中/大フォントに対応。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-hdd-network text-accent me-2"></i>アクティブNIC自動追従 ＆ 1クリックコピー</h3>
+                            <p class="small text-white-75 mb-0">使用中のNICを自動追従し、リンク速度・IPv4/CIDR・GW・DNSを表示。各行の左クリックで個別コピー、トレイのダブルクリックで全情報を一括コピーできます。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning-charge text-accent me-2"></i>NativeAOT ＆ 完全レジストリ不使用</h3>
+                            <p class="small text-white-75 mb-0">単一ファイルで .NET ランタイム不要。スタートアップ登録（<code>SimpleStats.lnk</code>）もレジストリ不使用で、OS言語に応じた日英UI自動切替にも対応します。</p>
                         </div>
                     </div>
                 </section>
@@ -115,15 +123,15 @@
                     <h2 class="section-title">主な表示・監視項目</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-cpu text-accent me-2"></i>CPU使用率 (%)</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-memory text-accent me-2"></i>メモリ使用量 / 空き</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-device-ssd text-accent me-2"></i>ディスクアクセス負荷</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-arrow-down-up text-accent me-2"></i>ネットワーク送受信速度</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pc-display text-accent me-2"></i>PCホスト名</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-ethernet text-accent me-2"></i>IPアドレス・サブネット</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-router text-accent me-2"></i>デフォルトゲートウェイ</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-globe text-accent me-2"></i>参照先DNSサーバー</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pin text-accent me-2"></i>最前面ピン留め切替</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-cpu text-accent me-2"></i>CPU使用率・モデル名・スレッド数</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-memory text-accent me-2"></i>メモリ使用率・使用量 / 総容量</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-device-ssd text-accent me-2"></i>物理ディスク負荷・読込/書込速度 (R/W)</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-hdd text-accent me-2"></i>各固定ドライブ使用率・使用/空き容量</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-arrow-down-up text-accent me-2"></i>ネットワーク負荷・送受信速度 (▼/▲)</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-graph-up text-accent me-2"></i>60秒スパークライン・3段階負荷カラー</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pc-display text-accent me-2"></i>ホスト名・OSビルド・ユーザー名・モード表示</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-ethernet text-accent me-2"></i>NIC名 (リンク速度)・IP/CIDR・SUB・GW・DNS</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-clock-history text-accent me-2"></i>システム起動日時・連続稼働時間</div>
                         </div>
                     </div>
                 </section>
@@ -133,10 +141,10 @@
                     <h2 class="section-title">主なユースケース</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>ビルドやコンパイル、動画書き出し中のシステム高負荷監視</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>テレワークや現場検証でのネットワークIP・ゲートウェイの常時把握</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-memory text-accent me-2"></i>メモリリークや特定アプリの異常なディスク消費の早期発見</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>マルチモニター環境のサブ画面隅に置く軽量システムHUDとして</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>ビルド・動画書き出し中のCPU/メモリ/ディスクR/Wとドライブ空き容量の常時監視</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-controller text-accent me-2"></i>最前面ゴーストHUD＋全画面自動停止による、普段作業とフルスクリーンゲームの両立</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>VPNや複数NIC環境でのアクティブIP/CIDR・リンク速度・GW/DNS確認と1クリックコピー</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>サブモニター隅に置く、実測約0.3MBの超軽量デスクトップHUDとして</div>
                         </div>
                     </div>
                 </section>
@@ -144,12 +152,12 @@
                 <!-- 4. スクリーンショット -->
                 <section class="mb-5">
                     <h2 class="section-title">スクリーンショット</h2>
-                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます。</p>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>画像をクリックすると拡大表示できます（矢印キーで前後の画像へ移動可能）。</p>
 
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" onclick="openGallery(0)">
-                                <img src="/img/simplestats-main.png" alt="Simple Stats メイン画面" class="screenshot-img">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(0)">
+                                <img src="/img/simplestats-main.png" alt="Simple Stats Obsidian Glass テーマ（Standard レイアウト）" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>拡大表示
@@ -157,8 +165,83 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-display me-1"></i>メインモニター</h4>
-                                <p class="text-white-50 small mb-0">円グラフと数値で、現在のリソース使用率やネットワーク情報を瞬時に把握できます。</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-display me-1"></i>Obsidian Glass（Standard レイアウト）</h4>
+                                <p class="text-white-50 small mb-0">標準ダークグラス調テーマ。ホスト名・OSビルド・ユーザー名・モードバッジ（WALL）、4種のアークゲージ＆60秒波形、ドライブ容量、NICリンク速度・起動日時まで一望できます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(1)">
+                                <img src="/img/simplestats-wallpaper.png" alt="Simple Stats Pure Wallpaper テーマ（Standard レイアウト）" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-layers me-1"></i>Pure Wallpaper（Standard レイアウト）</h4>
+                                <p class="text-white-50 small mb-0">外枠を省いた壁紙直描スタイル。背景に溶け込みながら、高負荷時の警告色変化もひと目で判別できます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(2)">
+                                <img src="/img/simplestats-cyber.png" alt="Simple Stats Cyber Cyan テーマ（Standard レイアウト）" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-cpu me-1"></i>Cyber Cyan（Standard レイアウト）</h4>
+                                <p class="text-white-50 small mb-0">シアン系アクセントのサイバーテーマ。CPUやディスクが高負荷になると、ゲージと波形が赤系アラート色へ変化します。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(3)">
+                                <img src="/img/simplestats-frost.png" alt="Simple Stats Frost Light テーマ（Standard レイアウト）" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-brightness-high me-1"></i>Frost Light（Standard レイアウト）</h4>
+                                <p class="text-white-50 small mb-0">明るい壁紙やライト環境になじむフロスト調ライトテーマ。高いコントラストで数値をくっきり表示します。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(4)">
+                                <img src="/img/simplestats-zen.png" alt="Simple Stats Minimal Zen レイアウト" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-ul me-1"></i>Minimal Zen レイアウト</h4>
+                                <p class="text-white-50 small mb-0">波形グラフをスリムバーへ集約した省スペース構成。主要メトリクスとNIC・起動日時を維持しつつ縦幅を抑えます。</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(5)">
+                                <img src="/img/simplestats-mini.png" alt="Simple Stats Compact Mini レイアウト" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>拡大表示
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-aspect-ratio me-1"></i>Compact Mini レイアウト</h4>
+                                <p class="text-white-50 small mb-0">ホスト名・IP・4種のアークゲージ・ドライブ容量を横長バーに凝縮。画面隅に最小スペースで常駐できます。</p>
                             </div>
                         </div>
                     </div>
@@ -172,22 +255,22 @@
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
                                 <h4 class="h6 fw-bold">起動と配置</h4>
-                                <p class="small mb-0 text-white-50">実行ファイルを起動し、ドラッグ操作でデスクトップの好きな位置へ配置します。</p>
+                                <p class="small mb-0 text-white-50"><code>SimpleStats.exe</code> を任意のフォルダで起動し、ドラッグ（画面端16pxマグネット吸着）または右クリックの四隅プリセットで配置します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">リソース確認</h4>
-                                <p class="small mb-0 text-white-50">CPU / MEM / DISK / NET の使用率やネットワーク情報をリアルタイムで確認します。</p>
+                                <h4 class="h6 fw-bold">右クリックでカスタマイズ</h4>
+                                <p class="small mb-0 text-white-50">HUDまたはトレイの右クリックから、表示モード・テーマ・レイアウト・フォント・不透明度・更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）・自動起動を設定します。</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
-                                <h4 class="h6 fw-bold">位置の自動復元</h4>
-                                <p class="small mb-0 text-white-50">ウィンドウ位置はJSON形式で自動保存され、次回起動時も同じ場所で開きます。</p>
+                                <h4 class="h6 fw-bold">1クリックコピー ＆ トレイ操作</h4>
+                                <p class="small mb-0 text-white-50">各行の左クリックで値をコピー。トレイのシングルクリックで表示/非表示、ダブルクリックで全システム情報を一括コピーします。</p>
                             </div>
                         </div>
                     </div>
                     <p class="small text-white-50 text-center mt-3 mb-0">
-                        <i class="bi bi-magic me-1 text-accent"></i> レジストリを一切使用せず、設定ファイルも実行ファイルと同じ場所にクリーンに保存されます。
+                        <i class="bi bi-magic me-1 text-accent"></i> 設定は <code>window_settings.json</code>、自動起動は <code>SimpleStats.lnk</code> に保存され、Windows レジストリは一切使用しません（起動オプション <code>--lang=en</code> / <code>--lang=ja</code> で言語指定可）。
                     </p>
                 </section>
 
@@ -199,12 +282,12 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading1">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>他のアプリを全画面表示していても常に最前面に固定できますか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>作業ウィンドウや全画面ゲームの邪魔になりませんか？表示モードの違いは？
                                 </button>
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    はい、デフォルトで「最前面表示（Topmost）」が有効になっています。ブラウザやエディタを背面に開いたままでも、常に画面の隅で数値をモニタリングできます。
+                                    デフォルトの<strong>「壁紙レイヤー固定」</strong>（HUD右上に <code>WALL</code> 表示）ではウィンドウ背面に貼り付き、<code>Win+D</code> でも消えず、タスクバーや <code>Alt+Tab</code> にも出ません。最前面表示したい場合は<strong>「最前面ゴーストHUD」</strong>に切り替えると、クリック透過かつマウス接近時のみ自動フェードします（<code>Ctrl + Alt</code> 押下中のみ一時操作可）。全画面ゲームやプレゼン中は描画・補助タイマーを自動で一時停止します。
                                 </div>
                             </div>
                         </div>
@@ -212,12 +295,12 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading2">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>常駐させていてもPCのバッテリーやCPUを消費しませんか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>常駐させていてもPCのバッテリーやメモリ・CPUを消費しませんか？
                                 </button>
                             </h3>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Simple Statsは超軽量設計となっており、更新頻度の最適化と最小化時の自動メモリ解放処理を行っているため、CPU使用率は通常0〜1%未満にとどまります。
+                                    Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・実測ワーキングセット約 0.3 MB（プライベート約 7 MB）・CPU負荷ほぼ 0% で動作します。更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）の調整と全画面自動一時停止にも対応しており、常駐負荷は極小です。
                                 </div>
                             </div>
                         </div>
@@ -225,12 +308,38 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading3">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>商用利用や企業内での利用は無料ですか？
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Windows起動時の自動実行やアンインストール方法は？
                                 </button>
                             </h3>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    はい、個人利用・法人利用を問わず完全無料でご利用いただけます。社内開発機やキッティング端末、サーバーの負荷監視などにも自由にお使いいただけます。
+                                    右クリックメニューの自動起動をオンにするとスタートアップフォルダに <code>SimpleStats.lnk</code> が作成されます（EXE移動時も起動時に自動修復）。レジストリは一切不使用のため、自動起動をオフにして <code>SimpleStats.exe</code> と <code>window_settings.json</code> を削除するだけでアンインストールできます（<code>--lang=en</code> / <code>--lang=ja</code> 指定可）。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>商用利用や企業内での利用は無料ですか？外部通信は行いますか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、個人・法人問わず完全無料で利用できます（二次配布は原則禁止）。取得したシステム・ネットワーク情報を外部送信することも一切ありません。
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>起動時に Windows SmartScreen の警告が出た場合は安全ですか？
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    はい、安全です。EVコードサイン証明書を持たないため初回起動時に警告が出る場合がありますが、<strong>「詳細情報」→「実行」</strong>で起動できます。外部通信ゼロで、VirusTotal でも検知数ゼロ（0/66）を確認済みです（<a href="https://www.virustotal.com/gui/file/68d644decfef55ed2755a943aed8351d888d35e75d7e1e760ccc6a4858f54ab8?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">スキャンレポートを見る (0/66)</a>）。
                                 </div>
                             </div>
                         </div>
@@ -241,8 +350,8 @@
                 <!-- 7. ボトムCTAカード -->
                 <section class="mb-5">
                     <div class="card-custom text-center p-4 border-accent bg-accent-soft">
-                        <h2 class="h4 fw-bold text-white mb-2">PCの健康状態を最小限のスペースで可視化</h2>
-                        <p class="small text-white-50 mb-4">単一ファイル・インストール不要・完全無料。GitHubから今すぐダウンロードしてご利用いただけます。</p>
+                        <h2 class="h4 fw-bold text-white mb-2">超軽量NativeAOT HUDで、PCの状態を美しく可視化</h2>
+                        <p class="small text-white-50 mb-4">単一ファイル（約3.0 MB）・インストール不要・レジストリ不使用・完全無料。GitHubから今すぐダウンロードしてご利用いただけます。</p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
                             <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
                                 <i class="bi bi-github me-1"></i> 最新版をダウンロード（GitHub）
@@ -257,7 +366,19 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.5.3.0</span> <span class="text-white-50 small">2026.05.03</span>
+                                <span class="badge bg-accent me-2">v26.11.26.0</span> <span class="text-white-50 small">2026.11.26</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Win32 / GDI+ 直描画 ＆ .NET 10 NativeAOT へ全面刷新（約3.0 MB単一EXE・実測ワーキングセット約0.3 MB／プライベート約7 MB・超低CPU負荷）</li>
+                                        <li>「壁紙レイヤー固定」（デフォルト・<code>Win+D</code>維持）と「最前面ゴーストHUD」（透過フェード・<code>Ctrl+Alt</code>一時操作）、全画面自動一時停止を搭載</li>
+                                        <li>4テーマ・3スリムレイアウト・3段階フォント・60秒スパークライン・16pxマグネット吸着・更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）に対応</li>
+                                        <li>タスクマネージャー準拠CPU（<code>PDH</code>/<code>CPUID</code>）・物理ディスクI/O（R/W）・全ドライブ容量バー・アクティブNIC自動追従（リンク速度/CIDR）・起動日時表示を実装</li>
+                                        <li>各行1クリックコピー＆一括コピー、レジストリ不使用の自動起動（<code>SimpleStats.lnk</code>）、日英UI自動切替（<code>--lang=en</code>/<code>--lang=ja</code>）を追加</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.5.3.0</span> <span class="text-white-50 small">2026.05.03</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     Simple Stats 初版公開。CPU/メモリ/ディスク/ネットワークのリアルタイム監視、ネットワーク詳細表示、位置自動保存に対応。
                                 </div>
@@ -323,13 +444,14 @@
                             <tbody>
                                 <tr><th>OS</th><td>Windows 10 / 11</td></tr>
                                 <tr><th>Arch</th><td>64bit (x64)</td></tr>
-                                <tr><th>Runtime</th><td>不要 (自己完結型)</td></tr>
-                                <tr><th>配布形態</th><td>単一実行ファイル (.exe)</td></tr>
-                                <tr><th>設定保存</th><td>JSON形式 (レジストリ不使用)</td></tr>
+                                <tr><th>Runtime</th><td>不要 (.NET 10 NativeAOT)</td></tr>
+                                <tr><th>配布形態</th><td>単一実行ファイル (約 3.0 MB)</td></tr>
+                                <tr><th>言語</th><td>日本語 / 英語 (自動切替)</td></tr>
+                                <tr><th>設定・自動起動</th><td>JSON / .lnk (レジストリ不使用)</td></tr>
                             </tbody>
                         </table>
                         <p class="small text-white-50 mt-3 mb-0">
-                            <i class="bi bi-info-circle me-1"></i> インストール不要。レジストリを汚さずポータブルに動作します。
+                            <i class="bi bi-info-circle me-1"></i> インストール・ランタイム・外部言語フォルダ不要。レジストリを汚さずポータブルに動作します。
                         </p>
                     </div>
 

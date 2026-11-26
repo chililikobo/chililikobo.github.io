@@ -14,18 +14,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Stats | chilili kobo - Real-time System Monitor</title>
-    <meta name="description" content="A compact real-time system monitor for your desktop. Monitor CPU, RAM, Disk, and Network with minimal footprint.">
+    <meta name="description" content="Ultra-lightweight Win32/GDI+ & .NET 10 NativeAOT desktop HUD (~3.0 MB, zero registry) with Wallpaper Layer, Ghost Overlay, 60s sparklines, and active NIC tracking.">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="chilili kobo">
     <meta property="og:title" content="Simple Stats | chilili kobo - Real-time System Monitor">
-    <meta property="og:description" content="Visualize system resources and network info in a tiny, elegant dashboard.">
+    <meta property="og:description" content="Ultra-lightweight native desktop telemetry HUD. Monitor CPU, RAM, Disk, and active NIC with Wallpaper Layer / Ghost Overlay modes and 60s sparklines.">
     <meta property="og:url" content="https://chililikobo.github.io/en/simple-stats.html">
     <meta property="og:image" content="https://chililikobo.github.io/img/og-simple-stats-en.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simple Stats | chilili kobo - Real-time System Monitor">
-    <meta name="twitter:description" content="Stay informed about your PC's health with a glance at your desktop corner.">
+    <meta name="twitter:description" content="Ultra-lightweight native desktop telemetry HUD. Monitor CPU, RAM, Disk, and active NIC with Wallpaper Layer / Ghost Overlay modes and 60s sparklines.">
     <meta name="twitter:image" content="https://chililikobo.github.io/img/og-simple-stats-en.png">
     <meta name="twitter:site" content="@chililikobo">
 
@@ -53,26 +53,26 @@
                 <h1 class="display-4 fw-bold mb-0">Simple <span class="text-accent">Stats</span></h1>
             </div>
 
-            <p class="lead text-white-50 mb-3">Peace of mind in the corner of your desktop. A minimal monitor for resources and network.</p>
+            <p class="lead text-white-50 mb-3">An ultra-lightweight desktop telemetry HUD that blends into your workspace, visualizing PC resources and network diagnostics.</p>
 
             <!-- Feature Pills -->
             <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3 mb-4 flex-wrap small text-white-50">
-                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 Ready</span>
+                <span><i class="bi bi-windows text-accent me-1"></i>Windows 10 / 11 (x64)</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-pin-angle text-accent me-1"></i>Always on Top & Auto Position Save</span>
+                <span><i class="bi bi-layers text-accent me-1"></i>Wallpaper Layer &amp; Ghost Overlay HUD</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-usb-drive text-accent me-1"></i>Portable & No Registry Footprint</span>
+                <span><i class="bi bi-usb-drive text-accent me-1"></i>Single-File (~3.0 MB) · Zero Registry</span>
                 <span class="d-none d-sm-inline text-secondary">|</span>
-                <span><i class="bi bi-award text-warning me-1"></i>Featured on Softpedia & AlternativeTo</span>
+                <span><i class="bi bi-award text-warning me-1"></i>Featured on Softpedia &amp; AlternativeTo</span>
             </div>
 
             <div class="d-inline-block">
                 <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button mb-2">
                     <i class="bi bi-github me-1"></i> Download Free on GitHub
                 </a>
-                <p class="small text-white-50 mt-1 mb-2">*No installation required. Runs as a single portable app.</p>
+                <p class="small text-white-50 mt-1 mb-2">*No installation or .NET runtime required (.NET 10 NativeAOT). 100% free for personal &amp; commercial use.</p>
                 <a href="#how-to-use" class="d-inline-block text-accent small text-decoration-none">
-                    <i class="bi bi-question-circle me-1"></i>How to Use & Features ↓
+                    <i class="bi bi-question-circle me-1"></i>How to Use &amp; Features ↓
                 </a>
             </div>
         </div>
@@ -86,44 +86,52 @@
                 <section class="mb-5">
                     <h2 class="section-title">Product Overview</h2>
 
-                    <p class="lead fw-bold text-accent mb-3">"All essential metrics in the smallest possible space."</p>
-                    <p class="text-white-75 mb-4">Simple Stats is a real-time system monitor that consolidates PC resource metrics and network parameters into a sleek, compact desktop widget. Featuring a high-contrast dark theme and optional "Always on Top" floating mode, it allows you to continuously keep an eye on system health without distracting from your core work.</p>
+                    <p class="lead fw-bold text-accent mb-3">"Essential PC and network telemetry at a glance—without getting in your way."</p>
+                    <p class="text-white-75 mb-4">Simple Stats is an ultra-lightweight desktop telemetry HUD that keeps essential PC resource and network metrics cleanly visible without cluttering your workflow. Powered by pure Win32 / GDI+ rendering and .NET 10 NativeAOT, it ships as a ~3.0 MB single executable running at ~0.3 MB working set (~7 MB private bytes) and near-zero CPU.</p>
 
-                    <!-- Feature Grid -->
+                    <!-- 6-Feature Grid -->
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-speedometer text-accent me-2"></i>Real-time 4-Resource Tracking</h3>
-                            <p class="small text-white-75 mb-0">Continuously visualizes CPU, RAM, Disk, and Network load with intuitive circular gauges and live numerical metrics.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-speedometer text-accent me-2"></i>Real-Time Monitoring &amp; 60s Sparklines</h3>
+                            <p class="small text-white-75 mb-0">Tracks Task Manager-aligned CPU, RAM, physical Disk I/O (R/W), per-drive capacity bars, and Network throughput (▼/▲), smoothly shifting green → amber → red under load.</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-hdd-network text-accent me-2"></i>Instant Network Diagnostics</h3>
-                            <p class="small text-white-75 mb-0">Quickly inspect your Hostname, IPv4 Address, Subnet Mask, Default Gateway, and primary DNS servers at a glance.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-layers text-accent me-2"></i>Dual Non-Intrusive Display Modes</h3>
+                            <p class="small text-white-75 mb-0">Switch between <strong>Wallpaper Layer Mode</strong> (default: behind windows, survives <code>Win+D</code>) and <strong>Ghost Overlay Mode</strong> (click-through with mouse-proximity fade and <code>Ctrl + Alt</code> temporary unlock).</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-pin-angle text-accent me-2"></i>Smart Placement & Memory Savings</h3>
-                            <p class="small text-white-75 mb-0">Auto-saves window desktop coordinates across restarts. Automatically trims memory usage when minimized.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-pause-circle text-accent me-2"></i>Fullscreen Auto-Pause</h3>
+                            <p class="small text-white-75 mb-0">Automatically suspends rendering and background timers during fullscreen games and presentations so nothing interferes.</p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="h6 fw-bold text-white"><i class="bi bi-exclamation-triangle text-accent me-2"></i>Overload Warning Colors</h3>
-                            <p class="small text-white-75 mb-0">Gauges automatically change to warning amber and red when resource usage exceeds 80%, providing early bottleneck alerts.</p>
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>4 Themes, 3 Layouts &amp; 3 Font Sizes</h3>
+                            <p class="small text-white-75 mb-0">Choose Obsidian Glass, Pure Wallpaper, Cyber Cyan, or Frost Light across Standard, Minimal Zen, and Compact Mini layouts with Small / Medium / Large fonts.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-hdd-network text-accent me-2"></i>Active NIC Tracking &amp; 1-Click Copy</h3>
+                            <p class="small text-white-75 mb-0">Auto-follows your active adapter with link speed, IPv4/CIDR, Gateway, and DNS. Left-click any row to copy, or double-click the tray icon for a full snapshot.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold text-white"><i class="bi bi-lightning-charge text-accent me-2"></i>NativeAOT &amp; Zero-Registry Design</h3>
+                            <p class="small text-white-75 mb-0">Single portable executable requiring no .NET runtime. Startup shortcut toggling (<code>SimpleStats.lnk</code>) writes zero registry keys and supports automatic EN/JA UI switching.</p>
                         </div>
                     </div>
                 </section>
 
                 <!-- 2. Monitored Metrics -->
                 <section class="mb-5">
-                    <h2 class="section-title">Monitored Metrics & Capabilities</h2>
+                    <h2 class="section-title">Monitored Metrics &amp; Capabilities</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-cpu text-accent me-2"></i>CPU Utilization (%)</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-memory text-accent me-2"></i>RAM Used / Free Capacity</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-device-ssd text-accent me-2"></i>Disk I/O Activity</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-arrow-down-up text-accent me-2"></i>Network Throughput (Tx/Rx)</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pc-display text-accent me-2"></i>PC Hostname</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-ethernet text-accent me-2"></i>IPv4 & Subnet Mask</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-router text-accent me-2"></i>Default Gateway IP</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-globe text-accent me-2"></i>Configured DNS Servers</div>
-                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pin text-accent me-2"></i>Pin Always on Top Toggle</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-cpu text-accent me-2"></i>CPU Utility, Model &amp; Threads</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-memory text-accent me-2"></i>RAM % &amp; Used / Total GB</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-device-ssd text-accent me-2"></i>Physical Disk I/O &amp; R/W Speed</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-hdd text-accent me-2"></i>Per-Drive % &amp; Used / Free Bars</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-arrow-down-up text-accent me-2"></i>Network Load &amp; Down/Up (▼/▲)</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-graph-up text-accent me-2"></i>60s Sparklines &amp; Load Colors</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-pc-display text-accent me-2"></i>Host, OS Build, User &amp; Mode Badge</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-ethernet text-accent me-2"></i>NIC (Link Speed), IP/CIDR, GW, DNS</div>
+                            <div class="col-6 col-md-4 text-white-75"><i class="bi bi-clock-history text-accent me-2"></i>Boot Timestamp &amp; Uptime</div>
                         </div>
                     </div>
                 </section>
@@ -133,10 +141,10 @@
                     <h2 class="section-title">Primary Use Cases</h2>
                     <div class="card-custom py-3">
                         <div class="row g-3">
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>Monitoring system pressure during intensive compilation, rendering, or gaming</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>Instant network address and gateway verification when debugging connections</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-memory text-accent me-2"></i>Catching runaway memory leaks or unexpected background disk throttling early</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>A clean, unobtrusive system HUD placed in the corner of secondary displays</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>Live CPU, RAM, Disk R/W, and drive-space tracking in Wallpaper Layer Mode during builds or rendering</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-controller text-accent me-2"></i>Seamless work and fullscreen gaming with Ghost Overlay auto-fade and Fullscreen Auto-Pause</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>Checking active IP/CIDR, link speed, Gateway, and DNS across VPNs/multi-NIC setups with 1-click copy</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>Ultra-light (~0.3 MB working set) telemetry HUD pinned cleanly to a secondary monitor</div>
                         </div>
                     </div>
                 </section>
@@ -144,12 +152,12 @@
                 <!-- 4. Screenshots -->
                 <section class="mb-5">
                     <h2 class="section-title">Screenshots</h2>
-                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>Click any image to enlarge.</p>
+                    <p class="small text-white-50 mb-4"><i class="bi bi-hand-index-thumb me-1"></i>Click any image to enlarge (use Left / Right arrow keys to navigate).</p>
 
                     <div class="row g-4">
                         <div class="col-md-6 mb-3">
-                            <div class="screenshot-container shadow" onclick="openGallery(0)">
-                                <img src="/img/simplestats-main.png" alt="Simple Stats Main Dashboard" class="screenshot-img">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(0)">
+                                <img src="/img/simplestats-main-en.png" alt="Simple Stats Obsidian Glass Theme (Standard Layout)" class="screenshot-img">
                                 <div class="screenshot-overlay">
                                     <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
                                         <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
@@ -157,8 +165,83 @@
                                 </div>
                             </div>
                             <div class="screenshot-description">
-                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-display me-1"></i>Main Monitor</h4>
-                                <p class="text-white-50 small mb-0">Instantly inspect CPU, memory, disk activity, and network IP details in one window.</p>
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-display me-1"></i>Obsidian Glass (Standard Layout)</h4>
+                                <p class="text-white-50 small mb-0">Default dark glass theme showing host, OS build, user, <code>WALL</code> mode badge, 4 arc gauges with 60s sparklines, drive bars, NIC link speed, and boot/uptime.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(1)">
+                                <img src="/img/simplestats-wallpaper-en.png" alt="Simple Stats Pure Wallpaper Theme (Standard Layout)" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-layers me-1"></i>Pure Wallpaper (Standard Layout)</h4>
+                                <p class="text-white-50 small mb-0">Frameless shadowed style that blends directly onto your wallpaper while preserving crisp readability and load warning colors.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(2)">
+                                <img src="/img/simplestats-cyber-en.png" alt="Simple Stats Cyber Cyan Theme (Standard Layout)" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-cpu me-1"></i>Cyber Cyan (Standard Layout)</h4>
+                                <p class="text-white-50 small mb-0">High-contrast cyan accent theme where high CPU or disk load smoothly shifts gauges and sparklines into alert red.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(3)">
+                                <img src="/img/simplestats-frost-en.png" alt="Simple Stats Frost Light Theme (Standard Layout)" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-brightness-high me-1"></i>Frost Light (Standard Layout)</h4>
+                                <p class="text-white-50 small mb-0">Clean frosted light theme designed for bright wallpapers and light-mode desktops with crisp contrast.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(4)">
+                                <img src="/img/simplestats-zen-en.png" alt="Simple Stats Minimal Zen Layout" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-list-ul me-1"></i>Minimal Zen Layout</h4>
+                                <p class="text-white-50 small mb-0">Replaces sparklines with slim progress bars to pack full telemetry, NIC details, and boot/uptime into a shorter footprint.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="screenshot-container screenshot-hud shadow" onclick="openGallery(5)">
+                                <img src="/img/simplestats-mini-en.png" alt="Simple Stats Compact Mini Layout" class="screenshot-img">
+                                <div class="screenshot-overlay">
+                                    <span class="badge bg-dark bg-opacity-75 border border-secondary text-white">
+                                        <i class="bi bi-zoom-in me-1"></i>Click to Enlarge
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="screenshot-description">
+                                <h4 class="h6 fw-bold text-accent"><i class="bi bi-aspect-ratio me-1"></i>Compact Mini Layout</h4>
+                                <p class="text-white-50 small mb-0">Horizontal mini strip condensing hostname, IP, 4 arc gauges, and drive space into minimal desktop real estate.</p>
                             </div>
                         </div>
                     </div>
@@ -171,23 +254,23 @@
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="h3 text-accent mb-2">01</div>
-                                <h4 class="h6 fw-bold">Launch & Place</h4>
-                                <p class="small mb-0 text-white-50">Run the executable and drag it to your preferred corner of the desktop.</p>
+                                <h4 class="h6 fw-bold">Launch &amp; Place</h4>
+                                <p class="small mb-0 text-white-50">Run <code>SimpleStats.exe</code> from any folder and drag it anywhere (16px magnetic snapping) or pick a corner preset via right-click.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
-                                <h4 class="h6 fw-bold">Monitor Status</h4>
-                                <p class="small mb-0 text-white-50">Track CPU / RAM / Disk / Net gauges and local network parameters live.</p>
+                                <h4 class="h6 fw-bold">Right-Click to Customize</h4>
+                                <p class="small mb-0 text-white-50">Right-click the HUD or tray icon to configure Display Mode, Theme, Layout, Font Size, Opacity, Refresh Interval (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>), and Auto-Start.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
-                                <h4 class="h6 fw-bold">Auto Restore</h4>
-                                <p class="small mb-0 text-white-50">Window position is saved to JSON and smoothly restored on next launch.</p>
+                                <h4 class="h6 fw-bold">1-Click Copy &amp; Tray Controls</h4>
+                                <p class="small mb-0 text-white-50">Left-click any row to copy its value. Single-click the tray icon to show/hide, or double-click to copy the full system snapshot.</p>
                             </div>
                         </div>
                     </div>
                     <p class="small text-white-50 text-center mt-3 mb-0">
-                        <i class="bi bi-magic me-1 text-accent"></i> Clean and self-contained: Leaves zero traces in the Windows registry.
+                        <i class="bi bi-magic me-1 text-accent"></i> Settings are saved to <code>window_settings.json</code> and Auto-Start uses <code>SimpleStats.lnk</code> with zero Windows Registry writes (force UI language via <code>--lang=en</code> / <code>--lang=ja</code>).
                     </p>
                 </section>
 
@@ -199,12 +282,12 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading1">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Can it stay on top while using other apps in full-screen?
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Will it get in the way of work windows or fullscreen games?
                                 </button>
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Yes. "Always on Top" is enabled by default. You can keep browsing, coding, or gaming while having live resource stats visible in the corner of your monitor.
+                                    No. In default <strong>Wallpaper Layer Mode</strong> (shown as <code>WALL</code> in the header), the HUD stays behind windows, survives <code>Win+D</code>, and stays hidden from the Taskbar and <code>Alt+Tab</code>. In <strong>Ghost Overlay Mode</strong>, it stays always-on-top with click-through and fades out automatically when your cursor nears (hold <code>Ctrl + Alt</code> to temporarily interact). <strong>Fullscreen Auto-Pause</strong> suspends rendering and timers during fullscreen games and presentations.
                                 </div>
                             </div>
                         </div>
@@ -212,12 +295,12 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading2">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Will this impact system performance or drain laptop battery?
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Will this impact system performance, memory, or battery?
                                 </button>
                             </h3>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    No. Simple Stats is engineered for ultra-low resource usage. Its polling cycle is optimized, and it automatically sheds memory when minimized, keeping CPU utilization under 0.5% in typical conditions.
+                                    Built with pure Win32 / GDI+ and .NET 10 NativeAOT, it ships as a ~3.0 MB single file and runs at ~0.3 MB working set (~7 MB private bytes) with near-zero CPU. Adjustable refresh intervals (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>) and Fullscreen Auto-Pause keep battery impact negligible.
                                 </div>
                             </div>
                         </div>
@@ -225,12 +308,38 @@
                         <div class="accordion-item bg-transparent border-secondary">
                             <h3 class="accordion-header" id="faqHeading3">
                                 <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    <i class="bi bi-question-circle text-accent me-2"></i>Is it free for commercial and enterprise use?
+                                    <i class="bi bi-question-circle text-accent me-2"></i>How do Auto-Start and uninstallation work?
                                 </button>
                             </h3>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Yes, Simple Stats is 100% free for both personal and commercial use across developer workstations, staging machines, and office PCs.
+                                    Enabling Auto-Start creates <code>SimpleStats.lnk</code> in your Windows Startup folder (auto-repaired if you move the executable). Because zero registry keys are written, simply turn off Auto-Start and delete <code>SimpleStats.exe</code> and <code>window_settings.json</code> to uninstall (<code>--lang=en</code> / <code>--lang=ja</code> supported).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Is it free for commercial use? Does it send any data externally?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Yes, it is 100% freeware for personal and commercial use (secondary distribution is prohibited in principle). It makes zero external network requests and never transmits any system or network data.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-secondary">
+                            <h3 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Is it safe if Windows SmartScreen warns on first launch?
+                                </button>
+                            </h3>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small pt-0 pb-3">
+                                    Yes, completely safe. Because this indie utility lacks an EV code-signing certificate, SmartScreen may appear once—click <strong>More info</strong> → <strong>Run anyway</strong>. It makes zero external requests and scored 0/66 detections on VirusTotal (<a href="https://www.virustotal.com/gui/file/68d644decfef55ed2755a943aed8351d888d35e75d7e1e760ccc6a4858f54ab8?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View Scan Report (0/66)</a>).
                                 </div>
                             </div>
                         </div>
@@ -241,8 +350,8 @@
                 <!-- 7. Bottom CTA -->
                 <section class="mb-5">
                     <div class="card-custom text-center p-4 border-accent bg-accent-soft">
-                        <h2 class="h4 fw-bold text-white mb-2">Visualize System Health in Minimal Space</h2>
-                        <p class="small text-white-50 mb-4">Single executable, zero installation, 100% free. Download from GitHub today.</p>
+                        <h2 class="h4 fw-bold text-white mb-2">Monitor Your PC with an Ultra-Light NativeAOT HUD</h2>
+                        <p class="small text-white-50 mb-4">Single executable (~3.0 MB), zero installation, zero registry, 100% free. Download from GitHub today.</p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
                             <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="buy-button">
                                 <i class="bi bi-github me-1"></i> Download on GitHub
@@ -257,7 +366,19 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.5.3.0</span> <span class="text-white-50 small">May 3, 2026</span>
+                                <span class="badge bg-accent me-2">v26.11.26.0</span> <span class="text-white-50 small">Nov 26, 2026</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Rebuilt on pure Win32 / GDI+ &amp; .NET 10 NativeAOT (~3.0 MB single file, ~0.3 MB working set / ~7 MB private bytes, near-zero CPU)</li>
+                                        <li>Added Wallpaper Layer Mode (default, survives <code>Win+D</code>) and Ghost Overlay Mode (click-through, proximity auto-fade, <code>Ctrl+Alt</code> unlock) plus Fullscreen Auto-Pause</li>
+                                        <li>Added 4 themes, 3 slim layouts, 3 font sizes, 60s sparklines, 16px magnetic snapping, and refresh intervals (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>)</li>
+                                        <li>Implemented Task Manager-aligned CPU (<code>PDH</code>/<code>CPUID</code>), physical Disk I/O (R/W), per-drive capacity bars, active NIC tracking (link speed/CIDR), and boot/uptime display</li>
+                                        <li>Added 1-click row &amp; full-snapshot copy, zero-registry Startup toggle (<code>SimpleStats.lnk</code>), and automatic EN/JA localization (<code>--lang=en</code>/<code>--lang=ja</code>)</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.5.3.0</span> <span class="text-white-50 small">May 3, 2026</span>
                                 <div class="mt-1 ps-1 text-white-75 small">
                                     Initial release of Simple Stats. Live CPU/RAM/Disk/Network monitoring, detailed network parameters, and persistent window coordinates.
                                 </div>
@@ -283,14 +404,14 @@
                         </div>
 
                         <div class="small text-white-50 mb-4">
-                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal & Commercial)</p>
+                            <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Freeware (Personal &amp; Commercial)</p>
                             <p class="mb-1"><i class="bi bi-check2-circle me-1 text-accent"></i> Redistribution Prohibited</p>
                             <p class="mb-0"><i class="bi bi-check2-circle me-1 text-accent"></i> No User Registration Required</p>
                         </div>
 
                         <!-- External Badges -->
                         <div class="border-top border-secondary pt-4 text-center">
-                            <p class="small text-white-50 mb-3 badge-title">Trusted & Featured On</p>
+                            <p class="small text-white-50 mb-3 badge-title">Trusted &amp; Featured On</p>
                             <div class="badge-row">
                                 <div class="badge-item badge-bg-white">
                                     <a href="https://www.softpedia.com/get/System/System-Info/Simple-Stats.shtml" target="_blank" rel="noopener">
@@ -323,13 +444,14 @@
                             <tbody>
                                 <tr><th>OS</th><td>Windows 10 / 11</td></tr>
                                 <tr><th>Arch</th><td>64-bit (x64)</td></tr>
-                                <tr><th>Runtime</th><td>None (Self-contained)</td></tr>
-                                <tr><th>Format</th><td>Single Executable (.exe)</td></tr>
-                                <tr><th>Settings</th><td>JSON File (No Registry)</td></tr>
+                                <tr><th>Runtime</th><td>None (.NET 10 NativeAOT)</td></tr>
+                                <tr><th>Format</th><td>Single Executable (~3.0 MB)</td></tr>
+                                <tr><th>Languages</th><td>English / Japanese (Auto)</td></tr>
+                                <tr><th>Settings / Startup</th><td>JSON / .lnk (No Registry)</td></tr>
                             </tbody>
                         </table>
                         <p class="small text-white-50 mt-3 mb-0">
-                            <i class="bi bi-info-circle me-1"></i> Truly portable. Leaves zero registry traces.
+                            <i class="bi bi-info-circle me-1"></i> No installation, separate .NET Runtime, or external language folders required. Truly portable with zero registry traces.
                         </p>
                     </div>
 
