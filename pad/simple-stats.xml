@@ -21,19 +21,19 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>Simple Stats</Program_Name>
-		<Program_Version>26.11.26.0</Program_Version>
+		<Program_Version>26.11.27.0</Program_Version>
 		<Program_Release_Month>11</Program_Release_Month>
-		<Program_Release_Day>26</Program_Release_Day>
+		<Program_Release_Day>27</Program_Release_Day>
 		<Program_Release_Year>2026</Program_Release_Year>
 		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Cost_Other_CP />
 		<Program_Cost_Other />
 		<Program_Type>Freeware</Program_Type>
-		<Program_Release_Status>Major Update</Program_Release_Status>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
 		<Program_Install_Support>No Install Support</Program_Install_Support>
 		<Program_OS_Support>Win10,Win11</Program_OS_Support>
 		<Program_Language>English,Japanese</Program_Language>
-		<Program_Change_Info>Rebuilt on pure Win32/GDI+ and .NET 10 NativeAOT (~3.0 MB, ~0.3 MB working set); added Wallpaper Layer &amp; Ghost Overlay auto-fade modes, Fullscreen Auto-Pause, 4 themes, 3 slim layouts, 3 font sizes, 60s sparklines, per-drive capacity bars, active NIC tracking, 1-click copy, zero-registry Startup toggle, and automatic EN/JA UI.</Program_Change_Info>
+		<Program_Change_Info>Fixed per-monitor Fullscreen Auto-Pause to auto-hide and restore Ghost Overlay during fullscreen apps, added 2-per-row multi-drive wrapping in Compact Mini layout, and polished Pure Wallpaper full transparency with dark halo outlines.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::System Analysis</Program_Category_Class>
 		<Program_System_Requirements>Windows 10 / Windows 11 (x64)</Program_System_Requirements>
@@ -57,14 +57,14 @@
 			<Char_Desc_45>Ultra-lightweight desktop telemetry HUD.</Char_Desc_45>
 			<Char_Desc_80>Ultra-lightweight native Windows HUD for real-time PC and network metrics.</Char_Desc_80>
 			<Char_Desc_250>Simple Stats is an ultra-lightweight, single-file native desktop telemetry HUD for Windows 10/11. Monitor CPU, RAM, Disk I/O, per-drive capacity, and active NIC metrics with Wallpaper Layer or Ghost Overlay modes and 60s sparklines.</Char_Desc_250>
-			<Char_Desc_450>Simple Stats is an ultra-lightweight standalone desktop telemetry HUD for Windows 10/11 built with pure Win32/GDI+ and .NET 10 NativeAOT (~3.0 MB, ~0.3 MB working set). Track CPU utility, RAM, physical Disk I/O, per-drive capacity, and active NIC details with 60s sparklines. Features Wallpaper Layer and mouse-fading Ghost Overlay modes, Fullscreen Auto-Pause, 4 themes, 3 layouts, 3 font sizes, 1-click copy, zero-registry Startup, and EN/JA UI.</Char_Desc_450>
+			<Char_Desc_450>Simple Stats is an ultra-lightweight standalone desktop telemetry HUD for Windows 10/11 built with pure Win32/GDI+ and .NET 10 NativeAOT (~3.0 MB, minimal memory). Track CPU utility, RAM, physical Disk I/O, per-drive capacity, and active NIC details with 60s sparklines. Features Wallpaper Layer and mouse-fading Ghost Overlay modes, Fullscreen Auto-Pause, 4 themes, 3 layouts, 3 font sizes, 1-click copy, zero-registry Startup, and EN/JA UI.</Char_Desc_450>
 			<Char_Desc_2000>Simple Stats: An ultra-lightweight desktop telemetry HUD for Windows.
 
-Simple Stats is a standalone, single-file desktop telemetry HUD rebuilt on native Win32 / GDI+ rendering and .NET 10 NativeAOT with zero third-party UI libraries (~3.0 MB executable, ~0.3 MB working set / ~7 MB private bytes, near-zero CPU).
+Simple Stats is a standalone, single-file desktop telemetry HUD rebuilt on native Win32 / GDI+ rendering and .NET 10 NativeAOT with zero third-party UI libraries (~3.0 MB executable, minimal memory footprint, near-zero CPU).
 
 Key features:
 - High-Precision Monitoring &amp; 60s Sparklines: Track Task Manager-aligned CPU utility (PDH % Processor Utility / CPUID), RAM usage, unprivileged deduplicated physical disk I/O, per-drive Used &amp; Free capacity bars, and network throughput (Kbps/Mbps/Gbps) with arc gauges and 60-second sparklines.
-- Non-Intrusive Dual Display Modes &amp; Fullscreen Auto-Pause: Choose between Wallpaper Layer Mode (pinned behind windows, survives Win+D, hidden from Taskbar / Alt+Tab) and Ghost Overlay Mode (always-on-top click-through with automatic mouse-proximity fade and Ctrl+Alt temporary unlock), plus automatic pause during fullscreen games and presentations.
+- Non-Intrusive Dual Display Modes &amp; Fullscreen Auto-Pause: Choose between Wallpaper Layer Mode (pinned behind windows, survives Win+D, hidden from Taskbar / Alt+Tab) and Ghost Overlay Mode (always-on-top click-through with automatic mouse-proximity fade and Ctrl+Alt temporary unlock), plus Fullscreen Auto-Pause that automatically hides the HUD and suspends rendering/timers while a fullscreen game or presentation runs on the same monitor, restoring it on exit.
 - 4 Themes, 3 Slim Layouts &amp; 3 Font Sizes: Switch between Obsidian Glass, Pure Wallpaper, Cyber Cyan, and Frost Light across Standard, Minimal Zen, and Compact Mini layouts with Small / Medium / Large font scaling.
 - Active NIC Auto-Tracking &amp; 1-Click Copy: Automatically follows the active adapter (Adapter, IPv4/CIDR, Subnet, Gateway, DNS) and copies any clicked row—or the full system snapshot—to the clipboard.
 - Zero-Registry &amp; Auto-Localized: Toggle Startup (SimpleStats.lnk) with zero Windows Registry writes and automatic English / Japanese UI switching (--lang=en / --lang=ja).

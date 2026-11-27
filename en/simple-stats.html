@@ -87,7 +87,7 @@
                     <h2 class="section-title">Product Overview</h2>
 
                     <p class="lead fw-bold text-accent mb-3">"Essential PC and network telemetry at a glance—without getting in your way."</p>
-                    <p class="text-white-75 mb-4">Simple Stats is an ultra-lightweight desktop telemetry HUD that keeps essential PC resource and network metrics cleanly visible without cluttering your workflow. Powered by pure Win32 / GDI+ rendering and .NET 10 NativeAOT, it ships as a ~3.0 MB single executable running at ~0.3 MB working set (~7 MB private bytes) and near-zero CPU.</p>
+                    <p class="text-white-75 mb-4">Simple Stats is an ultra-lightweight desktop telemetry HUD that keeps essential PC resource and network metrics cleanly visible without cluttering your workflow. Powered by pure Win32 / GDI+ rendering and .NET 10 NativeAOT, it ships as a ~3.0 MB single executable with a minimal memory footprint and near-zero CPU overhead.</p>
 
                     <!-- 6-Feature Grid -->
                     <div class="row g-4">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-pause-circle text-accent me-2"></i>Fullscreen Auto-Pause</h3>
-                            <p class="small text-white-75 mb-0">Automatically suspends rendering and background timers during fullscreen games and presentations so nothing interferes.</p>
+                            <p class="small text-white-75 mb-0">Automatically hides the HUD and suspends rendering/timers while a fullscreen game or presentation runs on the same monitor, restoring it on exit (stays visible on secondary monitors).</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>4 Themes, 3 Layouts &amp; 3 Font Sizes</h3>
@@ -144,7 +144,7 @@
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>Live CPU, RAM, Disk R/W, and drive-space tracking in Wallpaper Layer Mode during builds or rendering</div>
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-controller text-accent me-2"></i>Seamless work and fullscreen gaming with Ghost Overlay auto-fade and Fullscreen Auto-Pause</div>
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>Checking active IP/CIDR, link speed, Gateway, and DNS across VPNs/multi-NIC setups with 1-click copy</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>Ultra-light (~0.3 MB working set) telemetry HUD pinned cleanly to a secondary monitor</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>Ultra-light, minimal-memory telemetry HUD pinned cleanly to a secondary monitor</div>
                         </div>
                     </div>
                 </section>
@@ -181,7 +181,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-layers me-1"></i>Pure Wallpaper (Standard Layout)</h4>
-                                <p class="text-white-50 small mb-0">Frameless shadowed style that blends directly onto your wallpaper while preserving crisp readability and load warning colors.</p>
+                                <p class="text-white-50 small mb-0">Fully transparent frameless style (including card interiors and mode badge) with dark halo outlines for crisp readability on any wallpaper.</p>
                             </div>
                         </div>
 
@@ -241,7 +241,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-aspect-ratio me-1"></i>Compact Mini Layout</h4>
-                                <p class="text-white-50 small mb-0">Horizontal mini strip condensing hostname, IP, 4 arc gauges, and drive space into minimal desktop real estate.</p>
+                                <p class="text-white-50 small mb-0">Horizontal mini strip condensing hostname, IP, 4 arc gauges, and drive space (auto-wrapping at 2 drives per row for 3+ drives) into minimal screen space.</p>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    No. In default <strong>Wallpaper Layer Mode</strong> (shown as <code>WALL</code> in the header), the HUD stays behind windows, survives <code>Win+D</code>, and stays hidden from the Taskbar and <code>Alt+Tab</code>. In <strong>Ghost Overlay Mode</strong>, it stays always-on-top with click-through and fades out automatically when your cursor nears (hold <code>Ctrl + Alt</code> to temporarily interact). <strong>Fullscreen Auto-Pause</strong> suspends rendering and timers during fullscreen games and presentations.
+                                    No. In default <strong>Wallpaper Layer Mode</strong> (shown as <code>WALL</code> in the header), the HUD stays behind windows, survives <code>Win+D</code>, and stays hidden from the Taskbar and <code>Alt+Tab</code>. In <strong>Ghost Overlay Mode</strong>, it stays always-on-top with click-through and fades out automatically when your cursor nears (hold <code>Ctrl + Alt</code> to temporarily interact). <strong>Fullscreen Auto-Pause</strong> automatically hides the HUD and suspends timers while a fullscreen game or presentation runs on the same monitor, restoring it on exit (while staying visible on other monitors).
                                 </div>
                             </div>
                         </div>
@@ -300,7 +300,7 @@
                             </h3>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Built with pure Win32 / GDI+ and .NET 10 NativeAOT, it ships as a ~3.0 MB single file and runs at ~0.3 MB working set (~7 MB private bytes) with near-zero CPU. Adjustable refresh intervals (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>) and Fullscreen Auto-Pause keep battery impact negligible.
+                                    Built with pure Win32 / GDI+ and .NET 10 NativeAOT, it ships as a ~3.0 MB single file and runs with a minimal memory footprint and near-zero CPU. Adjustable refresh intervals (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>) and Fullscreen Auto-Pause keep battery impact negligible.
                                 </div>
                             </div>
                         </div>
@@ -339,7 +339,7 @@
                             </h3>
                             <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Yes, completely safe. Because this indie utility lacks an EV code-signing certificate, SmartScreen may appear once—click <strong>More info</strong> → <strong>Run anyway</strong>. It makes zero external requests and scored 0/66 detections on VirusTotal (<a href="https://www.virustotal.com/gui/file/68d644decfef55ed2755a943aed8351d888d35e75d7e1e760ccc6a4858f54ab8?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View Scan Report (0/66)</a>).
+                                    Yes, completely safe. Because this indie utility lacks an EV code-signing certificate, SmartScreen may appear once—click <strong>More info</strong> → <strong>Run anyway</strong>. It makes zero external requests and scored 0/66 detections on VirusTotal (<a href="https://www.virustotal.com/gui/file/fd6dda3867e73fdb3d732eb21034cc67718221a37e7c619863ceb6353cb171bb?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">View Scan Report (0/66)</a>).
                                 </div>
                             </div>
                         </div>
@@ -366,10 +366,20 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.11.26.0</span> <span class="text-white-50 small">Nov 26, 2026</span>
+                                <span class="badge bg-accent me-2">v26.11.27.0</span> <span class="text-white-50 small">Nov 27, 2026</span>
                                 <div class="mt-2 ps-1 text-white-75 small">
                                     <ul class="mb-0 ps-3">
-                                        <li>Rebuilt on pure Win32 / GDI+ &amp; .NET 10 NativeAOT (~3.0 MB single file, ~0.3 MB working set / ~7 MB private bytes, near-zero CPU)</li>
+                                        <li>Fixed per-monitor Fullscreen Auto-Pause to temporarily hide and auto-restore the HUD when a fullscreen app runs on the same monitor (prevents Ghost Overlay from staying on top; stays visible on other monitors)</li>
+                                        <li>Fixed multi-drive text clipping in Compact Mini layout by wrapping at 2 drives per row and dynamically expanding HUD height</li>
+                                        <li>Polished Pure Wallpaper theme with fully transparent card interiors and mode badge (<code>WALL</code> / <code>GHOST</code> / <code>LOCK</code>) plus dark halo outlines for crisp legibility on any wallpaper</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.11.26.0</span> <span class="text-white-50 small">Nov 26, 2026</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Rebuilt on pure Win32 / GDI+ &amp; .NET 10 NativeAOT (~3.0 MB single file, minimal memory footprint, near-zero CPU)</li>
                                         <li>Added Wallpaper Layer Mode (default, survives <code>Win+D</code>) and Ghost Overlay Mode (click-through, proximity auto-fade, <code>Ctrl+Alt</code> unlock) plus Fullscreen Auto-Pause</li>
                                         <li>Added 4 themes, 3 slim layouts, 3 font sizes, 60s sparklines, 16px magnetic snapping, and refresh intervals (<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>)</li>
                                         <li>Implemented Task Manager-aligned CPU (<code>PDH</code>/<code>CPUID</code>), physical Disk I/O (R/W), per-drive capacity bars, active NIC tracking (link speed/CIDR), and boot/uptime display</li>

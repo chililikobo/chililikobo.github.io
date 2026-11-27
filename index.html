@@ -65,13 +65,26 @@
                 <!-- 最新の5件を表示（古いお知らせは下記のアコーディオン内に格納） -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-20">
+                            <span class="text-accent fw-bold me-3">2026.11.27</span> Simple Stats v26.11.27.0 アップデート
+                        </button>
+                    </h2>
+                    <div id="info-item-20" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            同じモニターで全画面アプリ実行時に最前面ゴーストHUDを含め一時非表示・終了時自動復帰するよう修正（別モニター時は継続表示）。Compact Mini の3台以上ドライブ折り返し表示および Pure Wallpaper テーマの完全透過・縁取り描画に対応しました。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-19">
                             <span class="text-accent fw-bold me-3">2026.11.26</span> Simple Stats v26.11.26.0 アップデート
                         </button>
                     </h2>
                     <div id="info-item-19" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
                         <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Win32 / GDI+ ＆ .NET 10 NativeAOT へ全面刷新（約3.0 MB・実測ワーキングセット約0.3 MB）。壁紙レイヤー固定／最前面ゴーストHUD・全画面自動停止、4テーマ・3レイアウト、60秒スパークライン、ドライブ容量バー、アクティブNIC自動追従、1クリックコピー、レジストリ不使用の自動起動、日英自動切替に対応しました。
+                            Win32 / GDI+ ＆ .NET 10 NativeAOT へ全面刷新（約3.0 MB・超省メモリ設計）。壁紙レイヤー固定／最前面ゴーストHUD・全画面自動停止、4テーマ・3レイアウト、60秒スパークライン、ドライブ容量バー、アクティブNIC自動追従、1クリックコピー、レジストリ不使用の自動起動、日英自動切替に対応しました。
                         </div>
                     </div>
                 </div>
@@ -115,19 +128,6 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-15">
-                            <span class="text-accent fw-bold me-3">2026.11.07</span> ClickCapture v26.11.7.0 アップデート
-                        </button>
-                    </h2>
-                    <div id="info-item-15" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            ライセンス認証およびバックグラウンド検証処理の改善（オフライン猶予期間の延長、移行時のライセンス枠保護、セキュリティ強化）、各種環境でのキャプチャ処理・動作安定性を向上しました。
-                        </div>
-                    </div>
-                </div>
-
                 <!-- 過去のお知らせ (最新5件より古いものをアコーディオンに格納) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
@@ -139,6 +139,19 @@
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
 
                             <div class="accordion-item bg-dark text-white">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-15">
+                                        <span class="text-accent fw-bold me-3">2026.11.07</span> ClickCapture v26.11.7.0 アップデート
+                                    </button>
+                                </h3>
+                                <div id="info-item-15" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        ライセンス認証およびバックグラウンド検証処理の改善（オフライン猶予期間の延長、移行時のライセンス枠保護、セキュリティ強化）、各種環境でのキャプチャ処理・動作安定性を向上しました。
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-14">
                                         <span class="text-accent fw-bold me-3">2026.11.03</span> ClickCapture v26.11.3.0 アップデート

@@ -87,7 +87,7 @@
                     <h2 class="section-title">製品説明</h2>
 
                     <p class="lead fw-bold text-accent mb-3">「作業を邪魔せず、PCの状態をひと目で把握する。」</p>
-                    <p class="text-white-75 mb-4">Simple Stats（シンプル・スタッツ）は、PCのリソース状況とネットワーク情報をデスクトップに控えめかつ美しく表示する常駐テレメトリHUDです。Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・実測ワーキングセット約 0.3 MB（プライベート約 7 MB）・ほぼ 0% のCPU負荷で軽快に動作します。</p>
+                    <p class="text-white-75 mb-4">Simple Stats（シンプル・スタッツ）は、PCのリソース状況とネットワーク情報をデスクトップに控えめかつ美しく表示する常駐テレメトリHUDです。Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・超省メモリ設計・ほぼ 0% の低CPU負荷で軽快に動作します。</p>
 
                     <!-- 特徴 6選グリッド -->
                     <div class="row g-4">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-pause-circle text-accent me-2"></i>全画面自動一時停止</h3>
-                            <p class="small text-white-75 mb-0">フルスクリーンゲームやプレゼン実行中は描画と補助タイマーを自動停止し、パフォーマンスや表示を妨げません。</p>
+                            <p class="small text-white-75 mb-0">同じモニターでフルスクリーンゲームやプレゼンが実行されている間は自動で一時非表示にして描画と補助タイマーを停止し、終了時に自動復帰します（別モニター時は継続表示）。</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-palette text-accent me-2"></i>4テーマ・3レイアウト・3フォントサイズ</h3>
@@ -144,7 +144,7 @@
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-code-slash text-accent me-2"></i>ビルド・動画書き出し中のCPU/メモリ/ディスクR/Wとドライブ空き容量の常時監視</div>
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-controller text-accent me-2"></i>最前面ゴーストHUD＋全画面自動停止による、普段作業とフルスクリーンゲームの両立</div>
                             <div class="col-12 col-md-6 text-white-75"><i class="bi bi-laptop text-accent me-2"></i>VPNや複数NIC環境でのアクティブIP/CIDR・リンク速度・GW/DNS確認と1クリックコピー</div>
-                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>サブモニター隅に置く、実測約0.3MBの超軽量デスクトップHUDとして</div>
+                            <div class="col-12 col-md-6 text-white-75"><i class="bi bi-window-dock text-accent me-2"></i>サブモニター隅に置く、超省メモリ＆超軽量のデスクトップHUDとして</div>
                         </div>
                     </div>
                 </section>
@@ -181,7 +181,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-layers me-1"></i>Pure Wallpaper（Standard レイアウト）</h4>
-                                <p class="text-white-50 small mb-0">外枠を省いた壁紙直描スタイル。背景に溶け込みながら、高負荷時の警告色変化もひと目で判別できます。</p>
+                                <p class="text-white-50 small mb-0">外枠・カード内枠・右上モードバッジまで完全透過の壁紙直描スタイル。ダーク縁取りにより、明るい壁紙でもくっきり視認できます。</p>
                             </div>
                         </div>
 
@@ -241,7 +241,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-aspect-ratio me-1"></i>Compact Mini レイアウト</h4>
-                                <p class="text-white-50 small mb-0">ホスト名・IP・4種のアークゲージ・ドライブ容量を横長バーに凝縮。画面隅に最小スペースで常駐できます。</p>
+                                <p class="text-white-50 small mb-0">ホスト名・IP・4種のアークゲージ・ドライブ容量（3台以上は2台ずつ折り返し）を横長バーに凝縮。最小スペースで常駐できます。</p>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                             </h3>
                             <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    デフォルトの<strong>「壁紙レイヤー固定」</strong>（HUD右上に <code>WALL</code> 表示）ではウィンドウ背面に貼り付き、<code>Win+D</code> でも消えず、タスクバーや <code>Alt+Tab</code> にも出ません。最前面表示したい場合は<strong>「最前面ゴーストHUD」</strong>に切り替えると、クリック透過かつマウス接近時のみ自動フェードします（<code>Ctrl + Alt</code> 押下中のみ一時操作可）。全画面ゲームやプレゼン中は描画・補助タイマーを自動で一時停止します。
+                                    デフォルトの<strong>「壁紙レイヤー固定」</strong>（HUD右上に <code>WALL</code> 表示）ではウィンドウ背面に貼り付き、<code>Win+D</code> でも消えず、タスクバーや <code>Alt+Tab</code> にも出ません。最前面表示したい場合は<strong>「最前面ゴーストHUD」</strong>に切り替えると、クリック透過かつマウス接近時のみ自動フェードします（<code>Ctrl + Alt</code> 押下中のみ一時操作可）。同じモニターで全画面ゲームやプレゼンが実行されている間は自動で一時非表示にして描画・補助タイマーを停止し、終了時に自動復帰します（別モニター配置時は表示を継続）。
                                 </div>
                             </div>
                         </div>
@@ -300,7 +300,7 @@
                             </h3>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・実測ワーキングセット約 0.3 MB（プライベート約 7 MB）・CPU負荷ほぼ 0% で動作します。更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）の調整と全画面自動一時停止にも対応しており、常駐負荷は極小です。
+                                    Win32 / GDI+ 直描画と .NET 10 NativeAOT により、約 3.0 MB の単一ファイル・超省メモリ設計・ほぼ 0% の低CPU負荷で動作します。更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）の調整と全画面自動一時停止にも対応しており、常駐負荷は極小です。
                                 </div>
                             </div>
                         </div>
@@ -339,7 +339,7 @@
                             </h3>
                             <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small pt-0 pb-3">
-                                    はい、安全です。EVコードサイン証明書を持たないため初回起動時に警告が出る場合がありますが、<strong>「詳細情報」→「実行」</strong>で起動できます。外部通信ゼロで、VirusTotal でも検知数ゼロ（0/66）を確認済みです（<a href="https://www.virustotal.com/gui/file/68d644decfef55ed2755a943aed8351d888d35e75d7e1e760ccc6a4858f54ab8?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">スキャンレポートを見る (0/66)</a>）。
+                                    はい、安全です。EVコードサイン証明書を持たないため初回起動時に警告が出る場合がありますが、<strong>「詳細情報」→「実行」</strong>で起動できます。外部通信ゼロで、VirusTotal でも検知数ゼロ（0/66）を確認済みです（<a href="https://www.virustotal.com/gui/file/fd6dda3867e73fdb3d732eb21034cc67718221a37e7c619863ceb6353cb171bb?nocache=1" target="_blank" rel="noopener noreferrer" class="text-accent text-decoration-none">スキャンレポートを見る (0/66)</a>）。
                                 </div>
                             </div>
                         </div>
@@ -366,10 +366,20 @@
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-accent me-2">v26.11.26.0</span> <span class="text-white-50 small">2026.11.26</span>
+                                <span class="badge bg-accent me-2">v26.11.27.0</span> <span class="text-white-50 small">2026.11.27</span>
                                 <div class="mt-2 ps-1 text-white-75 small">
                                     <ul class="mb-0 ps-3">
-                                        <li>Win32 / GDI+ 直描画 ＆ .NET 10 NativeAOT へ全面刷新（約3.0 MB単一EXE・実測ワーキングセット約0.3 MB／プライベート約7 MB・超低CPU負荷）</li>
+                                        <li>全画面自動一時停止の挙動を改善し、同じモニターでのフルスクリーン実行中はHUDを一時非表示・終了時に自動復帰するよう修正（最前面ゴーストHUDが画面上に残る不具合を解消／別モニター時は継続表示）</li>
+                                        <li>Compact Mini レイアウトで固定ドライブが3台以上ある環境でも見切れないよう、1行2台ずつの自動折り返し・高さ拡張に対応</li>
+                                        <li>Pure Wallpaper テーマでグラフカード内枠および右上モードバッジ（<code>WALL</code> 等）背景を完全透過化し、ダーク縁取りで視認性を改善</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item mt-3">
+                                <span class="badge bg-secondary me-2">v26.11.26.0</span> <span class="text-white-50 small">2026.11.26</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Win32 / GDI+ 直描画 ＆ .NET 10 NativeAOT へ全面刷新（約3.0 MB単一EXE・超省メモリ設計・超低CPU負荷）</li>
                                         <li>「壁紙レイヤー固定」（デフォルト・<code>Win+D</code>維持）と「最前面ゴーストHUD」（透過フェード・<code>Ctrl+Alt</code>一時操作）、全画面自動一時停止を搭載</li>
                                         <li>4テーマ・3スリムレイアウト・3段階フォント・60秒スパークライン・16pxマグネット吸着・更新間隔（<code>1s</code>/<code>2s</code>/<code>5s</code>/<code>60s</code>）に対応</li>
                                         <li>タスクマネージャー準拠CPU（<code>PDH</code>/<code>CPUID</code>）・物理ディスクI/O（R/W）・全ドライブ容量バー・アクティブNIC自動追従（リンク速度/CIDR）・起動日時表示を実装</li>

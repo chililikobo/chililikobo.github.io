@@ -65,13 +65,26 @@
                 <!-- Show top 5 announcements (older items are placed in the accordion below) -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-20">
+                            <span class="text-accent fw-bold me-3">2026.11.27</span> Simple Stats v26.11.27.0 Update
+                        </button>
+                    </h2>
+                    <div id="info-item-20" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            Fixed per-monitor Fullscreen Auto-Pause to temporarily hide and auto-restore Ghost Overlay during fullscreen apps (stays visible on secondary monitors), added 2-per-row multi-drive wrapping in Compact Mini, and polished Pure Wallpaper full transparency with dark halo outlines.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-19">
                             <span class="text-accent fw-bold me-3">2026.11.26</span> Simple Stats v26.11.26.0 Update
                         </button>
                     </h2>
                     <div id="info-item-19" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
                         <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Rebuilt on native Win32 / GDI+ and .NET 10 NativeAOT (~3.0 MB, ~0.3 MB working set). Added Wallpaper Layer &amp; Ghost Overlay modes with Fullscreen Auto-Pause, 4 themes, 3 layouts, 60s sparklines, per-drive bars, active NIC tracking, 1-click copy, zero-registry Startup, and automatic EN/JA UI.
+                            Rebuilt on native Win32 / GDI+ and .NET 10 NativeAOT (~3.0 MB, minimal memory footprint). Added Wallpaper Layer &amp; Ghost Overlay modes with Fullscreen Auto-Pause, 4 themes, 3 layouts, 60s sparklines, per-drive bars, active NIC tracking, 1-click copy, zero-registry Startup, and automatic EN/JA UI.
                         </div>
                     </div>
                 </div>
@@ -115,19 +128,6 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-15">
-                            <span class="text-accent fw-bold me-3">2026.11.07</span> ClickCapture v26.11.7.0 Update
-                        </button>
-                    </h2>
-                    <div id="info-item-15" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Improved license authentication and background verification (extended offline grace period, license seat protection, and security enhancements), and enhanced capture stability across various display environments.
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Older Announcements (Items older than the top 5 are stored in this accordion) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
@@ -139,6 +139,19 @@
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
 
                             <div class="accordion-item bg-dark text-white">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-15">
+                                        <span class="text-accent fw-bold me-3">2026.11.07</span> ClickCapture v26.11.7.0 Update
+                                    </button>
+                                </h3>
+                                <div id="info-item-15" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Improved license authentication and background verification (extended offline grace period, license seat protection, and security enhancements), and enhanced capture stability across various display environments.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-14">
                                         <span class="text-accent fw-bold me-3">2026.11.03</span> ClickCapture v26.11.3.0 Update
