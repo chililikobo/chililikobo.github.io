@@ -13,18 +13,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PinSharp ICO | chilili kobo - Smart PC Utilities</title>
-    <meta name="description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icon files (.ico) that keep fine lines and details crisp even at 16×16. Free Edition for personal/commercial use, plus Pro Edition with batch processing, shape masks, multiple formats, and CLI automation.">
+    <meta name="description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icon files (.ico) or per-size images in the original format that keep fine lines crisp even at 16×16. Free Edition for personal/commercial use, plus Pro Edition with batch processing, shape masks, multiple formats, and CLI automation.">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="chilili kobo">
     <meta property="og:title" content="PinSharp ICO | chilili kobo - Smart PC Utilities">
-    <meta property="og:description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icons (.ico) instantly with drag-and-drop. Available in Free and feature-packed Pro Edition.">
+    <meta property="og:description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icons (.ico) or per-size images in the original format instantly with drag-and-drop. Available in Free and feature-packed Pro Edition.">
     <meta property="og:url" content="https://chililikobo.github.io/en/pinsharpico.html">
     <meta property="og:image" content="https://chililikobo.github.io/img/og-pinsharpico-en.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PinSharp ICO | chilili kobo - Smart PC Utilities">
-    <meta name="twitter:description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icons (.ico) instantly with drag-and-drop. Available in Free and feature-packed Pro Edition.">
+    <meta name="twitter:description" content="Relentlessly engineered for 256px to 16px downscaling. Build ultra-sharp Windows icons (.ico) or per-size images in the original format instantly with drag-and-drop. Available in Free and feature-packed Pro Edition.">
     <meta name="twitter:image" content="https://chililikobo.github.io/img/og-pinsharpico-en.png">
     <meta name="twitter:site" content="@chililikobo">
 
@@ -102,7 +102,7 @@
 
                     <p class="lead fw-bold text-accent mb-3">"From 256px to 16px. Relentlessly engineered for micro-dot clarity."</p>
                     <p class="text-white-75 mb-3">PinSharp ICO is a specialized Windows icon utility designed to solve common downscaling problems: white borders turning muddy gray, dark narrow slits vanishing, and sharp contours blurring away into vague shapes at small sizes like 16×16 or 24×24.</p>
-                    <p class="text-white-75 mb-4">Downscaling a 256×256px original image down to 16×16px represents an extreme 1/256 area reduction. PinSharp ICO preserves high contrast for delicate borders, typography, and narrow gaps, generating multi-resolution Windows ICO files that stand out crisply on taskbars, title bars, and File Explorer.</p>
+                    <p class="text-white-75 mb-4">Downscaling a 256×256px original image down to 16×16px represents an extreme 1/256 area reduction. PinSharp ICO preserves high contrast for delicate borders, typography, and narrow gaps, generating multi-resolution Windows ICO files or individual per-size images in the original format that stand out crisply on taskbars, title bars, and File Explorer.</p>
 
                     <!-- 6 Feature Highlights Grid -->
                     <div class="row g-4">
@@ -112,11 +112,11 @@
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-box-arrow-in-down text-accent me-2"></i>Drag-and-Drop Auto Saving</h3>
-                            <p class="small text-white-75 mb-0">Drop your image into the window and conversion starts immediately, automatically saving the `.ico` file without clicking "Save".</p>
+                            <p class="small text-white-75 mb-0">Drop your image into the window and conversion starts immediately, automatically saving the <code>.ico</code> or per-size images without clicking "Save".</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-grid-3x3 text-accent me-2"></i>All 11 Standard Windows Sizes</h3>
-                            <p class="small text-white-75 mb-0">Full coverage for 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256px. Presets (All / Standard / Compact) ready.</p>
+                            <p class="small text-white-75 mb-0">Full coverage for 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256px with presets (All / Standard / Compact). Export as ICO or individual images in the original format.</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="h6 fw-bold text-white"><i class="bi bi-shield-check text-accent me-2"></i>Zero-Halo Boundary Clamping</h3>
@@ -198,6 +198,11 @@
                                     <td><span class="text-success fw-bold">PNG, JPEG, BMP, WebP</span></td>
                                 </tr>
                                 <tr>
+                                    <td class="text-start">Output Format</td>
+                                    <td><span class="text-success fw-bold">ICO (.ico) / Same Format (Per Size)</span><br><small class="text-white-50">({name}_{size}px.{ext})</small></td>
+                                    <td><span class="text-success fw-bold">ICO (.ico) / Same Format (Per Size)</span><br><small class="text-white-50">(Supported in both GUI &amp; CLI)</small></td>
+                                </tr>
+                                <tr>
                                     <td class="text-start">Batch &amp; Folder Conversion</td>
                                     <td>1 file at a time</td>
                                     <td><span class="text-success fw-bold">Multi-file &amp; Recursive Folders<br><small class="text-white-50">(Auto-scans all subdirectories)</small></span></td>
@@ -209,7 +214,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-start">Output Destination Routing</td>
-                                    <td>Same folder as source</td>
+                                    <td>Same folder as source<br><small class="text-white-50">(Auto-creates {name}_{ext}/ for multi-size same-format)</small></td>
                                     <td><span class="text-success fw-bold">Same folder / icons/ subfolder / Custom<br><small class="text-white-50">(Auto-numbering prevents overwrites)</small></span></td>
                                 </tr>
 
@@ -266,7 +271,7 @@
                             </div>
                             <div class="screenshot-description">
                                 <h4 class="h6 fw-bold text-accent"><i class="bi bi-window-fullscreen me-1"></i>Main Interface</h4>
-                                <p class="text-white-75 small mb-0">Clean, focused workspace—drag and drop images to generate crisp icon files instantly.</p>
+                                <p class="text-white-75 small mb-0">Clean, focused workspace—drag and drop images to generate crisp icon files or per-size images instantly.</p>
                             </div>
                         </div>
 
@@ -320,12 +325,12 @@
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">02</div>
                                 <h4 class="h6 fw-bold text-white">Drop</h4>
-                                <p class="small mb-0 text-white-75">Drag and drop your image (or folder [Pro]) into the center. Pick sizes, shapes, or output destination as needed.</p>
+                                <p class="small mb-0 text-white-75">Drag and drop your image (or folder [Pro]) into the center. Pick sizes, output format (ICO / Same Format), shapes, or destination as needed.</p>
                             </div>
                             <div class="col-md-4 border-start border-secondary">
                                 <div class="h3 text-accent mb-2">03</div>
                                 <h4 class="h6 fw-bold text-white">Auto-Saved</h4>
-                                <p class="small mb-0 text-white-75">Saved automatically in an instant! Result previews appear below. Click "Show in Explorer" to locate.</p>
+                                <p class="small mb-0 text-white-75">Saved automatically in an instant (multi-size same-format exports go into <code>{name}_{ext}/</code>). Click "Show in Explorer" to locate.</p>
                             </div>
                         </div>
                     </div>
@@ -362,6 +367,10 @@
                                         <td>Automatically save into an <code>icons/</code> subfolder next to source images</td>
                                     </tr>
                                     <tr>
+                                        <td><code>-f, --format &lt;format&gt;</code></td>
+                                        <td>Output format: <code>ico</code> (default) or <code>same</code> (original extension per size)</td>
+                                    </tr>
+                                    <tr>
                                         <td><code>-c, --shape &lt;shape&gt;</code></td>
                                         <td>Shape mask: <code>square</code>, <code>rounded</code>, or <code>circle</code></td>
                                     </tr>
@@ -394,7 +403,10 @@ PinSharpICO.exe "D:\Assets\Images" -o "D:\Assets\Icons" --shape rounded
 PinSharpICO.exe "D:\Assets\Images" --subfolder
 
 # 6. Generate only specific sizes
-PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
+PinSharpICO.exe "icon.png" -s 16,32,48,256
+
+# 7. Export each selected size as an individual image in the original format
+PinSharpICO.exe "icon.png" -f same -s 16,32,48,256</code></pre>
                     </div>
                 </section>
 
@@ -543,6 +555,20 @@ PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
                             </div>
                         </div>
 
+                        <!-- 5.5 Output format (Same Format Per Size) -->
+                        <div class="accordion-item bg-dark border-secondary border-top">
+                            <h3 class="accordion-header" id="faq-h-format">
+                                <button class="accordion-button collapsed bg-dark text-white shadow-none py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq-c-format" aria-expanded="false" aria-controls="faq-c-format">
+                                    <i class="bi bi-question-circle text-accent me-2"></i>Q. Can I export individual resized images in the original format instead of an ICO file?
+                                </button>
+                            </h3>
+                            <div id="faq-c-format" class="accordion-collapse collapse" aria-labelledby="faq-h-format" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75 small border-top border-secondary">
+                                    <strong>A.</strong> Yes, in both Free and Pro editions. Select "Same Format (Per Size)" as the output format (or pass <code>-f same</code> / <code>--format same</code> in the Pro CLI) to export each selected size as a separate image in its original format (e.g., <code>icon_16px.png</code>, <code>icon_32px.png</code>). When multiple sizes are selected, files are automatically organized into a <code>{name}_{ext}/</code> subfolder.
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- 6. Admin & install -->
                         <div class="accordion-item bg-dark border-secondary border-top">
                             <h3 class="accordion-header" id="faq-h6">
@@ -580,7 +606,7 @@ PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
                             </h3>
                             <div id="faq-c8" class="accordion-collapse collapse" aria-labelledby="faq-h8" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-white-75 small border-top border-secondary">
-                                    <strong>A.</strong> As an independently developed executable, Windows SmartScreen may present a blue prompt on the very first launch. Simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>. The software is thoroughly verified clean on VirusTotal (0/67 detections).
+                                    <strong>A.</strong> As an independently developed executable, Windows SmartScreen may present a blue prompt on the very first launch. Simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>. The software is thoroughly verified clean on VirusTotal (0/66 detections).
                                 </div>
                             </div>
                         </div>
@@ -608,7 +634,18 @@ PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
                     <div class="card-custom">
                         <ul class="changelog-list mb-0">
                             <li class="changelog-item">
-                                <span class="badge bg-danger me-2">v26.11.1.0</span> <span class="text-white-50 small">2026.11.01</span>
+                                <span class="badge bg-danger me-2">v26.11.28.0</span> <span class="text-white-50 small">2026.11.28</span>
+                                <div class="mt-2 ps-1 text-white-75 small">
+                                    <strong class="text-white">"Same Format (Per Size)" Export &amp; Downscaling Engine Improvements</strong>
+                                    <ul class="mb-0 mt-1 ps-3 text-white-75">
+                                        <li>Added "Same Format (Per Size)" output mode (Free &amp; Pro) to export each selected size as an individual image in its original format (e.g., <code>icon_16px.png</code>), auto-organized into <code>{name}_{ext}/</code> when multiple sizes are selected (GUI and Pro CLI <code>-f, --format same</code>)</li>
+                                        <li>Refined and tuned the perceptual downscaling engine for sharper edges, fine lines, and text legibility across tiny sizes (16×16, 20×20, 24×24) and all standard resolutions</li>
+                                        <li>Added automatic saving and restoration of the selected output format (ICO or Same Format) via <code>settings.json</code></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="changelog-item">
+                                <span class="badge bg-secondary me-2">v26.11.1.0</span> <span class="text-white-50 small">2026.11.01</span>
                                 <div class="mt-2 ps-1 text-white-75 small">
                                     <strong class="text-white">PinSharp ICO Pro Edition &amp; Major Enhancements</strong>
                                     <ul class="mb-0 mt-1 ps-3 text-white-75">
@@ -712,6 +749,7 @@ PinSharpICO.exe "icon.png" -s 16,32,48,256</code></pre>
                                 <tr><th>OS</th><td>Windows 10 / 11</td></tr>
                                 <tr><th>Arch</th><td>64-bit (x64)</td></tr>
                                 <tr><th>Input Formats</th><td>PNG (Free)<br>PNG, JPEG, BMP, WebP (Pro)</td></tr>
+                                <tr><th>Output Formats</th><td>ICO (.ico)<br>Same Format (Per Size)</td></tr>
                                 <tr><th>Output Sizes</th><td>16 to 256px (All 11 sizes)</td></tr>
                                 <tr><th>Shape Masks</th><td>Square (Free)<br>Square, Rounded, Circle (Pro)</td></tr>
                                 <tr><th>CLI Execution</th><td>Supported (Pro)</td></tr>

@@ -21,19 +21,19 @@
   </Company_Info>
   <Program_Info>
     <Program_Name>PinSharp ICO</Program_Name>
-    <Program_Version>26.11.1.0</Program_Version>
+    <Program_Version>26.11.28.0</Program_Version>
     <Program_Release_Month>11</Program_Release_Month>
-    <Program_Release_Day>01</Program_Release_Day>
+    <Program_Release_Day>28</Program_Release_Day>
     <Program_Release_Year>2026</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Cost_Other_CP />
     <Program_Cost_Other>Pro Edition: One-time purchase lifetime license via Gumroad</Program_Cost_Other>
     <Program_Type>Freeware</Program_Type>
-    <Program_Release_Status>Major Update</Program_Release_Status>
+    <Program_Release_Status>Minor Update</Program_Release_Status>
     <Program_Install_Support>No Install Support</Program_Install_Support>
     <Program_OS_Support>Win10,Win11</Program_OS_Support>
     <Program_Language>English,Japanese</Program_Language>
-    <Program_Change_Info>Added Pro Edition with JPEG/BMP/WebP support, batch &amp; recursive folder conversion, shape masks (Rounded/Circle), destination routing, headless CLI, bilingual EN/JA toggle, and settings persistence.</Program_Change_Info>
+    <Program_Change_Info>Added "Same Format (Per Size)" output mode for Free &amp; Pro (GUI and Pro CLI -f / --format same), refined the perceptual downscaling engine for sharper micro-size clarity, and added output format persistence via settings.json.</Program_Change_Info>
     <Program_Specific_Category>Graphics</Program_Specific_Category>
     <Program_Category_Class>Graphic Apps::Converters &amp; Optimizers</Program_Category_Class>
     <Program_System_Requirements>Windows 10/11 (64-bit x64)</Program_System_Requirements>
@@ -56,21 +56,21 @@
     <English>
       <Char_Desc_45>Ultra-sharp Windows icon (.ico) builder.</Char_Desc_45>
       <Char_Desc_80>Ultra-sharp Windows icon builder down to 16x16 with batch &amp; shape masks.</Char_Desc_80>
-      <Char_Desc_250>PinSharp ICO is an ultra-sharp Windows icon builder. Drag-and-drop images to build crisp 16x16 to 256px ICO files with zero-halo clamping. Free Edition supports PNG. Pro Edition adds JPEG/BMP/WebP, batch folder conversion, shape masks, and CLI.</Char_Desc_250>
-      <Char_Desc_450>PinSharp ICO is an ultra-sharp Windows icon builder that solves blur and contrast loss in micro-downscaling. Free Edition creates crisp multi-size ICO files (16 to 256px) from PNG with zero-halo clamping. Pro Edition adds JPEG, BMP, and WebP support, batch multi-file &amp; recursive folder conversion, modern shape masks (Square, Rounded, Circle), output routing, and headless CLI automation. Standalone Native AOT portable app with no runtime needed.</Char_Desc_450>
+      <Char_Desc_250>PinSharp ICO is an ultra-sharp Windows icon builder. Export crisp 16x16 to 256px .ico files or per-size images in the original format. Free Edition supports PNG. Pro Edition adds JPEG/BMP/WebP, batch folder conversion, shape masks, and CLI.</Char_Desc_250>
+      <Char_Desc_450>PinSharp ICO is an ultra-sharp Windows icon builder that prevents blur and contrast loss in micro-downscaling. Export multi-size ICO files (16 to 256px) or individual per-size images in the original format (Free &amp; Pro). Free Edition supports PNG; Pro Edition adds JPEG/BMP/WebP, batch multi-file &amp; recursive folder conversion, shape masks (Square, Rounded, Circle), output routing, and CLI. Portable Native AOT app.</Char_Desc_450>
       <Char_Desc_2000>PinSharp ICO is an ultra-sharp Windows icon (.ico) builder designed for extreme downscaling clarity from 256px down to 16px.
 
-Standard downscaling tools frequently introduce artifacts: white outlines fade into gray, tight dark slits vanish, and edges blur at 16x16 or 24x24. PinSharp ICO tackles this extreme compression through a dedicated edge-preserving engine, maintaining crisp contrast for fine borders, typography, and narrow gaps.
+Standard scaling tools often blur edges: white outlines fade into gray, tight dark slits vanish, and details smear at 16x16 or 24x24. PinSharp ICO tackles this extreme compression through a dedicated edge-preserving engine, keeping crisp contrast for fine borders, text, and narrow gaps.
 
 Key Features:
 1. Ultra-Sharp Micro-Downscaling
 Retains high contrast for delicate outlines and narrow slits without muddy halos.
 
-2. Automated Instant Saving on Drag-and-Drop
-Drop an image (or folder in Pro) into the window. Processing starts instantly, saving the finished .ico automatically.
+2. Instant Auto-Save on Drag-and-Drop
+Drop an image (or folder in Pro) to start immediately and auto-save .ico or per-size images.
 
-3. All 11 Standard Windows Sizes
-Supports 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256 px. Switch with presets (All, Standard, Compact) in one click.
+3. All 11 Standard Windows Sizes &amp; Same-Format Output
+Supports 16, 20, 24, 32, 40, 48, 64, 72, 96, 128, and 256 px with one-click presets (All, Standard, Compact). Export as .ico or per-size original-format images (Free &amp; Pro, GUI &amp; CLI -f/--format same).
 
 4. Modern Shape Masks (Pro Edition)
 Clip icons into modern Rounded corners or circular shapes with anti-aliasing. Non-square photos are automatically centered.
@@ -88,7 +88,7 @@ Run batch icon generation directly from Command Prompt, PowerShell, or local bui
 Standalone portable app built with .NET 10 Native AOT. Zero registry impact and no runtime installation required.
 
 Editions:
-- Free Edition: 100% free for personal &amp; commercial use (PNG input, 1 file at a time, square shape).
+- Free Edition: 100% free for personal &amp; commercial use (PNG input, ICO or per-size PNG output, 1 file at a time, square shape).
 - Pro Edition: One-time purchase lifetime license (JPEG/BMP/WebP, batch &amp; folders, shape masks, CLI).</Char_Desc_2000>
     </English>
   </Program_Descriptions>
