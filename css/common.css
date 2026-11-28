@@ -149,6 +149,13 @@ footer {
         display: block;
     }
 
+    .footer-icon i {
+        font-size: 1.5rem;
+        line-height: 1;
+        color: var(--text-main);
+        display: block;
+    }
+
 /* リンク一覧のスタイル */
 footer ul.list-inline a {
     color: var(--text-main); /* index に合わせて白に近い色に */

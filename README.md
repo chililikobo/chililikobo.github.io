@@ -1,6 +1,6 @@
-# chilili kobo | Official Website
+# ちりり工房（chilili kobo / chililikobo）| Official Website
 
-**chilili kobo** の公式サイトです。
+**ちりり工房（chilili kobo / chililikobo）** の公式サイトです。
 (formerly **TABASCO soft** / 旧ブランドより順次移行中)
 
 ## 🌐 Links

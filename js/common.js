@@ -56,10 +56,15 @@ function initLangSwitch() {
         document.querySelectorAll('#header-placeholder a.nav-link, #header-placeholder a.navbar-brand').forEach(link => {
             if (link.id === 'lang-switch') return;
             const originalHref = link.getAttribute('href');
-            if (originalHref && !originalHref.startsWith('/en/')) {
+            if (originalHref && originalHref.startsWith('/') && !originalHref.startsWith('/en/')) {
                 link.href = '/en' + originalHref;
             }
         });
+
+        const brandLogo = document.querySelector('#header-placeholder .brand-logo');
+        if (brandLogo) {
+            brandLogo.alt = 'chilili kobo (ちりり工房)';
+        }
 
         const copyTextElement = document.getElementById('copy-link-text');
         if (copyTextElement) {
@@ -69,7 +74,12 @@ function initLangSwitch() {
 
     langBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        let targetPath = isEnglish ? path.replace('/en/', '/') : (path === '/' || path.endsWith('index.html') ? '/en/index.html' : '/en' + path);
+        let targetPath;
+        if (isEnglish) {
+            targetPath = (path === '/en/' || path === '/en/index.html') ? '/' : path.replace('/en/', '/');
+        } else {
+            targetPath = (path === '/' || path === '/index.html') ? '/en/' : '/en' + path;
+        }
         window.location.href = targetPath.replace('//', '/');
     });
 

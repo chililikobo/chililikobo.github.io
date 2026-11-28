@@ -2,3 +2,25 @@ url: "https://chililikobo.github.io"
 plugins:
   - jekyll-sitemap
 
+exclude:
+  - template-product.html
+  - .vs
+
+defaults:
+  - scope:
+      path: "header.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "footer.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "404.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "googlece1b3fc52b13f0e3.html"
+    values:
+      sitemap: false
+

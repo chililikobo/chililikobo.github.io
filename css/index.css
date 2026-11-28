@@ -16,6 +16,11 @@
     margin-bottom: 10px;
 }
 
+.hero-brand-sub {
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+}
+
 /* 製品カード */
 .card {
     background-color: var(--bg-card);
