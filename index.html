@@ -65,6 +65,19 @@
                 <!-- 最新の5件を表示（古いお知らせは下記のアコーディオン内に格納） -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-22">
+                            <span class="text-accent fw-bold me-3">2026.11.28</span> Simple Stats v26.11.28.0 アップデート
+                        </button>
+                    </h2>
+                    <div id="info-item-22" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            Windows標準の DXGI / D3DKMT API による外部ライブラリ不要・ベンダー非依存（NVIDIA / AMD / Intel対応）のリアルタイム GPU パフォーマンス監視（GPU使用率・60秒スパークライン・専用VRAM/共有GPUメモリ・GPU温度・GPU名）に対応。全3レイアウト（Compact Mini の5連ミニゲージ含む）・4テーマ・ワンクリックコピー・一括レポート・トレイツールチップへ統合し、マルチGPU最適制御およびハイブリッドノートPC休止中 dGPU（D3cold）保護も実装しました。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-21">
                             <span class="text-accent fw-bold me-3">2026.11.28</span> PinSharp ICO v26.11.28.0 アップデート
                         </button>
@@ -115,19 +128,6 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-17">
-                            <span class="text-accent fw-bold me-3">2026.11.22</span> Ohnuki-san Hub v26.11.22.0 リリース
-                        </button>
-                    </h2>
-                    <div id="info-item-17" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            従来の Ohnuki-san Lite（→ Free）・Plus（→ Pro）・Dashboard を1つに統合した管理コンソール「Ohnuki-san Hub（大抜さん Hub）」を新規公開しました。ポータブル調査ツール作成、複数台HTMLレポート集計・比較、無制限Excel用CSV出力に対応しています。
-                        </div>
-                    </div>
-                </div>
-
                 <!-- 過去のお知らせ (最新5件より古いものをアコーディオンに格納) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
@@ -139,6 +139,19 @@
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
 
                             <div class="accordion-item bg-dark text-white">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-17">
+                                        <span class="text-accent fw-bold me-3">2026.11.22</span> Ohnuki-san Hub v26.11.22.0 リリース
+                                    </button>
+                                </h3>
+                                <div id="info-item-17" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        従来の Ohnuki-san Lite（→ Free）・Plus（→ Pro）・Dashboard を1つに統合した管理コンソール「Ohnuki-san Hub（大抜さん Hub）」を新規公開しました。ポータブル調査ツール作成、複数台HTMLレポート集計・比較、無制限Excel用CSV出力に対応しています。
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-16">
                                         <span class="text-accent fw-bold me-3">2026.11.07</span> Robocopy Scheduler v26.11.7.0 アップデート
@@ -387,7 +400,7 @@
                                 <img src="/img/simplestats-icon256.png" alt="Simple Stats" class="product-icon me-3 mb-0">
                                 <h3 class="h4 card-title fw-bold mb-0">Simple Stats</h3>
                             </div>
-                            <p class="card-text mb-4">Win32/GDI+ ＆ .NET NativeAOT製の超軽量デスクトップHUD。壁紙レイヤー固定・最前面ゴーストモード・60秒スパークラインでリソースとネットワークを可視化。</p>
+                            <p class="card-text mb-4">Win32/GDI+ ＆ .NET NativeAOT製の超軽量デスクトップHUD。壁紙レイヤー固定・最前面ゴーストモード・60秒スパークラインでCPU・GPU（VRAM/温度）・メモリ・ディスク・アクティブNICを可視化。</p>
                             <div class="mt-auto">
                                 <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
                                     <i class="bi bi-github me-1"></i> GitHub で取得

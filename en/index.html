@@ -65,6 +65,19 @@
                 <!-- Show top 5 announcements (older items are placed in the accordion below) -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-22">
+                            <span class="text-accent fw-bold me-3">2026.11.28</span> Simple Stats v26.11.28.0 Update
+                        </button>
+                    </h2>
+                    <div id="info-item-22" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body text-white-50 border-top border-secondary small">
+                            Added vendor-neutral, zero-dependency real-time GPU telemetry via native DXGI &amp; D3DKMT APIs (GPU utilization, 60s sparklines, Dedicated VRAM / Shared GPU memory, temperature, and model across NVIDIA, AMD &amp; Intel). Integrated across all 3 layouts (including Compact Mini's 5-gauge bar), 4 themes, 1-click copy, full snapshot report, and tray tooltip, with smart multi-GPU handling and hybrid laptop D3cold sleep protection.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header border-top border-secondary">
                         <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-21">
                             <span class="text-accent fw-bold me-3">2026.11.28</span> PinSharp ICO v26.11.28.0 Update
                         </button>
@@ -115,19 +128,6 @@
                     </div>
                 </div>
 
-                <div class="accordion-item bg-dark text-white">
-                    <h2 class="accordion-header border-top border-secondary">
-                        <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-17">
-                            <span class="text-accent fw-bold me-3">2026.11.22</span> Ohnuki-san Hub v26.11.22.0 Released
-                        </button>
-                    </h2>
-                    <div id="info-item-17" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body text-white-50 border-top border-secondary small">
-                            Launched Ohnuki-san Hub, unifying Ohnuki-san Lite (now Free), Plus (now Pro), and Dashboard into a single management console with portable scanner export, multi-PC analytics, and unlimited Excel CSV export.
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Older Announcements (Items older than the top 5 are stored in this accordion) -->
                 <div class="accordion-item bg-dark text-white border-top border-secondary">
                     <h3 class="accordion-header" id="olderInfoHeading">
@@ -139,6 +139,19 @@
                         <div class="accordion accordion-flush" id="olderInfoAccordion">
 
                             <div class="accordion-item bg-dark text-white">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-17">
+                                        <span class="text-accent fw-bold me-3">2026.11.22</span> Ohnuki-san Hub v26.11.22.0 Released
+                                    </button>
+                                </h3>
+                                <div id="info-item-17" class="accordion-collapse collapse" data-bs-parent="#olderInfoAccordion">
+                                    <div class="accordion-body text-white-50 border-top border-secondary small">
+                                        Launched Ohnuki-san Hub, unifying Ohnuki-san Lite (now Free), Plus (now Pro), and Dashboard into a single management console with portable scanner export, multi-PC analytics, and unlimited Excel CSV export.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white border-top border-secondary">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed bg-dark text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#info-item-16">
                                         <span class="text-accent fw-bold me-3">2026.11.07</span> Robocopy Scheduler v26.11.7.0 Update
@@ -389,7 +402,7 @@
                                 <img src="/img/simplestats-icon256.png" alt="Simple Stats" class="product-icon me-3 mb-0">
                                 <h3 class="h4 card-title fw-bold mb-0">Simple Stats</h3>
                             </div>
-                            <p class="card-text mb-4">Ultra-lightweight native desktop telemetry HUD. Monitor CPU, RAM, Disk, and active NIC with Wallpaper Layer / Ghost Overlay modes and 60s sparklines.</p>
+                            <p class="card-text mb-4">Ultra-lightweight native desktop telemetry HUD. Monitor CPU, GPU (VRAM/temp), RAM, Disk, and active NIC with Wallpaper Layer / Ghost Overlay modes and 60s sparklines.</p>
                             <div class="mt-auto">
                                 <a href="https://github.com/chililikobo/SimpleStats/releases/latest" target="_blank" rel="noopener noreferrer" class="btn btn-danger fw-bold w-100 py-2 shadow-sm mb-3">
                                     <i class="bi bi-github me-1"></i> Get it on GitHub
